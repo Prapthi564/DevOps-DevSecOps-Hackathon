@@ -1,7 +1,8 @@
 # DevOps/DevSecOps Challenge - 1 Day Hackathon
 
 Welcome to the DevOps/DevSecOps Challenge hackathon! 
-In this hackathon, you'll venture into modern DevOps practices by implementing a seamless on-premises to cloud infrastructure transition. You'll exaplore and harness GitHub's fleet of features, dive into Azure's advanced PaaS services, and gain understanding on continuous delivery.
+
+- In this hackathon, you'll venture into modern DevOps practices by implementing a seamless on-premises to cloud infrastructure transition. You'll exaplore and harness GitHub's fleet of features, dive into Azure's advanced PaaS services, and gain understanding on continuous delivery.
 
 ## Table of Contents
 
