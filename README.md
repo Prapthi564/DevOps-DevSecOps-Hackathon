@@ -23,25 +23,46 @@ By participating in this hackathon, you will:
 
 ## Challenges
 
-1. **Challenge 01: Deploy Azure OpenAI Service and Large Language Models**
-   - Deploy the Azure OpenAI Service and implement the deployment of a Large Language Model (LLM) within the OpenAI Service.
-     
-2. **Challenge 02: Document Search using Azure Cognitive Search**
-   - Create Azure AI Search, AI Services, storage, upload and index documents, and customize search using VS Code and Azure.
-             
-3. **Challenge 03: Architecture Deployment with Terraform**
-   - Master deploying scalable and efficient architectures in Azure using Terraform.
-          
-4. **Challenge 04: Implement Chat App with Azure OpenAI LLM**
-   - Navigate and explore the web app, interact adeptly with Chatapp using insightful questions, showcase multilingual query proficiency, and implement advanced settings for comprehensive Azure OpenAI service understanding.
-          
-5. **Challenge 05: Load Balancing Azure OpenAI Resources**
-    - Optimize Azure OpenAI resource performance through effective load balancing with Azure API Management (APIM).
-  
-6. **Challenge 06: Serverless Document Batch Processing**
-   - Discover the efficiency of serverless computing for document batch processing. This challenge will walk you through building a serverless solution for processing documents.
-          
+1. **Challenge 01: Dev Center Setup**
+   - Create designated environments for development purposes.
+   - Configure and define Dev Boxes within each Dev Center.
+   - Network Connection Establishment.
+   - Dev Pool Box Creation.
+   - Launching Dev Boxes.
 
+2. **Challenge 02: CI/CD with GitHub, Docker, and VS Code**
+   - Access GitHub Repository via VS Code
+   - Set up a local infrastructure using .NET and work with three Docker images: `fabrikam-init`, `fabrikam-api`, and `fabrikam-web`.
+   - GitHub Project Repo and Infrastructure Repository
+      - Create a new project repository on GitHub linked to the GitHub enterprise account.
+      - Set up a new repository to store the infrastructure code and configurations.
+   - Configure GitHub Actions for building and pushing code.
+   - Modify the GitHub workflow file using Codespaces.
+      - Use Codespaces to access the GitHub repository.
+      - Edit the GitHub workflow file within the Codespaces environment to optimize the CI/CD pipeline.
+             
+3. **Challenge 03: Azure DevOps & GitHub Integration**
+   - Connect your Azure DevOps project's board to your GitHub repository using Azure Board apps.
+   - Make code changes in workflows and observe continuous deployment with GitHub Actions.
+      - Verify that GitHub Actions automatically trigger upon code changes.
+   - Set up test plans within Azure DevOps for your project.
+          
+4. **Challenge 04: GitHub's Advace Security Features**
+   - Activate code scanning for the repository.
+      - Identify and address security vulnerabilities detected by the code scanner within the codebase.
+   - Enable CodeQL alerts to proactively identify and resolve security issues.
+   - Enable repository security advisories to receive alerts about vulnerable dependencies.
+   - Implement strategies to mitigate identified security risks in dependencies.
+   - Configure **Dependabot** to track package versions and generate pull requests automatically for updating outdated packages.
+   - Utilize secret scanning capabilities to detect and secure sensitive information within the repository.
+          
+5. **Challenge 05: Monitoring and Load Testing** : **Guided Lab**
+    - Monitoring with Application Insights.
+      - Integrate Application Insights into a web application.
+      - Set up monitoring metrics for key performance indicators (KPIs) like response time, server latency, and error rates.
+      - Create dashboards to visualize and analyze collected data.
+    - Azure Load Testing Setup
+      - Deploy Azure LoadTesting instances and execute load tests and geather performance metrics.
 
 Each challenge comes with its own set of tasks and objectives. Click on the challenge title to get started.
 
