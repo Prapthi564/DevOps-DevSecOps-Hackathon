@@ -1,6 +1,7 @@
 # DevOps/DevSecOps Challenge Labs - 1 Day Hackathon
 
-Welcome to the DevOps/DevSecOps Challenge hackathon! This event is designed to enhance your skills in the exciting field of AI. Below, you'll find essential information to get started.
+Welcome to the DevOps/DevSecOps Challenge hackathon! 
+In this hackathon, you'll venture into modern DevOps practices by implementing a seamless on-premises to cloud infrastructure transition. You'll exaplore and harness GitHub's fleet of features, dive into Azure's advanced PaaS services, and gain understanding on continuous delivery.
 
 ## Table of Contents
 
@@ -11,15 +12,15 @@ Welcome to the DevOps/DevSecOps Challenge hackathon! This event is designed to e
 
 ## Introduction
 
-In this hackathon, you will immerse yourself in the world of Active Gen AI, exploring innovative solutions and pushing the boundaries of artificial intelligence.
+In this hackathon, you will immerse yourself in the world of DevOps, exploring innovative solutions and pushing the boundaries of CI/CD.
 
 ## Learning Objectives
 
 By participating in this hackathon, you will:
 
-- Gain practical experience with Active Gen AI technologies.
-- Enhance your problem-solving skills in AI application development.
-- Collaborate with peers and industry professionals to tackle real-world challenges.
+- Leveraging GitHub's Potential: Manage code efficiently with repositories, utilize GitHub Codespace for a personalized cloud dev environment, and automate your pipeline using workflows and actions.
+- Explore GitHub's advanced security for proactive vulnerability detection. Safeguard your codebase with robust protective measures.
+- Learn the synergy between Azure DevOps components such as Azure Boards and GitHub repositories. Integrate Azure DevOps Test Plans with your applications for comprehensive testing and quality assurance.
 
 ## Challenges
 
