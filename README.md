@@ -44,7 +44,7 @@ By participating in this hackathon, you will:
    - Configure **Dependabot** to track package versions and generate pull requests automatically for updating outdated packages.
    - Utilize secret scanning capabilities to detect and secure sensitive information within the repository.
           
-3. **Challenge 03: Monitoring and Load Testing** : **Guided Lab**
+3. **Challenge 03: Monitoring** : **Guided Lab**
     - Monitoring with Application Insights.
       - Integrate Application Insights into a web application.
       - Set up monitoring metrics for key performance indicators (KPIs) like response time, server latency, and error rates.
