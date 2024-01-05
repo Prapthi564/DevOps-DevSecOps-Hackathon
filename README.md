@@ -21,18 +21,10 @@ By participating in this hackathon, you will:
 
 - Leveraging GitHub's Potential: Manage code efficiently with repositories, utilize GitHub Codespace for a personalized cloud dev environment, and automate your pipeline using workflows and actions.
 - Explore GitHub's advanced security for proactive vulnerability detection. Safeguard your codebase with robust protective measures.
-- Learn the synergy between Azure DevOps components such as Azure Boards and GitHub repositories. Integrate Azure DevOps Test Plans with your applications for comprehensive testing and quality assurance.
 
 ## Challenges
 
-1. **Challenge 01: Dev Center Setup**
-   - Create designated environments for development purposes.
-   - Configure and define Dev Boxes within each Dev Center.
-   - Network Connection Establishment.
-   - Dev Pool Box Creation.
-   - Launching Dev Boxes.
-
-2. **Challenge 02: CI/CD with GitHub, Docker, and VS Code**
+1. **Challenge 01: CI/CD with GitHub, Docker, and VS Code**
    - Access GitHub Repository via VS Code
    - Set up a local infrastructure using .NET and work with three Docker images: `fabrikam-init`, `fabrikam-api`, and `fabrikam-web`.
    - GitHub Project Repo and Infrastructure Repository
@@ -42,14 +34,8 @@ By participating in this hackathon, you will:
    - Modify the GitHub workflow file using Codespaces.
       - Use Codespaces to access the GitHub repository.
       - Edit the GitHub workflow file within the Codespaces environment to optimize the CI/CD pipeline.
-             
-3. **Challenge 03: Azure DevOps & GitHub Integration**
-   - Connect your Azure DevOps project's board to your GitHub repository using Azure Board apps.
-   - Make code changes in workflows and observe continuous deployment with GitHub Actions.
-      - Verify that GitHub Actions automatically trigger upon code changes.
-   - Set up test plans within Azure DevOps for your project.
-          
-4. **Challenge 04: GitHub's Advace Security Features**
+                   
+2. **Challenge 02: GitHub's Advance Security Features**
    - Activate code scanning for the repository.
       - Identify and address security vulnerabilities detected by the code scanner within the codebase.
    - Enable CodeQL alerts to proactively identify and resolve security issues.
@@ -58,13 +44,14 @@ By participating in this hackathon, you will:
    - Configure **Dependabot** to track package versions and generate pull requests automatically for updating outdated packages.
    - Utilize secret scanning capabilities to detect and secure sensitive information within the repository.
           
-5. **Challenge 05: Monitoring and Load Testing** : **Guided Lab**
+3. **Challenge 03: Monitoring and Load Testing** : **Guided Lab**
     - Monitoring with Application Insights.
       - Integrate Application Insights into a web application.
       - Set up monitoring metrics for key performance indicators (KPIs) like response time, server latency, and error rates.
       - Create dashboards to visualize and analyze collected data.
-    - Azure Load Testing Setup
-      - Deploy Azure LoadTesting instances and execute load tests and geather performance metrics.
+
+4. **Challenge 04: Azure Load Testing Setup**
+   - Deploy Azure LoadTesting instances and execute load tests and gather performance metrics.
 
 Each challenge comes with its own set of tasks and objectives. Click on the challenge title to get started.
 
