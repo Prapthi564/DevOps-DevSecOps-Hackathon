@@ -6,14 +6,14 @@ This challenge equips participants with practical skills in fortifying code usin
 ## Challenge Objectives:
 
 1. **Activity Code Scanning:**
-   - Set up code scanning in a repository (can be a sample or personal project).
+   - Set up code scanning in the repository that was created in the previous challenge.
    - Use the code scanner to identify security vulnerabilities within the codebase.
    - Address at least three vulnerabilities found by the code scanner.
    - Document the identified vulnerabilities, their impact, and the steps taken to fix them. Provide before-and-after code snippets.
 
 2. **CodeQL Integration:**
 
-   -  Integrate CodeQL into a chosen repository to proactively identify security issues.
+   -  Integrate CodeQL into the chosen repository to proactively identify security issues.
    -  Analyze and resolve at least two high-priority security issues flagged by CodeQL.
    -  Document the process of fixing these issues, including any complexities encountered and the rationale behind chosen solutions
   
