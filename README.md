@@ -27,29 +27,36 @@ By participating in this hackathon, you will:
 1. **Challenge 01: Continuous Integration and Deployment for .NET Apps using GitHub Actions**
    - Create a new repository on GitHub for the .NET application.
    - Initialize the repository with a basic .NET application structure or use an existing codebase.
-   - Setup CI/CD Workflow with GitHub Actions:
+   - Setup CI/CD Workflow with GitHub Actions by creating a YAML workflow file.
    - Deployment Setup:
       - Configure the workflow to deploy the .NET application using GitHub Actions and use appropriate deployment strategies such that the application is deployed over Azure.
    - Integration Testing and Feature Modification:
       - Modify an existing feature or add a new feature to the .NET application codebase which must be integrated seamlessly with the existing application functionalities.
-2. **Challenge 02: GitHub's Advanced Security Features**
+
+2. **Challenge 02: Code Security Enhancements**
    - Activate code scanning for the repository.
       - Code scanning is set up in a repository (which could be a sample or personal project) to identify security vulnerabilities within the codebase. At least three of these vulnerabilities are addressed, and detailed documentation, including their impact and the steps taken to fix them, is provided along with before-and-after code snippets.
    - Enable CodeQL alerts to proactively identify and resolve security issues.
       - The challenge involves integrating CodeQL into a selected repository to proactively detect security issues. It includes analyzing and resolving a minimum of two high-priority security concerns flagged by CodeQL. The task requires meticulous documentation, outlining the fixing process, complexities encountered, and the reasoning behind the chosen solutions.
    - Enable repository security advisories to receive alerts about vulnerable dependencies.
    - Implement strategies to mitigate identified security risks in dependencies.
-   - Configure **Dependabot** to track package versions and generate pull requests automatically for updating outdated packages.
-   - Utilize secret scanning capabilities to detect and secure sensitive information within the repository.
        
-3. **Challenge 03: Monitoring** : **Guided Lab**
-    - Monitoring with Application Insights.
-      - Integrate Application Insights into a web application.
-      - Set up monitoring metrics for key performance indicators (KPIs) like response time, server latency, and error rates.
-      - Create dashboards to visualize and analyze collected data.
+3. **Challenge 03: Dependency Management and Security**:
+    - Dependency Security:
+       - Analyze dependencies in a repository to identify and mitigate security risks.
+    - Implement Dependabot in a repository for automated package version tracking, generating two pull requests to update outdated packages. Document the review process and decisions on merging or rejecting these pull requests.
+    - Use GitHub's secret scanning capabilities to detect and secure sensitive information within a repository and identify instances where sensitive information (e.g., API keys, credentials) was successfully detected and secured.
 
-4. **Challenge 04: Azure Load Testing Setup**
-   - Deploy Azure LoadTesting instances and execute load tests and gather performance metrics.
+4. **Challenge 04: Implementing Monitoring Solutions**
+   - Integrate Azure Monitor and Application Insights seamlessly within the Azure-based application infrastructure.
+   - Define and configure key performance metrics for monitoring purposes.
+   - Create effective alerting mechanisms based on predefined thresholds.
+   - Design comprehensive dashboards for real-time visualization of application health and performance metrics.
+   - Optimize the monitoring setup for actionable insights and usability.
+
+5. **Challenge 05: Resilience Testing using Azure Chaos Studio**
+   - Create an Azure Load Testing instance and execute a test using a JMeter file to simulate high-scale traffic on a web application.
+   - Configuring Targets and Running Experiments in Azure Chaos Studio
 
 Each challenge comes with its own set of tasks and objectives. Click on the challenge title to get started.
 
