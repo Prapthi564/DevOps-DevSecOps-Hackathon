@@ -11,7 +11,7 @@ This challenge equips participants with essential skills to fortify repositories
 
 2. **Dependabot Configuration:**
 
-   -  Configure Dependabot within a repository to automatically track package versions.
+   -  Configure Dependabot within the repository that was created in Challenge-01 to automatically track package versions.
    -  Generate and showcase at least two pull requests automatically for updating outdated packages.
    -  Document the review process of these pull requests and the decision-making for merging or rejecting them.
   
