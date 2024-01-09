@@ -5,7 +5,7 @@ This challenge is designed to evaluate participants' skills in creating a robust
 
 ## Challenge Objectives:
 
->**Note:** Solely the use GitHub and GitHub Actions for CI/CD; no usage of Azure DevOps or any external CI/CD services.
+>**Note:** Solely use GitHub and GitHub Actions for CI/CD; no usage of Azure DevOps or any external CI/CD services.
 
 1. **Repository Setup:**
    - Participants must create a new repository on GitHub for the .NET application.
