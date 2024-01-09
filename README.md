@@ -1,8 +1,8 @@
-# DevOps/DevSecOps Challenge - 1 Day Hackathon
+# DevOps/DevSecOps Challenge - 1-Day Hackathon
 
 Welcome to the DevOps/DevSecOps Challenge hackathon! 
 
-- In this hackathon, you'll venture into modern DevOps practices by implementing a seamless on-premises to cloud infrastructure transition. You'll exaplore and harness GitHub's fleet of features, dive into Azure's advanced PaaS services, and gain understanding on continuous delivery.
+- In this hackathon, you'll venture into modern DevOps practices by implementing a seamless on-premises to cloud infrastructure transition. You'll explore and harness GitHub's fleet of features, dive into Azure's advanced PaaS services, and gain an understanding of continuous delivery.
 
 ## Table of Contents
 
@@ -26,16 +26,16 @@ By participating in this hackathon, you will:
 
 1. **Challenge 01: CI/CD with GitHub, Docker, and VS Code**
    - Access GitHub Repository via VS Code
-   - Set up a local infrastructure using .NET and work with three Docker images: `fabrikam-init`, `fabrikam-api`, and `fabrikam-web`.
+   - Set up a local infrastructure using .NET and 
    - GitHub Project Repo and Infrastructure Repository
-      - Create a new project repository on GitHub linked to the GitHub enterprise account.
+      - Create a new project repository on GitHub linked to the GitHub account.
       - Set up a new repository to store the infrastructure code and configurations.
    - Configure GitHub Actions for building and pushing code.
    - Modify the GitHub workflow file using Codespaces.
       - Use Codespaces to access the GitHub repository.
       - Edit the GitHub workflow file within the Codespaces environment to optimize the CI/CD pipeline.
                    
-2. **Challenge 02: GitHub's Advance Security Features**
+2. **Challenge 02: GitHub's Advanced Security Features**
    - Activate code scanning for the repository.
       - Identify and address security vulnerabilities detected by the code scanner within the codebase.
    - Enable CodeQL alerts to proactively identify and resolve security issues.
