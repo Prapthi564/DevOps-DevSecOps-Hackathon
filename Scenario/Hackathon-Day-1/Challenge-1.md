@@ -28,7 +28,6 @@ This challenge is designed to evaluate participants' skills in creating a robust
 ## Success criteria:
 To complete this challenge successfully:
 
-- Solely use GitHub and GitHub Actions for CI/CD; no usage of Azure DevOps or any external CI/CD services.
 - The application can be deployed using VS Code which supports GitHub Actions.
 - **CI/CD Implementation**: The CI/CD pipeline should be established using GitHub Actions, encompassing build, test, and deployment stages effectively.
 - **Deployment Accuracy**: The application must be successfully deployed using GitHub Actions, and the chosen deployment strategy should align with the project's requirements.
