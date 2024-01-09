@@ -24,26 +24,24 @@ By participating in this hackathon, you will:
 
 ## Challenges
 
-1. **Challenge 01: CI/CD with GitHub, Docker, and VS Code**
-   - Access GitHub Repository via VS Code
-   - Set up a local infrastructure using .NET and 
-   - GitHub Project Repo and Infrastructure Repository
-      - Create a new project repository on GitHub linked to the GitHub account.
-      - Set up a new repository to store the infrastructure code and configurations.
-   - Configure GitHub Actions for building and pushing code.
-   - Modify the GitHub workflow file using Codespaces.
-      - Use Codespaces to access the GitHub repository.
-      - Edit the GitHub workflow file within the Codespaces environment to optimize the CI/CD pipeline.
-                   
+1. **Challenge 01: Continuous Integration and Deployment for .NET Apps using GitHub Actions**
+   - Create a new repository on GitHub for the .NET application.
+   - Initialize the repository with a basic .NET application structure or use an existing codebase.
+   - Setup CI/CD Workflow with GitHub Actions:
+   - Deployment Setup:
+      - Configure the workflow to deploy the .NET application using GitHub Actions and use appropriate deployment strategies such that the application is deployed over Azure.
+   - Integration Testing and Feature Modification:
+      - Modify an existing feature or add a new feature to the .NET application codebase which must be integrated seamlessly with the existing application functionalities.
 2. **Challenge 02: GitHub's Advanced Security Features**
    - Activate code scanning for the repository.
-      - Identify and address security vulnerabilities detected by the code scanner within the codebase.
+      - Code scanning is set up in a repository (which could be a sample or personal project) to identify security vulnerabilities within the codebase. At least three of these vulnerabilities are addressed, and detailed documentation, including their impact and the steps taken to fix them, is provided along with before-and-after code snippets.
    - Enable CodeQL alerts to proactively identify and resolve security issues.
+      - The challenge involves integrating CodeQL into a selected repository to proactively detect security issues. It includes analyzing and resolving a minimum of two high-priority security concerns flagged by CodeQL. The task requires meticulous documentation, outlining the fixing process, complexities encountered, and the reasoning behind the chosen solutions.
    - Enable repository security advisories to receive alerts about vulnerable dependencies.
    - Implement strategies to mitigate identified security risks in dependencies.
    - Configure **Dependabot** to track package versions and generate pull requests automatically for updating outdated packages.
    - Utilize secret scanning capabilities to detect and secure sensitive information within the repository.
-          
+       
 3. **Challenge 03: Monitoring** : **Guided Lab**
     - Monitoring with Application Insights.
       - Integrate Application Insights into a web application.
