@@ -1,4 +1,4 @@
-# Challenge 1:  Continuous Integration and Deployment for .NET Apps using GitHub Actions
+# Challenge 01: Continuous Integration and Deployment for .NET Apps using GitHub Actions
 
 ## Introduction:
 This challenge is designed to evaluate participants' skills in creating a robust CI/CD pipeline leveraging GitHub Actions specifically tailored for a .NET application. It aims to assess their capability to not only establish a seamless pipeline but also to guarantee the successful deployment of the application. Additionally, participants will demonstrate their expertise by efficiently modifying and integrating new features into the existing codebase, showcasing their proficiency in adapting and evolving the application's functionality.
