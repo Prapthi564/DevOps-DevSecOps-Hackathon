@@ -28,16 +28,16 @@ This challenge is designed to evaluate participants' skills in creating a robust
 ## Success criteria:
 To complete this challenge successfully:
 
-- Successfully deployed the Azure Search Service and the Azure Storage Account
-- Successfully added the data into the storage account.
-- Successfully indexed the documents in Azure AI Search using the Azure portal.
-- Suuccessfully customized the index and configured the indexer in Azure AI Search.
-- Successfully modified and explored search components using JSON definitions.
-- Successfully utilized the Azure AI Search SDK to create a client application for search.
-- Successfully ran the web application locally, performed searches, and refined search results successfully.
+- Solely use GitHub and GitHub Actions for CI/CD; no usage of Azure DevOps or any external CI/CD services.
+- The application can be deployed using VS Code which supports GitHub Actions.
+- **CI/CD Implementation**: The CI/CD pipeline should be established using GitHub Actions, encompassing build, test, and deployment stages effectively.
+- **Deployment Accuracy**: The application must be successfully deployed using GitHub Actions, and the chosen deployment strategy should align with the project's requirements.
+- **Code Modification**: Clear adherence to best practices are expected for any modifications made to the codebase, ensuring seamless integration of new features.
 
 ## Additional Resources:
 
-- Refer to [What is Azure AI Search](https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search) for reference.
-- [Create an Azure AI Search Solution](https://github.com/MicrosoftLearning/AI-102-AIEngineer/blob/master/Instructions/22-azure-search.md)
-- [Searching document text at scale using Azure Cognitive Search](https://benalexkeen.com/searching-document-text-at-scale-using-azure-cognitive-search/)
+- Refer to [GitHub Actions and .NET](https://learn.microsoft.com/en-us/dotnet/devops/github-actions-overview) for reference.
+- [Building and testing .NET](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net).
+- [Why CI/CD](https://resources.github.com/ci-cd/).
+- [Continuous Deployment with Github Actions: An Example](https://www.dolthub.com/blog/2020-11-23-continous-deployment-with-github-actions/).
+- [How to build a CI/CD pipeline with GitHub Actions in four simple steps](https://github.blog/2022-02-02-build-ci-cd-pipeline-github-actions-four-steps/).
