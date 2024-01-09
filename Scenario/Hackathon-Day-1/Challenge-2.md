@@ -1,39 +1,45 @@
-# Challenge 1: Code Security Enhancements
+# Challenge 02: Code Security Enhancements
 
 ## Introduction:
 This challenge equips participants with practical skills in fortifying code using GitHub's Advanced Security Features. The goal is to identify vulnerabilities, proactively address security issues, and establish robust security practices within repositories. In today's software landscape, security is crucial, and this challenge matters as it enables participants to leverage GitHub's tools effectively, fostering a proactive security culture through code scanning, CodeQL integration, and handling security advisories.
+
 ## Challenge Objectives:
 
-1. **Repository Setup:**
-   - Participants must create a new repository on GitHub for the .NET application.
-   - Initialize the repository with a basic .NET application structure or use an existing codebase.
+1. **Activity Code Scanning:**
+   - Set up code scanning in a repository (can be a sample or personal project).
+   - Use the code scanner to identify security vulnerabilities within the codebase.
+   - Address at least three vulnerabilities found by the code scanner.
+   - Document the identified vulnerabilities, their impact, and the steps taken to fix them. Provide before-and-after code snippets.
 
-2. **Setup CI/CD Workflow with GitHub Actions:**
+2. **CodeQL Integration:**
 
-   -  Participants need to create a GitHub Actions workflow file (e.g., **.github/workflows/main.yml**) to automate the CI/CD process.
-   -  Implement a workflow that includes steps for building the .NET application.
-   -  Add necessary steps for running tests to ensure the application's stability.
+   -  Integrate CodeQL into a chosen repository to proactively identify security issues.
+   -  Analyze and resolve at least two high-priority security issues flagged by CodeQL.
+   -  Document the process of fixing these issues, including any complexities encountered and the rationale behind chosen solutions
   
-3. **Deployment Setup:**
-   - Configure the workflow to deploy the .NET application using GitHub Actions.
-   - Use appropriate deployment strategies such that the application is deployed over Azure.
-
-4. **Integration Testing and Feature Modification:**
-   - Modify an existing feature or add a new feature to the .NET application codebase.
-   - The modified/added feature must be integrated seamlessly with the existing application functionalities.
+3. **Repository Security Advisories:**
+   - Enable repository security advisories to receive alerts regarding vulnerable dependencies.
+   - Demonstrate the reception of a security advisory alert and the steps taken to handle it.
   
 ## Success criteria:
 To complete this challenge successfully:
 
-- The application can be deployed using VS Code which supports GitHub Actions.
-- **CI/CD Implementation**: The CI/CD pipeline should be established using GitHub Actions, encompassing build, test, and deployment stages effectively.
-- **Deployment Accuracy**: The application must be successfully deployed using GitHub Actions, and the chosen deployment strategy should align with the project's requirements.
-- **Code Modification**: Clear adherence to best practices are expected for any modifications made to the codebase, ensuring seamless integration of new features.
+- **Successful Implementation of Code Scanning**:
+   - Code scanning is properly set up in the chosen repository.
+   - At least three significant security vulnerabilities are identified within the codebase.
+
+- **Effective Resolution of Code Scanner Findings**:
+   - Documented fixes for the identified vulnerabilities, showcasing before-and-after code snippets or explanations.
+   
+- **Integration and Resolution with CodeQL**:
+   - CodeQL is integrated into the repository to proactively identify security issues.
+   - At least two high-priority security issues flagged by CodeQL are resolved with documented fixes.
+
+- **Enabled Repository Security Advisories:**
+   - Repository security advisories are enabled to receive alerts about vulnerable dependencies.
+   - Strategies proposed to mitigate security risks in dependencies, demonstrating a proactive approach to handling vulnerabilities.
 
 ## Additional Resources:
 
-- Refer to [GitHub Actions and .NET](https://learn.microsoft.com/en-us/dotnet/devops/github-actions-overview) for reference.
-- [Building and testing .NET](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net).
-- [Why CI/CD](https://resources.github.com/ci-cd/).
-- [Continuous Deployment with Github Actions: An Example](https://www.dolthub.com/blog/2020-11-23-continous-deployment-with-github-actions/).
-- [How to build a CI/CD pipeline with GitHub Actions in four simple steps](https://github.blog/2022-02-02-build-ci-cd-pipeline-github-actions-four-steps/).
+- Refer to [About GitHub's Advanced Security](https://docs.github.com/en/get-started/learning-about-github/about-github-advanced-security) for reference.
+- [GitHub Security Features](https://docs.github.com/en/code-security/getting-started/github-security-features).
