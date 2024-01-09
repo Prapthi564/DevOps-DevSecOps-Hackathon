@@ -37,7 +37,6 @@ By participating in this hackathon, you will:
    - Activate code scanning for the repository.
       - Code scanning is set up in a repository (which could be a sample or personal project) to identify security vulnerabilities within the codebase. At least three of these vulnerabilities are addressed, and detailed documentation, including their impact and the steps taken to fix them, is provided along with before-and-after code snippets.
    - Enable CodeQL alerts to proactively identify and resolve security issues.
-      - The challenge involves integrating CodeQL into a selected repository to proactively detect security issues. It includes analyzing and resolving a minimum of two high-priority security concerns flagged by CodeQL. The task requires meticulous documentation, outlining the fixing process, complexities encountered, and the reasoning behind the chosen solutions.
    - Enable repository security advisories to receive alerts about vulnerable dependencies.
    - Implement strategies to mitigate identified security risks in dependencies.
        
