@@ -8,7 +8,7 @@ This challenge is designed to evaluate participants' skills in creating a robust
 >**Note:** Solely use GitHub and GitHub Actions for CI/CD; no usage of Azure DevOps or any external CI/CD services.
 
 1. **Repository Setup:**
-   - Participants must create a new repository on GitHub for the .NET application.
+   - Create a new repository on GitHub for the .NET application.
    - Initialize the repository with a basic .NET application structure or use an existing codebase.
 
 2. **Setup CI/CD Workflow with GitHub Actions:**
@@ -29,6 +29,7 @@ This challenge is designed to evaluate participants' skills in creating a robust
 To complete this challenge successfully:
 
 - The application can be deployed using VS Code which supports GitHub Actions.
+- A new repository must have been created.
 - **CI/CD Implementation**: The CI/CD pipeline should be established using GitHub Actions, encompassing build, test, and deployment stages effectively.
 - **Deployment Accuracy**: The application must be successfully deployed using GitHub Actions, and the chosen deployment strategy should align with the project's requirements.
 - **Code Modification**: Clear adherence to best practices are expected for any modifications made to the codebase, ensuring seamless integration of new features.
