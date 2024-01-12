@@ -1,5 +1,7 @@
 # Challenge 05: Resilience Testing using Azure Chaos Studio
 
+### Estimated Time: 1 Hour
+
 ## Introduction:
 This challenge centers around Azure Load Testing and Azure Chaos Studio, empowering you to perform performance tests and enhance application resilience. In the modern digital landscape, guaranteeing optimal performance during heavy loads and fortifying against disruptions is essential. Through Azure's tools, you'll gain insights into proactive issue detection and methods to reinforce your applications.
 
