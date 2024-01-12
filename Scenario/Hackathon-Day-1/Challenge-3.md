@@ -7,9 +7,11 @@ This challenge equips participants with essential skills to fortify repositories
 
 ## Challenge Objectives:
 
-1. **Dependency Security:**
-   - Analyze dependencies in a repository to identify and mitigate security risks.
-   - Implement and document strategies to enhance the security posture related to dependencies.
+1. **Code Scanning with CodeQL:**
+   - Ensure GitHub Actions is enabled for your e-commerce repository.
+   - Configure CodeQL analysis in the workflow.
+   - Address any security vulnerabilities identified by CodeQL.
+   - Demonstrate the integration of CodeQL scan results into your pull request workflow.
 
 2. **Dependabot Configuration:**
 
