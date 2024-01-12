@@ -2,12 +2,12 @@
 
 ## Repository Setup and Basic Security
 
+### Estimated Time: 1 Hour
+
 ### Introduction:
 In this challenge, you are part of a dynamic development team embarking on the creation of an e-commerce platform and in today's software landscape, security is crucial.
 
 Given the critical nature of handling customer data and payment information, your goal is to ensure a setup that protects the main branch from unauthorized changes and to establish a baseline of security through GitHub Advanced Security features. This scenario encompasses tasks ranging from securing the repository setup to enabling essential security measures like dependency tracking and secret scanning.
-
-### Estimated Time: 1 Hour
 
 ## Challenge Objectives:
 
