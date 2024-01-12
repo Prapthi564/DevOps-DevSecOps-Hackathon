@@ -1,6 +1,8 @@
-# Challenge 03: Dependency Management and Security
+# Challenge 03: GitHub Advanced Security II
 
-## Introduction:
+## Advanced Security and Policy Enforcement
+
+### Introduction:
 This challenge equips participants with essential skills to fortify repositories through effective dependency management and sensitive information security using GitHub's Advanced Security Features. Participants will focus on mitigating risks in dependencies and securing sensitive data. This challenge is crucial as it empowers participants to apply best practices in dependency security, automate updates, and fortify repositories against potential vulnerabilities using tools like Dependabot and secret scanning.
 
 ## Challenge Objectives:
