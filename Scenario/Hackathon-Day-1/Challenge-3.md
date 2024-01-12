@@ -15,26 +15,26 @@ This challenge equips participants with essential skills to fortify repositories
    - Address any security vulnerabilities identified by CodeQL.
    - Demonstrate the integration of CodeQL scan results into your pull request workflow.
 
-2. **Dependabot Configuration:**
+2. **GitHub Administration for Advanced Security:**
 
-   -  Configure Dependabot within the repository that was created in Challenge-01 to automatically track package versions.
-   -  Generate and showcase at least two pull requests automatically for updating outdated packages.
-   -  Document the review process of these pull requests and the decision-making for merging or rejecting them.
+   -  Explore and configure security settings at the organization level.
+   -  Implement security policies and controls specific to the healthcare application.
   
-3. **Secret Scanning:**
-   - Use GitHub's secret scanning capabilities to detect and secure sensitive information within a repository.
-   - Identify instances where sensitive information (e.g., API keys, credentials) was successfully detected and secured.
+3. **Manage Sensitive Data and Policies:**
+   - Store a sensitive configuration file securely using GitHub Secrets.
+   - Create a comprehensive security policy document for your repository.
+   - Implement a pull request template that includes a security checklist.
   
 ## Success criteria:
 To complete this challenge successfully:
 
-- Successfully identifies potential security risks associated with dependencies within the repository.
-- Configured Dependabot successfully within the repository to automatically track and generate at least two pull requests for outdated packages.
-- Usage of GitHub's secret scanning capabilities to successfully detect and secure sensitive information within the repository.
+- Successful implementation of CodeQL for identifying and addressing security vulnerabilities.
+- Proper exploration and configuration of GitHub organization-level security settings.
+- Effective management of sensitive data using GitHub Secrets.
+- Well-documented security policies and checklist in the repository.
 
 ## Additional Resources:
 
-- Refer to [About GitHub's Advanced Security](https://docs.github.com/en/get-started/learning-about-github/about-github-advanced-security) for reference.
-- [GitHub Security Features](https://docs.github.com/en/code-security/getting-started/github-security-features).
-- Refer to [Configure Dependabo security updates](https://docs.github.com/en/code-security/dependabot/dependabot-security-updates/configuring-dependabot-security-updates) for reference.
-- Refer to [About Secret Scanning](https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning) for reference.
+- Refer to [About GitHub's Advanced Security](https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql) for reference.
+- Refer to [Code Scanning with GitHub CodeQL](https://learn.microsoft.com/en-us/training/modules/code-scanning-with-github-codeql/) for reference.
+- Refer to [Manage sensitive data and security policies within GitHub](https://learn.microsoft.com/en-us/training/modules/manage-sensitive-data-security-policies/) for reference.
