@@ -1,4 +1,4 @@
-# DevOps/DevSecOps Challenge - 1-Day Hackathon
+# DevOps/DevSecOps Challenge - 1 Day Hackathon
 
 Welcome to the DevOps/DevSecOps Challenge hackathon! 
 
