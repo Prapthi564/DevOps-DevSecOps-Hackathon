@@ -57,3 +57,17 @@ To complete this challenge successfully:
 - [Why CI/CD](https://resources.github.com/ci-cd/).
 - [Continuous Deployment with Github Actions: An Example](https://www.dolthub.com/blog/2020-11-23-continous-deployment-with-github-actions/).
 - [How to build a CI/CD pipeline with GitHub Actions in four simple steps](https://github.blog/2022-02-02-build-ci-cd-pipeline-github-actions-four-steps/).
+
+On the **Sign into Microsoft Azure tab** you will see a login screen, enter the following email/username and then click on **Next**.
+
+   - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+
+1. Now enter the following password and click on **Sign in**.
+
+   - **Password:** <inject key="AzureAdUserPassword"></inject>
+
+1. If you see the pop-up **Stay Signed in?**, click No.
+
+1. If you see the pop-up **You have free Azure Advisor recommendations!** close the window to continue the lab.
+
+1. If a **Welcome to Microsoft Azure** popup window appears, click **Maybe Later** to skip the tour.
