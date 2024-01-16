@@ -33,7 +33,6 @@ To complete this challenge successfully:
 - Successful integration of Azure Monitor and Application Insights within the application environment, ensuring seamless data collection and monitoring capabilities.
 - Selection and configuration of key performance metrics relevant to the application's functionality and performance goals.
 - Establishment of effective alerting mechanisms with well-defined thresholds, ensuring timely notifications for potential issues or deviations in monitored metrics.
-- Creation of visually intuitive and comprehensive dashboards presenting relevant metrics for real-time monitoring and providing clear insights into the application's health and performance.
 
 ## Additional Resources:
 
