@@ -31,7 +31,6 @@ To complete this challenge successfully:
 - Successful implementation of CodeQL for identifying and addressing security vulnerabilities.
 - Proper exploration and configuration of GitHub organization-level security settings.
 - Effective management of sensitive data using GitHub Secrets.
-- Well-documented security policies and checklist in the repository.
 
 ## Additional Resources:
 
