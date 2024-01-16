@@ -44,7 +44,7 @@ This challenge is designed to evaluate your skills in creating a robust CI/CD pi
 ## Success criteria:
 To complete this challenge successfully:
 
-- The application can be deployed using VS Code which supports GitHub Actions.
+- The application must be deployed using VS Code which supports GitHub Actions.
 - A new repository must have been created.
 - **CI/CD Implementation**: The CI/CD pipeline should be established using GitHub Actions, encompassing build, test, and deployment stages effectively.
 - **Deployment Accuracy**: The application must be successfully deployed using GitHub Actions, and the chosen deployment strategy should align with the project's requirements.
