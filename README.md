@@ -2,7 +2,7 @@
 
 Welcome to the DevOps/DevSecOps Challenge hackathon! 
 
-- In this hackathon, you'll venture into modern DevOps practices by implementing a seamless on-premises to cloud infrastructure transition. You'll explore and harness GitHub's fleet of features, dive into Azure's advanced PaaS services, and gain an understanding of continuous delivery.
+- In this hackathon, you'll elevate your .NET applications to new heights! Dive into the world of Continuous Integration and Deployment (CI/CD) using GitHub Actions, fortify repository security with GitHub Advanced Security, enforce advanced security measures and policies, and implement monitoring solutions with resilience testing using Azure Chaos Studio.
 
 ## Table of Contents
 
@@ -13,7 +13,11 @@ Welcome to the DevOps/DevSecOps Challenge hackathon!
 
 ## Introduction
 
-In this hackathon, you will immerse yourself in the world of DevOps, exploring innovative solutions and pushing the boundaries of CI/CD.
+In this hackathon, you will automate your development lifecycle with CI/CD using GitHub Actions, ensuring efficient builds, tests, and deployments. Strengthen repository security with GitHub Advanced Security, covering vulnerability detection, dependency scanning, and code analysis.
+
+Explore and navigte through the advanced security challenges and enforce policies, aligning with industry standards. Transition to the cloud with Azure Chaos Studio, implementing monitoring solutions and resilience testing to enhance application reliability.
+
+
 
 ## Learning Objectives
 
