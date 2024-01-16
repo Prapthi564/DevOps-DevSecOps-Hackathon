@@ -61,14 +61,8 @@ By participating in this hackathon, you will:
    - Create an Azure Load Testing instance and execute a test using a JMeter file to simulate high-scale traffic on a web application.
    - Configuring Targets and Running Experiments in Azure Chaos Studio
 
-Each challenge comes with its own set of tasks and objectives. Click on the challenge title to get started.
+Each challenge comes with its own set of tasks and objectives.
 
-## Prerequisites
-
-Before you begin, ensure that you have the following prerequisites:
-
-- **Prerequisites**: Information on the tools and knowledge required for the hackathon.
-
-Feel free to explore the challenges, learn, and have fun during this hackathon! If you have any questions, don't hesitate to reach out to our support team.
+Feel free to explore the challenges, learn, and have fun during this hackathon! If you have any questions, don't hesitate to reach out to your coach.
 
 Happy hacking!
