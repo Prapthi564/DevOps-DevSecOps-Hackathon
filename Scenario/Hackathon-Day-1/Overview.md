@@ -1,10 +1,10 @@
-# Active Gen AI Hackathon Overview - 2-Day Hackathon
+# DevSecOps Hackathon Overview -1 Day Hackathon
 
 ## Introduction:
-Welcome to the Active Gen AI Hackathon, a transformative journey into the world of Gen AI and its practical implementation. In this two-day immersive experience, you'll explore the capabilities of Azure OpenAI and Azure AI Search to build your personalized chat applications with a focus on scalability, performance, and document intelligence.
+Welcome to the DevSecOps Hackathon! Through this Hand's-On experience, you'll delve into Continuous Integration and Deployment (CI/CD) for .NET Apps, harnessing the capabilities of GitHub Actions, GitHub Advanced Security, and Azure Chaos Studio. Get ready to strengthen your skills in ensuring the security, reliability, and efficiency of software development through the integration of DevOps and Security practices.
 
-## What is Active Gen AI?
-Active Gen AI is all about empowering you to harness the potential of Azure OpenAI and Azure AI Search to create dynamic and scalable chat applications tailored to your specific needs. The hackathon will guide you through key aspects:
+## Why do we need DevSecOps?
+As the software development landscape evolves, the need for a seamless and secure development pipeline becomes crucial. DevSecOps combines development, operations, and security to address vulnerabilities early in the development process, fostering a culture of collaboration, speed, and risk mitigation. Throughout this hackathon, you'll understand the importance of integrating security into every phase of the software development lifecycle.
 
 **Day 1: Building the Foundation**
 - Learn about Azure OpenAI service and its configuration.
@@ -13,27 +13,22 @@ Active Gen AI is all about empowering you to harness the potential of Azure Open
 - Deploy a chat app architecture with Terraform, emphasizing the practical aspects of implementation.
 - Experience interacting with a chat app and explore features in multilingual queries, and use of advanced settings to influence chat responses.
 
-**Day 2: Scaling and Document Intelligence**
-- Explore the necessity of load balancing in a chat app with increased user engagement.
-- Update your existing deployment to incorporate load-balanced Azure OpenAI.
-- Witness the challenges of handling growing user demands and the solution through load balancing.
-- Implement serverless document batch processing for continuous document indexing and language translation.
-- Learn to operationalize the integration for automatic processing and storage in Azure Cognitive Search.
-
 ## Setting Expectations:
-In this hackathon, you will:
 
-**Understand Gen AI Concepts:**
-- Gain insights into the core concepts of Gen AI, including Azure OpenAI and Azure AI Search.
+**Hands-On Practicality:**
+- Expect a hands-on experience where you will actively implement CI/CD for .NET Apps using GitHub Actions, set up GitHub Advanced Security features, and conduct resilience testing with Azure Chaos Studio. This isn't just about theory; it's about applying concepts in a practical, real-world scenario.
 
-**Hands-On Implementation:**
-- Engage in hands-on challenges, from deploying a chat app to scaling and integrating document intelligence.
+**Learning Curve:**
+- Anticipate a learning curve as you navigate through the integration of various tools and technologies. Embrace challenges as opportunities to expand your skill set, and don't hesitate to seek guidance from mentors and fellow participants.
 
-**Real-World Applications:**
-- Apply your knowledge to real-world scenarios, addressing challenges that organizations face with increased user interactions, dynamic document processing, and innovative use cases.
+**Time Commitment:**
+- Recognize that this hackathon demands a dedicated time commitment. Successfully building and securing a robust development pipeline requires attention to detail and iterative refinement. Plan accordingly to make the most out of the learning and collaboration opportunities.
 
 **Collaborative Learning:**
-- Collaborate with fellow participants, share insights, and collectively tackle challenges.
+- Understand that DevSecOps is inherently collaborative. You'll work to brainstorm ideas, solve problems, and share insights. Embrace the chance to learn from others and contribute your unique perspective to the collective success of the hackathon.
+
+**Integration of DevOps and Security:**
+- Emphasize the integration of DevOps and Security throughout. Recognize that this is not just about writing secure code but also about embedding security practices into the entire development lifecycle. Expect to see how security can be seamlessly woven into CI/CD pipelines and resilience testing.
 
 ### Use Case Ideation & Brainstorming:
 **1: Deploy Azure OpenAI Service and Large Language Models**
