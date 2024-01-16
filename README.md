@@ -17,7 +17,7 @@ In this hackathon, you will automate your development lifecycle with CI/CD using
 
 Explore and navigte through the advanced security challenges and enforce policies, aligning with industry standards. Transition to the cloud with Azure Chaos Studio, implementing monitoring solutions and resilience testing to enhance application reliability.
 
-
+This hack consists of five challenges and is designed to be self-administered, so anyone can complete the material independently. Whether you have limited to no experience with DevSecOps or have not experimented using CI/CD and GitHub before, but want a deeper understanding of its implementation, this hack is for you.
 
 ## Learning Objectives
 
