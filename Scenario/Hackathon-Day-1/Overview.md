@@ -30,7 +30,7 @@ As the software development landscape evolves, the need for a seamless and secur
 **Integration of DevOps and Security:**
 - Emphasize the integration of DevOps and Security throughout. Recognize that this is not just about writing secure code but also about embedding security practices into the entire development lifecycle. Expect to see how security can be seamlessly woven into CI/CD pipelines and resilience testing.
 
-### Use Case Ideation & Brainstorming:
+## Use Case Ideation & Brainstorming:
 **1: Deploy Azure OpenAI Service and Large Language Models**
 - **Description:** Understand the challenges and possibilities of deploying Azure OpenAI services and integrating large language models into your applications. Brainstorm how this can be utilized in real-world scenarios, from content generation to natural language understanding.
 
