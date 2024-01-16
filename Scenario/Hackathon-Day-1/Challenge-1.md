@@ -9,7 +9,7 @@ This challenge is designed to evaluate your skills in creating a robust CI/CD pi
 
 1. To access the and login to GitHub, open the edge browser from inside the environment and navigate to **[GitHub](https://github.com/)**.
 
-2. Signin to GitHub by clicking on the **Sign in** button from the top right corner of the GitHub home page.
+2. Sign in to GitHub by clicking on the **Sign in** button from the top right corner of the GitHub home page.
 
 3. On the **Sign into GitHUb tab** you will see a login screen, enter the following email/username and then click on **Next**.
 
