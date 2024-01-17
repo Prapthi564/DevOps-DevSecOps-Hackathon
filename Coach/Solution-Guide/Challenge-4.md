@@ -19,13 +19,8 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
    - **Email/Username:** <inject key="GitHubUsername"></inject>
    - **Password:** <inject key="GitHubPassword"></inject>
 ```
-$userName = <update the username>
-$password = <update the password>
 
-$securePassword = $password | ConvertTo-SecureString -AsPlainText -Force
-$cred = new-object -typename System.Management.Automation.PSCredential -argumentlist $userName, $SecurePassword
-
-Connect-AzAccount -Credential $cred | Out-Null
+Connect-AzAccount 
 
 $RGname = "contosotraders-$deploymentid"
 
