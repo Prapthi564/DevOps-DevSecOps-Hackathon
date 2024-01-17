@@ -36,7 +36,7 @@ In this task, you'll create an Azure Load Testing instance and run a test using 
    
    **Note**: In case, the test fails due to `The test was stopped due to a high error rate. Check your script and try again. In case the issue persists, raise a ticket with a support error. This is expected as sometimes the load on the application exceeds the defined throughput.
      
-## Task 2: Create exeperiment and target using Azure Chaos studio
+## Task 2: Create experiment and target using Azure Chaos studio
 
 In this task you will add **Targets** and create an **Experiment** on **Azure Chaos Studio** to check the resilience of the web application that we created by adding  real faults and observe how our applications respond to real-world disruptions.
 
