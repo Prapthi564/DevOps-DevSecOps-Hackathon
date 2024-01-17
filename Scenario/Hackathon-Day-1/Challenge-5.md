@@ -12,7 +12,7 @@ This challenge centers around Azure Load Testing and Azure Chaos Studio, empower
    - Create an Azure Load Testing instance and create and execute a quick test to check load of 50 users for 2 minutes.
    - Resolve the errors if the test fails and take actions to improve the application's resiliancy.
 
-2. **Create exeperiment and target using Azure Chaos studio:**
+2. **Create experiment and target using Azure Chaos studio:**
 
    -  Utilize Azure Chaos Studio to assess the resilience of the Azure kubernetes service where the Contoso traders application is hosted.
    - Using Chaos studio, target the AKS cluster resource.
