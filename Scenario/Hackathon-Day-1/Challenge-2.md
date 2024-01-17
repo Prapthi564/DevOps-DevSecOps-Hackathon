@@ -1,6 +1,6 @@
 # Challenge 02: GitHub Advanced Security - Implement Code Security Enhancements
 
-### Estimated Time: 1 Hour
+### Estimated Time: 60 minutes
 
 ### Introduction:
 In this previous challenge, you did a successful hosting of the application using GitHub repository and GitHub Actions for Continuous Integration and Continuous Delivery. In this challenge, you are a DevSecOps engineer tasked with ensuring the security of the Contoso Traders application hosted on GitHub. In this challenge, your goal is to mitigate risks in dependencies and secure sensitive data using advanced security features provided by GitHub. 
