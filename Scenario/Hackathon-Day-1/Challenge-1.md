@@ -13,7 +13,7 @@ You are a DevOps engineer tasked with setting up a robust Continuous Integration
 
 2. Sign in to GitHub by clicking on the **Sign in** button from the top right corner of the GitHub home page.
 
-3. On the **Sign into GitHUb tab** you will see a login screen, enter the following email/username and then click on **Next**.
+3. On the **Sign into GitHub tab** you will see a login screen, enter the following email/username and then click on **Next**.
 
    - **Email/Username:** <inject key="GitHubUsername"></inject>
 
