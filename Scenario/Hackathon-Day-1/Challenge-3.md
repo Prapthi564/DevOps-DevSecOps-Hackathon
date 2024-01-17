@@ -1,10 +1,10 @@
 # Challenge 03: GitHub Advanced Security II
 
-## Advanced Security and Policy Enforcement
-
-### Estimated Time: 1 Hour
+### Estimated Time: 40 minutes
 
 ### Introduction:
+
+In the previous challenge you configured a few of the GitHub Advanced security features. In this challenge, you will continue to focus on crucial GitHub Advanced security features
 This challenge equips you with essential skills to fortify repositories through effective dependency management and sensitive information security using GitHub's Advanced Security Features. You will focus on mitigating risks in dependencies and securing sensitive data. This challenge is crucial as it empowers to apply best practices in dependency security, automate updates, and fortify repositories against potential vulnerabilities using tools like Dependabot and secret scanning.
 
 ## Challenge Objectives:

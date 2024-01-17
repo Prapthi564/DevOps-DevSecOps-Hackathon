@@ -1,42 +1,49 @@
 # Challenge 02: GitHub Advanced Security I
 
-## Repository Setup and Basic Security
-
 ### Estimated Time: 1 Hour
 
 ### Introduction:
-In this challenge, you are part of a dynamic development team embarking on the creation of an e-commerce platform and in today's software landscape, security is crucial.
+In this previous challenge, you did a successful hosting of the .Net application using GitHub repository and GitHub Actions for Continuous Integration and Continuous Deliverys. In this challenge, you will focus on implementing security to your GitHub repository using GitHub Advance security features. You need to focus on completing the implemenation of below mentioned security features.
 
-Given the critical nature of handling customer data and payment information, your goal is to ensure a setup that protects the main branch from unauthorized changes and to establish a baseline of security through GitHub Advanced Security features. This scenario encompasses tasks ranging from securing the repository setup to enabling essential security measures like dependency tracking and secret scanning.
+**Secret Scanning**: GitHub secret scanning is a security feature provided by GitHub to help identify and manage sensitive information, such as API keys, tokens, and other credentials, that may have been accidentally committed to a code repository.
+
+**CodeQL**: CodeQL is the code analysis engine developed by GitHub to automate security checks. You can analyze your code using CodeQL and display the results as code scanning alerts.
+
+**Repository security advisories**: Repository security advisories allow repository maintainers to privately discuss and fix a security vulnerability in a project. 
+
+## Accessing GitHub
+
+1. To access the and login to GitHub, open the edge browser from inside the environment and navigate to **[GitHub](https://github.com/)**.
+
+2. Sign in to GitHub by clicking on the **Sign in** button from the top right corner of the GitHub home page.
+
+3. On the **Sign into GitHUb tab** you will see a login screen, enter the following email/username and then click on **Next**.
+
+   - **Email/Username:** 
+
+1. Now enter the following password and click on **Sign in**.
+
+   - **Password:** 
+
 
 ## Challenge Objectives:
 
-1. **Secure Repository Setup:**
-   - Create a new GitHub repository for the e-commerce platform.
-   - Configure repository settings to enforce branch protection, allowing only branch maintainers to push directly to the main branch.
-   - Implement branch protection rules requiring code reviews before merging.
+1. **Implement Secret Scanning and CodeQL:**
+   - Use the same GitHub repository which you created in the last challenge.
+   - Enable Secret scanning for the repository
+   - set up and implement CodeQL security features to the existing GitHub repository.
+   - Resolve the generated alerts if any.
 
-2. **Enable Basic Security Features:**
-   -  Enable GitHub Advanced Security features for your repository.
-   -  Set up security alerts to detect vulnerabilities in dependencies.
-   -  Verify that security alerts are actively monitoring the repository for potential security risks.
+2. **Implement Repository security advisories:**
+   -  Set up Repository security advisories features for App.js package. Use `aiw-devops-with-github-lab-files/src/TailwindTraders.Ui.Website/src/App.js` path while configuring the affected products.
 
-3. **Dependabot Integration:**
-   - Enable Dependabot for automatic checks and updates of outdated dependencies.
-   - Confirm that Dependabot is configured to address security vulnerabilities in dependencies.
-  
-4. **Secret Scanning:**
-   - Integrate a sample secret (e.g., API key) into your repository.
-   - Configure secret scanning to identify and report the added secret.
-   - Demonstrate how secret scanning prevents the accidental exposure of sensitive information.
   
 ## Success criteria:
 To complete this challenge successfully:
 
-   - Proper implementation of repository settings and branch protection.
-   - Successful enabling and configuration of basic security features.
-   - Effective integration of Dependabot and management of security alerts.
-   - Correct implementation of secret scanning and prevention of sensitive information exposure.
+   - Verify the implementation of Implement Secret Scanning and CodeQL.
+   - Configure the Repository security advisories feature and createtemporary private fork.
+
 
 ## Additional Resources:
 
@@ -62,5 +69,5 @@ To complete this challenge successfully:
 
 
 ## Conclusion
-Congratulations on successfully completing the GitHub Advanced Security challenge for the e-commerce platform repository! You've taken crucial steps to ensure the security and integrity of your codebase, especially when dealing with sensitive customer data. As you continue developing the e-commerce platform, consider regularly reviewing and updating your security measures. Stay informed about new security features and best practices offered by GitHub to ensure that your repository remains resilient to emerging threats.
+Congratulations on successfully completing the GitHub Advanced Security challenge. You've taken crucial steps to ensure the security and integrity of your codebase, especially when dealing with sensitive customer data. As you continue developing the e-commerce platform, consider regularly reviewing and updating your security measures. Stay informed about new security features and best practices offered by GitHub to ensure that your repository remains resilient to emerging threats.
 
