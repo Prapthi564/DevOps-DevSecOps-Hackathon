@@ -1,4 +1,4 @@
-# Challenge 04: GitHub Advanced Security II
+# Challenge 04: Implementing Monitoring Solutions
 
 ## Introduction
 
