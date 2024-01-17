@@ -1,6 +1,6 @@
 # Challenge 05: Resilience Testing using Azure Load Testing & Azure Chaos Studio
 
-### Estimated Time: 1 Hour
+### Estimated Time: 60 minutes
 
 ## Introduction:
 As a DevOps Engineer specializing in performance and resilience testing, you are tasked with enhancing the Contoso Traders application's resilience using Azure Load Testing and Azure Chaos Studio. This challenge focuses on ensuring optimal performance during heavy loads and fortifying the application against disruptions.
