@@ -3,9 +3,9 @@
 ### Estimated Time: 1 Hour
 
 ### Introduction:
-In this previous challenge, you did a successful hosting of the .Net application using GitHub repository and GitHub Actions for Continuous Integration and Continuous Deliverys. In this challenge, you are a DevSecOps engineer tasked with ensuring the security of the Contoso Traders application hosted on GitHub. In this challenge, your goal is to mitigate risks in dependencies and secure sensitive data using advanced security features provided by GitHub. 
+In this previous challenge, you did a successful hosting of the application using GitHub repository and GitHub Actions for Continuous Integration and Continuous Delivery. In this challenge, you are a DevSecOps engineer tasked with ensuring the security of the Contoso Traders application hosted on GitHub. In this challenge, your goal is to mitigate risks in dependencies and secure sensitive data using advanced security features provided by GitHub. 
 
-You need to focus on completing the implemenation of below mentioned security features.
+You need to focus on completing the implementation of the below-mentioned security features.
 
 **Code Scanning**: Code scanning is a feature that you use to analyze the code in a GitHub repository to find security vulnerabilities and coding errors. Any problems identified by the analysis are shown in GitHub. You can use code scanning to find, triage, and prioritize fixes for existing problems in your code. Code scanning also prevents developers from introducing new problems
 
