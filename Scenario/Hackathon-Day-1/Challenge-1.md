@@ -9,17 +9,17 @@ Through this challenge, you will set up a GitHub repository, implement a CI/CD w
 
 ## Accessing GitHub
 
-1. To access the and login to GitHub, open the edge browser from inside the environment and navigate to **[GitHub](https://github.com/)**.
+1. To access and login to GitHub, open the edge browser from inside the environment and navigate to **[GitHub](https://github.com/)**.
 
 2. Sign in to GitHub by clicking on the **Sign in** button from the top right corner of the GitHub home page.
 
 3. On the **Sign into GitHUb tab** you will see a login screen, enter the following email/username and then click on **Next**.
 
-   - **Email/Username:** 
+   - **Email/Username:** <inject key="GitHubUsername"></inject>
 
 1. Now enter the following password and click on **Sign in**.
 
-   - **Password:** 
+   - **Password:** <inject key="GitHubPassword"></inject>
 
 ## Accessing Azure portal
 
@@ -39,7 +39,7 @@ Through this challenge, you will set up a GitHub repository, implement a CI/CD w
    
 1. Now you will see the Azure Portal Dashboard. Click on **Resource groups** from the Navigate panel to see the resource groups.
   
-1. Confirm you have a resource group **Activate-GenAI** present, as shown in the below screenshot. You need to use the **<inject key="Resource Group Name"/>** resource group throughout this challenge.
+1. Confirm you have a resource group **DevOps-DevSecOps** present, as shown in the below screenshot. You need to use the **<inject key="Resource Group Name"/>** resource group throughout this challenge.
 
 ## Challenge Objectives:
 
@@ -100,4 +100,9 @@ Refer to documentation and guides mentioned below.
 1. If you are still having trouble, you can reach out to the support team via `labs-support@spektrasystems.com` for further assistance. The support team is available to help you to troubleshoot and resolve any technical issues or validation issues that may arise while the lab environment is live.
 
 ## Conclusion:
-Congratulations on successfully completing the **Continuous Integration and Deployment using GitHub** challenge. Thorough this challenge, you've not only showcased your technical skills but also demonstrated your ability to implement industry-standard CI/CD practice. This experience will undoubtedly contribute to your expertise in modern software development methodologies and tools.
+Congratulations on successfully completing the **Continuous Integration and Deployment using GitHub** challenge. You have successfully verified the configuration of a GitHub repository, established a functional CI/CD workflow, utilized GitHub Actions to deploy the .NET application, and conducted testing following updates to the workflow file.
+
+Thorough this challenge, you've not only showcased your technical skills but also demonstrated your ability to implement industry-standard CI/CD practice. This experience will undoubtedly contribute to your expertise in modern software development methodologies and tools. In the next challenge, you will focus on implementing security to your GitHub repository using GitHub Advance security features.
+
+
+

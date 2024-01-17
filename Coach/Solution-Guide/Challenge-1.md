@@ -1,21 +1,23 @@
-# Challenge 01: Continuous Integration and Deployment for .NET Apps using GitHub Actions
+# Challenge 01: Continuous Integration and Continuous Deployment using GitHub
 
 ## Introduction
-This challenge is designed to evaluate your skills in creating a robust CI/CD pipeline leveraging GitHub Actions specifically tailored for a .NET application. It aims to assess your capability to not only establish a seamless pipeline but also to guarantee the successful deployment of the application. Additionally, you will demonstrate their expertise by efficiently modifying and integrating new features into the existing codebase, showcasing their proficiency in adapting and evolving the application's functionality.
+This challenge is designed to evaluate your skills in creating a robust CI/CD pipeline leveraging GitHub Actions. It aims to assess your capability to not only establish a seamless pipeline but also to guarantee the successful deployment of the application.
+
+Through this challenge, you will set up a GitHub repository, implement a CI/CD workflow using GitHub Actions, deploy a .NET application to Azure, and make rolling updates to the application.
 
 ## Accessing GitHub
 
-1. To access the and login to GitHub, open the edge browser from inside the environment and navigate to **[GitHub](https://github.com/)**.
+1. To access and login to GitHub, open the edge browser from inside the environment and navigate to **[GitHub](https://github.com/)**.
 
 2. Sign in to GitHub by clicking on the **Sign in** button from the top right corner of the GitHub home page.
 
 3. On the **Sign into GitHUb tab** you will see a login screen, enter the following email/username and then click on **Next**.
 
-   - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+   - **Email/Username:** <inject key="GitHubUsername"></inject>
 
 1. Now enter the following password and click on **Sign in**.
 
-   - **Password:** <inject key="AzureAdUserPassword"></inject>
+   - **Password:** <inject key="GitHubPassword"></inject>
 
 ## Accessing Azure portal
 
