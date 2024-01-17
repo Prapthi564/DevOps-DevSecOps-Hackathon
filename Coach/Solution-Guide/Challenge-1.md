@@ -452,3 +452,19 @@ The last task automated building and updating only one of the Docker images. In 
 
 1. Click on the **Next** button present in the bottom-right corner of this lab guide.
 
+## Success criteria:
+To complete this challenge successfully:
+
+- The application must be deployed using VS Code which supports GitHub Actions.
+- A new repository must have been created.
+- **CI/CD Implementation**: The CI/CD pipeline should be established using GitHub Actions, encompassing build, test, and deployment stages effectively.
+- **Deployment Accuracy**: The application must be successfully deployed using GitHub Actions, and the chosen deployment strategy should align with the project's requirements.
+- **Code Modification**: Clear adherence to best practices are expected for any modifications made to the codebase, ensuring seamless integration of new features.
+
+## Additional Resources:
+
+- Refer to [GitHub Actions and .NET](https://learn.microsoft.com/en-us/dotnet/devops/github-actions-overview) for reference.
+- [Building and testing .NET](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net).
+- [Why CI/CD](https://resources.github.com/ci-cd/).
+- [Continuous Deployment with Github Actions: An Example](https://www.dolthub.com/blog/2020-11-23-continous-deployment-with-github-actions/).
+- [How to build a CI/CD pipeline with GitHub Actions in four simple steps](https://github.blog/2022-02-02-build-ci-cd-pipeline-github-actions-four-steps/).
