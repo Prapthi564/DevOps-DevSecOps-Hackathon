@@ -1,7 +1,7 @@
 # Challenge 02: GitHub Advanced Security I
 
 ## Introduction
-In this challenge, you will focus on implementing security to your GitHub repository using GitHub Advance security features. You need to focus on completing the implemenation of below mentioned security features.
+In this challenge, the user will focus on implementing security such as Code scanning, CodeQL alerts and repository security advisories to their GitHub repository using GitHub Advance security features. Here's the solution guide which includes detailed step-by-step instructions required to complete this challenge.
 
 ## Accessing GitHub
 
@@ -19,7 +19,7 @@ In this challenge, you will focus on implementing security to your GitHub reposi
 
 ## Solution Guide
 
-## Task 1: Enabling Code scanning and CodeQL alerts 
+## Task 1: Implement Code Scanning and CodeQL:
 
 In this task, you'll configure Code scanning and explore CodeQL alerts. Code scanning is a feature that you use to analyze the code in a GitHub repository to find security vulnerabilities and coding errors. Any problems identified by the analysis are shown on GitHub.
 
@@ -51,7 +51,7 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
    
    ![](media/devops1.6.png)
     
-## Task 2: Repository security advisories  
+## Task 2: Implement Repository security advisories:
  
 In this task, you'll enable Repository security advisories. You can use GitHub Security Advisories to privately discuss, fix, and publish information about security vulnerabilities in your repository.  Anyone with admin permissions to a repository can create a security advisory.
  
