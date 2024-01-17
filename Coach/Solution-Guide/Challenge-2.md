@@ -1,7 +1,9 @@
 # Challenge 02: GitHub Advanced Security I
 
 ## Introduction
-In this challenge, the user will focus on implementing security such as Code scanning, CodeQL alerts and repository security advisories to their GitHub repository using GitHub Advance security features. Here's the solution guide which includes detailed step-by-step instructions required to complete this challenge.
+In this challenge, the user will focus on implementing security such as Code scanning, CodeQL alerts and repository security advisories to their GitHub repository using GitHub Advance security features.
+
+Here's the solution guide which includes detailed step-by-step instructions required to complete this challenge.
 
 ## Accessing GitHub
 
