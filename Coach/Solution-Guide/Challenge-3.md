@@ -2,7 +2,9 @@
 
 ## Introduction
 
-In this challenge, you will continue to focus on implementing crucial GitHub Advanced security features like GitHub Dependabots and Secret Scanning.
+In this challenge, attendee/user will continue to focus on implementing crucial GitHub Advanced security features like GitHub Dependabots and Secret Scanning.
+
+This is the solution guide, which provides all the specific, step-by-step directions needed to do the task.
 
 ## Solution Guide
 
