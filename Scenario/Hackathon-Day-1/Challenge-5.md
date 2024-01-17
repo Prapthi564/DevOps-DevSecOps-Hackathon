@@ -1,4 +1,4 @@
-# Challenge 05: Resilience Testing using Azure Load Testing and Azure Chaos Studio
+# Challenge 05: Resilience Testing using Azure Load Testing & Azure Chaos Studio
 
 ### Estimated Time: 1 Hour
 
