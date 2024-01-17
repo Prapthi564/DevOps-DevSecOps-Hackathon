@@ -16,6 +16,6 @@
 | 15:30 - 16:30 | **Challenge 04: Implementing Monitoring Solutions - 60 min**   | Complete [Challenge 04](https://github.com/CloudLabs-MOC/DevOps-DevSecOp-challenge-labs/blob/main/Scenario/Hackathon-Day-1/Challenge-4.md)             |
 | 16:30 - 16:45 | **Validate Challenge 04 Completion, Q&A** | Discussion, etc.           |
 | 16:45 - 17:00 | **Break**                                           |                                  |
-| 17:00 - 18:30 | **Challenge 05: Resilience Testing using Azure Chaos Studio - 90 min** |   Complete [Challenge 05](https://github.com/CloudLabs-MOC/DevOps-DevSecOp-challenge-labs/blob/main/Scenario/Hackathon-Day-1/Challenge-5.md)             |
+| 17:00 - 18:30 | **Resilience Testing using Azure Load Testing and Azure Chaos Studio - 90 min** |   Complete [Challenge 05](https://github.com/CloudLabs-MOC/DevOps-DevSecOp-challenge-labs/blob/main/Scenario/Hackathon-Day-1/Challenge-5.md)             |
 | 18:30 - 18:45 | **Validate Challenge 05 Completion, Q&A** | Discussion, etc.           |
 | 04:45 - 05:00 | **Closing Remarks & Next Steps and Future Collaboration** | Discussion, etc.        |
