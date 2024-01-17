@@ -19,7 +19,7 @@ You need to focus on completing the implementation of the below-mentioned securi
 
 2. Sign in to GitHub by clicking on the **Sign in** button from the top right corner of the GitHub home page.
 
-3. On the **Sign into GitHUb tab** you will see a login screen, enter the following email/username and then click on **Next**.
+3. On the **Sign into GitHub tab** you will see a login screen, enter the following email/username and then click on **Next**.
 
    - **Email/Username:** 
 
