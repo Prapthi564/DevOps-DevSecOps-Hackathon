@@ -46,12 +46,12 @@ Through this challenge, you will set up a GitHub repository, implement a CI/CD w
 >**Note:** Solely use GitHub and GitHub Actions for CI/CD; no usage of Azure DevOps or any external CI/CD services.
 
 1. **Repository Setup:**
-   - Create a new repository on GitHub for the .NET application.
+   - Create a new public repository on GitHub for the .NET application.
    - Initialize the repository with a basic .NET application structure or use an existing codebase.
 
 2. **Setup CI/CD Workflow with GitHub Actions:**
 
-   -  Participants need to create a GitHub Actions workflow file (e.g., **.github/workflows/main.yml**) to automate the CI/CD process.
+   -  Create a GitHub Actions workflow file (e.g., **.github/workflows/main.yml**) to automate the CI/CD process.
    -  Implement a workflow that includes steps for building the .NET application.
    -  Add necessary steps for running tests to ensure the application's stability.
   
@@ -97,3 +97,6 @@ To complete this challenge successfully:
      ![](../media/validate04.png "Validation")
  
 1. If you are still having trouble, you can reach out to the support team via `labs-support@spektrasystems.com` for further assistance. The support team is available to help you to troubleshoot and resolve any technical issues or validation issues that may arise while the lab environment is live.
+
+## Conclusion:
+Congratulations on successfully completing the **Continuous Integration and Deployment challenge for a .NET application using GitHub Actions** challenge. Thorough this challenge, you've not only showcased your technical skills but also demonstrated your ability to implement industry-standard CI/CD practices tailored for .NET applications. This experience will undoubtedly contribute to your expertise in modern software development methodologies and tools.
