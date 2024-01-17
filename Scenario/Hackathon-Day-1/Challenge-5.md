@@ -3,7 +3,9 @@
 ### Estimated Time: 1 Hour
 
 ## Introduction:
-This challenge centers around Azure Load Testing and Azure Chaos Studio, empowering you to perform performance tests and enhance application resilience. In the modern digital landscape, guaranteeing optimal performance during heavy loads and fortifying against disruptions is essential. Through Azure's tools, you'll gain insights into proactive issue detection and methods to reinforce your applications.
+As a DevOps Engineer specializing in performance and resilience testing, you are tasked with enhancing the Contoso Traders application's resilience using Azure Load Testing and Azure Chaos Studio. This challenge focuses on ensuring optimal performance during heavy loads and fortifying the application against disruptions.
+
+The Contoso Traders application is hosted on Azure Kubernetes Service (AKS), and your goal is to assess and improve its resilience through performance testing and controlled chaos experiments.
 
 ## Challenge Objectives:
 
