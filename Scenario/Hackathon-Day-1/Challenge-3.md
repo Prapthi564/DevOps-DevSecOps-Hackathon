@@ -4,7 +4,7 @@
 
 ### Introduction:
 
-In the previous challenge you configured a few of the GitHub Advanced security features. In this challenge, you will continue to focus on crucial GitHub Advanced security features like GitHub Dependabots and Secret Scanning. 
+In the previous challenge you configured a few of the GitHub Advanced security features. In this challenge, as a DevSecOps engineer, your focus is on automating security processes and preventing security vulnerabilities. The Contoso Traders application, hosted on GitHub, will benefit from crucial GitHub Advanced security features like GitHub Dependabots and Secret Scanning.
 
 **Dependabots**: Dependabot security updates are automated pull requests that help you update dependencies with known vulnerabilities. Dependabot version updates are automated pull requests that keep your dependencies updated, even when they don't have any vulnerabilities.
 
