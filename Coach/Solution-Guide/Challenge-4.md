@@ -7,7 +7,32 @@ In this challenge, user/attendee will integrate Azure's monitoring tools—Azure
 This is the solution guide that contains all of the comprehensive, step-by-step directions needed to finish the challenge.
 
 ## Solution Guide
-### Task 1: Monitoring using Application Insights
+
+### Task 1: Deploy Monitoring Infrastructure
+
+1. You will deploy the complete monitoring infrastructure using the bicep template. The monitoring infrastructure includes a Log Analytics workspace, Application Insights, a secret created for Application Insights, and a monitoring dashboard.
+
+1. Open VS Code, update the variable `$userName` and `$password` in the code mentioned below, and execute the code. The below-mentioned code uses a bicep template named `monitorinfra.bicep` which contains code to deploy the complete monitoring infrastructure.
+   
+   - **Email/Username:** <inject key="GitHubUsername"></inject>
+   - **Password:** <inject key="GitHubPassword"></inject>
+```
+$userName = shivashant@onmicrosoft.com
+$password = qweqweqwew
+
+$securePassword = $password | ConvertTo-SecureString -AsPlainText -Force
+$cred = new-object -typename System.Management.Automation.PSCredential -argumentlist $userName, $SecurePassword
+
+Connect-AzAccount -Credential $cred | Out-Null
+
+$RGname = "contosotraders-$deploymentid"
+
+cd C:\Workspaces\lab\devsecops\iac
+
+New-AzResourceGroupDeployment -Name "createresources" -TemplateFile "monitorinfra.bicep" -TemplateParameterFile "monitorinfra.parameters.json" -ResourceGroup $RGname
+```
+
+### Task 2: Monitoring using Application Insights
 
 1. In the Azure Portal, navigate to **contoso-traders-<inject key="Deploymentid" enableCopy="false" />** **(1)** resource group and select the **Application Insights** resource with the name  **contoso-traders-ai<inject key="Deploymentid" />** **(2)**.
 
