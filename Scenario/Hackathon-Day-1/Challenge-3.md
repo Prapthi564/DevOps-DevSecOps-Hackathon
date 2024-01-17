@@ -4,41 +4,36 @@
 
 ### Introduction:
 
-In the previous challenge you configured a few of the GitHub Advanced security features. In this challenge, you will continue to focus on crucial GitHub Advanced security features
-This challenge equips you with essential skills to fortify repositories through effective dependency management and sensitive information security using GitHub's Advanced Security Features. You will focus on mitigating risks in dependencies and securing sensitive data. This challenge is crucial as it empowers to apply best practices in dependency security, automate updates, and fortify repositories against potential vulnerabilities using tools like Dependabot and secret scanning.
+In the previous challenge you configured a few of the GitHub Advanced security features. In this challenge, you will continue to focus on crucial GitHub Advanced security features like GitHub Dependabots and Secret Scanning. 
+
+**Dependabots**: Dependabot security updates are automated pull requests that help you update dependencies with known vulnerabilities. Dependabot version updates are automated pull requests that keep your dependencies updated, even when they don't have any vulnerabilities.
+
+**Secret Scanning**: GitHub secret scanning is a security feature provided by GitHub to help identify and manage sensitive information, such as API keys, tokens, and other credentials, that may have been accidentally committed to a code repository.
 
 ## Challenge Objectives:
 
->**Note:** Please ensure to use the e-commerce repository that was created in the previous challenge to implement GitHub Advanced Security features.
+> **Note**: Use the same GitHub repository which you created in the last challenge.
 
-1. **Code Scanning with CodeQL:**
-   - Ensure GitHub Actions is enabled for your e-commerce repository.
-   - Configure CodeQL analysis in the workflow.
-   - Address any security vulnerabilities identified by CodeQL.
-   - Demonstrate the integration of CodeQL scan results into your pull request workflow.
+1. **Configure Dependabot Alerts:**
 
-2. **GitHub Administration for Advanced Security:**
-
-   -  Explore and configure security settings at the organization level.
-   -  Implement security policies and controls specific to the healthcare application.
+   -  use Dependabot and configure it to track the versions of the packages used in your GitHub repository and create pull requests to update packages for us.
+   - Track and resolve any of the dependabots alert.
   
-3. **Manage Sensitive Data and Policies:**
-   - Store a sensitive configuration file securely using GitHub Secrets.
-   - Create a comprehensive security policy document for your repository.
-   - Implement a pull request template that includes a security checklist.
+3. **Implement Secret Scanning:**
+   - Enable Secret Scanning security feature to the existing GitHub repository.
+   - Check the working of feature by exposing the application ID of a service principal and resolve the alerts.
   
 ## Success criteria:
 To complete this challenge successfully:
 
-- Successful implementation of CodeQL for identifying and addressing security vulnerabilities.
-- Proper exploration and configuration of GitHub organization-level security settings.
-- Effective management of sensitive data using GitHub Secrets.
+- Successful implementation of GitHub Dependabots for identifying and addressing security vulnerabilities.
+- Setup secreting scanning and updated the code base to resolve the alerts.
 
 ## Additional Resources:
 
-- Refer to [About GitHub's Advanced Security](https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql) for reference.
-- Refer to [Code Scanning with GitHub CodeQL](https://learn.microsoft.com/en-us/training/modules/code-scanning-with-github-codeql/) for reference.
-- Refer to [Manage sensitive data and security policies within GitHub](https://learn.microsoft.com/en-us/training/modules/manage-sensitive-data-security-policies/) for reference.
+
+- Refer to [Secret Scanning](https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning) for reference.
+- Refer to [GitHub Dependabot](https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts) for reference.
 
 ## Challenge Validations: [WIP]
 
@@ -59,6 +54,4 @@ To complete this challenge successfully:
 1. If you are still having trouble, you can reach out to the support team via `labs-support@spektrasystems.com` for further assistance. The support team is available to help you to troubleshoot and resolve any technical issues or validation issues that may arise while the lab environment is live.
 
 ## Conclusion
-Congratulations on completing the **GitHub Advanced Security II** challenge! By addressing critical aspects of dependency management, sensitive data security, and organization-level security settings, you've significantly strengthened the security posture of your e-commerce repository.
-
-As you continue to evolve your e-commerce platform, consider regularly updating your security measures in response to emerging threats. Stay informed about GitHub's latest security features and updates, ensuring that your repository remains resilient to new vulnerabilities.
+Congratulations on completing the **GitHub Advanced Security II** challenge! By addressing critical aspects of sensitive data security, and organization-level security settings, you've significantly strengthened the security posture of your GitHub repository.

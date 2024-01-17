@@ -3,9 +3,9 @@
 ### Estimated Time: 1 Hour
 
 ### Introduction:
-In this previous challenge, you did a successful hosting of the .Net application using GitHub repository and GitHub Actions for Continuous Integration and Continuous Deliverys. In this challenge, you will focus on implementing security to your GitHub repository using GitHub Advance security features. You need to focus on completing the implemenation of below mentioned security features.
+In this previous challenge, you did a successful hosting of the .Net application using GitHub repository and GitHub Actions for Continuous Integration and Continuous Deliverys. In this challenge, you will focus on mitigating risks in dependencies and securing sensitive data. You need to focus on completing the implemenation of below mentioned security features.
 
-**Secret Scanning**: GitHub secret scanning is a security feature provided by GitHub to help identify and manage sensitive information, such as API keys, tokens, and other credentials, that may have been accidentally committed to a code repository.
+**Code Scanning**: Code scanning is a feature that you use to analyze the code in a GitHub repository to find security vulnerabilities and coding errors. Any problems identified by the analysis are shown in GitHub. You can use code scanning to find, triage, and prioritize fixes for existing problems in your code. Code scanning also prevents developers from introducing new problems
 
 **CodeQL**: CodeQL is the code analysis engine developed by GitHub to automate security checks. You can analyze your code using CodeQL and display the results as code scanning alerts.
 
@@ -28,10 +28,12 @@ In this previous challenge, you did a successful hosting of the .Net application
 
 ## Challenge Objectives:
 
-1. **Implement Secret Scanning and CodeQL:**
-   - Use the same GitHub repository which you created in the last challenge.
-   - Enable Secret scanning for the repository
-   - set up and implement CodeQL security features to the existing GitHub repository.
+> **Note**: Use the same GitHub repository which you created in the last challenge.
+
+1. **Implement Code Scanning and CodeQL:**
+ 
+   - Enable Code scanning for the repository.
+   - Configure CodeQL analysis in the workflow to the existing GitHub.
    - Resolve the generated alerts if any.
 
 2. **Implement Repository security advisories:**
@@ -41,13 +43,15 @@ In this previous challenge, you did a successful hosting of the .Net application
 ## Success criteria:
 To complete this challenge successfully:
 
-   - Verify the implementation of Implement Secret Scanning and CodeQL.
+   - Verify the implementation of Implement Code Scanning and CodeQL.
    - Configure the Repository security advisories feature and createtemporary private fork.
 
 
 ## Additional Resources:
 
 - Refer to [About GitHub's Advanced Security](https://docs.github.com/en/code-security/getting-started/github-security-features) for reference.
+- Refer to [About GitHub's Advanced Security](https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql) for reference.
+- Refer to [Code Scanning with GitHub CodeQL](https://learn.microsoft.com/en-us/training/modules/code-scanning-with-github-codeql/) for reference.
 
 ## Challenge Validations: [WIP]
 
