@@ -1,1 +1,45 @@
+# Challenge 04: GitHub Advanced Security II
 
+## Introduction
+
+In this challenge you will integrate Azure's monitoring tools—Azure Monitor and Application Insights—into your Azure-based application. Monitor essential metrics, analyze performance data, and gain real-time insights to ensure optimal application health. Monitoring is vital for maintaining efficiency and resilience in cloud applications, enabling proactive issue identification and seamless user experiences.
+
+## Solution Guide
+### Task 1: Monitoring using Application Insights
+
+1. In the Azure Portal, navigate to **contoso-traders-<inject key="Deploymentid" enableCopy="false" />** **(1)** resource group and select the **Application Insights** resource with the name  **contoso-traders-ai<inject key="Deploymentid" />** **(2)**.
+
+   ![](media/upd-ex6-t1-openai.png)
+   
+1. From the Overview of **contoso-traders-ai<inject key="Deploymentid"  enableCopy="false" />** Application Insights resource, you can set the **Show data for last** as per your requirement of monitoring insights.
+
+   ![](media/upd-ex6-t1-set-showdata.png)
+   
+1. In the first graph, you can see the number of failed requests for the Application access.
+
+   ![](media/upd-ex6-t1-failedrequests.png)
+   
+1. In the next graph, you can see the average server response time.
+
+   ![](media/upd-ex6-t1-server-response-time.png)
+   
+1. In the next graph, you can see the number of server requests.
+
+   ![](media/upd-ex6-t1-server-requests.png)
+   
+1. In the last graph, you can see the average availability.
+
+   ![](media/upd-ex6-t1-availability.png)  
+
+## Success criteria:
+To complete this challenge successfully:
+
+- Successful integration of Azure Monitor and Application Insights within the application environment, ensuring seamless data collection and monitoring capabilities.
+- Selection and configuration of key performance metrics relevant to the application's functionality and performance goals.
+- Establishment of effective alerting mechanisms with well-defined thresholds, ensuring timely notifications for potential issues or deviations in monitored metrics.
+
+## Additional Resources:
+
+- Refer to [Application Insights Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview) for reference.
+- [Application Insights for ASP.NET Core applications](https://learn.microsoft.com/en-us/azure/azure-monitor/app/asp-net-core?tabs=netcorenew%2Cnetcore6).
+- Refer to [Azure Monitor vs Application Insights](https://azurelib.com/azure-monitor-vs-application-insights/) for reference.
