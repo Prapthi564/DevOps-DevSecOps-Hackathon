@@ -21,7 +21,7 @@ This hackathon adopts a challenge-based format, offering you a unique opportunit
 - Strategizing your approach to find the most effective solution.
 - Leveraging the provided lab environment and GitHub technologies.
 - Collaborating with peers to refine and implement your solutions.
-- 
+
 ## Challenges
 
 1. **Challenge 01: Continuous Integration and Deployment for Contoso Traders using GitHub Actions**
