@@ -53,10 +53,8 @@ You are a DevOps engineer tasked with setting up a robust Continuous Integration
 
 2. **Deploy Infrastructure:**
    - Create an Azure resource group in your Azure subscription with name **Contoso-Traders<inject key="DeploymentID" enableCopy="false" />**.
-   - Deploy the below-mentioned bicep template using Azure CLI commands.
-      - Template: [Bicep template file](https://experienceazure.blob.core.windows.net/devsecops-hackthon/createResources.bicep)
-      - Parameters file: [Bicep parameters file](https://experienceazure.blob.core.windows.net/devsecops-hackthon/createResources.parameters.json)  
-
+   - Deploy the below-mentioned bicep template using GitHub Action name **deploy-infrastructure.yml** which is present in `.github/workflow` directory .
+      
 2. **Setup CI/CD Workflow:**
 
    - Create GitHub secrets with same name as mentioned below.
@@ -75,7 +73,7 @@ You are a DevOps engineer tasked with setting up a robust Continuous Integration
 ## Success criteria:
 To complete this challenge successfully:
 
-- Verify the successful deployment of Infrastructure of the application in the Azure portal.
+- Verify the successful deployment of the Infrastructure of the application in the Azure portal.
 - Verify the GitHub Action, all the jobs in GitHub Action should be completed without any error.
 - Verify the deployment and hosting of the Contoso Traders application in Azure.
 
