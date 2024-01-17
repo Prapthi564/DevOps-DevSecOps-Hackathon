@@ -1,65 +1,52 @@
 # DevOps/DevSecOps Challenge - 1 Day Hackathon
 
-Welcome to the DevOps/DevSecOps Challenge hackathon! 
+Welcome to the DevSecOps Mastery with GitHub Hackathon! This event is your gateway to mastering DevSecOps practices within a modern application environment. We have crafted this hackathon to provide you with a robust learning experience, focused on Contoso Traders, a hypothetical e-commerce company using a React front-end, .NET back-end, and various microservices and container services.
 
-- In this hackathon, you'll elevate your .NET applications to new heights! Dive into the world of Continuous Integration and Deployment (CI/CD) using GitHub Actions, fortify repository security with GitHub Advanced Security, enforce advanced security measures and policies, and implement monitoring solutions with resilience testing using Azure Chaos Studio.
+Your goal is to integrate DevSecOps practices into Contoso Traders' existing e-commerce application. As you navigate through various challenges, you will gain practical experience in implementing DevSecOps in an application built with a modern tech stack.
 
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Learning Objectives](#learning-objectives)
-- [Challenges](#challenges)
-- [Prerequisites](#prerequisites)
-
-## Introduction
-
-In this hackathon, you will automate your development lifecycle with CI/CD using GitHub Actions, ensuring efficient builds, tests, and deployments. Strengthen repository security with GitHub Advanced Security, covering vulnerability detection, dependency scanning, and code analysis.
-
-Explore and navigte through the advanced security challenges and enforce policies, aligning with industry standards. Transition to the cloud with Azure Chaos Studio, implementing monitoring solutions and resilience testing to enhance application reliability.
-
-This hack consists of five challenges and is designed to be self-administered, so anyone can complete the material independently. Whether you have limited to no experience with DevSecOps or have not experimented using CI/CD and GitHub before, but want a deeper understanding of its implementation, this hack is for you.
 
 ## Learning Objectives
 
-By participating in this hackathon, you will:
+Participating in this hackathon, you will:
 
-- Leveraging GitHub's Potential: Manage code efficiently with repositories, utilize GitHub Codespace for a personalized cloud dev environment, and automate your pipeline using workflows and actions.
-- Explore GitHub's advanced security for proactive vulnerability detection. Safeguard your codebase with robust protective measures.
+- Master the art of Continuous Integration and Deployment (CI/CD) for .NET applications using GitHub Actions.
+- Enhance code security and manage dependencies effectively.
+- Integrate and optimize monitoring solutions using Azure Monitor and Application Insights.
+- Execute resilience testing to ensure the robustness of the application.
 
+## Hackathon Format: Challenge Based
+This hackathon adopts a challenge-based format, offering you a unique opportunity to learn while dealing with practical problems. Each challenge includes one or more self-contained tasks, designed to test and enhance your skills in specific aspects of DevSecOps. You will approach these challenges by:
+
+- Analyzing the problem statement.
+- Strategizing your approach to find the most effective solution.
+- Leveraging the provided lab environment and GitHub technologies.
+- Collaborating with peers to refine and implement your solutions.
+- 
 ## Challenges
 
-1. **Challenge 01: Continuous Integration and Deployment for .NET Apps using GitHub Actions**
-   - Create a new repository on GitHub for the .NET application.
-   - Initialize the repository with a basic .NET application structure or use an existing codebase.
-   - Setup CI/CD Workflow with GitHub Actions by creating a YAML workflow file.
-   - Deployment Setup:
-      - Configure the workflow to deploy the .NET application using GitHub Actions and use appropriate deployment strategies such that the application is deployed over Azure.
-   - Integration Testing and Feature Modification:
-      - Modify an existing feature or add a new feature to the .NET application codebase which must be integrated seamlessly with the existing application functionalities.
+1. **Challenge 01: Continuous Integration and Deployment for Contoso Traders using GitHub Actions**
+   - Create a GitHub repository for the ecommerce application.
+   - Set up a CI/CD workflow using GitHub Actions.
+   - Add new features and test automated deployments with GitHub Actions. 
 
-2. **Challenge 02: Code Security Enhancements**
-   - Activate code scanning for the repository.
-      - Code scanning is set up in a repository (which could be a sample or personal project) to identify security vulnerabilities within the codebase. At least three of these vulnerabilities are addressed, and detailed documentation, including their impact and the steps taken to fix them, is provided along with before-and-after code snippets.
-   - Enable CodeQL alerts to proactively identify and resolve security issues.
-   - Enable repository security advisories to receive alerts about vulnerable dependencies.
-   - Implement strategies to mitigate identified security risks in dependencies.
+2. **Challenge 02: GitHub Advanced Security - Implement Code Security Enhancements**
+   - Activate and utilize code scanning tools for vulnerability identification.
+   - Implement CodeQL alerts and handle security advisories.
+   - Mitigate security risks identified in dependencies.
        
-3. **Challenge 03: Dependency Management and Security**:
-    - Dependency Security:
-       - Analyze dependencies in a repository to identify and mitigate security risks.
-    - Implement Dependabot in a repository for automated package version tracking, generating two pull requests to update outdated packages. Document the review process and decisions on merging or rejecting these pull requests.
-    - Use GitHub's secret scanning capabilities to detect and secure sensitive information within a repository and identify instances where sensitive information (e.g., API keys, credentials) was successfully detected and secured.
+3. **Challenge 03: GitHub Advanced Security - Dependency Management and Secret Scanning**:
+    - Analyze and manage dependencies for security risks.
+    - Implement Dependabot for automated package updates.
+    - Use secret scanning to secure sensitive information.
 
-4. **Challenge 04: Implementing Monitoring Solutions**
-   - Integrate Azure Monitor and Application Insights seamlessly within the Azure-based application infrastructure.
-   - Define and configure key performance metrics for monitoring purposes.
-   - Create effective alerting mechanisms based on predefined thresholds.
-   - Design comprehensive dashboards for real-time visualization of application health and performance metrics.
-   - Optimize the monitoring setup for actionable insights and usability.
+4. **Challenge 04: Implementing Monitoring Solutions for Contoso Traders**
+   - Integrate Azure Monitor and Application Insights.
+   - Configure key performance metrics and alerting mechanisms.
+   - Design dashboards for monitoring application health.
 
-5. **Challenge 05: Resilience Testing using Azure Chaos Studio**
-   - Create an Azure Load Testing instance and execute a test using a JMeter file to simulate high-scale traffic on a web application.
-   - Configuring Targets and Running Experiments in Azure Chaos Studio
+5. **Challenge 05: Resilience Testing using Azure Load Testing & Azure Chaos Studio**
+   - Conduct Azure Load Testing for high-scale traffic simulation.
+   - Configure and run experiments in Azure Chaos Studio.
 
 Each challenge comes with its own set of tasks and objectives.
 
