@@ -100,9 +100,8 @@ Here are a few documentation and guides to assist you in completing the challeng
 1. If you are still having trouble, you can reach out to the support team via `labs-support@spektrasystems.com` for further assistance. The support team is available to help you to troubleshoot and resolve any technical issues or validation issues that may arise while the lab environment is live.
 
 ## Conclusion:
-Congratulations on successfully completing the **Continuous Integration and Deployment using GitHub** challenge. You have successfully verified the configuration of a GitHub repository, established a functional CI/CD workflow, utilized GitHub Actions to deploy the .NET application, and conducted testing following updates to the workflow file.
+Congratulations on successfully completing the **Continuous Integration and Deployment using GitHub** challenge. You have successfully verified the configuration of a GitHub repository, established a functional CI/CD workflow, utilized GitHub Actions to deploy the .NET application. In the next challenge, you will look into implementing security features offered by GitHub.
 
-Thorough this challenge, you've not only showcased your technical skills but also demonstrated your ability to implement industry-standard CI/CD practice. This experience will undoubtedly contribute to your expertise in modern software development methodologies and tools. In the next challenge, you will focus on implementing security to your GitHub repository using GitHub Advance security features.
 
 
 
