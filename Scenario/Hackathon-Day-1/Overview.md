@@ -49,7 +49,7 @@ As the software development landscape evolves, the need for a seamless and secur
 **6: Resilience Testing Scenarios:**
 - **Description:** Consider scenarios for resilience testing using Azure Chaos Studio, brainstorming on potential failure scenarios and strategies to test the application's recovery capabilities.
 
-## Objectives: 
+## Key Features and Objectives: 
 
 - **Continuous Integration and Deployment with GitHub Actions::** Set up CI/CD pipelines for .NET Apps and automate your build, test, and deployment processes.
 
