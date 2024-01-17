@@ -18,4 +18,4 @@
 | 16:45 - 17:00 | **Break**                                           |                                  |
 | 17:00 - 18:30 | **Resilience Testing using Azure Load Testing and Azure Chaos Studio - 90 min** |   Complete [Challenge 05](https://github.com/CloudLabs-MOC/DevOps-DevSecOp-challenge-labs/blob/main/Scenario/Hackathon-Day-1/Challenge-5.md)             |
 | 18:30 - 18:45 | **Validate Challenge 05 Completion, Q&A** | Discussion, etc.           |
-| 04:45 - 05:00 | **Closing Remarks & Next Steps and Future Collaboration** | Discussion, etc.        |
+| 18:45 - 19:00 | **Closing Remarks & Next Steps and Future Collaboration** | Discussion, etc.        |
