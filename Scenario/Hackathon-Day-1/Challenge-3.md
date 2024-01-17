@@ -9,6 +9,8 @@ This challenge equips you with essential skills to fortify repositories through 
 
 ## Challenge Objectives:
 
+>**Note:** Please ensure to use the e-commerce repository that was created in the previous challenge to implement GitHub Advanced Security features.
+
 1. **Code Scanning with CodeQL:**
    - Ensure GitHub Actions is enabled for your e-commerce repository.
    - Configure CodeQL analysis in the workflow.
