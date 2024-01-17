@@ -1,4 +1,4 @@
-# Challenge 02: GitHub Advanced Security I
+# Challenge 02: GitHub Advanced Security - Implement Code Security Enhancements
 
 ### Estimated Time: 1 Hour
 
