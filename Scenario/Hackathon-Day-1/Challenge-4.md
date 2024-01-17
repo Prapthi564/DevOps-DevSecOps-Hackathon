@@ -1,6 +1,6 @@
 # Challenge 04: Implementing Monitoring Solutions for Contoso Traders
 
-### Estimated Time: 1 Hour
+### Estimated Time: 60 minutes
 
 ## Introduction:
 
