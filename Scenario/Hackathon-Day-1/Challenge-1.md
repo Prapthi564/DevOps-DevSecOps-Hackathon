@@ -1,11 +1,11 @@
-# Challenge 01: Continuous Integration and Deployment for .NET Apps using GitHub Actions
+# Challenge 01: Continuous Integration and Continuous Deployment using GitHub 
 
 ### Estimated Time: 90 minutes
 
 ## Introduction:
-This challenge is designed to evaluate your skills in creating a robust CI/CD pipeline leveraging GitHub Actions specifically tailored for a .NET application. It aims to assess your capability to not only establish a seamless pipeline but also to guarantee the successful deployment of the application. Additionally, you will demonstrate their expertise by efficiently modifying and integrating new features into the existing codebase, showcasing their proficiency in adapting and evolving the application's functionality.
+This challenge is designed to evaluate your skills in creating a robust CI/CD pipeline leveraging GitHub Actions. It aims to assess your capability to not only establish a seamless pipeline but also to guarantee the successful deployment of the application. Additionally, you will demonstrate their expertise by efficiently modifying and integrating new features into the existing codebase, showcasing their proficiency in adapting and evolving the application's functionality.
 
-Through this challenge, you will set up a GitHub repository, implement a CI/CD workflow using GitHub Actions, deploy a .NET application to Azure, and make modifications to the application codebase.
+Through this challenge, you will set up a GitHub repository, implement a CI/CD workflow using GitHub Actions, deploy a .NET application to Azure, and make rolling updates to the application.
 
 ## Accessing GitHub
 
@@ -15,11 +15,11 @@ Through this challenge, you will set up a GitHub repository, implement a CI/CD w
 
 3. On the **Sign into GitHUb tab** you will see a login screen, enter the following email/username and then click on **Next**.
 
-   - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+   - **Email/Username:** 
 
 1. Now enter the following password and click on **Sign in**.
 
-   - **Password:** <inject key="AzureAdUserPassword"></inject>
+   - **Password:** 
 
 ## Accessing Azure portal
 
@@ -45,32 +45,33 @@ Through this challenge, you will set up a GitHub repository, implement a CI/CD w
 
 >**Note:** Solely use GitHub and GitHub Actions for CI/CD; no usage of Azure DevOps or any external CI/CD services.
 
-1. **Repository Setup:**
-   - Create a new public repository on GitHub for the .NET application.
-   - Initialize the repository with a basic .NET application structure or use an existing codebase.
+1. **Setup a GitHub repository:**
+   - Create a new GitHub repository with public access permission.
+   - You are provided with an e-commerce application named Contoso Traders which needs to be deployed and hosted in Azure.
+   - You can navigate to `C:\Workspaces\lab\aiw-devops-with-github-lab-files` directory and find the complete code base of the application.
+   - Using Visual Studio code, connect to the GitHub repository which you created in earlier step and push the application code base to your GitHub repository.
 
-2. **Setup CI/CD Workflow with GitHub Actions:**
+2. **Setup CI/CD Workflow:**
 
-   -  Create a GitHub Actions workflow file (e.g., **.github/workflows/main.yml**) to automate the CI/CD process.
-   -  Implement a workflow that includes steps for building the .NET application.
-   -  Add necessary steps for running tests to ensure the application's stability.
+   - Create GitHub secrets with same name as mentioned below.
+      - **SQL_PASSWORD** - You need to store ADO.NET connection string of your SQL database in this secret.
+      - **SERVICEPRINCIPAL** - create a secret to store service principal details. You can find the details in Environment details tab of your environment.
+      - **ENVIRONMENT**: create a secret to store the deployment ID. You can find the details in Environment details tab of your environment.
+   - In GitHub repository, navigate to  **.github/workflow** where you will be able find the yaml workflow. This YAML file is partially updated, you need to update the YAML files with right steps and complete the workflow. This workflow should deploy the application into Azure. 
   
-3. **Deployment Setup:**
-   - Configure the workflow to deploy the .NET application using GitHub Actions.
-   - Use appropriate deployment strategies such that the application is deployed over Azure.
+3. **Deploy the application using GitHub Actions:**
+   - Use GitHub Actions and run the workflow file which you updated in previous task.
 
-4. **Integration Testing and Feature Modification:**
-   - Modify an existing feature or add a new feature to the .NET application codebase.
-   - The modified/added feature must be integrated seamlessly with the existing application functionalities.
+
+4. **Test the application and perform rolling updates:**
+   - Navigate to Azure portal and check the application status using Azure Endpoint.
+   - Update the workflow file to intitate Action run on changes to the GitHub repository.
   
 ## Success criteria:
 To complete this challenge successfully:
 
-- The application must be deployed using VS Code which supports GitHub Actions.
-- A new repository must have been created.
-- **CI/CD Implementation**: The CI/CD pipeline should be established using GitHub Actions, encompassing build, test, and deployment stages effectively.
-- **Deployment Accuracy**: The application must be successfully deployed using GitHub Actions, and the chosen deployment strategy should align with the project's requirements.
-- **Code Modification**: Clear adherence to best practices are expected for any modifications made to the codebase, ensuring seamless integration of new features.
+- Verify the GitHub Action, all the jobs should be completed without any error.
+- Verify the deployment and hosting of the Contoso Traders application in Azure.
 
 ## Additional Resources:
 
@@ -99,4 +100,4 @@ To complete this challenge successfully:
 1. If you are still having trouble, you can reach out to the support team via `labs-support@spektrasystems.com` for further assistance. The support team is available to help you to troubleshoot and resolve any technical issues or validation issues that may arise while the lab environment is live.
 
 ## Conclusion:
-Congratulations on successfully completing the **Continuous Integration and Deployment challenge for a .NET application using GitHub Actions** challenge. Thorough this challenge, you've not only showcased your technical skills but also demonstrated your ability to implement industry-standard CI/CD practices tailored for .NET applications. This experience will undoubtedly contribute to your expertise in modern software development methodologies and tools.
+Congratulations on successfully completing the **Continuous Integration and Deployment using GitHub** challenge. Thorough this challenge, you've not only showcased your technical skills but also demonstrated your ability to implement industry-standard CI/CD practice. This experience will undoubtedly contribute to your expertise in modern software development methodologies and tools.
