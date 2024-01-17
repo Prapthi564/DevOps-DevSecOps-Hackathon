@@ -24,10 +24,10 @@ Here's the solution guide which includes detailed step-by-step instructions requ
 1. To access the Azure portal, open the edge browser from inside the environment and navigate to **[Azure Portal](https://portal.azure.com)**.
 
 1. On the **Sign in to Microsoft Azure** tab, you will see a login screen. Enter the following email/username and then click on **Next**. 
-   * Email/Username: <inject key="AzureAdUserEmail"></inject>
+   * **Email/Username**: <inject key="AzureAdUserEmail"></inject>
         
 1. Now enter the following password and click on **Sign in**.
-   * Password: <inject key="AzureAdUserPassword"></inject>
+   * **Password**: <inject key="AzureAdUserPassword"></inject>
      
 1. If you see the pop-up **Stay Signed in?**, click No.
 
