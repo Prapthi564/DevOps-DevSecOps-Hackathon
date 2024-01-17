@@ -43,8 +43,6 @@ Here's the solution guide which includes detailed step-by-step instructions requ
 
 ### Task 1: Setup a GitHub repository
 
-In this task, you'll access the GitHub enterprise account and create a new repository to store the infrastructure.
-
 In this task, you will create an account in [GitHub](https://github.com) and use `git` to add lab files to a new repository.
 
 1. In a new browser tab open ```https://www.github.com/login```. From Environment details page ***(1)***, navigate to **License** ***(2)*** tab and **copy** ***(3)*** the credentials. Use the same username and password to login into GitHub.
