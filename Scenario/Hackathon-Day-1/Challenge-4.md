@@ -3,7 +3,10 @@
 ### Estimated Time: 1 Hour
 
 ## Introduction:
-In this challenge you will integrate Azure's monitoring tools—Azure Monitor and Application Insights—into your Azure-based application. Monitor essential metrics, analyze performance data, and gain real-time insights to ensure optimal application health. Monitoring is vital for maintaining efficiency and resilience in cloud applications, enabling proactive issue identification and seamless user experiences.
+
+As a Cloud Solutions Engineer, your task is to enhance the monitoring capabilities of the Contoso Traders application hosted on Azure. Monitoring is crucial for maintaining optimal application health, identifying potential issues proactively, and ensuring a seamless user experience. 
+
+In this challenge, you will integrate Azure's monitoring tools—Azure Monitor and Application Insights—into the Azure-based application.you will integrate Azure's monitoring tools—Azure Monitor and Application Insights—into your Azure-based application. Monitor essential metrics, analyze performance data, and gain real-time insights to ensure optimal application health. Monitoring is vital for maintaining efficiency and resilience in cloud applications, enabling proactive issue identification and seamless user experiences.
 
 ## Challenge Objectives:
 
