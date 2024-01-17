@@ -3,7 +3,7 @@
 ### Estimated Time: 1 Hour
 
 ### Introduction:
-In this previous challenge, you did a successful hosting of the .Net application using GitHub repository and GitHub Actions for Continuous Integration and Continuous Deliverys. You are a DevSecOps engineer tasked with ensuring the security of the Contoso Traders application hosted on GitHub. In this challenge, your goal is to mitigate risks in dependencies and secure sensitive data using advanced security features provided by GitHub. 
+In this previous challenge, you did a successful hosting of the .Net application using GitHub repository and GitHub Actions for Continuous Integration and Continuous Deliverys. In this challenge, you are a DevSecOps engineer tasked with ensuring the security of the Contoso Traders application hosted on GitHub. In this challenge, your goal is to mitigate risks in dependencies and secure sensitive data using advanced security features provided by GitHub. 
 
 You need to focus on completing the implemenation of below mentioned security features.
 
