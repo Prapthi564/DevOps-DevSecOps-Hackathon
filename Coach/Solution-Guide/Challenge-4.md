@@ -2,7 +2,9 @@
 
 ## Introduction
 
-In this challenge you will integrate Azure's monitoring tools—Azure Monitor and Application Insights—into your Azure-based application. Monitor essential metrics, analyze performance data, and gain real-time insights to ensure optimal application health. Monitoring is vital for maintaining efficiency and resilience in cloud applications, enabling proactive issue identification and seamless user experiences.
+In this challenge, user/attendee will integrate Azure's monitoring tools—Azure Monitor and Application Insights—into their Azure-based application. Monitoring is vital for maintaining efficiency and resilience in cloud applications, enabling proactive issue identification and seamless user experiences.
+
+This is the solution guide that contains all of the comprehensive, step-by-step directions needed to finish the challenge.
 
 ## Solution Guide
 ### Task 1: Monitoring using Application Insights
