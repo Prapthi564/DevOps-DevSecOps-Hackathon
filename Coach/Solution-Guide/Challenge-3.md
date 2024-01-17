@@ -8,7 +8,7 @@ This is the solution guide, which provides all the specific, step-by-step direct
 
 ## Solution Guide
 
-### Task 1: Using Dependabot
+### Task 1: Configure Dependabot Alerts:
 
 In this task, you will use Dependabot to track the versions of the packages we use in our GitHub repository and create pull requests to update packages for us.
 
@@ -56,7 +56,7 @@ In this task, you will use Dependabot to track the versions of the packages we u
    git pull
    ```
    
-## Task 2: Explore Secret Scanning
+## Task 2: Implement Secret Scanning:
 
 In this task, you'll explore how secret scanning works and see how it generates alerts. GitHub scans repositories for known types of secrets, to prevent fraudulent use of secrets that were committed accidentally.
 
