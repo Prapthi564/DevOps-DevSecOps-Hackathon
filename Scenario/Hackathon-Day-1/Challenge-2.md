@@ -43,8 +43,8 @@ In this previous challenge, you did a successful hosting of the .Net application
 ## Success criteria:
 To complete this challenge successfully:
 
-   - Verify the implementation of Implement Code Scanning and CodeQL.
-   - Configure the Repository security advisories feature and createtemporary private fork.
+   - Verify the implementation of setting up Code Scanning and CodeQL via alerts.
+   - Configure the Repository security advisories feature and create temporary private fork.
 
 
 ## Additional Resources:

@@ -23,9 +23,7 @@ In this challenge you will integrate Azure's monitoring tools—Azure Monitor an
 ## Success criteria:
 To complete this challenge successfully:
 
-- Successful integration of Azure Monitor and Application Insights within the application environment, ensuring seamless data collection and monitoring capabilities.
-- Selection and configuration of key performance metrics relevant to the application's functionality and performance goals.
-- Establishment of effective alerting mechanisms with well-defined thresholds, ensuring timely notifications for potential issues or deviations in monitored metrics.
+- Check on the Monitoring dashboards to verify the creation and set up of Azure monitoring infrastructure for Conotos traders application.
 
 ## Additional Resources:
 

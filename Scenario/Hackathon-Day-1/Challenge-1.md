@@ -70,7 +70,7 @@ Through this challenge, you will set up a GitHub repository, implement a CI/CD w
 ## Success criteria:
 To complete this challenge successfully:
 
-- Verify the GitHub Action, all the jobs should be completed without any error.
+- Verify the GitHub Action, all the jobs in GitHub Action should be completed without any error.
 - Verify the deployment and hosting of the Contoso Traders application in Azure.
 
 ## Additional Resources:
