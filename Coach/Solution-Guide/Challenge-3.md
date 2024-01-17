@@ -1,4 +1,4 @@
-# Challenge 03: GitHub Advanced Security II
+# Challenge 03: GitHub Advanced Security - Dependency Management and Secret Scanning
 
 ## Introduction
 
