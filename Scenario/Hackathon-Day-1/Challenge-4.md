@@ -7,25 +7,18 @@ In this challenge you will integrate Azure's monitoring tools—Azure Monitor an
 
 ## Challenge Objectives:
 
-1. **Integration of Azure Tools:**
-   - Integrate Azure Monitor and Application Insights seamlessly within the Azure-based application infrastructure.
-      - Participants are required to set up and configure Azure Monitor and Application Insights within their Azure application environment. This involves the deployment of these monitoring tools and the establishment of connections or instrumentation within the application code to enable data collection.
+1. **Setup Monitoring Infrastructure:**
 
-2. **Key Metric Selection:**
-   - Define and configure key performance metrics for monitoring purposes.
-      -  Participants need to identify crucial metrics specific to their application's performance, such as response times, CPU/memory utilization, request rates, error rates, or any custom metrics relevant to the application's functionality. Configuring these metrics involves setting up data collection and aggregation to provide meaningful insights.
-  
-3. **Alert Configuration:**
-   - Create effective alerting mechanisms based on predefined thresholds.
-      - Participants must establish alert rules and thresholds for the selected metrics. These rules will trigger notifications or actions when metrics breach defined thresholds, allowing proactive identification and resolution of potential issues before they impact the application's performance or user experience.
+   - Create Log Analytics workspace
+   - Create and set up Application Insights for the Contoso traders application using Key vault.
 
-4. **Dashboard Creation:**
+2. **Dashboard Creation:**
    - Design comprehensive dashboards for real-time visualization of application health and performance metrics.
-      - Participants will create visually intuitive dashboards within Azure Monitor or Application Insights, displaying the collected metrics. These dashboards should offer clear insights into the application's health, performance trends, and potential areas that may require attention, aiding in quick decision-making.
+      - Participants will create visually intuitive dashboards within Azure Monitor or Application Insights, displaying the collected metrics. These dashboards should offer clear insights into the application's health, failed requests, Server respose time and availability of the application.
 
-5. **Optimization and Insights:**
-   - Optimize the monitoring setup for actionable insights and usability.
-      - Participants are encouraged to refine and optimize the monitoring setup for better usability and actionable insights. This includes organizing and presenting data in a user-friendly format, enhancing query capabilities for deeper analysis, and ensuring the monitoring setup aligns with the application's specific needs and objectives.
+3. **Monitor the application using App Insights:**
+
+   - Monitor and explore the application using the dashboard which you created in the previous task.
 
 ## Success criteria:
 To complete this challenge successfully:

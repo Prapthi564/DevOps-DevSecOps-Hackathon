@@ -1,4 +1,4 @@
-# Challenge 05: Resilience Testing using Azure Chaos Studio
+# Challenge 05: Resilience Testing using Azure Load Testing and Azure Chaos Studio
 
 ### Estimated Time: 1 Hour
 
@@ -8,25 +8,27 @@ This challenge centers around Azure Load Testing and Azure Chaos Studio, empower
 ## Challenge Objectives:
 
 1. **Setting Up Azure Load Testing:**
-   - Create an Azure Load Testing instance and execute a test using a JMeter file to simulate high-scale traffic on a web application.
-     - Set up an Azure Load Testing instance within the Azure portal and then use a JMeter file—a script defining load testing scenarios—to simulate high-scale traffic on a web application hosted on Azure. The goal is to evaluate the application's performance, scalability, and capacity under heavy loads.
+   - Create an Azure Load Testing instance and create and execure a quick test to check load of 50 users for 2 minutes.
 
-2. **Configuring Targets and Running Experiments in Azure Chaos Studio:**
+   - Resolve the errors if the test fails and take actions to improve the application's resiliancy.
 
-   -  Utilize Azure Chaos Studio to assess the resilience of the web application by introducing real faults and disruptions.
-     -  Participants will explore Azure Chaos Studio, a tool designed to measure and enhance cloud application resilience. Configure specific targets within their web application and create controlled experiments by introducing real-world disruptions, such as latency injection, fault injection, or other fault scenarios. The objective is to observe how the application responds to these disruptions and identify areas for improvement in its resilience and fault tolerance.
-  
+
+2. **Create exeperiment and target using Azure Chaos studio:**
+
+   -  Utilize Azure Chaos Studio to assess the resilience of the Azure kubernetes service where the Contoso traders application is hosted
+   - Using Chaos studio, target the AKS cluster resource.
+   - Create experiment and set up faults on AKS Chaos Mesh Pods for 5 minutes. 
+
 ## Success criteria:
 To complete this challenge successfully:
 
-- Successful setup and execution of Azure Load Testing using a JMeter file to simulate high-scale traffic on the web application.
-- Well-designed experiments within Azure Chaos Studio introducing real-world disruptions to the web application, showcasing a clear understanding of resilience testing principles.
+- Successful setup and execution of Azure Load Testing using a quick test to simulate high-scale traffic on the web application.
+- Create and verify experiment execution using Azure Chaos studio showcasing a clear understanding of resilience testing principles.
 
 ## Additional Resources:
 
 - Refer to [Continuous validation with Azure Load Testing and Azure Chaos Studio](https://learn.microsoft.com/en-us/azure/architecture/guide/testing/mission-critical-deployment-testing) for reference.
 - [What is Azure Chaos Studio?](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-overview).
-- [Load test a website by using a JMeter script in Azure Load Testing](https://learn.microsoft.com/en-us/azure/load-testing/how-to-create-and-run-load-test-with-jmeter-script?tabs=portal).
 - [Intro to Chaos Engineering and Azure Chaos Studio](https://pdtit.medium.com/intro-to-chaos-engineering-and-azure-chaos-studio-preview-5e85fff10642).
 
 ## Challenge Validations: [WIP]
@@ -46,3 +48,6 @@ To complete this challenge successfully:
      ![](../media/validate04.png "Validation")
  
 1. If you are still having trouble, you can reach out to the support team via `labs-support@spektrasystems.com` for further assistance. The support team is available to help you to troubleshoot and resolve any technical issues or validation issues that may arise while the lab environment is live.
+
+## Conclusion
+Congratulations on completing the **Resilience Testing using Azure Load Testing and Azure Chaos Studio** challenge! You learnt the implementation of Azure Load testing and experiment in Azure Chaos studio.
