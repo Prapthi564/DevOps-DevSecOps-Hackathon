@@ -1,8 +1,8 @@
 # Day-1 Hackathon Agenda
 
-| Time          | Agenda                                              | Remarks                                  |
-|---------------|-----------------------------------------------------|------------------------------------------|
-| 09:00 - 09:15 | **Welcome note**                                        |                                          |
+| Time             | Agenda                                              | Remarks                                  |
+|------------------|-----------------------------------------------------|------------------------------------------|
+| 09:00 - 09:15    | **Welcome note**                                        |                                          |
 | 09:15 - 09:45 | **Hackathon Challenge Use-Case : DevSecOps Challenge Discussion** |      |
 | 09:45 - 11:15 | **Challenge 01: Continuous Integration and Deployment for .NET Apps using GitHub Actions - 90 min** | Complete [Challenge 01](https://github.com/CloudLabs-MOC/DevOps-DevSecOp-challenge-labs/blob/main/Scenario/Hackathon-Day-1/Challenge-1.md)         |
 | 11:15 - 11:30 | **Validate Challenge 01 Completion, Q&A** | Discussion, etc.                  |
