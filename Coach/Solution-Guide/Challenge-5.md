@@ -4,6 +4,8 @@
 
 This challenge centers around Azure Load Testing and Azure Chaos Studio, empowering you to perform performance tests and enhance application resilience. In the modern digital landscape, guaranteeing optimal performance during heavy loads and fortifying against disruptions is essential. Through Azure's tools, you'll gain insights into proactive issue detection and methods to reinforce your applications.
 
+This is the solution guide that contains all of the comprehensive, step-by-step directions needed to finish the challenge.
+
 ## Solution Guide
 
 ## Task 1: Setting Up Azure Load Testing
