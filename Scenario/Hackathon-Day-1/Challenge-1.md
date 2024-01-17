@@ -3,9 +3,9 @@
 ### Estimated Time: 90 minutes
 
 ## Introduction:
-This challenge is designed to evaluate your skills in creating a robust CI/CD pipeline leveraging GitHub Actions. It aims to assess your capability to not only establish a seamless pipeline but also to guarantee the successful deployment of the application. Additionally, you will demonstrate expertise by efficiently modifying and integrating new features into the existing codebase, showcasing your proficiency in adapting and evolving the application's functionality.
+This challenge is designed to evaluate your skills in creating a robust CI/CD pipeline leveraging GitHub Actions. It aims to assess your capability to not only establish a seamless pipeline but also to guarantee the successful deployment of the application.
 
-Through this challenge, you will set up a GitHub repository, deploy and host a .NET application over Azure, create GitHub secrets, implement a CI/CD workflow using GitHub Actions, and test by rolling updates to the application.
+Through this challenge, you will set up a GitHub repository, implement a CI/CD workflow using GitHub Actions, deploy a .NET application to Azure, and make rolling updates to the application.
 
 ## Accessing GitHub
 
@@ -15,11 +15,11 @@ Through this challenge, you will set up a GitHub repository, deploy and host a .
 
 3. On the **Sign into GitHUb tab** you will see a login screen, enter the following email/username and then click on **Next**.
 
-   - **Email/Username:** <inject key="GitHubUsername"></inject>
+   - **Email/Username:** 
 
 1. Now enter the following password and click on **Sign in**.
 
-   - **Password:** <inject key="GitHubPassword"></inject>
+   - **Password:** 
 
 ## Accessing Azure portal
 
@@ -39,7 +39,7 @@ Through this challenge, you will set up a GitHub repository, deploy and host a .
    
 1. Now you will see the Azure Portal Dashboard. Click on **Resource groups** from the Navigate panel to see the resource groups.
   
-1. Confirm you have a resource group **DevOps-DevSecOps** present, as shown in the below screenshot. You need to use the **<inject key="Resource Group Name"/>** resource group throughout this challenge.
+1. Confirm you have a resource group **Activate-GenAI** present, as shown in the below screenshot. You need to use the **<inject key="Resource Group Name"/>** resource group throughout this challenge.
 
 ## Challenge Objectives:
 
@@ -75,8 +75,8 @@ To complete this challenge successfully:
 
 ## Additional Resources:
 
-- Refer to [GitHub Actions and .NET](https://learn.microsoft.com/en-us/dotnet/devops/github-actions-overview) for reference.
-- [Building and testing .NET](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net).
+Refer to documentation and guides mentioned below. 
+- [GitHub Actions](https://docs.github.com/en/actions)
 - [Why CI/CD](https://resources.github.com/ci-cd/).
 - [Continuous Deployment with Github Actions: An Example](https://www.dolthub.com/blog/2020-11-23-continous-deployment-with-github-actions/).
 - [How to build a CI/CD pipeline with GitHub Actions in four simple steps](https://github.blog/2022-02-02-build-ci-cd-pipeline-github-actions-four-steps/).
