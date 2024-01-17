@@ -75,8 +75,8 @@ To complete this challenge successfully:
 
 ## Additional Resources:
 
-- Refer to [GitHub Actions and .NET](https://learn.microsoft.com/en-us/dotnet/devops/github-actions-overview) for reference.
-- [Building and testing .NET](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net).
+Refer to documentation and guides mentioned below. 
+- [GitHub Actions](https://docs.github.com/en/actions)
 - [Why CI/CD](https://resources.github.com/ci-cd/).
 - [Continuous Deployment with Github Actions: An Example](https://www.dolthub.com/blog/2020-11-23-continous-deployment-with-github-actions/).
 - [How to build a CI/CD pipeline with GitHub Actions in four simple steps](https://github.blog/2022-02-02-build-ci-cd-pipeline-github-actions-four-steps/).
