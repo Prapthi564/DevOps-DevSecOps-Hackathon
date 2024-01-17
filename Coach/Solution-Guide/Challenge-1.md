@@ -61,7 +61,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
    ![The `New Repository` creation form in GitHub.](media/ex2-t3-3-git.png "New Repository Creation Form")
 
-1. On the **Create a new repository** screen, name the repository ```aiw-devops-with-github-lab-files``` ***(1)***, select **Public** ***(2)*** and click on **Create repository** ***(3)***  button.
+1. On the **Create a new repository** screen, name the repository ```devsecops``` ***(1)***, select **Public** ***(2)*** and click on **Create repository** ***(3)***  button.
 
    ![The `New Repository` creation form in GitHub.](media/2dgn91.png "New Repository Creation Form")
    
@@ -71,7 +71,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
    ![The `New Repository` creation form in GitHub.](media/2dg1.png "New Repository Creation Form")
 
-1. Using the search bar, search for ```aiw-devops-with-github-lab-files``` **(1)** and select to open it.
+1. Using the search bar, search for ```devsecops``` **(1)** and select to open it.
 
    ![The `New Repository` creation form in GitHub.](media/2dg118.png "New Repository Creation Form")
 
@@ -102,7 +102,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 1. In the Visual Studio Code, run the below commands in the terminal to set your **username** and **email**, which Git uses for commits. Make sure to replace GitHub account email and username.
    
      ```pwsh
-     cd C:\Workspaces\lab\aiw-devops-with-github-lab-files
+     cd C:\Workspaces\lab\devsecops
      git config --global user.email "you@example.com"
      git config --global user.name "Your UserName"
      ```
