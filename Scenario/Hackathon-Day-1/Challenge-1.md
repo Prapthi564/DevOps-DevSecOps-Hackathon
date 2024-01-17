@@ -1,4 +1,4 @@
-# Challenge 01: Continuous Integration and Continuous Deployment using GitHub 
+# Challenge 01: Continuous Integration and Deployment for Contoso Traders using GitHub Actions
 
 ### Estimated Time: 90 minutes
 
