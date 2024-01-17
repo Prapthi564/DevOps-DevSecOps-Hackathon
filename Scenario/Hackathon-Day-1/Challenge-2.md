@@ -1,7 +1,5 @@
 # Challenge 02: GitHub Advanced Security I
 
-## Repository Setup and Basic Security
-
 ### Estimated Time: 1 Hour
 
 ### Introduction:
