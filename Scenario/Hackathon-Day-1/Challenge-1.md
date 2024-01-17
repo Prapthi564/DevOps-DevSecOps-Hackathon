@@ -52,7 +52,7 @@ You are a DevOps engineer tasked with setting up a robust Continuous Integration
    - Using Visual Studio code, connect to the GitHub repository which you created in earlier step and push the application code base to your GitHub repository.
 
 2. **Deploy Infrastructure:**
-   - Create an Azure resource group in your Azure subscription with name **Contoso-Traders<inject key="DeploymentID" enableCopy="false" />**.
+   - Create an Azure resource group in your Azure subscription with name **Contosotraders-<inject key="DeploymentID" enableCopy="false" />**.
    - Deploy the below-mentioned bicep template using GitHub Action name **deploy-infrastructure.yml** which is present in `.github/workflow` directory .
       
 2. **Setup CI/CD Workflow:**
