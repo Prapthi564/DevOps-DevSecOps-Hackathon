@@ -12,7 +12,9 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
 
 1. You will deploy the complete monitoring infrastructure using the bicep template. The monitoring infrastructure includes a Log Analytics workspace, Application Insights, a secret created for Application Insights, and a monitoring dashboard.
 
-1. Open VS Code, update the variable `$userName` and `$password` in the code mentioned below, and execute the code. The below-mentioned code uses a bicep template named `monitorinfra.bicep` which contains code to deploy the complete monitoring infrastructure.
+1. Open VS Code, update the variable `$userName` and `$password` in the code mentioned below, and execute the code.
+
+   The below-mentioned code uses a bicep template named `monitorinfra.bicep` which contains code to deploy the complete monitoring infrastructure.
    
    - **Email/Username:** <inject key="GitHubUsername"></inject>
    - **Password:** <inject key="GitHubPassword"></inject>
