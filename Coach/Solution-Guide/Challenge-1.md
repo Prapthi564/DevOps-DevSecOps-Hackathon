@@ -41,7 +41,7 @@ Through this challenge, you will set up a GitHub repository, implement a CI/CD w
 
 ## Solution Guide 
 
-### Task 3: Create the Project Repo
+### Task 1: Setup a GitHub repository
 
 In this task, you'll access the GitHub enterprise account and create a new repository to store the infrastructure.
 
@@ -130,7 +130,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
        
    - After you are prompted with the message **Authorization Succeeded**, close the tab and continue with the next task.
      
-### Task 4: Build and push using GitHub Actions
+### Task 2: Setup CI/CD Workflow and deploy the application using GitHub Actions
 
 In this exercise, you will build automation in GitHub for updating and republishing our Docker images when the code changes. You will create a workflow file using the GitHub interface and its GitHub Actions workflow editor. This will get you familiar with how to create and edit an action through the GitHub website.
 
@@ -254,7 +254,7 @@ In this exercise, you will build automation in GitHub for updating and republish
     
    ![](media/2dgn162.png) 
     
-### Task 5: Editing the GitHub Workflow File using Codespace
+### Task 3: Test the application and perform rolling updates
 
 The last task automated building and updating only one of the Docker images. In this task, we will update the workflow file with a more appropriate workflow for the structure of our repository. This task will end with a file named `docker-publish.yml` that will rebuild and publish Docker images as their respective code is updated.
 
