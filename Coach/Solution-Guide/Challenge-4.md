@@ -18,11 +18,13 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
    
    - **Email/Username:** <inject key="GitHubUsername"></inject>
    - **Password:** <inject key="GitHubPassword"></inject>
+
+   >**Note**: Please use the above-mentioned credentials to login into Azure.
 ```
 
 Connect-AzAccount 
 
-$RGname = "existing RG name"
+$RGname = <update the existing RG name>
 
 cd C:\Workspaces\lab\devsecops\iac
 
