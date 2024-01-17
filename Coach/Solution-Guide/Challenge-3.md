@@ -60,8 +60,6 @@ In this task, you will use Dependabot to track the versions of the packages we u
 
 In this task, you'll explore how secret scanning works and see how it generates alerts. GitHub scans repositories for known types of secrets, to prevent fraudulent use of secrets that were committed accidentally.
 
-**Note**: This is a **READ-ONLY** task. Please do not perform the steps in the lab environment.
-
 1. From your GitHub repository, click on the **Settings** tab.
 
    ![](media/2dg110.png)
