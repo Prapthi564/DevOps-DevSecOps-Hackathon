@@ -75,7 +75,7 @@ To complete this challenge successfully:
 
 ## Additional Resources:
 
-Refer to documentation and guides mentioned below. 
+Here are a few documentation and guides to assist you in completing the challenge.
 - [GitHub Actions](https://docs.github.com/en/actions)
 - [Why CI/CD](https://resources.github.com/ci-cd/).
 - [Continuous Deployment with Github Actions: An Example](https://www.dolthub.com/blog/2020-11-23-continous-deployment-with-github-actions/).

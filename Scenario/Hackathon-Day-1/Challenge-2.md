@@ -49,9 +49,10 @@ To complete this challenge successfully:
 
 ## Additional Resources:
 
-- Refer to [About GitHub's Advanced Security](https://docs.github.com/en/code-security/getting-started/github-security-features) for reference.
-- Refer to [About GitHub's Advanced Security](https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql) for reference.
-- Refer to [Code Scanning with GitHub CodeQL](https://learn.microsoft.com/en-us/training/modules/code-scanning-with-github-codeql/) for reference.
+Here are a few documentation and guides to assist you in completing the challenge.
+- [About GitHub's Advanced Security](https://docs.github.com/en/code-security/getting-started/github-security-features)
+- [About GitHub's Advanced Security](https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql)
+- [Code Scanning with GitHub CodeQL](https://learn.microsoft.com/en-us/training/modules/code-scanning-with-github-codeql/)
 
 ## Challenge Validations: [WIP]
 
