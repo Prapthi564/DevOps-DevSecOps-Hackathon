@@ -63,7 +63,7 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
      
 1. In the Open a draft security advisory tab, under the Advisory Details section provide the following details.
 
-   - Title: **Improper Access Control in aiw-devops-with-github-lab-files/src/TailwindTraders.Ui.Website/src/App.js** ***(1)***
+   - Title: **Improper Access Control in devsecops/src/TailwindTraders.Ui.Website/src/App.js** ***(1)***
    - CVE identifier: **Request CVE ID later** ***(2)***
    - Description: **Add** ***(3)*** the below mentioned details in the description section.
    
@@ -105,7 +105,7 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
 1. In the Affected products section, provide the following details and click on **Create draft security advisory** ***(7)***   
  
    - Ecosystem: **composer** ***(1)***
-   - Package name: **aiw-devops-with-github-lab-files/src/TailwindTraders.Ui.Website/src/App.js** ***(2)***
+   - Package name: **devsecops/src/TailwindTraders.Ui.Website/src/App.js** ***(2)***
    - Affected version: **<1.2** ***(3)***
    - Patched version: **1.2** ***(4)***
    - Severity: **High** ***(5)***
