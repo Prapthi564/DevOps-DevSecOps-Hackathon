@@ -55,7 +55,8 @@ You are a DevOps engineer tasked with setting up a robust Continuous Integration
    - In GitHub repository, navigate to `iac/createResources.parameters.json` path and update the following parameters value.
      - Replace `deploymentid` value with **<inject key="DeploymentID" enableCopy="false" />**.
      - Replace `bicepsqlpass` value with **<inject key="AzureAdUserPassword"></inject>**.
-
+   -    - Create GitHub secrets with same name as mentioned below.
+      - **SERVICEPRINCIPAL** - create a secret to store service principal details. You can find the details in Environment details tab of your environment
    - Create an Azure resource group in your Azure subscription with name **Contosotraders-<inject key="DeploymentID" enableCopy="false" />**.
    - Deploy the below-mentioned bicep template using GitHub Action name **deploy-infrastructure.yml** which is present in `.github/workflow` directory .
       
@@ -63,7 +64,6 @@ You are a DevOps engineer tasked with setting up a robust Continuous Integration
 
    - Create GitHub secrets with same name as mentioned below.
       - **SQL_PASSWORD** - You need to store ADO.NET connection string of your **productsdb** SQL database in this secret.
-      - **SERVICEPRINCIPAL** - create a secret to store service principal details. You can find the details in Environment details tab of your environment.
       - **ENVIRONMENT**: create a secret to store the deployment ID which is **<inject key="DeploymentID" enableCopy="false" />**. You can also find the deployment ID in Environment details tab of your environment.
    - In GitHub repository, navigate to  **.github/workflow** where you will be able find the yaml workflow. This YAML file is partially updated, you need to update the YAML files with right steps and complete the workflow. This workflow should deploy the application into Azure. 
   
