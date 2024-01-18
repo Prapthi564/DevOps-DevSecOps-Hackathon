@@ -10,7 +10,7 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
 
 ### Task 1: Deploy Monitoring Infrastructure
 
-1. You will deploy the complete monitoring infrastructure using the bicep template. The monitoring infrastructure includes a Log Analytics workspace, Application Insights, a secret created for Application Insights, and a monitoring dashboard.
+1. You will deploy the complete monitoring infrastructure using the bicep template. The monitoring infrastructure includes a Application Insights, a secret created for Application Insights, and a monitoring dashboard.
 
 1. Open VS Code, and execute the code.
 
