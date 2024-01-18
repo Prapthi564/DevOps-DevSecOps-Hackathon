@@ -18,10 +18,6 @@ Before you begin, ensure that you have the following prerequisites installed and
    1. Install .NET 6.0 SDK [(https://dotnet.microsoft.com/download/dotnet/6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)).
    1. Install Node v16.8.0  ([https://nodejs.org/en/download](https://nodejs.org/en/blog/release/v16.8.0)).
 
-1. **Azure Environment**: Create an Azure resource group in your Azure subscription. Deploy the below-mentioned bicep template using Azure CLI commands.
-   - Template: [Bicep template file](https://experienceazure.blob.core.windows.net/devsecops-hackthon/createResources.bicep)
-   - Parameters file: [Bicep parameters file](https://experienceazure.blob.core.windows.net/devsecops-hackthon/createResources.parameters.json)  
-
 Feel free to explore the challenges, learn, and have fun during this hackathon! If you have any questions, don't hesitate to contact our support team. 
 
 Happy hacking!
