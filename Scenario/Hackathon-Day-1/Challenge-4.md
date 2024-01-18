@@ -17,7 +17,7 @@ In this challenge, you will integrate Azure's monitoring tools—Azure Monitor a
 
 2. **Dashboard Creation:**
    - Design comprehensive dashboards for real-time visualization of application health and performance metrics.
-      - Participants will create visually intuitive dashboards within Azure Monitor or Application Insights, displaying the collected metrics. These dashboards should offer clear insights into the application's health, failed requests, Server respose time and availability of the application.
+      - Participants will create visually intuitive dashboards within Azure Monitor or Application Insights, displaying the collected metrics. These dashboards should offer clear insights into the application's health, failed requests, Server response time, and availability of the application.
 
 3. **Monitor the application using App Insights:**
 
