@@ -28,7 +28,7 @@ $RGname = <update the existing RG name>
 
 cd C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files\iac
 
-New-AzResourceGroupDeployment -Name "createresources" -TemplateFile "monitoringinfra.bicep" -TemplateParameterFile "monitoringinfra.parameters.json" -ResourceGroup $RGname
+New-AzResourceGroupDeployment -Name "createresource" -TemplateFile "monitoringinfra.bicep" -TemplateParameterFile "monitoringinfra.parameters.json" -ResourceGroup $RGname
 ```
 
 ### Task 2: Monitoring using Application Insights
