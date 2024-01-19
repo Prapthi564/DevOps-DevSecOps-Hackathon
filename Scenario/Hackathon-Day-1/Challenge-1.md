@@ -57,7 +57,7 @@ You are a DevOps engineer tasked with setting up a robust Continuous Integration
      - Replace `bicepsqlpass` value with **<inject key="AzureAdUserPassword"></inject>**.
      - Create GitHub secrets with the same name as mentioned below.
        - **SERVICEPRINCIPAL** - create a secret to store service principal details. You can find the details in Environment details tab of your environment
-       - **SQL_PASSWORD** - You need to store ADO.NET connection string of your **productsdb** SQL database in this secret.
+       - **SQL_PASSWORD** - You need to store **<inject key="AzureAdUserPassword"></inject>** as a secret.
        - **ENVIRONMENT**: create a secret to store the deployment ID which is **<inject key="DeploymentID" enableCopy="false" />**. You can also find the deployment ID in Environment details tab of your environment.
    - Deploy the below-mentioned bicep template within the pre-created Azure resource group named **contoso-traders** using GitHub Action name **deploy-infrastructure.yml** which is present in `.github/workflow` directory.
       
