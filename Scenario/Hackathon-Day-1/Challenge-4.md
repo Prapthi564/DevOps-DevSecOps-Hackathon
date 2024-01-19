@@ -12,7 +12,6 @@ In this challenge, you will integrate Azure's monitoring tools—Azure Monitor a
 
 1. **Setup Monitoring Infrastructure:**
 
-   - Create Log Analytics workspace
    - Create and set up Application Insights for the Contoso traders application using Key vault.
 
 2. **Dashboard Creation:**
