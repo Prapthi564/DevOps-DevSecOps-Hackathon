@@ -33,11 +33,11 @@ New-AzResourceGroupDeployment -Name "createresource" -TemplateFile "monitoringin
 
 ### Task 2: Monitoring using Application Insights
 
-1. In the Azure Portal, navigate to **contoso-traders-<inject key="Deploymentid" enableCopy="false" />** **(1)** resource group and select the **Application Insights** resource with the name  **contoso-traders-ai<inject key="Deploymentid" />** **(2)**.
+1. In the Azure Portal, navigate to **contosotraders-<inject key="Deploymentid" enableCopy="false" />** **(1)** resource group and select the **Application Insights** resource with the name  **contoso-traders-aivalue** **(2)**.
 
    ![](media/upd-ex6-t1-openai.png)
    
-1. From the Overview of **contoso-traders-ai<inject key="Deploymentid"  enableCopy="false" />** Application Insights resource, you can set the **Show data for last** as per your requirement of monitoring insights.
+1. From the Overview of **contoso-traders-aivalue** Application Insights resource, you can set the **Show data for last** as per your requirement of monitoring insights.
 
    ![](media/upd-ex6-t1-set-showdata.png)
    
