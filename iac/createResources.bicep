@@ -5,11 +5,10 @@ targetScope = 'resourceGroup'
 ////////////////////////////////////////////////////////////////////////////////
 
 // common
-@minLength(3)
-@maxLength(7)
 @description('A unique environment name (max 6 characters, alphanumeric only).')
 param env string
 
+@secure()
 param sqlPassword string
 
 param resourceLocation string = resourceGroup().location
@@ -103,6 +102,7 @@ var acrName = '${prefix}acr${env}'
 
 // load testing service
 var loadTestSvcName = '${prefixHyphenated}-loadtest${env}'
+var logAnalyticsWorkspaceName = '${prefixHyphenated}-loganalytics${env}'
 
 
 // aks cluster
