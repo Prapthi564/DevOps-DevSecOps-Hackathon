@@ -39,7 +39,7 @@ You need to focus on completing the implementation of the below-mentioned securi
    - Resolve the generated alerts if any.
 
 2. **Implement Repository security advisories:**
-   -  Set up Repository security advisories features for App.js package. Use `aiw-devops-with-github-lab-files/src/TailwindTraders.Ui.Website/src/App.js` path while configuring the affected products.
+   -  Set up Repository security advisories features for App.js package. Use `devsecops/src/TailwindTraders.Ui.Website/src/App.js` path while configuring the affected products.
 
   
 ## Success criteria:
