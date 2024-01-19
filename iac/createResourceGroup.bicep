@@ -6,19 +6,12 @@ targetScope = 'subscription'
 
 param rgLocation string = 'eastus'
 
-param prefixHyphenated string = 'contoso-traders'
-
 // variables
 ////////////////////////////////////////////////////////////////////////////////
 
 // rg for storage account, service bus, cosmos db & function app
-var rgName = '${prefixHyphenated}-rg'
+var rgName = 'contosotraders-<deployment-id>'
 
-// tags
-var rgTags = {
-  Product: prefixHyphenated
-  Environment: 'testing'
-}
 
 // resource groups
 ////////////////////////////////////////////////////////////////////////////////
@@ -26,7 +19,6 @@ var rgTags = {
 resource rg 'Microsoft.Resources/resourceGroups@2021-04-01' = {
   name: rgName
   location: rgLocation
-  tags: rgTags
 }
 
 // outputs
