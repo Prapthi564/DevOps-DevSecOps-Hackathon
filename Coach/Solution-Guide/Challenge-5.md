@@ -64,11 +64,11 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
 
    ![](media/Ex6-T2-S2.png)
       
-1. From the drop-down menu, select **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** resource group.
+1. From the drop-down menu, select **contosotraders-<inject key="DeploymentID" enableCopy="false" />** resource group.
  
-   ![](media/2dgn122.1.png)
+   ![](media/chaos-studio.png)
      
-1. Click on the **contoso-traders-aks<inject key="DeploymentID" enableCopy="false" />** **(1)** **Kubernetes service** instance and form the drop-down for **Enable Targets** **(2)** choose **Enable service-direct targets (All resources)** **(3)**.
+1. Click on the **contoso-traders-aks<inject key="DeploymentID" enableCopy="false" />** **(1)** **Kubernetes service** instance and from the drop-down for **Enable Targets** **(2)** choose **Enable service-direct targets (All resources)** **(3)**.
 
    ![](media/2dgn99.png)
      
@@ -93,11 +93,11 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
 1. On the **Create an experiment** page, under **Basics** tab provide the following values and select **Next: Permissions >** ***(4)***.
 
     - Subscription: Select the default subscription ***(1)***
-    - Resource Group: **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** ***(2)***
+    - Resource Group: **contosotraders-<inject key="DeploymentID" enableCopy="false" />** ***(2)***
     - Name: **contoso-chaos-<inject key="DeploymentID" enableCopy="false" />** ***(3)***
     - Region: Leave it to default 
  
-   ![](media/E5T1S10.png)
+   ![](media/experiment.png)
    
 1. On the **Permissions** page, leave the default selection and select **Next: Experiment designer >**.
 
@@ -123,10 +123,8 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
   
    ![](media/upd-review.png)
    
-1. On the **Review + create** click on **Create**.
-  
-   ![](media/2dgn104.png)
-  
+1. On the **Review + create** page, click on **Create**.
+    
 1. Navigate back to the **contoso-traders-aks<inject key="DeploymentID" enableCopy="false" />** container instance and select **Access control (IAM) (1)**, click on **+ Add (2)** and select **Add role assignment (3)**. 
   
    ![](media/2dgn121.png)
@@ -139,9 +137,9 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
    
    ![](media/ex6-task3-step19.png)
   
-1. Next on the **Conditions** tab select **Delegation type** as **Not constrained** **(1)** and click on **Review + assign** **(2)**.
+1. Next on the **Conditions** tab select **What user can do** as **Allow user to assign all roles** **(1)** and click on **Review + assign** **(2)**.
 
-   ![](media/ex6-task3-step20.png)
+   ![](media/role-assignment.png)
 
 1. Click on **Review + assign**. 
    
