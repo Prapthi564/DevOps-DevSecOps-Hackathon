@@ -12,25 +12,39 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
 
 In this task, you'll create an Azure Load Testing instance and run a test using a JMeter file.
 
-1. In the Azure Portal, navigate to **contoso-traders-<inject key="Deploymentid" enableCopy="false" />** resource group and select the **Endpoint** resource with the name  **contoso-traders-ui2<inject key="Deploymentid" />**.
+1. In the Azure Portal, navigate to **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** resource group and select the **Endpoint** resource with the name  **contoso-traders-ui2<inject key="DeploymentID" />**.
 
    ![](media/dglt1.jpg)
 
-1. From the overview of **contoso-traders-ui2<inject key="Deploymentid" enableCopy="false" />** endpoint, copy the **Endpoint hostname** **(2)** and paste it into the notepad for later use in the task.
+1. From the overview of **contoso-traders-ui2<inject key="DeploymentID" enableCopy="false" />** endpoint, copy the **Endpoint hostname** **(2)** and paste it into the notepad for later use in the task.
 
    ![](media/dglt2.jpg)
 
-1. In the Azure Portal, navigate to **contoso-traders-<inject key="Deploymentid" enableCopy="false" />** **(1)** resource group and select the **Azure Load Testing** resource with the name  **contoso-traders-loadtest<inject key="Deploymentid" />** **(2)**.
+1. To create an Azure Load Testing service, within the global search bar of the Azure Portal - search for and select **Azure Load Testing**.
 
-   ![](media/upd-2dgn117.png)
-   
-1. On the left hand side pane, select **Tests** ***(1)*** and click on **+ Create** ***(2)*** and select **Create a quick test** ***(3)***.
+   ![](media/loadtesting.png)
 
-   ![](media/2dgn96.png)
+1. Click on **+ Create**.
 
-1. On the **Create test** page, under basic tab paste the **Endpoint URL** as Test URL ***(1)*** and  leave everything as default, then click **Run Test** ***(2)***.
+   ![](media/createloadtesting.png)
 
-   ![](media/ex6-task2-step5.png)
+1. Within the **Basics** tab of the **Create a load testing resource**, enter the following details. Click on **Review + create**
+   - **Subscription**: Select the available subscription provided **(1)**.
+   - **Resource group**: Select **contosotraders-<inject key="DeploymentID" /> (2)**
+   - **Name**: Enter **contoso-traders-loadtest-<inject key="DeploymentID" /> (3)**
+   -  **Region**: **East US (4)**
+   -  Click on **Review + create (5)**
+   - Finally, click on the **Create**.
+
+   ![](media/createloadtesting-1.png)
+
+1. On the left hand side pane, select **Tests** ***(1)*** and click on **+ Create** ***(2)*** and select **Create a URL-based test (3)**.
+
+   ![](media/url-load-test.png)
+
+1. On the **Create a URL-based test** page, under basic tab paste the **Endpoint URL** as Test URL ***(1)***, leave the rest as default and then click on **Review + create (2)** followed by **Create**.
+
+   ![](media/url-load-test-1.png)
 
 1. The test run will start running and once the test run is completed, you will be able to see **Client-side metrics**. Explore the given metrics output.
 
