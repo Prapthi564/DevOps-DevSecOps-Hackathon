@@ -58,21 +58,24 @@ You are a DevOps engineer tasked with setting up a robust Continuous Integration
        
        >**Hint**: You can also find the deployment ID and the Azure AD password within the environment details tab of your integrated lab guide.
 
-   - In GitHub repository, navigate to `iac/createResourceGroup.bicep` path and update the resource group name as mentioned below.
+   - In GitHub repository, navigate to `iac/createResourceGroup.bicep` path and update the resource group name as mentioned below:
       - Replace `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
-   - 
-   - Deploy the workflow named **deploy-infrastructure.yml** in `.github/workflow` directory` .
 
-   >**Note:** Ensure to replace `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />** within the above bicep template before proceeding to deploy and then run the `contoso-traders-provisioning-deployment` workflow.
-      
+   - Within your repository, navigate to `.github/workflow/deploy-infrastructure.yml` path and ensure to update the `RESOURCE_GROUP_NAME` environment variable by replacing `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
+   
+   -  Run the workflow named `contoso-traders-provisioning-deployment`.
+   
 2. **Setup CI/CD Workflow:**
+
+   - Update the previously created GitHub secret with the following value
+      - **SQL_PASSWORD**: ADO.NET (SQL authentication) connection string of `productsdb` SQL database.
 
    - In GitHub repository, navigate to  **.github/workflow** where you will be able find the yaml workflow. This YAML file is partially updated, you need to update the YAML files with right steps and complete the workflow. This workflow should deploy the application into Azure. 
   
-3. **Deploy the application using GitHub Actions:**
+2. **Deploy the application using GitHub Actions:**
    - Use GitHub Actions and run the workflow file which you updated in previous task.
 
-4. **Test the application and perform rolling updates:**
+3. **Test the application and perform rolling updates:**
    - Navigate to Azure portal and check the application status using Azure Endpoint.
    - Update the workflow file to intitate Action run on changes to the GitHub repository.
   
