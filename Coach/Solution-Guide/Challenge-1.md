@@ -79,11 +79,13 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
    ![The `New Repository` creation form in GitHub.](media/2dg119.png "New Repository Creation Form")
 
-1. In the settings page, scroll to the bottom of the page and select **Delete this repository**.
+1. In the settings page, scroll to the bottom of the page to select **Delete this repository** and then click on **I want to delete this repository**.
 
    ![The `New Repository` creation form in GitHub.](media/2dg120.png "New Repository Creation Form")
 
-1. In the Are you absolutely sure? pop up window, Copy the **repository name** **(1)**, paste it in the **box** **(2)**, and click on **I understand the consequences, delete this repository** **(3)**.
+1. Within the following pop-up window, click on **I have read and understand these effects**.
+
+1. In the succeeding pop up window, copy the **repository name** **(1)**, paste it in the **box** **(2)**, and click on **Delete this repository** **(3)**.
 
    ![The `New Repository` creation form in GitHub.](media/2dg121.png "New Repository Creation Form")
 
@@ -99,7 +101,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
    ![Quick setup screen is displayed with the copy button next to the GitHub URL textbox selected.](media/2dg4.png "Quick setup screen")
 
-1. In the Visual Studio Code, run the below commands in the terminal to set your **username** and **email**, which Git uses for commits. Make sure to replace GitHub account email and username.
+1. In the Visual Studio Code, run the below commands in the terminal to set your **email** and **username**, which Git uses for commits. Make sure to replace GitHub account email and username.
    
      ```pwsh
      cd C:\Workspaces\lab\devsecops
@@ -109,7 +111,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
      
    ![](media/2dgn72.png) 
      
-    Run the below mentioned command in the terminal. Make sure to replace your_github_repository-url with the value you copied in step 11 and Unique-ID in step 12.
+    Run the below mentioned command in the terminal. Make sure to replace `your_github_repository-url` with the value you copied in step 12 and `Unique-ID` in step 13.
 
     Note: This step is done to Initialize the folder as a git repository, commit, and submit contents to the remote GitHub branch “main” in the lab files repository created in Step 1. 
 
@@ -136,7 +138,7 @@ In this exercise, you will build automation in GitHub for updating and republish
 
    ![](media/2dgn9.png) 
    
-1. Select **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
+1. Select **contoso-traders** resource group from the list.
 
    ![](media/2dgn135.png)  
    
@@ -192,7 +194,7 @@ In this exercise, you will build automation in GitHub for updating and republish
 1. Under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** ***(3)***.
 
    - **Name** : Enter **ENVIRONMENT** ***(1)***
-   - **Value** : **<inject key="DeploymentID" enableCopy="false" />** ***(2)***
+   - **Value** : **<inject key="DeploymentID" enableCopy="false" />** (Copy the Deployment ID from the environment details tab) ***(2)***
    
    ![](media/2dgn33.png)
    
