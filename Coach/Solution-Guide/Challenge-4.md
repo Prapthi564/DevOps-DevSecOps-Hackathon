@@ -26,7 +26,7 @@ Connect-AzAccount
 
 $RGname = <update the existing RG name>
 
-cd C:\Workspaces\lab\devsecops\iac
+cd C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files\iac
 
 New-AzResourceGroupDeployment -Name "createresources" -TemplateFile "monitoringinfra.bicep" -TemplateParameterFile "monitoringinfra.parameters.json" -ResourceGroup $RGname
 ```
