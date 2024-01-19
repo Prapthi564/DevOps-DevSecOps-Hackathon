@@ -12,13 +12,13 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
 
 In this task, you'll create an Azure Load Testing instance and run a test using a JMeter file.
 
-1. In the Azure Portal, navigate to **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** resource group and select the **Endpoint** resource with the name  **contoso-traders-ui2<inject key="DeploymentID" />**.
+1. In the Azure Portal, navigate to **contosotraders-<inject key="DeploymentID" enableCopy="false" />** resource group and select the **Endpoint** resource with the name  **contoso-traders-ui2<inject key="DeploymentID" />**.
 
-   ![](media/dglt1.jpg)
+   ![](media/cl5-t1-s1.jpg)
 
 1. From the overview of **contoso-traders-ui2<inject key="DeploymentID" enableCopy="false" />** endpoint, copy the **Endpoint hostname** **(2)** and paste it into the notepad for later use in the task.
 
-   ![](media/dglt2.jpg)
+   ![](media/cl5-t1-s2.jpg)
 
 1. To create an Azure Load Testing service, within the global search bar of the Azure Portal - search for and select **Azure Load Testing**.
 
