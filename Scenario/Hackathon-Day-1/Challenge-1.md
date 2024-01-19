@@ -65,17 +65,14 @@ You are a DevOps engineer tasked with setting up a robust Continuous Integration
    
    -  Run the workflow named `contoso-traders-provisioning-deployment` using GitHub Actions.
    
-2. **Setup CI/CD Workflow:**
+3. **Setup CI/CD Workflow:**
 
    - Update the previously created GitHub secret with the following value
       - **SQL_PASSWORD**: ADO.NET (SQL authentication) connection string of `productsdb` SQL database.
 
    - In GitHub repository, navigate to  **.github/workflow** where you will be able find the yaml workflow. This YAML file is partially updated, you need to update the YAML files with right steps and complete the workflow. This workflow should deploy the application into Azure. 
   
-2. **Deploy the application using GitHub Actions:**
-   - Use GitHub Actions and run the workflow file which you updated in previous task.
-
-3. **Test the application and perform rolling updates:**
+4. **Test the application and perform rolling updates:**
    - Navigate to Azure portal and check the application status using Azure Endpoint.
    - Update the workflow file to intitate Action run on changes to the GitHub repository.
   
