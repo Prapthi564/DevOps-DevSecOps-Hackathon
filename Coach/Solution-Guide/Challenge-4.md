@@ -35,11 +35,11 @@ New-AzResourceGroupDeployment -Name "createresource" -TemplateFile "monitoringin
 
 1. In the Azure Portal, navigate to **contosotraders-<inject key="Deploymentid" enableCopy="false" />** **(1)** resource group and select the **Application Insights** resource with the name  **contoso-traders-aivalue** **(2)**.
 
-   ![](media/upd-ex6-t1-openai.png)
+   ![](media/cl4-t2-s1.png)
    
 1. From the Overview of **contoso-traders-aivalue** Application Insights resource, you can set the **Show data for last** as per your requirement of monitoring insights.
 
-   ![](media/upd-ex6-t1-set-showdata.png)
+   ![](media/cl4-t2-s2.png)
    
 1. In the first graph, you can see the number of failed requests for the Application access.
 
