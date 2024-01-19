@@ -57,8 +57,7 @@ You are a DevOps engineer tasked with setting up a robust Continuous Integration
      - Replace `bicepsqlpass` value with **<inject key="AzureAdUserPassword"></inject>**.
    -    - Create GitHub secrets with same name as mentioned below.
       - **SERVICEPRINCIPAL** - create a secret to store service principal details. You can find the details in Environment details tab of your environment
-   - Create an Azure resource group in your Azure subscription with name **contosotraders-<inject key="DeploymentID" enableCopy="false" />**.
-   - Deploy the below-mentioned bicep template using GitHub Action name **deploy-infrastructure.yml** which is present in `.github/workflow` directory .
+   - Deploy the below-mentioned bicep template within the pre-created Azure resource group named **contoso-traders** using GitHub Action name **deploy-infrastructure.yml** which is present in `.github/workflow` directory.
       
 2. **Setup CI/CD Workflow:**
 
