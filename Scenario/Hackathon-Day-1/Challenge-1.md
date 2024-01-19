@@ -63,7 +63,7 @@ You are a DevOps engineer tasked with setting up a robust Continuous Integration
 
    - Within your repository, navigate to `.github/workflow/deploy-infrastructure.yml` path and ensure to update the `RESOURCE_GROUP_NAME` environment variable by replacing `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
    
-   -  Run the workflow named `contoso-traders-provisioning-deployment`.
+   -  Run the workflow named `contoso-traders-provisioning-deployment` using GitHub Actions.
    
 2. **Setup CI/CD Workflow:**
 
