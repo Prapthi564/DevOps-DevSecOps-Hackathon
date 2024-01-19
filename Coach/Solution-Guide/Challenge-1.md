@@ -104,7 +104,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 1. In the Visual Studio Code, run the below commands in the terminal to set your **email** and **username**, which Git uses for commits. Make sure to replace GitHub account email and username.
    
      ```pwsh
-     cd C:\Workspaces\lab\devsecops
+     cd C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files
      git config --global user.email "you@example.com"
      git config --global user.name "Your UserName"
      ```
