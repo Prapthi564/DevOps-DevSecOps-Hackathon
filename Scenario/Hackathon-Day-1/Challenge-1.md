@@ -56,10 +56,18 @@ You are a DevOps engineer tasked with setting up a robust Continuous Integration
      - Replace `deploymentidvalue` with **<inject key="DeploymentID" enableCopy="false" />**.
      - Replace `bicepsqlpass` value with **<inject key="AzureAdUserPassword"></inject>**.
      - Create GitHub secrets with the same name as mentioned below.
-       - **SERVICEPRINCIPAL** - create a secret to store service principal details. You can find the details in Environment details tab of your environment
-       - **SQL_PASSWORD** - You need to store **<inject key="AzureAdUserPassword"></inject>** as a secret.
-       - **ENVIRONMENT**: create a secret to store the deployment ID which is **<inject key="DeploymentID" enableCopy="false" />**. You can also find the deployment ID in Environment details tab of your environment.
-   - Deploy the below-mentioned bicep template within the pre-created Azure resource group named **contoso-traders** using GitHub Action name **deploy-infrastructure.yml** which is present in `.github/workflow` directory.
+        - **SERVICEPRINCIPAL**: create a secret to store service principal details. You can find the details in Environment details tab of your environment.
+        - **SQL_PASSWORD**: You need to store **<inject key="AzureAdUserPassword"></inject>(Azure AD user password)** as a secret.
+        - **ENVIRONMENT**: Create a secret to store the deployment ID which is **<inject key="DeploymentID" enableCopy="false" />**.
+       
+       >**Hint**: You can also find the deployment ID and the Azure AD password within the environment details tab of your integrated lab guide.
+
+   - In GitHub repository, navigate to `iac/createResourceGroup.bicep` path and update the following parameters value.
+      - Replace `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
+
+   - Deploy the below-mentioned bicep template named **deploy-infrastructure.yml** within the pre-created Azure resource group named **contoso-traders** using GitHub Action which is present in `.github/workflow` directory.
+
+   >**Note:** Ensure to replace `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />** within the above bicep template before proceeding to deploy and then run the `contoso-traders-provisioning-deployment` workflow.
       
 2. **Setup CI/CD Workflow:**
 
