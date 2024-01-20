@@ -59,7 +59,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
 1. On the **Create a new repository** screen, name the repository ```devsecops``` ***(1)***, select **Public** ***(2)*** and click on **Create repository** ***(3)***  button.
 
-   ![The `New Repository` creation form in GitHub.](media/2dgn91.png "New Repository Creation Form")
+   ![The `New Repository` creation form in GitHub.](media/cl1-t1-s5.png "New Repository Creation Form")
    
    >**Note**: If you observe any repository existing with the same name, please make sure you delete the Repo and create a new one. Please follow the step 6 to step 10. Else, skip to step 11.
 
@@ -69,7 +69,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
 1. Using the search bar, search for ```devsecops``` **(1)** and select to open it.
 
-   ![The `New Repository` creation form in GitHub.](media/2dg118.png "New Repository Creation Form")
+   ![The `New Repository` creation form in GitHub.](media/cl1-t1-s7.png "New Repository Creation Form")
 
 1. From the GitHub repository, click on the **Settings** tab.
 
@@ -81,13 +81,15 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
 1. Within the following pop-up window, click on **I have read and understand these effects**.
 
+   ![](media/cl1-t1-s10.png)
+
 1. In the succeeding pop up window, copy the **repository name** **(1)**, paste it in the **box** **(2)**, and click on **Delete this repository** **(3)**.
 
-   ![The `New Repository` creation form in GitHub.](media/2dg121.png "New Repository Creation Form")
+   ![The `New Repository` creation form in GitHub.](media/cl1-t1-s11.png "New Repository Creation Form")
 
 1. On the **Quick setup** screen, copy the **HTTPS** GitHub URL for your new repository, and **save it** in a notepad for future use.
 
-   ![](media/ex2-t3-5.png)
+   ![](media/cl1-t1-s12.png)
    
 1. From the GitHub username, note down the **Unique-ID** present in the Username. You'll use this value in upcoming steps.
 
