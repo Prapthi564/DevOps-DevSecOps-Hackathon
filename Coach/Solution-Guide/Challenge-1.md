@@ -277,23 +277,23 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
    ![](media/2dgn9.png) 
    
-1. Select **contosotraders-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
+2. Select **contosotraders-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
 
    ![](media/2dgn135.png) 
    
-1. Select **contosotraders-ui2<inject key="DeploymentID" enableCopy="false" />** endpoint from the list of resources.
+3. Select **contosotraders-ui2<inject key="DeploymentID" enableCopy="false" />** endpoint from the list of resources.
 
    ![](media/2dgn127.png) 
    
-1. Click on **Endpoint hostname**. It'll open a browser tab where you will be able to verify that the Contoso Traders app has been hosted successfully.
+4. Click on **Endpoint hostname**. It'll open a browser tab where you will be able to verify that the Contoso Traders app has been hosted successfully.
 
    ![](media/2dgn128.png) 
     
    ![](media/2dgn162.png) 
     
-The last task automated building and updating only one of the Docker images. In this task, we will update the workflow file with a more appropriate workflow for the structure of our repository. This task will end with a file named `docker-publish.yml` that will rebuild and publish Docker images as their respective code is updated.
+   The last task automated building and updating only one of the Docker images. In this task, we will update the workflow file with a more appropriate workflow for the structure of our repository. This task will end with    a file named `docker-publish.yml` that will rebuild and publish Docker images as their respective code is updated.
 
-1. From the GitHub browser tab, follow the steps given below and click on **Create codespace on main** ***(3)***.
+5. From the GitHub browser tab, follow the steps given below and click on **Create codespace on main** ***(3)***.
 
    - Click on **Code** ***(1)***, 
    - Select the **Codespace** ***(2)*** tab
@@ -302,19 +302,19 @@ The last task automated building and updating only one of the Docker images. In 
    
    >**Note**: In case you had created codespace in previous task. Click on **+** button to create new codespace.
    
-1. You'll be redirected to a new codespace tab in the browser. Please wait until the codespace is configured.
+6. You'll be redirected to a new codespace tab in the browser. Please wait until the codespace is configured.
 
    ![](media/2dg33.png)
    
-1. From the explorer side blade, navigate to **.github (1)** > **workflows** **(2)** and select **contoso-traders-provisioning-deployment.yml** **(3)** file.
+7. From the explorer side blade, navigate to **.github (1)** > **workflows** **(2)** and select **contoso-traders-provisioning-deployment.yml** **(3)** file.
 
    ![](media/contosoprovision.png) 
    
-1. Remove the commands from line 7 to 14 from the workflow file.
+8. Remove the commands from line 7 to 14 from the workflow file.
 
    ![](media/2dgn163.png) 
    
-1. Using the terminal from codespace, run the following commands to commit this change to your repo and to push the change to GitHub.
+9. Using the terminal from codespace, run the following commands to commit this change to your repo and to push the change to GitHub.
 
    ```pwsh
    git add .
@@ -325,11 +325,11 @@ The last task automated building and updating only one of the Docker images. In 
     
    > **Note**: This will update the workflow and will **not** run the "Update the ... Docker image" jobs.
 
-1. Navigate back to the GitHub browser, select the **Actions** ***(1)*** tab and review the **workflow** ***(2)*** created automatically for the changes made. 
+10. Navigate back to the GitHub browser, select the **Actions** ***(1)*** tab and review the **workflow** ***(2)*** created automatically for the changes made. 
 
-   ![](media/2dgn164.png)
+      ![](media/2dgn164.png)
 
-1. Click on the **Next** button present in the bottom-right corner of this lab guide.
+11. Click on the **Next** button present in the bottom-right corner of this lab guide.
 
 ## Success criteria:
 To complete this challenge successfully:
