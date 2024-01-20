@@ -67,7 +67,7 @@ You are a DevOps engineer tasked with setting up a robust Continuous Integration
    
 3. **Setup CI/CD Workflow:**
 
-   - Update the previously created GitHub secret with the following value
+   - Update the previously created GitHub secret with the following value:
       - **SQL_PASSWORD**: ADO.NET (SQL authentication) connection string of `productsdb` SQL database.
 
    - In GitHub repository, navigate to  **.github/workflow** where you will be able find the yaml workflow. This YAML file is partially updated, you need to update the YAML files with right steps and complete the workflow. This workflow should deploy the application into Azure. 
