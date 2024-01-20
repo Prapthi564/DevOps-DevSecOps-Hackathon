@@ -37,21 +37,21 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
 
 1. Update the workflow name to **codeql-analysis.yml** ***(1)*** and review the yaml file. Select **Commit changes** ***(2)***, then select **Commit directly to the main branch** ***(3)*** and click on **Commit new file** ***(4)***.
   
-   ![](media/ex5-task1-step3a.png)
+   ![](media/cl2-t1-s3.png)
 
    ![](media/ex5-task1-step3b.png) 
   
 1. Navigate to **Actions** ***(1)*** tab, You can review the **workflow** ***(2)*** run.
     
-   ![](media/ex5-codeql-actions.png) 
+   ![](mediacl2-t1-s4.png) 
   
 1. Navigate to **Security** ***(1)*** tab and click on **View alerts** ***(2)***.
    
-   ![](media/ex5-codescanning-viewalerts.png)
+   ![](media/cl2-t1-s5.png)
   
 1. You will be navigated to **Code scanning** section. You'll be able to visualize that the **No code scanning alerts here!**.
    
-   ![](media/devops1.6.png)
+   ![](media/cl2-t1-s6.png)
     
 ## Task 2: Implement Repository security advisories:
  
@@ -59,7 +59,7 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
  
 1. Navigate to **Security** ***(1)*** tab, select **Advisories** ***(2)*** from the side blade and click on **New draft security advisory** ***(3)***.
 
-   ![](media/ex5-t2-advisories.png)  
+   ![](media/cl2-t2-s1.png)  
      
 1. In the Open a draft security advisory tab, under the Advisory Details section provide the following details.
 
@@ -100,7 +100,7 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
    https://codeql.github.com/codeql-query-help/javascript/js-missing-rate-limiting/
    ```
     
-   ![](media/ex5-t2-securityadvisor1.png)
+   ![](media/cl2-t2-s2.png)
    
 1. In the Affected products section, provide the following details and click on **Create draft security advisory** ***(7)***   
  
@@ -111,13 +111,13 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
    - Severity: **High** ***(5)***
    - Common Weakness Enumerator (CWE): **Improper Access Control (CWE-284)** ***(6)***
   
-   ![](media/ex5-t2-securityadvisor2.png)
+   ![](media/cl2-t2-s3.png)
    
  1. Once the security advisory is created, scroll-down and click on **start a temporary private fork**. It is used to collaborate on a patch for this advisory.
 
-    ![](media/ex5-t2-securityadvisor3.png)
+    ![](media/cl2-t2-s4-a.png)
     
-    ![](media/ex5-t2-securityadvisor4.png)
+    ![](media/cl2-t2-s4-b.png)
   
  1. After having the temporary fork you can request a CVE, it is used for GitHub reviews and published security advisories. Upon review, we may use this advisory to send Dependabot alerts to affected repositories and redistribute the advisory through our API and Atom feed.
 
