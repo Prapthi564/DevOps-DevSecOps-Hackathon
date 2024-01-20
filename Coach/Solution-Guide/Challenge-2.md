@@ -43,7 +43,7 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
   
 1. Navigate to **Actions** ***(1)*** tab, You can review the **workflow** ***(2)*** run.
     
-   ![](mediacl2-t1-s4.png) 
+   ![](media/cl2-t1-s4.png) 
   
 1. Navigate to **Security** ***(1)*** tab and click on **View alerts** ***(2)***.
    
