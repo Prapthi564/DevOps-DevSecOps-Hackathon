@@ -26,7 +26,7 @@ In this task, you will use Dependabot to track the versions of the packages we u
 
 1. You should arrive at the `Dependabot alerts` blade in the `Security` tab.
 
-   ![GitHub Dependabot alerts in the Security tab.](mediacl3-t1-s3.png "GitHub Dependabot alerts")
+   ![GitHub Dependabot alerts in the Security tab.](media/cl3-t1-s3.png "GitHub Dependabot alerts")
 
 1. Sort the Dependabot alerts by `Package name`. Under the **Package** ***(1)*** dropdown menu, search for **node-forge** ***(2)*** by typing in the search box and select **node-forge** ***(3)*** vulnerability.
 
