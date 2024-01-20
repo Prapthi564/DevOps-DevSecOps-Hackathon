@@ -131,8 +131,8 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 ### Task 2: Deploy Infrastructure
 
 1. Within the GitHub repository, navigate to `iac/createResources.parameters.json` path and update the following parameters value:
-   - Replace `deploymentidvalue` with **<inject key="DeploymentID" enableCopy="false" />**.
-   - Replace `bicepsqlpass` value with **<inject key="AzureAdUserPassword"></inject>**.
+   - Replace `deploymentidvalue` with **<inject key="DeploymentID" enableCopy="false" /> (1)**.
+   - Replace `bicepsqlpass` value with **<inject key="AzureAdUserPassword"></inject> (2)**.
   
        ![](media/cl1-t2-s1.png)
 
@@ -169,7 +169,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 6. To create another secret, under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** ***(3)***.
 
    - **Name** : Enter **SQL_PASSWORD** ***(1)***
-   - **Value** : Enter **<inject key="AzureAdUserPassword"></inject>** which would be the same as the Azure AD Password.
+   - **Value** : Enter **<inject key="AzureAdUserPassword"></inject> (2)** which would be the same as the Azure AD Password.
 
    ![](media/cl1-t2-s6.png)
 
@@ -227,7 +227,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
    - **Value** : Paste the **ADO.NET (SQL authentication)** which you copied in previous step.
    
-   ![](media/2dgn123.png)
+   ![](media/cl1-t3-s7.png)
    
    >**Note**: Replace `{your_password}` with the ODL User Azure Password. Go to **Environment Details (1)**, click on **Azure credentials (2)**, and copy **Password (3)**.
    
