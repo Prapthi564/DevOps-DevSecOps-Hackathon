@@ -93,7 +93,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
    
 1. From the GitHub username, note down the **Unique-ID** present in the Username. You'll use this value in upcoming steps.
 
-   ![](media/2dgn157.png) 
+   ![](media/cl1-t1-s13.png) 
    
 1. Navigate back to the **Visual Studio Code** application in which the terminal is already open. In the terminal, click on the **drop-down** button and select **PowerShell** to open a fresh PowerShell terminal tab.
 
@@ -107,7 +107,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
      git config --global user.name "Your UserName"
      ```
      
-   ![](media/2dgn72.png) 
+   ![](media/cl1-t1-s15.png) 
      
     Run the below mentioned command in the terminal. Make sure to replace `your_github_repository-url` with the value you copied in step 12 and `Unique-ID` in step 13.
 
