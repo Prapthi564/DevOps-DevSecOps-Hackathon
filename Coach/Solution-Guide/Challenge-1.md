@@ -73,7 +73,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
 1. From the GitHub repository, click on the **Settings** tab.
 
-   ![The `New Repository` creation form in GitHub.](media/2dg119.png "New Repository Creation Form")
+   ![The `New Repository` creation form in GitHub.](media/cl1-t1-s8.png "New Repository Creation Form")
 
 1. In the settings page, scroll to the bottom of the page to select **Delete this repository** and then click on **I want to delete this repository**.
 
