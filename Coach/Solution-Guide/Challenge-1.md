@@ -34,10 +34,6 @@ Here's the solution guide which includes detailed step-by-step instructions requ
 1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
 
 1. If a **Welcome to Microsoft Azure** pop-up window appears, click **Maybe Later** to skip the tour.
-   
-1. Now you will see the Azure Portal Dashboard. Click on **Resource groups** from the Navigate panel to see the resource groups.
-  
-1. Confirm you have a resource group **DevOps-DevSecOps** present, as shown in the below screenshot. You need to use the **<inject key="Resource Group Name"/>** resource group throughout this challenge.
 
 ## Solution Guide 
 
