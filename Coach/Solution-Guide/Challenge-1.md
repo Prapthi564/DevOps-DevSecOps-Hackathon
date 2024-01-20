@@ -138,7 +138,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
 2. To create GitHub secrets, in your GitHub lab files repository, click on **Settings** tab.
 
-       ![](media/cl1-t2-s2.png)
+      ![](media/cl1-t2-s2.png)
 
  3. Navigate to **Environment Details** **(1)**, click on **Service Principal Details** **(2)** and copy the **Subscription ID**, **Tenant Id (Directory ID)**, **Application Id(Client Id)** and **Secret Key (Client Secret)**.
 
@@ -171,23 +171,45 @@ In this task, you will create an account in [GitHub](https://github.com) and use
    - **Name** : Enter **SQL_PASSWORD** ***(1)***
    - **Value** : Enter **<inject key="AzureAdUserPassword"></inject>** which would be the same as the Azure AD Password.
 
-   ![](media/2dgn36.png)
+   ![](media/cl1-t2-s6.png)
 
-### Task 2: Setup CI/CD Workflow and deploy the application using GitHub Actions
+7. Under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** ***(3)***.
 
-In this exercise, you will build automation in GitHub for updating and republishing our Docker images when the code changes. You will create a workflow file using the GitHub interface and its GitHub Actions workflow editor. This will get you familiar with how to create and edit an action through the GitHub website.
+   - **Name** : Enter **ENVIRONMENT** ***(1)***
+   - **Value** : **<inject key="DeploymentID" enableCopy="false" />** (Copy the Deployment ID from the environment details tab) ***(2)***
+   
+   ![](media/2dgn33.png)
+
+8. Now within the GitHub repository, navigate to `iac/createResourceGroup.bicep` path and update the update the resource group name as mentioned below:
+   - Replace `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
+
+   ![](media/cl1-t2-s8.png)
+
+9. Navigate to `.github/workflow/deploy-infrastructure.yml` path and ensure to update the `RESOURCE_GROUP_NAME` environment variable by replacing `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
+
+   ![](media/cl1-t2-s9.png)
+
+10. To run a workflow, perform the following steps and wait for the resources to be deployed within your azure portal:
+   - Click on **Actions (1)** within your GitHub repository.
+   - Select on the workflow named **contoso-traders-provisioning-deployment (2)**.
+   - Click on **Run workflow (3)**.
+   - Finally click on **Run workflow (4)**. Ensure that the branch is select as **main**.
+
+   ![](media/cl1-t2-s10.png)
+
+### Task 3: Setup CI/CD Workflow
 
 1. From the Azure Portal Dashboard, click on Resource Groups from the Navigate panel to see the resource groups.
 
    ![](media/2dgn9.png) 
    
-1. Select **contoso-traders** resource group from the list.
+1. Select **contosotraders-<Deployment-ID>** resource group from the list.
 
-   ![](media/2dgn135.png)  
+   ![](media/cl1-t3-s2.png)  
    
 1. Select **productsdb** SQL database from the list of resources.
 
-   ![](media/upd-2dgn11.png) 
+   ![](media/cl1-t3-s3.png) 
    
 1. Under Settings side blade, select **Connection strings** ***(1)*** and copy the **ADO.NET (SQL authentication)** ***(2)*** connection string from ADO.NET tab. 
 
@@ -195,51 +217,21 @@ In this exercise, you will build automation in GitHub for updating and republish
  
 1. In your GitHub lab files repository, select the **Settings** tab from the lab files repository.
 
-   ![](media/2dgn4.png)
+   ![](media/cl1-t1-s8.png)
    
-1. Under **Security**, expand **Secrets and variables** ***(1)*** by clicking the drop-down and select **Actions** ***(2)*** blade from the left navigation bar. Select the **New repository secret** ***(3)*** button.
+1. Under **Security**, expand **Secrets and variables** ***(1)*** by clicking the drop-down and select **Actions** ***(2)*** blade from the left navigation bar. Select edit button for the created secret named **SQL_PASSWORD** ***(3)*** button.
 
-   ![](media/exe2-task4-step6-action-setup.png)
+   ![](media/cl1-t3-s6.png)
     
-1. Under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** ***(3)***.
+1. Under **Actions Secrets/Update secret** page, enter the below mentioned details and Click on **Update secret** ***(3)***.
 
-   - **Name** : Enter **SQL_PASSWORD** ***(1)***
-   - **Value** : Paste the **ADO.NET (SQL authentication)** ***(2)*** which you copied in previous step.
+   - **Value** : Paste the **ADO.NET (SQL authentication)** which you copied in previous step.
    
    ![](media/2dgn123.png)
    
    >**Note**: Replace `{your_password}` with the ODL User Azure Password. Go to **Environment Details (1)**, click on **Azure credentials (2)**, and copy **Password (3)**.
    
    ![](media/2dgn155.png)   
-   
-1. Navigate to **Environment Details** **(1)**, click on **Service Principal Details** **(2)** and copy the **Subscription ID**, **Tenant Id (Directory ID)**, **Application Id(Client Id)** and **Secret Key (Client Secret)**.
-
-   ![](media/ex2-t4-8.png)
-   
-   - Replace the values that you copied in below Json. You will be using them in this step.
-   
-   ```json
-   {
-      "clientId": "zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz",
-      "clientSecret": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
-      "tenantId": "zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz",
-      "subscriptionId": "zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz"
-   }
-   ```
-   
-1. Under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** ***(3)***.
-
-   - **Name** : Enter **SERVICEPRINCIPAL** ***(1)***
-   - **Value** : Paste the service principal details in json format ***(2)***
-   
-   ![](media/2dgn36.png)    
-   
-1. Under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** ***(3)***.
-
-   - **Name** : Enter **ENVIRONMENT** ***(1)***
-   - **Value** : **<inject key="DeploymentID" enableCopy="false" />** (Copy the Deployment ID from the environment details tab) ***(2)***
-   
-   ![](media/2dgn33.png)
    
 1. From your GitHub repository, select **Actions** ***(1)*** tab. Select the **contoso-traders-app-deployment** ***(2)*** workflow from the side blade, Click on the  **drop-down** ***(3)*** next Run workflow button, and select **Run workflow** ***(4)***.
 
