@@ -127,7 +127,52 @@ In this task, you will create an account in [GitHub](https://github.com) and use
        ![](media/ex2-t3.png)
        
    - After you are prompted with the message **Authorization Succeeded**, close the tab and continue with the next task.
-     
+
+### Task 2: Deploy Infrastructure
+
+1. Within the GitHub repository, navigate to `iac/createResources.parameters.json` path and update the following parameters value:
+   - Replace `deploymentidvalue` with **<inject key="DeploymentID" enableCopy="false" />**.
+   - Replace `bicepsqlpass` value with **<inject key="AzureAdUserPassword"></inject>**.
+  
+       ![](media/cl1-t2-s1.png)
+
+2. To create GitHub secrets, in your GitHub lab files repository, click on **Settings** tab.
+
+       ![](media/cl1-t2-s2.png)
+
+ 3. Navigate to **Environment Details** **(1)**, click on **Service Principal Details** **(2)** and copy the **Subscription ID**, **Tenant Id (Directory ID)**, **Application Id(Client Id)** and **Secret Key (Client Secret)**.
+
+      ![](media/ex2-t4-8.png)
+   
+      - Replace the values that you copied in below Json. You will be using them in this step.
+      
+      ```json
+      {
+         "clientId": "zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz",
+         "clientSecret": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+         "tenantId": "zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz",
+         "subscriptionId": "zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz"
+      }
+      ```
+
+4. Under **Security**, expand **Secrets and variables** ***(1)*** by clicking the drop-down and select **Actions** ***(2)*** blade from the left navigation bar. Select the **New repository secret** ***(3)*** button.
+
+   ![](media/exe2-task4-step6-action-setup.png)
+
+5. Under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** ***(3)***.
+
+   - **Name** : Enter **SERVICEPRINCIPAL** ***(1)***
+   - **Value** : Paste the service principal details in json format ***(2)***
+   
+   ![](media/2dgn36.png)
+
+6. To create another secret, under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** ***(3)***.
+
+   - **Name** : Enter **SQL_PASSWORD** ***(1)***
+   - **Value** : Enter **<inject key="AzureAdUserPassword"></inject>** which would be the same as the Azure AD Password.
+
+   ![](media/2dgn36.png)
+
 ### Task 2: Setup CI/CD Workflow and deploy the application using GitHub Actions
 
 In this exercise, you will build automation in GitHub for updating and republishing our Docker images when the code changes. You will create a workflow file using the GitHub interface and its GitHub Actions workflow editor. This will get you familiar with how to create and edit an action through the GitHub website.
