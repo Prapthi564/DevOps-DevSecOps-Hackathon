@@ -190,12 +190,12 @@ In this task, you will create an account in [GitHub](https://github.com) and use
    ![](media/cl1-t2-s9.png)
 
 10. To run a workflow, perform the following steps and wait for the resources to be deployed within your azure portal:
-   - Click on **Actions (1)** within your GitHub repository.
-   - Select on the workflow named **contoso-traders-provisioning-deployment (2)**.
-   - Click on **Run workflow (3)**.
-   - Finally click on **Run workflow (4)**. Ensure that the branch is select as **main**.
+      - Click on **Actions (1)** within your GitHub repository.
+      - Select on the workflow named **contoso-traders-provisioning-deployment (2)**.
+      - Click on **Run workflow (3)**.
+      - Finally click on **Run workflow (4)**. Ensure that the branch is select as **main**.
 
-   ![](media/cl1-t2-s10.png)
+      ![](media/cl1-t2-s10.png)
 
 ### Task 3: Setup CI/CD Workflow
 
@@ -270,16 +270,18 @@ In this task, you will create an account in [GitHub](https://github.com) and use
    ![](media/2dgn160.png)
    
    ![](media/2dgn161.png)      
-   
+
+## Task 4: Test the application and perform rolling updates
+
 1. Navigate to Azure Portal, click on Resource groups from the Navigate panel to see the resource groups.
 
    ![](media/2dgn9.png) 
    
-1. Select **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
+1. Select **contosotraders-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
 
    ![](media/2dgn135.png) 
    
-1. Select **contoso-traders-ui2<inject key="DeploymentID" enableCopy="false" />** endpoint from the list of resources.
+1. Select **contosotraders-ui2<inject key="DeploymentID" enableCopy="false" />** endpoint from the list of resources.
 
    ![](media/2dgn127.png) 
    
@@ -289,8 +291,6 @@ In this task, you will create an account in [GitHub](https://github.com) and use
     
    ![](media/2dgn162.png) 
     
-### Task 3: Test the application and perform rolling updates
-
 The last task automated building and updating only one of the Docker images. In this task, we will update the workflow file with a more appropriate workflow for the structure of our repository. This task will end with a file named `docker-publish.yml` that will rebuild and publish Docker images as their respective code is updated.
 
 1. From the GitHub browser tab, follow the steps given below and click on **Create codespace on main** ***(3)***.
