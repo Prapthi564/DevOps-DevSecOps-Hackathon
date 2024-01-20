@@ -16,17 +16,17 @@ In this task, you will use Dependabot to track the versions of the packages we u
 
    > **Note**: Enabling the `Dependabot security updates` will also automatically enable `Dependency graph` and `Dependabot alerts`.
 
-   ![The GitHub Repository Security Overview tab.](media/ex5-t3-enabledb.png "GitHub Repository Security Overview")
+   ![The GitHub Repository Security Overview tab.](media/cl3-t1-s1.png "GitHub Repository Security Overview")
 
    > **Note**: The alerts for the repository may take some time to appear. The rest of the steps for this task rely on the alerts to be present. You can continue with the next exercise as this is an independent task and doesn't affect the lab. Please visit this task later and complete the task.
 
 1. To observe Dependabot issues, navigate to the **Security** ***(1)*** tab and select the **View Dependabot alerts** ***(2)*** link.
 
-   ![GitHub Dependabot alerts in the Security tab.](media/ex5-t3-viewdb.png "GitHub Dependabot alerts")
+   ![GitHub Dependabot alerts in the Security tab.](media/cl3-t1-s2.png "GitHub Dependabot alerts")
 
 1. You should arrive at the `Dependabot alerts` blade in the `Security` tab.
 
-   ![GitHub Dependabot alerts in the Security tab.](media/ex5-t3-dependabot.png "GitHub Dependabot alerts")
+   ![GitHub Dependabot alerts in the Security tab.](mediacl3-t1-s3.png "GitHub Dependabot alerts")
 
 1. Sort the Dependabot alerts by `Package name`. Under the **Package** ***(1)*** dropdown menu, search for **node-forge** ***(2)*** by typing in the search box and select **node-forge** ***(3)*** vulnerability.
 
@@ -40,7 +40,7 @@ In this task, you will use Dependabot to track the versions of the packages we u
 
 1. Navigate to **Pull Requests** ***(1)*** tab, find the Dependabot security patch pull request ***(2)*** and merge it to your main branch.
 
-   ![List of Pull Requests.](media/ex5-t3-open-nfpr.png "Pull Requests")
+   ![List of Pull Requests.](media/cl3-t1-s6.png "Pull Requests")
    
 1. Click on **Merge pull request** and followed by click on **Confirm merge**. 
 
