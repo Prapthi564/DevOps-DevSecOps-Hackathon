@@ -51,7 +51,7 @@ In this task, you will use Dependabot to track the versions of the packages we u
 1. Pull the latest changes from your GitHub repository to your local GitHub folder.
 
    ```pwsh
-   cd C:\Workspaces\lab\devsecops  # This path may vary depending on how
+   cd C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files  # This path may vary depending on how
                                                             # you set up your lab files repository
    git pull
    ```
