@@ -12,11 +12,11 @@ The Contoso Traders application is hosted on Azure Kubernetes Service (AKS), and
 1. **Setting Up Azure Load Testing:**
 
    - Create an Azure Load Testing instance and create and execute a quick test to check load of 50 users for 2 minutes.
-   - Resolve the errors if the test fails and take actions to improve the application's resiliancy.
+   - Resolve the errors if the test fails and take actions to improve the application's resiliency.
 
 2. **Create experiment and target using Azure Chaos studio:**
 
-   -  Utilize Azure Chaos Studio to assess the resilience of the Azure kubernetes service where the Contoso traders application is hosted.
+   -  Utilize Azure Chaos Studio to assess the resilience of the Azure Kubernetes service where the Contoso traders application is hosted.
    - Using Chaos studio, target the AKS cluster resource.
    - Create experiment and set up faults on AKS Chaos Mesh Pods for 5 minutes amd execute the experiment. 
 
