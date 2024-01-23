@@ -52,4 +52,4 @@ To complete this challenge successfully:
 1. If you are still having trouble, you can reach out to the support team via `labs-support@spektrasystems.com` for further assistance. The support team is available to help you to troubleshoot and resolve any technical issues or validation issues that may arise while the lab environment is live.
 
 ## Conclusion
-Congratulations on completing the **Implementing Monitoring Solutions** challenge! You learnt about creation and configuration of Azure Monitoring infrastructure for a cloud hosted application. In the next challenge, You will focus on testing resiliancy and availability of the application.
+Congratulations on completing the **Implementing Monitoring Solutions for Contoso Traders** challenge! You learnt about creation and configuration of Azure Monitoring infrastructure for a cloud hosted application. In the next challenge, You will focus on testing resiliancy and availability of the application.
