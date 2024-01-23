@@ -50,8 +50,5 @@ Here are a few documentation and guides to assist you in completing the challeng
      ![](../media/validate04.png "Validation")
  
 1. If you are still having trouble, you can reach out to the support team via `labs-support@spektrasystems.com` for further assistance. The support team is available to help you to troubleshoot and resolve any technical issues or validation issues that may arise while the lab environment is live.
-
 ## Conclusion
-Congratulations on completing the **Resilience Testing using Azure Load Testing and Azure Chaos Studio** challenge! You learnt the implementation of Azure Load testing and experiment in Azure Chaos studio. 
-
-Congratulations! You have successfully completed all the challenges. 
+Congratulations on completing the **Resilience Testing using Azure Load Testing and Azure Chaos Studio** challenge! You learnt the implementation of Azure Load testing and experiment in Azure Chaos studio. In the following challenge you will dive into leveraging AI to improve your DevSecOps workflow and developer productivity through GitHub Actions.
