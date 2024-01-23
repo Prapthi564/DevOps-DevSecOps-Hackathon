@@ -13,7 +13,7 @@ You need to focus on completing the implementation of the below-mentioned GitHub
 
 ## Challenge Objectives:
 
->**Note:** This challenge provides you with a pre-deployed OpenAI resource and its OpenAI API key for a hassle free execution of this challenge.
+>**Note:** This challenge provides you with a pre-deployed OpenAI resource and its OpenAI API key for a hassle free execution.
 
 1. **Configure and implement AI Code Review GitHub Action:**
    
