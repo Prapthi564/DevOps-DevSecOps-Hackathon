@@ -1,41 +1,44 @@
 # Challenge 09: Securing DevOps with Microsoft Defender for Cloud
 
-### Estimated Time: 40 minutes
+### Estimated Time: 30 minutes
 
 ### Introduction:
 Contoso Traders, a leading trading platform, is committed to delivering secure and efficient software solutions. In this challenge, as a DevSecOps engineer, you are responsible for ensuring the security of your applications throughout the development lifecycle. Your organization has recently adopted Microsoft Defender for Cloud to enhance the security posture of your DevOps pipelines.
 
-You need to focus on completing the implementation of the below-mentioned GitHub Actions:
-
-**AI Code Review Action**: AI Code Reviewer is a GitHub Action that leverages OpenAI's GPT-4 API to provide intelligent feedback and suggestions on your pull requests. This powerful tool helps improve code quality and saves developers time by automating the code review process.
-
-**AI Security Check for Pull Request**: This GitHub Action uses OpenAI's GPT to analyze code in pull requests and identify potential security and privacy vulnerabilities and comment to the pull request with the findings.
+Your task is to implement Microsoft Defender for Cloud DevOps security measures by configuring the necessary GitHub actions within your created GitHub repository, viewing the scanned results, and connecting your GitHub environment to Microsoft Defender for Cloud.
 
 ## Challenge Objectives:
 
->**Note:** This challenge provides you with a pre-deployed OpenAI resource and its OpenAI API key for a hassle free execution.
+>**Note:** The GitHub account provided whose credentials would be available in the environment details tab, has GitHub Enterprise with GitHub Advanced Security enabled for the ease of execution of this challenge.
 
-1. **Configure and implement AI Code Review GitHub Action:**
+1. **Configure Microsoft Security DevOps GitHub Action:**
    
-   - Use the OpenAI API key **<inject key="openAIkey" enableCopy="false" />** to create a GitHub Secret in your repository with the name `OPENAI_API_KEY`. You can find the API key details in Environment details tab of your environment.
-   - Create a `.github/workflows/main.yml` file in your repository to successfully implement `AI Code Reviewer` GitHub Action which provides intelligent feedback and suggestions on your pull requests.
-
-2. **Configure and implement AI Security Check for Pull Requests:**
-   - Use the OpenAI API key **<inject key="openAIkey" enableCopy="false" />** to create a GitHub Secret in your repository with the name `OPENAI_TOKEN`. You can find the API key details in Environment details tab of your environment.
-   - Create a new GitHub secret named `GH_TOKEN` with a GitHub Personal Access Token with the `repo` and `write:discussion` scopes enabled.
-   - Create a new `./github/workflows/ai-security-check-for-pr.yml` workflow file in your repository to successfully implement `AI Security Check for Pull Requests` GitHub Action which analyzes the code in each pull request targeting the specified branch.
+   - Integrate the Microsoft Defender for Cloud GitHub Action into your workflow of your GitHub repository.
+   - Create a `.github/workflows/msdevopssec.yml` file in your repository to perform static code analysis, vulnerability scanning, and compliance checks.
+  
+2. **View Scanned Results:**
+   - Trigger the GitHub Action workflow created in the previous challenge objective to run the Microsoft Defender for Cloud scans.
+   - Review, identify and understand the security findings and recommendations provided by Microsoft Defender for Cloud.
+   - Implement fixes or enhancements to address the security findings identified during the scan.
+   - Ensure that the GitHub Action workflow passes successfully after addressing the security issues.
+  
+3. **Connect GitHub Environment to Microsoft Defender for Cloud:**
+   - Connect your GitHub environment to Microsoft Defender for Cloud.
+   - Extend the security capabilities of Defender for Cloud to your GitHub resources by enabling the **Cloud Security Posture Management (CSPM) features**.
+   - Ensure that the Microsoft Defender for cloud is configured such that it auto-discovers all repositories in GitHub organizations and any future organizations where the DevOps security GitHub application is installed.
   
 ## Success criteria:
 To complete this challenge successfully:
 
-- Successful implementation of the `AI Code Review Action` and generation of of review comments based on the AI's response and added to the pull request.
-- Successful implementation of the `AI Security Check for Pull Requests` and generation of comments to the pull requests based on AI's analysis of the code.
+- Appropriate integration and configuration of Microsoft Security DevOps GitHub Action.
+- Successful connection of GitHub environment to Microsoft Defender for Cloud.
 
 ## Additional Resources:
 
 
-- Refer to [AI Code Review Action](https://github.com/marketplace/actions/ai-code-review-action) for reference.
-- Refer to [AI Security Check for Pull Request](https://github.com/marketplace/actions/ai-security-check-for-pull-request) for reference.
+- Refer to [Overview of Microsoft Defender for Cloud DevOps Security](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-devops-introduction) for reference.
+- Refer to [Configure the Microsoft Security DevOps GitHub action](https://learn.microsoft.com/en-us/azure/defender-for-cloud/github-action) for reference.
+- Refer to [Connect your GitHub Environment to Microsoft Defender for Cloud](https://learn.microsoft.com/en-us/azure/defender-for-cloud/quickstart-onboard-github) for reference.
 
 ## Challenge Validations: [WIP]
 
@@ -56,4 +59,8 @@ To complete this challenge successfully:
 1. If you are still having trouble, you can reach out to the support team via `labs-support@spektrasystems.com` for further assistance. The support team is available to help you to troubleshoot and resolve any technical issues or validation issues that may arise while the lab environment is live.
 
 ## Conclusion
-Congratulations on completing the **DevSecOps with AI-Powered GitHub Actions** challenge! Through this challenge you have seamlessly integrated AI-driven GitHub Actions, elevated code quality, security, and developer productivity. In the next challenge, you will focus on using GitHub Copilot Chat to implement/add new features to the exisiting Contoso Traders Application and deploy the changes to Azure through CI/CD. 
+Congratulations on completing the **Securing DevOps with Microsoft Defender for Cloud** challenge! Through this challenge you have seamlessly integrated and configured Microsoft Defender for Cloud within a DevOps context, ensuring a secure and resilient software development lifecycle.
+
+This concludes the Day 2 hackathon.
+
+Thank you
