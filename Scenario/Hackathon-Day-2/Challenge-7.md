@@ -3,39 +3,38 @@
 ### Estimated Time: 40 minutes
 
 ### Introduction:
-Contoso Traders, a leading trading platform, is committed to delivering secure and efficient software solutions. In this challenge, as a Lead DevSecOps engineer, your focus is to enhance the DevSecOps workflow by leveraging AI-driven GitHub Actions that focus on code review and security checks for pull requests thus leading to improved code quality and enhanced security practices in the development lifecycle.
-
-You need to focus on completing the implementation of the below-mentioned GitHub Actions:
-
-**AI Code Review Action**: AI Code Reviewer is a GitHub Action that leverages OpenAI's GPT-4 API to provide intelligent feedback and suggestions on your pull requests. This powerful tool helps improve code quality and saves developers time by automating the code review process.
-
-**AI Security Check for Pull Request**: This GitHub Action uses OpenAI's GPT to analyze code in pull requests and identify potential security and privacy vulnerabilities and comment to the pull request with the findings.
+Contoso Traders is a web application for stock trading. In this challenge, as a DevOps engineer, your focus is to use GitHub Copilot to exipidite the development process to add a new feature into the web application 
 
 ## Challenge Objectives:
 
->**Note:** This challenge provides you with a pre-deployed OpenAI resource and its OpenAI API key for a hassle free execution.
-
-1. **Configure and implement AI Code Review GitHub Action:**
+1. **Feature Addition with GitHub Copilot:**
    
-   - Use the OpenAI API key **<inject key="openAIkey" enableCopy="false" />** to create a GitHub Secret in your repository with the name `OPENAI_API_KEY`. You can find the API key details in Environment details tab of your environment.
-   - Create a `.github/workflows/main.yml` file in your repository to successfully implement `AI Code Reviewer` GitHub Action which provides intelligent feedback and suggestions on your pull requests.
+2. **Unit Test Generation with Copilot:**
+   - After implementing the feature, participants should use GitHub Copilot to generate unit tests for the new functionality which includes assessing the accuracy and completeness of the generated unit tests.
+   - Ensure that the generated test cases are alligning with the code analogy with successful test passes.
+   - Resolve any unit test failures with the help of GitHub Copilot chat.
 
-2. **Configure and implement AI Security Check for Pull Requests:**
-   - Use the OpenAI API key **<inject key="openAIkey" enableCopy="false" />** to create a GitHub Secret in your repository with the name `OPENAI_TOKEN`. You can find the API key details in Environment details tab of your environment.
-   - Create a new GitHub secret named `GH_TOKEN` with a GitHub Personal Access Token with the `repo` and `write:discussion` scopes enabled.
-   - Create a new `./github/workflows/ai-security-check-for-pr.yml` workflow file in your repository to successfully implement `AI Security Check for Pull Requests` GitHub Action which analyzes the code in each pull request targeting the specified branch.
-  
+3. **Code Review and Security Check:**
+   - Perform a code review and on the new feature implemented using GitHub Copilot.
+   >**Hint:** Focus areas include code readability, adherence to best practices, and ensuring that the new feature aligns with the existing codebase.
+   - Run a security check on the newly implemented code using GitHub Advanced Security features thus resolving any alerts to vulnerabilities and catch any potential security issues using CodeQL over the repository.
+
+4. **CI/CD Pipeline Setup and Deployment:**
+   - Set up a GitHub Actions CI/CD pipeline for Contoso Traders hosted on GitHub.
+   - The pipeline should include steps for building, testing, and deploying the new feature to the hosted application on Azure.
+
 ## Success criteria:
 To complete this challenge successfully:
 
-- Successful implementation of the `AI Code Review Action` and generation of of review comments based on the AI's response and added to the pull request.
-- Successful implementation of the `AI Security Check for Pull Requests` and generation of comments to the pull requests based on AI's analysis of the code.
+- Successful implementation of the new feature.
+- Accuracy and completeness of the generated unit tests with all successful passes.
+- Successful setup and execution of the CI/CD pipeline.
 
 ## Additional Resources:
 
-
-- Refer to [AI Code Review Action](https://github.com/marketplace/actions/ai-code-review-action) for reference.
-- Refer to [AI Security Check for Pull Request](https://github.com/marketplace/actions/ai-security-check-for-pull-request) for reference.
+- Refer to [About GitHub Copilot Chat](https://docs.github.com/en/copilot/github-copilot-chat/about-github-copilot-chat) for reference.
+- Refer to [Copilot Chat writes Unit Tests](https://dev.to/this-is-learning/copilot-chat-writes-unit-tests-for-you-1c82) for reference.
+- Refer to [Using GitHub Copilot Chat in your IDE](https://docs.github.com/en/copilot/github-copilot-chat/using-github-copilot-chat-in-your-ide) for reference.
 
 ## Challenge Validations: [WIP]
 
