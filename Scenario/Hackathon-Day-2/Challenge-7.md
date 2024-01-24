@@ -3,7 +3,7 @@
 ### Estimated Time: 60 minutes
 
 ### Introduction:
-Contoso Traders is a web application for stock trading. In this challenge, as a DevOps engineer, your focus is to use GitHub Copilot to exipidite the development process to add a new feature into the web application 
+Contoso Traders is a web application for stock trading. In this challenge, as a DevOps engineer, your focus is to seamlessly implement and test new features with Copilot, ensuring accuracy and alignment. Conduct a thorough code review and enhance security using GitHub Advanced Security's CodeQL. Streamline development with a GitHub Actions CI/CD pipeline for Contoso Traders, ensuring efficient and secure deployment.
 
 ## Challenge Objectives:
 
