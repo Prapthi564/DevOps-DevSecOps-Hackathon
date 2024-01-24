@@ -61,6 +61,5 @@ To complete this challenge successfully:
 ## Conclusion
 Congratulations on completing the **Securing DevOps with Microsoft Defender for Cloud** challenge! Through this challenge you have seamlessly integrated and configured Microsoft Defender for Cloud within a DevOps context, ensuring a secure and resilient software development lifecycle.
 
-This concludes the Day 2 hackathon.
+Congratulations! You have successfully completed all the challenges.
 
-Thank you
