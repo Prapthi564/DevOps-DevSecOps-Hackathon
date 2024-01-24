@@ -1,6 +1,6 @@
 # Challenge 07: Enhancing Contoso Traders with GitHub Copilot
 
-### Estimated Time: 40 minutes
+### Estimated Time: 60 minutes
 
 ### Introduction:
 Contoso Traders is a web application for stock trading. In this challenge, as a DevOps engineer, your focus is to use GitHub Copilot to exipidite the development process to add a new feature into the web application 
