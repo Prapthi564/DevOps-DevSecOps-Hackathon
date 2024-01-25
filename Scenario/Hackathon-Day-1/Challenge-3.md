@@ -27,7 +27,7 @@ In the previous challenge, you configured a few of the GitHub Advanced security 
 To complete this challenge successfully:
 
 - Successful implementation of GitHub Dependabots for identifying and addressing security vulnerabilities.
-- Set up secreting scanning and updated the code base to resolve the alerts.
+- Set up secreting scanning and update the code base to resolve the alerts.
 
 ## Additional Resources:
 
