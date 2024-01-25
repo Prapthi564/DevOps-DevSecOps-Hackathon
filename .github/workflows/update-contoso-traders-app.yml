@@ -1,4 +1,4 @@
-name: update contoso Traders app
+name: update contoso traders app
 
 on:
   workflow_dispatch:
