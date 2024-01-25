@@ -2,13 +2,13 @@
 
 Before you begin, ensure that you have the following prerequisites installed and configured in CloudLabs provided Integrated Environment (JumpVM) which you are going to use throughout the hackathon:
      
-> Note: Pre-requisites are already set up in the CloudLabs provided environment. If you're using your personal computer or laptop, please make sure that all necessary prerequisites are installed to complete this Hackathon.
+> Note: Prerequisites are already set up in the CloudLabs-provided environment. If you're using your personal computer or laptop, please make sure that all necessary prerequisites are installed to complete this Hackathon.
 
 1. **Basic programming knowledge**: Familiarity with at least one programming language (e.g., Python, JavaScript, Java, or C#) and a basic understanding of software development concepts.
 
 1. **Azure account**: A Microsoft Azure account with an active subscription.
 
-1. **GitHub**: A GitHub account with trial Enterprise subscription and familiarity with GitHub concepts for version control.
+1. **GitHub**: A GitHub account with a trial Enterprise subscription and familiarity with GitHub concepts for version control.
 
 1. **Development environment**: A computer with your preferred development environment installed with the below prerequisites
 
