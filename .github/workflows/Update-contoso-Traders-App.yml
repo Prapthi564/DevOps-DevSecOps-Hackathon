@@ -1,4 +1,4 @@
-name: contoso-traders-provisioning-deployment
+name: update contoso Traders app
 
 on:
   workflow_dispatch:
