@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In this challenge, user/attendee will integrate Azure's monitoring tools—Azure Monitor and Application Insights—into their Azure-based application. Monitoring is vital for maintaining efficiency and resilience in cloud applications, enabling proactive issue identification and seamless user experiences.
+In this challenge, the user/attendee will integrate Azure's monitoring tools—Azure Monitor and Application Insights—into their Azure-based application. Monitoring is vital for maintaining efficiency and resilience in cloud applications, enabling proactive issue identification and seamless user experiences.
 
 This is the solution guide that contains all of the comprehensive, step-by-step directions needed to finish the challenge.
 
@@ -10,7 +10,7 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
 
 ### Task 1: Deploy Monitoring Infrastructure
 
-1. You will deploy the complete monitoring infrastructure using the bicep template. The monitoring infrastructure includes a Application Insights, a secret created for Application Insights, and a monitoring dashboard.
+1. You will deploy the complete monitoring infrastructure using the Bicep template. The monitoring infrastructure includes Application Insights, a secret created for Application Insights, and a monitoring dashboard.
 
 1. Open VS Code, and execute the code.
 
@@ -19,7 +19,7 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
    - **Email/Username:** <inject key="GitHubUsername"></inject>
    - **Password:** <inject key="GitHubPassword"></inject>
 
-   >**Note**: Please use the above-mentioned credentials to login into Azure.
+   >**Note**: Please use the above-mentioned credentials to login to Azure.
 ```
 
 Connect-AzAccount 
@@ -33,7 +33,7 @@ New-AzResourceGroupDeployment -Name "createresource" -TemplateFile "monitoringin
 
 ### Task 2: Monitoring using Application Insights
 
-1. In the Azure Portal, navigate to **contosotraders-<inject key="Deploymentid" enableCopy="false" />** **(1)** resource group and select the **Application Insights** resource with the name  **contoso-traders-aivalue** **(2)**.
+1. In the Azure Portal, navigate to the **contosotraders-<inject key="Deploymentid" enableCopy="false" />** **(1)** resource group and select the **Application Insights** resource with the name  **contoso-traders-aivalue** **(2)**.
 
    ![](../media/cl4-t2-s1.png)
    
@@ -41,7 +41,7 @@ New-AzResourceGroupDeployment -Name "createresource" -TemplateFile "monitoringin
 
    ![](../media/cl4-t2-s2.png)
    
-1. In the first graph, you can see the number of failed requests for the Application access.
+1. In the first graph, you can see the number of failed requests for Application access.
 
    ![](../media/upd-ex6-t1-failedrequests.png)
    
@@ -68,4 +68,4 @@ To complete this challenge successfully:
 
 - Refer to [Application Insights Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview) for reference.
 - [Application Insights for ASP.NET Core applications](https://learn.microsoft.com/en-us/azure/azure-monitor/app/asp-net-core?tabs=netcorenew%2Cnetcore6).
-- Refer to [Azure Monitor vs Application Insights](https://azurelib.com/azure-monitor-vs-application-insights/) for reference.
+- Refer to [Azure Monitor vs. Application Insights](https://azurelib.com/azure-monitor-vs-application-insights/) for reference.

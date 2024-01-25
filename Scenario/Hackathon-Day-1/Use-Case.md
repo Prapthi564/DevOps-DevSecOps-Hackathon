@@ -19,8 +19,8 @@ Strengthen Code and Dependency Security:
 4. **Conduct Resilience Testing:**
     - Perform resilience testing using Azure Load Testing and Azure Chaos Studio. Simulate high-scale traffic and chaotic events to test and improve the resilience of the e-commerce platform.
 
-In this hackathon, you will be at the forefront of applying cutting-edge DevSecOps practices in a real-world scenario. You will have access to all the necessary tools and resources to effectively implement these use-cases and contribute to the evolution of Contoso Traders’ e-commerce platform.
+In this hackathon, you will be at the forefront of applying cutting-edge DevSecOps practices in a real-world scenario. You will have access to all the necessary tools and resources to effectively implement these use cases and contribute to the evolution of Contoso Traders’ e-commerce platform.
 
-Join us in this transformative journey to redefine the standards of e-commerce operations and security. Your expertise and creativity can pave the way for a more secure, efficient, and resilient digital retail experience. Let’s innovate together!
+Join us on this transformative journey to redefine the standards of e-commerce operations and security. Your expertise and creativity can pave the way for a more secure, efficient, and resilient digital retail experience. Let’s innovate together!
 
 Happy hacking!

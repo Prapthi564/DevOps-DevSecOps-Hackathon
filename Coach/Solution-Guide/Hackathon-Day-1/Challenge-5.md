@@ -12,15 +12,15 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
 
 In this task, you'll create an Azure Load Testing instance and run a test using a JMeter file.
 
-1. In the Azure Portal, navigate to **contosotraders-<inject key="DeploymentID" enableCopy="false" />** resource group and select the **Endpoint** resource with the name  **contoso-traders-ui2<inject key="DeploymentID" />**.
+1. In the Azure Portal, navigate to the **contosotraders-<inject key="DeploymentID" enableCopy="false" />** resource group and select the **Endpoint** resource with the name  **contoso-traders-ui2<inject key="DeploymentID" />**.
 
    ![](../media/cl5-t1-s1.png)
 
-1. From the overview of **contoso-traders-ui2<inject key="DeploymentID" enableCopy="false" />** endpoint, copy the **Endpoint hostname** **(2)** and paste it into the notepad for later use in the task.
+1. From the overview of the **contoso-traders-ui2<inject key="DeploymentID" enableCopy="false" />** endpoint, copy the **Endpoint hostname** **(2)** and paste it into the notepad for later use in the task.
 
    ![](../media/cl5-t1-s2.png)
 
-1. To create an Azure Load Testing service, within the global search bar of the Azure Portal - search for and select **Azure Load Testing**.
+1. To create an Azure Load Testing service, within the global search bar of the Azure Portal, search for and select **Azure Load Testing**.
 
    ![](../media/loadtesting.png)
 
@@ -34,29 +34,29 @@ In this task, you'll create an Azure Load Testing instance and run a test using 
    - **Name**: Enter **contoso-traders-loadtest-<inject key="DeploymentID" /> (3)**
    -  **Region**: **East US (4)**
    -  Click on **Review + create (5)**
-   - Finally, click on the **Create**.
+   - Finally, click on **Create**.
 
    ![](../media/createloadtesting-1.png)
 
-1. On the left hand side pane, select **Tests** ***(1)*** and click on **+ Create** ***(2)*** and select **Create a URL-based test (3)**.
+1. On the left-hand side pane, select **Tests** ***(1)***, and click on **+ Create** ***(2)***, and select **Create a URL-based test (3)**.
 
    ![](../media/url-load-test.png)
 
-1. On the **Create a URL-based test** page, under basic tab paste the **Endpoint URL** as Test URL ***(1)***, leave the rest as default and then click on **Review + create (2)** followed by **Create**.
+1. On the **Create a URL-based test** page, under the basic tab, paste the **Endpoint URL** as Test URL ***(1)***, leave the rest as default, and then click on **Review + create (2)**, followed by **Create**.
 
    ![](../media/url-load-test-1.png)
 
-1. The test run will start running and once the test run is completed, you will be able to see **Client-side metrics**. Explore the given metrics output.
+1. The test run will start, and once the test run is completed, you will be able to see the **Client-side metrics**. Explore the given metrics output.
 
    ![](../media/dglt4.jpg)
    
-   **Note**: In case, the test fails due to `The test was stopped due to a high error rate. Check your script and try again. In case the issue persists, raise a ticket with a support error. This is expected as sometimes the load on the application exceeds the defined throughput.
+   **Note**: In case the test fails due to `The test was stopped due to a high error rate, check your script and try again. If the issue persists, raise a ticket with a support error. This is expected, as sometimes the load on the application exceeds the defined throughput.
      
-## Task 2: Create experiment and target using Azure Chaos studio
+## Task 2: Create an experiment and target using Azure Chaos studio
 
-In this task you will add **Targets** and create an **Experiment** on **Azure Chaos Studio** to check the resilience of the web application that we created by adding  real faults and observe how our applications respond to real-world disruptions.
+In this task, your objective is to incorporate Targets and establish an Experiment within Azure Chaos Studio. This process aims to assess the resilience of the web application we developed by introducing real faults and observing how our applications react to real-world disruptions.
 
-1. In the Azure Portal search for **Azure Chaos Studio (1)** and then click on it from the search results **(2)**.
+1. In the Azure Portal, search for **Azure Chaos Studio (1)** and then click on it from the search results **(2)**.
    
    ![](../media/Ex6-T2-S1.1.png)
 
@@ -64,11 +64,11 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
 
    ![](../media/Ex6-T2-S2.png)
       
-1. From the drop-down menu, select **contosotraders-<inject key="DeploymentID" enableCopy="false" />** resource group.
+1. From the drop-down menu, select the **contosotraders-<inject key="DeploymentID" enableCopy="false" />** resource group.
  
    ![](../media/chaos-studio.png)
      
-1. Click on the **contoso-traders-aks<inject key="DeploymentID" enableCopy="false" />** **(1)** **Kubernetes service** instance and from the drop-down for **Enable Targets** **(2)** choose **Enable service-direct targets (All resources)** **(3)**.
+1. Click on the **contoso-traders-aks<inject key="DeploymentID" enableCopy="false" />** **(1)** **Kubernetes service** instance, and from the drop-down for **Enable Targets** **(2)**, choose **Enable service-direct targets (All resources)** **(3)**.
 
    ![](../media/2dgn99.png)
      
@@ -76,7 +76,7 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
 
    ![](../media/reviewenable.png)
 
-1. Then click on **Enable** to Enable service direct targets. 
+1. Then click on **Enable** to Enable service-direct targets. 
    
    ![](../media/enable.png)
 
@@ -86,11 +86,11 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
    
    ![](../media/Ex6-T2-S1.1.png)
     
-1. Once the target is enabled, select **Experiments** ***(1)*** on the left, click **+ Create** ***(2)*** drop-down, and select **New experiment** **(3)** .
+1. Once the target is enabled, select **Experiments** ***(1)*** on the left, click the **+ Create** ***(2)*** drop-down, and select **New experiment** **(3)** .
  
    ![](../media/ex6-task3-step9.png)
  
-1. On the **Create an experiment** page, under **Basics** tab provide the following values and select **Next: Permissions >** ***(4)***.
+1. On the **Create an experiment** page, under the **Basics** tab, provide the following values and select **Next: Permissions >** ***(4)***.
 
     - Subscription: Select the default subscription ***(1)***
     - Resource Group: **contosotraders-<inject key="DeploymentID" enableCopy="false" />** ***(2)***
@@ -115,7 +115,7 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
      
    ![](../media/2dgn61.png)
      
-1. On the **Target resources**, select the **Manually select from a list** **(1)** under **Select target resources** , select the **contoso-traders-aks<inject key="DeploymentID" enableCopy="false" />** ***(2)*** resource, and **Add** ***(3)***.
+1. On **Target resources**, select **Manually select from a list** **(1)** option under the **Select target resources** , select the **contoso-traders-aks<inject key="DeploymentID" enableCopy="false" />** ***(2)*** resource, and **Add** ***(3)***.
   
    ![](../media/ex6-task3-step14.png)
   
@@ -125,19 +125,19 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
    
 1. On the **Review + create** page, click on **Create**.
     
-1. Navigate back to the **contoso-traders-aks<inject key="DeploymentID" enableCopy="false" />** container instance and select **Access control (IAM) (1)**, click on **+ Add (2)** and select **Add role assignment (3)**. 
+1. Navigate back to the **contoso-traders-aks<inject key="DeploymentID" enableCopy="false" />** container instance and select **Access control (IAM) (1)**, click on **+ Add (2)**, and select **Add role assignment (3)**. 
   
    ![](../media/2dgn121.png)
   
-1. In the **Add role assignment** page, under **Role** tab select **Privileged administrator roles**. Select **Owner (1)** in it and then **Next (2)**.
+1. In the **Add role assignment** page, under the **Role** tab, select **Privileged administrator roles**. Select **Owner (1)** and then **Next (2)**.
   
    ![](../media/ex6-task3-step18.png)
   
-1. Next on the **Members** tab select **Managed identity (1)**  for **Assign access to** , click on **+ Select members (2)**  on the **Select managed identities** choose **Chaos Experiment (3)** for **Managed identity** select the experiment **contoso-chaos-<inject key="DeploymentID" enableCopy="false" /> (4)**, click on **Select (5)** and click on **Next** **(6)**.  
+1. Next, on the **Members** tab, select **Managed identity (1)**  for **Assign access to** , click on **+ Select members (2)**  on the **Select managed identities** choose **Chaos Experiment (3)** for **Managed identity**, select the experiment **contoso-chaos-<inject key="DeploymentID" enableCopy="false" /> (4)**, click on **Select (5)**, and click on **Next** **(6)**.  
    
    ![](../media/ex6-task3-step19.png)
   
-1. Next on the **Conditions** tab select **What user can do** as **Allow user to assign all roles** **(1)** and click on **Review + assign** **(2)**.
+1. Next, on the **Conditions** tab, select **What user can do** as **Allow user to assign all roles** **(1)** and click on **Review + assign** **(2)**.
 
    ![](../media/role-assignment.png)
 
@@ -145,11 +145,11 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
    
    ![](../media/ex6-task3-step21.png)
       
-1. On the Azure portal navigate back to the Chaos experiment you created **contoso-chaos-<inject key="DeploymentID" enableCopy="false" />** and click on **Start**.
+1. On the Azure Portal, navigate back to the Chaos experiment you created, **contoso-chaos-<inject key="DeploymentID" enableCopy="false" />** and click on **Start**.
   
    ![](../media/2dgn108.png)
  
-1. Select **Ok** for **Start this experiment** pop-up.
+1. Select **Ok** to **Start this experiment** pop-up.
 
     ![](../media/Ex6-T2-S17.1.png)
        
@@ -157,7 +157,7 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
  
    ![](../media/2dgn109.png)
  
-1. On the **Details** preview page select **Action (1)** and view the complete detail of the run on **Fault details** under **Successful targets (2)**.
+1. On the **Details** preview page, select **Action (1)** and view the complete details of the run on **Fault details** under **Successful targets (2)**.
  
    ![](../media/2dgn110.png)
 
