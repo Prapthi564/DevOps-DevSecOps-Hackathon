@@ -1,3 +1,5 @@
+
+
 // common
 targetScope = 'resourceGroup'
 
@@ -5,9 +7,6 @@ targetScope = 'resourceGroup'
 ////////////////////////////////////////////////////////////////////////////////
 
 // common
-@minLength(3)
-@maxLength(6)
-@description('A unique environment name (max 6 characters, alphanumeric only).')
 param env string
 
 @secure()
@@ -56,38 +55,8 @@ var resourceTags = {
 //
 // key vault
 //
-
-resource kv 'Microsoft.KeyVault/vaults@2022-07-01' = {
+resource kv 'Microsoft.KeyVault/vaults@2022-07-01' existing = {
   name: kvName
-  location: resourceLocation
-  tags: resourceTags
-  properties: {
-    // @TODO: Hack to enable temporary access to devs during local development/debugging.
-    accessPolicies: [
-      {
-        objectId: '31de563b-fc1a-43a2-9031-c47630038328'
-        tenantId: tenantId
-        permissions: {
-          secrets: [
-            'get'
-            'list'
-            'delete'
-            'set'
-            'recover'
-            'backup'
-            'restore'
-          ]
-        }
-      }
-    ]
-    sku: {
-      family: 'A'
-      name: 'standard'
-    }
-    softDeleteRetentionInDays: 7
-    tenantId: tenantId
-  }
-
 
   // secret
   resource kv_secretAppInsightsConnStr 'secrets' = {
