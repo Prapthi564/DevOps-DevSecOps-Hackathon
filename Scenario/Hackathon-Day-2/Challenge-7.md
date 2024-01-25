@@ -10,7 +10,7 @@ Contoso Traders is a web application for stock trading. In this challenge, as a 
 1. **Feature Addition with GitHub Copilot:**
    
 2. **Unit Test Generation with Copilot:**
-   - After implementing the feature, participants should use GitHub Copilot to generate unit tests for the new functionality which includes assessing the accuracy and completeness of the generated unit tests.
+   - After implementing the feature, you should use GitHub Copilot to generate unit tests for the new functionality which includes assessing the accuracy and completeness of the generated unit tests.
    - Ensure that the generated test cases are alligning with the code analogy with successful test passes.
    - Resolve any unit test failures with the help of GitHub Copilot chat.
 
