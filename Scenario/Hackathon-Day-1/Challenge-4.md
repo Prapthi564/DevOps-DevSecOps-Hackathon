@@ -25,7 +25,7 @@ In this challenge, you will integrate Azure's monitoring tools—Azure Monitor a
 ## Success criteria:
 To complete this challenge successfully:
 
-- Check on the Monitoring dashboards to verify the creation and set up of the Azure monitoring infrastructure for the Conotos traders application.
+- Verify the Monitoring dashboards where data should be populated based on usage of Contoso traders application.
 
 ## Additional Resources:
 
