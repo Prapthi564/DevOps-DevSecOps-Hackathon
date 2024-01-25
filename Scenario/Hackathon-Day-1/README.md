@@ -1,13 +1,13 @@
 # DevOps/DevSecOps Challenge - Day 1 Hackathon
 
-Welcome to the DevSecOps Mastery with GitHub Hackathon! This event is your gateway to mastering DevSecOps practices within a modern application environment. We have crafted this hackathon to provide you with a robust learning experience, focused on Contoso Traders, a hypothetical e-commerce company using a React front-end, .NET back-end, and various microservices and container services.
+Welcome to the DevSecOps Mastery with GitHub Hackathon! This event is your gateway to mastering DevSecOps practices within a modern application environment. We have crafted this hackathon to provide you with a robust learning experience focused on Contoso Traders, a hypothetical e-commerce company using a React front-end, .NET back-end, and various microservices and container services.
 
 Your goal is to integrate DevSecOps practices into Contoso Traders' existing e-commerce application. As you navigate through various challenges, you will gain practical experience in implementing DevSecOps in an application built with a modern tech stack.
 
 
 ## Learning Objectives
 
-Participating in this hackathon, you will:
+By participating in this hackathon, you will:
 
 - Master the art of Continuous Integration and Deployment (CI/CD) for .NET applications using GitHub Actions.
 - Enhance code security and manage dependencies effectively.
@@ -25,14 +25,14 @@ This hackathon adopts a challenge-based format, offering you a unique opportunit
 ## Challenges
 
 1. **Challenge 01: Continuous Integration and Deployment for Contoso Traders using GitHub Actions**
-   - Create a GitHub repository for the ecommerce application.
+   - Create a GitHub repository for the e-commerce application.
    - Set up a CI/CD workflow using GitHub Actions.
    - Add new features and test automated deployments with GitHub Actions. 
 
 2. **Challenge 02: GitHub Advanced Security - Implement Code Security Enhancements**
    - Activate and utilize code scanning tools for vulnerability identification.
    - Implement CodeQL alerts and handle security advisories.
-   - Mitigate security risks identified in dependencies.
+   - Mitigate the security risks identified in dependencies.
        
 3. **Challenge 03: GitHub Advanced Security - Dependency Management and Secret Scanning**:
     - Analyze and manage dependencies for security risks.
