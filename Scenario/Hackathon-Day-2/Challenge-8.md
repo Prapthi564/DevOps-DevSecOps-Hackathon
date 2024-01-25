@@ -1,40 +1,33 @@
-# Challenge 08: Enhancing Contoso Traders with GitHub Copilot
+# Challenge 08: Security Compliance as Code
 
 ### Estimated Time: 60 minutes
 
 ### Introduction:
-Contoso Traders is a web application for stock trading. In this challenge, as a DevOps engineer, your focus is to seamlessly implement and test new features with Copilot, ensuring accuracy and alignment. Conduct a thorough code review and enhance security using GitHub Advanced Security's CodeQL. Streamline development with a GitHub Actions CI/CD pipeline for Contoso Traders, ensuring efficient and secure deployment.
+In this challenge, you are a DevOps engineer responsible for ensuring the security compliance of your organization's Azure resources. Your task is to implement and enforce security policies using Azure Policy over the Azure resources and integrate compliance scanning into the GitHub CI/CD pipelines for your Azure projects. 
 
 ## Challenge Objectives:
 
-1. **Feature Addition with GitHub Copilot:**
+1. **Azure Policy Implementation:**
+   - Implement Azure Policy definiation as code (written in JSON) to enforce security compliance on the resources related to the Contoso Traders Application that have been deployed over Azure. This includes policies for resource tagging, encryption, network security, etc.
+   - Ensure that your policies are effective in preventing non-compliant resources from being deployed.
+   - Store these policy definitions in a GitHub repository.
    
-2. **Unit Test Generation with Copilot:**
-   - After implementing the feature, participants should use GitHub Copilot to generate unit tests for the new functionality which includes assessing the accuracy and completeness of the generated unit tests.
-   - Ensure that the generated test cases are alligning with the code analogy with successful test passes.
-   - Resolve any unit test failures with the help of GitHub Copilot chat.
-
-3. **Code Review and Security Check:**
-   - Perform a code review and on the new feature implemented using GitHub Copilot.
-   >**Hint:** Focus areas include code readability, adherence to best practices, and ensuring that the new feature aligns with the existing codebase.
-   - Run a security check on the newly implemented code using GitHub Advanced Security features thus resolving any alerts to vulnerabilities and catch any potential security issues using CodeQL over the repository.
-
-4. **CI/CD Pipeline Setup and Deployment:**
-   - Set up a GitHub Actions CI/CD pipeline for Contoso Traders hosted on GitHub.
-   - The pipeline should include steps for building, testing, and deploying the new feature to the hosted application on Azure.
+2. **GitHub CI/CD Integration:**
+   - Integrate a compliance scanning step into your GitHub pipeline that checks for policy compliance before allowing deployment.
+   - Implement **Azure Policy Compliance Scan** GitHub action within `.github/workflows/workflow.yml` which triggers a policy compliance scan on the provided subscription.
+   - Ensure that compliance scans are triggered automatically during the CI/CD process.
 
 ## Success criteria:
 To complete this challenge successfully:
 
-- Successful implementation of the new feature.
-- Accuracy and completeness of the generated unit tests with all successful passes.
+- Successful effectiveness of policies in enforcing security compliance.
+- Successful integration of compliance scanning into the pipeline.
 - Successful setup and execution of the CI/CD pipeline.
 
 ## Additional Resources:
 
-- Refer to [About GitHub Copilot Chat](https://docs.github.com/en/copilot/github-copilot-chat/about-github-copilot-chat) for reference.
-- Refer to [Copilot Chat writes Unit Tests](https://dev.to/this-is-learning/copilot-chat-writes-unit-tests-for-you-1c82) for reference.
-- Refer to [Using GitHub Copilot Chat in your IDE](https://docs.github.com/en/copilot/github-copilot-chat/using-github-copilot-chat-in-your-ide) for reference.
+- Refer to [Overview of Azure Policy](https://learn.microsoft.com/en-us/azure/governance/policy/overview) for reference.
+- Refer to [Azure Policy Compliance Scan](https://github.com/marketplace/actions/azure-policy-compliance-scan) for reference.
 
 ## Challenge Validations: [WIP]
 
@@ -55,4 +48,4 @@ To complete this challenge successfully:
 1. If you are still having trouble, you can reach out to the support team via `labs-support@spektrasystems.com` for further assistance. The support team is available to help you to troubleshoot and resolve any technical issues or validation issues that may arise while the lab environment is live.
 
 ## Conclusion
-Congratulations on completing the **Enhancing Contoso Traders with GitHub Copilot** challenge! Through this challenge you have not only focused on finding and fixing vulnerabilities but also promoted a security-conscious development mindset. The next challenge focuses on implemeting security policies using Azure Policy and integrating compliance scanning within your GitHub CI/CD pipelines.
+Congratulations on completing the **Security Compliance as Code** challenge! Through this challenge  not only implemented security policies using Azure Policy but also emphasized the importance of automating the entire process through CI/CD pipelines thus ensuring continuous compliance in a dynamic cloud environment. The next challenge focuses seamlessly integrating and configuring Microsoft Defender for Cloud within a DevOps context, ensuring a secure and resilient software development lifecycle.
