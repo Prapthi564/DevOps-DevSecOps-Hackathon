@@ -197,7 +197,20 @@ In this task, you will create an account on [GitHub](https://github.com) and use
 
       ![](../media/cl1-t2-s10.png)
 
-### Task 3: Setup the CI/CD Workflow
+
+11. Navigate to `.github/workflow/update-contoso-traders-App.yml` path, ensure to update the `AKS_NODES_RESOURCE_GROUP_NAME` and`RESOURCE_GROUP_NAME` environment variable by replacing `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
+
+    ![](../media/dso1.png) 
+
+12. To run a workflow, perform the following steps and wait for the resources to be deployed within your azure portal:
+      - Click on **Actions (1)** within your GitHub repository.
+      - Select on the workflow named **update contoso traders app (2)**.
+      - Click on **Run workflow (3)**.
+      - Finally click on **Run workflow (4)**. Ensure that the branch is select as **main**.
+
+    ![](../media/dso2.png) 
+
+### Task 3: Setup CI/CD Workflow
 
 1. From the Azure Portal Dashboard, click on Resource Groups from the Navigate panel to see the resource groups.
 
