@@ -12,7 +12,7 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
 
 1. You will deploy the complete monitoring infrastructure using the Bicep template. The monitoring infrastructure includes Application Insights, a secret created for Application Insights, and a monitoring dashboard.
 
-1. Navigate to `C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files\iac` path, open the `monitoringinfra.parameters.json` file and update **env** parameter value with **deployment-ID**
+1. Navigate to `C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files\iac` path, open the `monitoringinfra.parameters.json` file and update **env** parameter value with **deployment-ID**.
 
 1. Open VS Code, and execute the code.
 
