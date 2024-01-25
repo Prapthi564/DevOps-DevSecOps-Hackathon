@@ -1,6 +1,6 @@
 # DevOps/DevSecOps Challenge - Day 2 Hackathon
 
-Welcome to the DevSecOps Mastery with GitHub Hackathon! This event is your gateway to mastering DevSecOps practices within a modern application environment. We have crafted this hackathon to provide you with a robust learning experience, focused on Contoso Traders, a hypothetical e-commerce company using a React front-end, .NET back-end, and various microservices and container services.
+Welcome to the DevSecOps Mastery with GitHub Hackathon! This event is your gateway to mastering DevSecOps practices within a modern application environment. We have crafted this hackathon to provide you with a robust learning experience, focused on Contoso Traders, a hypothetical e-commerce company using a React front-end, .NET back-end, and various microservices, container services, AI-powered GitHub Actions, undersatnding of Security compliance as code and mastering the usage of GitHub Copilot.
 
 Your goal is to integrate DevSecOps practices into Contoso Traders' existing e-commerce application. As you navigate through various challenges, you will gain practical experience in implementing DevSecOps in an application built with a modern tech stack.
 
@@ -13,6 +13,8 @@ Participating in this hackathon, you will:
 - Enhance code security and manage dependencies effectively.
 - Integrate and optimize monitoring solutions using Azure Monitor and Application Insights.
 - Execute resilience testing to ensure the robustness of the application.
+- Intergrate the usage of AI-powered GitHub actions to have a good hold on the security checks and complaince of pipelines.
+- Master the usage of GitHub Copilot to leverage the power of AI towards code completion and testing.
 
 ## Hackathon Format: Challenge Based
 This hackathon adopts a challenge-based format, offering you a unique opportunity to learn while dealing with practical problems. Each challenge includes one or more self-contained tasks, designed to test and enhance your skills in specific aspects of DevSecOps. You will approach these challenges by:
@@ -47,6 +49,25 @@ This hackathon adopts a challenge-based format, offering you a unique opportunit
 5. **Challenge 05: Resilience Testing using Azure Load Testing & Azure Chaos Studio**
    - Conduct Azure Load Testing for high-scale traffic simulation.
    - Configure and run experiments in Azure Chaos Studio.
+
+6. **Challenge 06: DevSecOps with AI-Powered GitHub Actions**
+   - Configure and implement AI Code Review GitHub Action.
+   - Configure and implement AI Security Check for Pull Requests.
+  
+7. **Challenge 07: Enhancing Contoso Traders with GitHub Copilot**
+   - Feature Addition with GitHub Copilot.
+   - Unit Test Generation with Copilot.
+   - Code Review and Security Check.
+   - CI/CD Pipeline Setup and Deployment.
+  
+8. **Challenge 08: ecurity Compliance as Code**
+   - Azure Policy Implementation.
+   - GitHub CI/CD Integration.
+  
+9. **Challenge 09: Securing DevOps with Microsoft Defender for Cloud**
+   - Configure Microsoft Security DevOps GitHub Action.
+   - View Scanned Results.
+   - Connect GitHub Environment to Microsoft Defender for Cloud.
 
 Each challenge comes with its own set of tasks and objectives.
 
