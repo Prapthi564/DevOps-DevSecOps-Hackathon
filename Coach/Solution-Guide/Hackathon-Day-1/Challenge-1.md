@@ -39,7 +39,7 @@ Here's the solution guide, which includes detailed step-by-step instructions req
 
 ### Task 1: Setup a GitHub repository
 
-In this task, you will create an account on [GitHub](https://github.com) and use `git` to add lab files to a new repository.
+In this task, you will login to an account on [GitHub](https://github.com) and use `git` to add lab files to a new repository.
 
 1. In a new browser tab, open ```https://www.github.com/login```. From the **Environment Details** page **(1)**, navigate to **License** **(2)** tab and **copy** **(3)** the credentials. Use the same username and password to log into GitHub.
 
