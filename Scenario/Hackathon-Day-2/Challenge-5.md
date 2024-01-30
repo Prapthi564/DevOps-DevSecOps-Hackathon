@@ -11,20 +11,20 @@ The Contoso Traders application is hosted on Azure Kubernetes Service (AKS), and
 
 1. **Setting Up Azure Load Testing:**
 
-   - Create an Azure Load Testing instance and create and execute a quick test to check load of 50 users for 2 minutes.
-   - Resolve the errors if the test fails and take actions to improve the application's resiliency.
+   - Create an Azure Load Testing instance, and create and execute a quick test to check the load of 50 users for 2 minutes.
+   - Resolve the errors if the test fails and take action to improve the application's resiliency.
 
-2. **Create experiment and target using Azure Chaos studio:**
+2. **Create an experiment and target using Azure Chaos Studio:**
 
-   -  Utilize Azure Chaos Studio to assess the resilience of the Azure Kubernetes service where the Contoso traders application is hosted.
-   - Using Chaos studio, target the AKS cluster resource.
-   - Create experiment and set up faults on AKS Chaos Mesh Pods for 5 minutes amd execute the experiment. 
+   -  Utilize Azure Chaos Studio to assess the resilience of the Azure Kubernetes service where the Contoso Traders' application is hosted.
+   - Using Chaos Studio, target the AKS cluster resource.
+   - Create an experiment and set up faults on AKS Chaos Mesh Pods for 5 minutes, and execute the experiment. 
 
 ## Success criteria:
 To complete this challenge successfully:
 
 - Successful setup and execution of Azure Load Testing using a quick test to simulate high-scale traffic on the web application.
-- Create and verify experiment execution using Azure Chaos studio showcasing a clear understanding of resilience testing principles.
+- Create and verify experiment execution using Azure Chaos Studio showcasing a clear understanding of resilience testing principles.
 
 ## Additional Resources:
 
@@ -39,7 +39,7 @@ Here are a few documentation and guides to assist you in completing the challeng
  
     ![](../media/validate01.png "Validation")
  
-1. If the validation status displays **Success** for all the validation steps, **congratulations!**. This means that you have successfully completed the challenge.
+1. If the validation status displays **Success** for all the validation steps, **congratulations!** This means that you have successfully completed the challenge.
  
      ![](../media/validate02.png "Validation")
 1. If the validation status displays **Fail**, **don't worry!** This could mean that you did not perform the challenge correctly.
@@ -49,6 +49,9 @@ Here are a few documentation and guides to assist you in completing the challeng
 1. Hover your mouse over the `i` **(1)** icon to see the error message and determine the root cause of the failure. Based on the error message, revisit the challenge as necessary, and redo the validation by clicking on the **VALIDATE (3)** button again.
      ![](../media/validate04.png "Validation")
  
-1. If you are still having trouble, you can reach out to the support team via `labs-support@spektrasystems.com` for further assistance. The support team is available to help you to troubleshoot and resolve any technical issues or validation issues that may arise while the lab environment is live.
+1. If you are still having trouble, you can reach out to the support team via `labs-support@spektrasystems.com` for further assistance. The support team is available to help you troubleshoot and resolve any technical issues or validation issues that may arise while the lab environment is live.
+
 ## Conclusion
-Congratulations on completing the **Resilience Testing using Azure Load Testing and Azure Chaos Studio** challenge! You learnt the implementation of Azure Load testing and experiment in Azure Chaos studio. In the following challenge you will dive into leveraging AI to improve your DevSecOps workflow and developer productivity through GitHub Actions.
+Congratulations on completing the **Resilience Testing using Azure Load Testing and Azure Chaos Studio** challenge! You learned about the implementation of Azure Load testing and experimented in Azure Chaos Studio. 
+
+Congratulations! You have successfully completed all the challenges. 
