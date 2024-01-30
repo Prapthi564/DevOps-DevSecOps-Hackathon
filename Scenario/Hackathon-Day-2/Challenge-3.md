@@ -4,7 +4,7 @@
 
 ### Introduction:
 
-In the previous challenge you configured a few of the GitHub Advanced security features. In this challenge, as a DevSecOps engineer, your focus is on automating security processes and preventing security vulnerabilities. The Contoso Traders application, hosted on GitHub, will benefit from crucial GitHub Advanced security features like GitHub Dependabots and Secret Scanning.
+In the previous challenge, you configured a few of the GitHub Advanced security features. In this challenge, as a DevSecOps engineer, your focus is on automating security processes and preventing security vulnerabilities. The Contoso Traders application, hosted on GitHub, will benefit from crucial GitHub Advanced security features like GitHub Dependabots and Secret Scanning.
 
 **Dependabots**: Dependabot security updates are automated pull requests that help you update dependencies with known vulnerabilities. Dependabot version updates are automated pull requests that keep your dependencies updated, even when they don't have any vulnerabilities.
 
@@ -12,7 +12,7 @@ In the previous challenge you configured a few of the GitHub Advanced security f
 
 ## Challenge Objectives:
 
-> **Note**: Use the same GitHub repository which you created in the last challenge.
+> **Note**: Use the same GitHub repository that you created in the last challenge.
 
 1. **Configure Dependabot Alerts:**
 
@@ -20,14 +20,14 @@ In the previous challenge you configured a few of the GitHub Advanced security f
    - Track and resolve any of the dependabots alert.
   
 3. **Implement Secret Scanning:**
-   - Enable Secret Scanning security feature to the existing GitHub repository.
-   - Check the working of feature by exposing the application ID of a service principal and resolve the alerts.
+   - Enable the Secret Scanning security feature to the existing GitHub repository.
+   - Check the working of the feature by exposing the application ID of a service principal and resolving the alerts.
   
 ## Success criteria:
 To complete this challenge successfully:
 
 - Successful implementation of GitHub Dependabots for identifying and addressing security vulnerabilities.
-- Setup secreting scanning and updated the code base to resolve the alerts.
+- Set up secreting scanning and update the code base to resolve the alerts.
 
 ## Additional Resources:
 
@@ -41,7 +41,7 @@ To complete this challenge successfully:
  
     ![](../media/validate01.png "Validation")
  
-1. If the validation status displays **Success** for all the validation steps, **congratulations!**. This means that you have successfully completed the challenge.
+1. If the validation status displays **Success** for all the validation steps, **congratulations!** This means that you have successfully completed the challenge.
  
      ![](../media/validate02.png "Validation")
 1. If the validation status displays **Fail**, **don't worry!** This could mean that you did not perform the challenge correctly.
@@ -51,7 +51,7 @@ To complete this challenge successfully:
 1. Hover your mouse over the `i` **(1)** icon to see the error message and determine the root cause of the failure. Based on the error message, revisit the challenge as necessary, and redo the validation by clicking on the **VALIDATE (3)** button again.
      ![](../media/validate04.png "Validation")
  
-1. If you are still having trouble, you can reach out to the support team via `labs-support@spektrasystems.com` for further assistance. The support team is available to help you to troubleshoot and resolve any technical issues or validation issues that may arise while the lab environment is live.
+1. If you are still having trouble, you can reach out to the support team via `labs-support@spektrasystems.com` for further assistance. The support team is available to help you troubleshoot and resolve any technical issues or validation issues that may arise while the lab environment is live.
 
 ## Conclusion
 Congratulations on completing the **GitHub Advanced Security - Dependency Management and Secret Scanning** challenge! By addressing critical aspects of sensitive data security, and organization-level security settings, you've significantly strengthened the security posture of your GitHub repository. In the next challenge, you will focus on implementing monitoring over the application.
