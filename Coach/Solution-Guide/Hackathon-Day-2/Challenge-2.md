@@ -1,17 +1,17 @@
 # Challenge 02: GitHub Advanced Security - Implement Code Security Enhancements
 
 ## Introduction
-In this challenge, the user will focus on implementing security such as Code scanning, CodeQL alerts and repository security advisories to their GitHub repository using GitHub Advance security features.
+In this challenge, the user will focus on implementing security features such as Code scanning, CodeQL alerts, and repository security advisories to their GitHub repository using GitHub Advance security features.
 
-Here's the solution guide which includes detailed step-by-step instructions required to complete this challenge.
+Here's the solution guide, which includes detailed step-by-step instructions required to complete this challenge.
 
 ## Accessing GitHub
 
-1. To access and login to GitHub, open the edge browser from inside the environment and navigate to **[GitHub](https://github.com/)**.
+1. To access and log into GitHub, open the edge browser from inside the environment and navigate to **[GitHub](https://github.com/)**.
 
-2. Sign in to GitHub by clicking on the **Sign in** button from the top right corner of the GitHub home page.
+2. Sign in to GitHub by clicking on the **Sign in** button in the top right corner of the GitHub home page.
 
-3. On the **Sign into GitHUb tab** you will see a login screen, enter the following email/username and then click on **Next**.
+3. On the **Sign into GitHub tab**, you will see a login screen. Enter the following email/username and click on **Next**.
 
    - **Email/Username:** <inject key="GitHubUsername"></inject>
 
@@ -31,25 +31,25 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
 
    ![](../media/2dgn168.png)  
    
-1. Click on **Set up** **(1)** button to enable CodeQL analysis and select the **Advanced** **(2)** option for creating a CodeQL Analysis YAML file.
+1. Click on the **Set up** **(1)** button to enable CodeQL analysis, and select the **Advanced** **(2)** option for creating a CodeQL Analysis YAML file.
 
    ![](../media/2dgn169.png)      
 
-1. Update the workflow name to **codeql-analysis.yml** ***(1)*** and review the yaml file. Select **Commit changes** ***(2)***, then select **Commit directly to the main branch** ***(3)*** and click on **Commit new file** ***(4)***.
+1. Update the workflow name to **codeql-analysis.yml** ***(1)*** and review the yaml file. Select **Commit changes** ***(2)***, then select **Commit directly to the main branch** ***(3)***, and click on **Commit new file** ***(4)***.
   
    ![](../media/cl2-t1-s3.png)
 
    ![](../media/ex5-task1-step3b.png) 
   
-1. Navigate to **Actions** ***(1)*** tab, You can review the **workflow** ***(2)*** run.
+1. Navigate to the **Actions** ***(1)*** tab, here you can review the **workflow** ***(2)*** run.
     
    ![](../media/cl2-t1-s4.png) 
   
-1. Navigate to **Security** ***(1)*** tab and click on **View alerts** ***(2)***.
+1. Navigate to the **Security** ***(1)*** tab and click on **View alerts** ***(2)***.
    
    ![](../media/cl2-t1-s5.png)
   
-1. You will be navigated to **Code scanning** section. You'll be able to visualize that the **No code scanning alerts here!**.
+1. You will be navigated to the **Code scanning** section. You'll be able to visualize the **No code scanning alerts here!**.
    
    ![](../media/cl2-t1-s6.png)
     
@@ -57,15 +57,15 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
  
 In this task, you'll enable Repository security advisories. You can use GitHub Security Advisories to privately discuss, fix, and publish information about security vulnerabilities in your repository.  Anyone with admin permissions to a repository can create a security advisory.
  
-1. Navigate to **Security** ***(1)*** tab, select **Advisories** ***(2)*** from the side blade and click on **New draft security advisory** ***(3)***.
+1. Navigate to the **Security** ***(1)*** tab, select **Advisories** ***(2)*** from the side blade, and click on **New draft security advisory** ***(3)***.
 
    ![](../media/cl2-t2-s1.png)  
      
-1. In the Open a draft security advisory tab, under the Advisory Details section provide the following details.
+1. In the Open a draft security advisory tab, under the Advisory Details section, provide the following details:
 
    - Title: **Improper Access Control in devsecops/src/TailwindTraders.Ui.Website/src/App.js** ***(1)***
    - CVE identifier: **Request CVE ID later** ***(2)***
-   - Description: **Add** ***(3)*** the below mentioned details in the description section.
+   - Description: **Add** ***(3)*** the below-mentioned details in the description section.
    
    ```
    Impact
@@ -102,7 +102,7 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
     
    ![](../media/cl2-t2-s2.png)
    
-1. In the Affected products section, provide the following details and click on **Create draft security advisory** ***(7)***   
+1. In the **Affected products** section, provide the following details and click on **Create draft security advisory** ***(7)***   
  
    - Ecosystem: **composer** ***(1)***
    - Package name: **devsecops/src/TailwindTraders.Ui.Website/src/App.js** ***(2)***
@@ -113,19 +113,19 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
   
    ![](../media/cl2-t2-s3.png)
    
- 1. Once the security advisory is created, scroll-down and click on **start a temporary private fork**. It is used to collaborate on a patch for this advisory.
+ 1. Once the security advisory is created, scroll down and click on **start a temporary private fork**. It is used to collaborate on a patch for this advisory.
 
     ![](../media/cl2-t2-s4-a.png)
     
     ![](../media/cl2-t2-s4-b.png)
   
- 1. After having the temporary fork you can request a CVE, it is used for GitHub reviews and published security advisories. Upon review, we may use this advisory to send Dependabot alerts to affected repositories and redistribute the advisory through our API and Atom feed.
+ 1. After having the temporary fork, you can request a CVE. It is used for GitHub reviews and published security advisories. Upon review, we may use this advisory to send Dependabot alerts to affected repositories and redistribute the advisory through our API and Atom feed.
 
  ## Success criteria:
 To complete this challenge successfully:
 
    - Verify the implementation of Implement Code Scanning and CodeQL.
-   - Configure the Repository security advisories feature and createtemporary private fork.
+   - Configure the Repository security advisories feature and create temporary private fork.
 
 ## Additional Resources:
 
