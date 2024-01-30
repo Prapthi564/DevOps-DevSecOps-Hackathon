@@ -3,23 +3,23 @@
 ### Estimated Time: 60 minutes
 
 ### Introduction:
-In this previous challenge, you did a successful hosting of the application using GitHub repository and GitHub Actions for Continuous Integration and Continuous Delivery. In this challenge, you are a DevSecOps engineer tasked with ensuring the security of the Contoso Traders application hosted on GitHub. In this challenge, your goal is to mitigate risks in dependencies and secure sensitive data using advanced security features provided by GitHub. 
+In this previous challenge, you successfully hosted the application using the GitHub repository and GitHub Actions for Continuous Integration and Continuous Delivery. In this challenge, you are a DevSecOps engineer tasked with ensuring the security of the Contoso Traders application hosted on GitHub. In this challenge, your goal is to mitigate risks in dependencies and secure sensitive data using advanced security features provided by GitHub. 
 
 You need to focus on completing the implementation of the below-mentioned security features.
 
-**Code Scanning**: Code scanning is a feature that you use to analyze the code in a GitHub repository to find security vulnerabilities and coding errors. Any problems identified by the analysis are shown in GitHub. You can use code scanning to find, triage, and prioritize fixes for existing problems in your code. Code scanning also prevents developers from introducing new problems
+**Code Scanning**: Code scanning is a feature that you use to analyze the code in a GitHub repository to find security vulnerabilities and coding errors. Any problems identified by the analysis are shown on GitHub. You can use code scanning to find, triage, and prioritize fixes for existing problems in your code. Code scanning also prevents developers from introducing new problems
 
-**CodeQL**: CodeQL is the code analysis engine developed by GitHub to automate security checks. You can analyze your code using CodeQL and display the results as code scanning alerts.
+**CodeQL**: CodeQL is the code analysis engine developed by GitHub to automate security checks. You can analyze your code using CodeQL and display the results as code-scanning alerts.
 
 **Repository security advisories**: Repository security advisories allow repository maintainers to privately discuss and fix a security vulnerability in a project. 
 
 ## Accessing GitHub
 
-1. To access the and login to GitHub, open the edge browser from inside the environment and navigate to **[GitHub](https://github.com/)**.
+1. To access and login to GitHub, open the Edge browser from inside the environment and navigate to **[GitHub](https://github.com/)**.
 
-2. Sign in to GitHub by clicking on the **Sign in** button from the top right corner of the GitHub home page.
+2. Sign in to GitHub by clicking on the **Sign in** button in the top right corner of the GitHub home page.
 
-3. On the **Sign into GitHub tab** you will see a login screen, enter the following email/username and then click on **Next**.
+3. On the **Sign into GitHub tab**, you will see a login screen. Enter the following email/username and then click on **Next**.
 
    - **Email/Username:** 
 
@@ -30,16 +30,16 @@ You need to focus on completing the implementation of the below-mentioned securi
 
 ## Challenge Objectives:
 
-> **Note**: Use the same GitHub repository which you created in the last challenge.
+> **Note**: Use the same GitHub repository that you created in the last challenge.
 
 1. **Implement Code Scanning and CodeQL:**
  
    - Enable Code scanning for the repository.
    - Configure CodeQL analysis in the workflow to the existing GitHub.
-   - Resolve the generated alerts if any.
+   - Resolve the generated alerts, if any.
 
 2. **Implement Repository security advisories:**
-   -  Set up Repository security advisories features for App.js package. Use `devsecops/src/TailwindTraders.Ui.Website/src/App.js` path while configuring the affected products.
+   -  Set up Repository security advisory features for App.js package. Use the `devsecops/src/TailwindTraders.Ui.Website/src/App.js` path while configuring the affected products.
 
   
 ## Success criteria:
@@ -62,7 +62,7 @@ Here are a few documentation and guides to assist you in completing the challeng
  
     ![](../media/validate01.png "Validation")
  
-1. If the validation status displays **Success** for all the validation steps, **congratulations!**. This means that you have successfully completed the challenge.
+1. If the validation status displays **Success** for all the validation steps, **congratulations!** This means that you have successfully completed the challenge.
  
      ![](../media/validate02.png "Validation")
 1. If the validation status displays **Fail**, **don't worry!** This could mean that you did not perform the challenge correctly.
@@ -72,7 +72,7 @@ Here are a few documentation and guides to assist you in completing the challeng
 1. Hover your mouse over the `i` **(1)** icon to see the error message and determine the root cause of the failure. Based on the error message, revisit the challenge as necessary, and redo the validation by clicking on the **VALIDATE (3)** button again.
      ![](../media/validate04.png "Validation")
  
-1. If you are still having trouble, you can reach out to the support team via `labs-support@spektrasystems.com` for further assistance. The support team is available to help you to troubleshoot and resolve any technical issues or validation issues that may arise while the lab environment is live.
+1. If you are still having trouble, you can reach out to the support team via `labs-support@spektrasystems.com` for further assistance. The support team is available to help you troubleshoot and resolve any technical issues or validation issues that may arise while the lab environment is live.
 
 
 ## Conclusion
