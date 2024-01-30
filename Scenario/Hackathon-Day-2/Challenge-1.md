@@ -9,11 +9,11 @@ You are a DevOps engineer tasked with setting up a robust Continuous Integration
 
 ## Accessing GitHub
 
-1. To access and login to GitHub, open the edge browser from inside the environment and navigate to **[GitHub](https://github.com/)**.
+1. To access and login to GitHub, open the Edge browser from inside the environment and navigate to **[GitHub](https://github.com/)**.
 
-2. Sign in to GitHub by clicking on the **Sign in** button from the top right corner of the GitHub home page.
+2. Sign in to GitHub by clicking on the **Sign in** button in the top right corner of the GitHub home page.
 
-3. On the **Sign into GitHub tab** you will see a login screen, enter the following email/username and then click on **Next**.
+3. On the **Sign into GitHub tab**, you will see a login screen. Enter the following email/username, and click on **Next**.
 
    - **Email/Username:** <inject key="GitHubUsername"></inject>
 
@@ -21,9 +21,9 @@ You are a DevOps engineer tasked with setting up a robust Continuous Integration
 
    - **Password:** <inject key="GitHubPassword"></inject>
 
-## Accessing Azure portal
+## Accessing the Azure Portal
 
-1. To access the Azure portal, open the edge browser from inside the environment and navigate to **[Azure Portal](https://portal.azure.com)**.
+1. To access the Azure Portal, open the Edge browser from inside the environment and navigate to **[Azure Portal](https://portal.azure.com)**.
 
 1. On the **Sign in to Microsoft Azure** tab, you will see a login screen. Enter the following email/username and then click on **Next**. 
    * Email/Username: <inject key="AzureAdUserEmail"></inject>
@@ -39,29 +39,33 @@ You are a DevOps engineer tasked with setting up a robust Continuous Integration
 
 ## Challenge Objectives:
 
->**Note:** Solely use GitHub and GitHub Actions for CI/CD; no usage of Azure DevOps or any external CI/CD services.
+>**Note:** Only use GitHub and GitHub Actions for CI/CD; no usage of Azure DevOps or any external CI/CD services.
 
 1. **Setup a GitHub repository:**
    - Create a new GitHub repository with public access permission.
-   - You are provided with an e-commerce application named Contoso Traders which needs to be deployed and hosted in Azure.
-   - You can navigate to `C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files` directory and find the complete code base of the application.
-   - Using Visual Studio code, connect to the GitHub repository which you created in earlier step and push the application code base to your GitHub repository.
+   - You are provided with an e-commerce application named Contoso Traders, which needs to be deployed and hosted on Azure.
+   - You can navigate to the `C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files` directory and find the complete code base of the application.
+   - Using Visual Studio code, connect to the GitHub repository that you created in the earlier step and push the application code base to your GitHub repository.
 
 2. **Deploy Infrastructure:**
-   - In GitHub repository, navigate to `iac/createResources.parameters.json` path and update the following parameters value.
+   - In the GitHub repository, navigate to the `iac/createResources.parameters.json` path and update the value of the following parameters.
      - Replace `deploymentidvalue` with **<inject key="DeploymentID" enableCopy="false" />**.
      - Replace `bicepsqlpass` value with **<inject key="AzureAdUserPassword"></inject>**.
      - Create GitHub secrets with the same name as mentioned below.
-        - **SERVICEPRINCIPAL**: Create a secret to store service principal details. You can find the details in Environment details tab of your environment.
+        - **SERVICEPRINCIPAL**: Create a secret to store service principal details. You can find the details in the Environment details tab of your environment.
         - **SQL_PASSWORD**: You need to store **<inject key="AzureAdUserPassword"></inject>(Azure AD user password)** as a secret.
         - **ENVIRONMENT**: Create a secret to store the deployment ID which is **<inject key="DeploymentID" enableCopy="false" />**.
        
        >**Hint**: You can also find the deployment ID and the Azure AD password within the environment details tab of your integrated lab guide.
 
-   - In GitHub repository, navigate to `iac/createResourceGroup.bicep` path and update the resource group name as mentioned below:
+   - In the GitHub repository, navigate to the `iac/createResourceGroup.bicep` path and update the resource group name as mentioned below:
       - Replace `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
 
    - Within your repository, navigate to `.github/workflow/deploy-infrastructure.yml` path and ensure to update the `RESOURCE_GROUP_NAME` environment variable by replacing `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
+     
+   - Within your repository, navigate to `.github/workflow/Update-contoso-Traders-App.yml` path, ensure to update the `RESOURCE_GROUP_NAME`, and `AKS_NODES_RESOURCE_GROUP_NAME` environment variable by replacing `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
+   
+   -  Run the workflow named `contoso-traders-provisioning-deployment` and `update contoso Traders app`, using GitHub Actions.
    
    -  Run the workflow named `contoso-traders-provisioning-deployment` using GitHub Actions.
    
@@ -70,17 +74,17 @@ You are a DevOps engineer tasked with setting up a robust Continuous Integration
    - Update the previously created GitHub secret with the following value:
       - **SQL_PASSWORD**: ADO.NET (SQL authentication) connection string of `productsdb` SQL database.
 
-   - In GitHub repository, navigate to  **.github/workflow** where you will be able find the yaml workflow. This YAML file is partially updated, you need to update the YAML files with right steps and complete the workflow. This workflow should deploy the application into Azure. 
+   - In the GitHub repository, navigate to  **.github/workflow** where you will be able to find the yaml workflow. This YAML file is partially updated, you need to update the YAML files with the right steps and complete the workflow. This workflow should deploy the application to Azure. 
   
 4. **Test the application and perform rolling updates:**
-   - Navigate to Azure portal and check the application status using Azure Endpoint.
-   - Update the workflow file to intitate Action run on changes to the GitHub repository.
+   - Navigate to the Azure Portal and check the application status using Azure Endpoint.
+   - Update the workflow file to initiate Action run on changes to the GitHub repository.
   
 ## Success criteria:
 To complete this challenge successfully:
 
-- Verify the successful deployment of the Infrastructure of the application in the Azure portal.
-- Verify the GitHub Action, all the jobs in GitHub Action should be completed without any error.
+- Verify the successful deployment of the Infrastructure of the application in the Azure Portal.
+- Verify the GitHub Action; all the jobs in the GitHub Action should be completed without any error.
 - Verify the deployment and hosting of the Contoso Traders application in Azure.
 
 ## Additional Resources:
@@ -97,7 +101,7 @@ Here are a few documentation and guides to assist you in completing the challeng
  
     ![](../media/validate01.png "Validation")
  
-1. If the validation status displays **Success** for all the validation steps, **congratulations!**. This means that you have successfully completed the challenge.
+1. If the validation status displays **Success** for all the validation steps, **congratulations!** This means that you have completed the challenge.
  
      ![](../media/validate02.png "Validation")
 1. If the validation status displays **Fail**, **don't worry!** This could mean that you did not perform the challenge correctly.
@@ -107,7 +111,7 @@ Here are a few documentation and guides to assist you in completing the challeng
 1. Hover your mouse over the `i` **(1)** icon to see the error message and determine the root cause of the failure. Based on the error message, revisit the challenge as necessary, and redo the validation by clicking on the **VALIDATE (3)** button again.
      ![](../media/validate04.png "Validation")
  
-1. If you are still having trouble, you can reach out to the support team via `labs-support@spektrasystems.com` for further assistance. The support team is available to help you to troubleshoot and resolve any technical issues or validation issues that may arise while the lab environment is live.
+1. If you are still having trouble, you can reach out to the support team via `labs-support@spektrasystems.com` for further assistance. The support team is available to help you troubleshoot and resolve any technical issues or validation issues that may arise while the lab environment is live.
 
 ## Conclusion:
-Congratulations on successfully completing the **Continuous Integration and Deployment for Contoso Traders using GitHub Actions** challenge. You have successfully verified the configuration of a GitHub repository, established a functional CI/CD workflow, utilized GitHub Actions to deploy the .NET application. In the next challenge, you will look into implementing security features offered by GitHub.
+Congratulations on completing the **Continuous Integration and Deployment for Contoso Traders using GitHub Actions** challenge. You have successfully verified the configuration of a GitHub repository, established a functional CI/CD workflow, and utilized GitHub Actions to deploy the .NET application. In the next challenge, you will look into implementing security features offered by GitHub.
