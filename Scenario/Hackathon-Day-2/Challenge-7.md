@@ -8,7 +8,9 @@ Contoso Traders is a web application for stock trading. In this challenge, as a 
 ## Challenge Objectives:
 
 1. **Feature Addition with GitHub Copilot:**
-   
+   - Use GitHub Copilot to assist you in writing code for the new welcome page feature.
+   - Enhance the user interface and design to create an engaging welcome experience.
+
 2. **Unit Test Generation with Copilot:**
    - After implementing the feature, you should use GitHub Copilot to generate unit tests for the new functionality which includes assessing the accuracy and completeness of the generated unit tests.
    - Ensure that the generated test cases are alligning with the code analogy with successful test passes.
