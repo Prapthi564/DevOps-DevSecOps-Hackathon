@@ -158,6 +158,12 @@ with the github credentials that were copied over to Notepad in the previous ste
       
    ![Picture1](../media/cl7-ex1-t2-s9.png)
 
+## Exercise 2: Generate and run Unit Test cases using GitHub Coplilot:
+
+### Task 1: Generate Unit Tests using GitHub Copilot Chat:
+
+1. 
+
 ## Success criteria:
 To complete this challenge successfully:
 
