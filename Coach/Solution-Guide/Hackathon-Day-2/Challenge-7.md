@@ -160,18 +160,52 @@ with the github credentials that were copied over to Notepad in the previous ste
 
 ## Exercise 2: Generate and run Unit Test cases using GitHub Coplilot:
 
-### Task 1: Generate Unit Tests using GitHub Copilot Chat:
+### Task 1: Create and run test cases:
 
 1. In Visual Studio Code, go to **Explorer (1)** and navigate to `C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files\src\ContosoTraders.Ui.Website\src` and open the `App.js` file.
 
    ![Picture1](../media/cl7-ex2-t1-s1.png)
 
-2. Select all code lines `[CTRL+A]` within the `App.js` file **(1)** and then paste the following prompt within the GitHub Copilot Chat Panel:
+2. Select all code lines `[CTRL+A]` within the `App.js` file **(1)** and then paste the following prompt **(2)** within the GitHub Copilot Chat Panel:
    ```
-   
+   /tests
    ```
 
-4. Now navigate to the GitHub Copilot Chat panel, 
+   ![Picture1](../media/cl7-ex2-t1-s2.png)
+
+3. Now create a new folder named `_tests_` under the path `C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files\src\ContosoTraders.Ui.Website\src`.
+
+   ![Picture1](../media/cl7-ex2-t1-s3.png)
+
+4. Create a new test file named `App.test.js` within the `_tests_` folder.
+
+   ![Picture1](../media/cl7-ex2-t1-s4.png)
+
+5. Navigate back to the GitHub Copilot chat panel and copy the unit test that has been generated using Copilot for your `App` component. Ensure to paste these unit test cases within the newly created file - `App.test.js` under the `_tests_` folder and save the file.
+
+   ![Picture1](../media/cl7-ex2-t1-s5-a.png)
+
+   ![Picture1](../media/cl7-ex2-t1-s5-b.png)
+
+   >**Note:** Ensure to add the following code line at the beginning of your `App.test.js` file as shown in the above screenshot. The comment `/** @jest-environment jsdom */` is a directive used in Jest to specify the testing environment for a particular test file. In this case, it indicates that the test should be executed in a JavaScript Document Object Model (DOM) environment, specifically provided by jsdom.
+
+6. Once ready with the test cases, open a new terminal within Visual Studio Code, and navigate to the following path/directory by running the below command within the terminal:
+
+   ```
+   cd C:\DevOps-DevSecOps-Hackathon-lab-files\DevOps-DevSecOps-Hackathon-lab-files\src\ContosoTraders.Ui.Website\src>
+   ```
+
+   >**Note:** Ensure that your current working directory within the terminal has the `_tests_` folder in its present path. In this scenario, the `_tests_` folder is present inside the `/src` directory. 
+
+7. To execute the unit test cases genereated by GitHub Copilot, we need to run the `App.test.js` file using the following command within the terminal:
+
+   ```
+   npm run test
+   ```
+
+8. Post execution of the above unit test, you must ensure to have a successful - `PASS` test runs with no errors. If you are produced with errors, please understand the intricacies of the error as mentioned within the terminal and work towards a successful unit test run.
+
+   ![Picture1](../media/cl7-ex2-t1-s8.png)
 
 ## Success criteria:
 To complete this challenge successfully:
