@@ -8,7 +8,9 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
 
 ## Solution Guide
 
-## Task 1: Sign in to GitHub Copilot in Visual Studio Code
+## Exercise 1: Feature Addition with GitHub Copilot
+
+### Task 1: Sign in to GitHub Copilot in Visual Studio Code
 
 1. Open **Visual Studio Code** from the desktop screen. 
 
@@ -64,13 +66,94 @@ with the github credentials that were copied over to Notepad in the previous ste
 
 ## Task 2: Create a new file in Visual Studio Code
 
-1. In Visual Studio Code, go to **Explorer (1)** and click on **Open Folder (2)**. Navigate to **C:\CloudLabs** within the file explorer, and select the **CloudLabs** folder.
+>**NOTE:** It should be noted that the code suggestions offered by GitHub Copilot might not exactly match the screenshots shown within the labguide. GitHub Copilot is an AI-powered tool that generates code based on context and patterns, and its suggestions can be influenced by various factors. It is also important that you have the knowledge on operating and running React Applications which may be needed as you proceed with this exercise.
+
+1. In Visual Studio Code, go to **Explorer (1)** and click on **Open Folder (2)**. Navigate to **C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files** within the file explorer, and select the **DevOps-DevSecOps-Hackathon-lab-files** folder.
 
     ![Picture1](../media/openfolders.png) 
 
 2. Ensure to click on **Yes, I trust the authors** within the pop-up to successfully import the CloudLabs folder into VS Code.
 
-   ![Picture1](../media/trust-authors.png) 
+   ![Picture1](../media/trust-authors.png)
+
+3. Once the project has loaded, within the explorer pane, navigate to `C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files\src\ContosoTraders.Ui.Website\src` to view the `App.js` file.
+
+   ![Picture1](../media/cl7-ex1-t2-s3.png)
+
+4. Within the **CHAT: GITHUB COPILOT** pane, type: `Help me add a welcome page into the current project` and observe the AI response. You can follow the instructions provided by GitHub Copilot towards successfully adding the welcome page as a part of the Contoso Traders Application.
+
+   ![Picture1](../media/cl7-ex1-t2-s3.png)
+
+5. Create a new file named `Welcome.js` **(1)** in your `pages` directory ie., within the path `C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files\src\ContosoTraders.Ui.Website\src\pages\welcome` and then add the following code:
+
+   ```
+   import React from 'react';
+
+   const Welcome = () => {
+     return (
+       <div>
+         <h1>Welcome to our site!</h1>
+         <p>This is the welcome page.</p>
+       </div>
+     );
+   };
+   
+   export default Welcome;
+   ```
+
+   >**Note:** This `Welcome.js` file, defines a new component that will serve as your welcome page. This is where you'll write the code for the same.
+
+   ![Picture1](../media/cl7-ex1-t2-s5.png)
+
+6. Save the newly created `Welcome.js` file.
+
+7. Now we need to import this new component into your `App.js` file. `App.js` is usually the main file in a React application. You'll need to import the Welcome component into the `App.js` file by using the following code:
+
+   ```
+   import Welcome from './pages/welcome/welcome'; // assuming a new directory named `welcome` within `pages`.
+   ```
+
+   ![Picture1](../media/cl7-ex1-t2-s7.png)
+
+8. Next, you must add a new `Route` for the `Welcome` page by using the following code within the `App.js` file:
+
+   ```
+   return (
+     <div>
+       {this.renderWelcomeMessage()}
+       {/* Rest of your app goes here */}
+       <div className="App">
+         <Fragment>
+           <div className="mainHeader">
+             <HeaderMessage type="warning" icon={warningIcon} message="This Is A Demo Store For Testing Purposes — No Orders Shall Be Fulfilled."/>
+             <Appbar quantity={quantity} />
+             {this.props.history.location.pathname === '/' || this.props.history.location.pathname === '/new-arrivals' ?
+               <Header quantity={quantity} />
+               :
+               <div id="box"></div>}
+           </div>
+           <Route path="/welcome" component={Welcome} /> {/* Add this line */}
+         </Fragment>
+       </div>
+     </div>
+   );
+   ```
+
+   ![Picture1](../media/cl7-ex1-t2-s8.png)
+
+   >**Note:** The above code tells the router to show the `Welcome` component when the URL path is `/welcome`. Now, if you navigate to `http://localhost:3000/welcome` in your web browser (assuming your React app is running on localhost port 3000), you should see your welcome page!
+   
+   >**Note:** Please note that the placement of the Route component might need to be adjusted based on the exact structure and requirements of your application.
+   >
+
+9. To run your React application, you typically use the command line (also known as the terminal). Here are the steps:
+      - Within Visual Studio Code, you can open the terminal by going to the top menu and selecting View -> Terminal **(1)**.
+      - Navigate to your project directory. You can do this with the `cd` command followed by the path to your project. You can use the below command to navigate to the React application's working directory **(2)**:
+      ```
+      cd C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files\src\ContosoTraders.Ui.Website\src
+      ``` 
+      - Once you're in your project directory, you can start the application with the `npm start` because the Contoso Traders Application has used npm to 
+
 
 ## Success criteria:
 To complete this challenge successfully:
