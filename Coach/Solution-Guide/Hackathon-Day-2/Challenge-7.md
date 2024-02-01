@@ -64,7 +64,7 @@ with the github credentials that were copied over to Notepad in the previous ste
     ![Picture1](../media/chatnew.png)
    
 
-## Task 2: Create a new file in Visual Studio Code
+### Task 2: Create a new file in Visual Studio Code
 
 >**NOTE:** It should be noted that the code suggestions offered by GitHub Copilot might not exactly match the screenshots shown within the labguide. GitHub Copilot is an AI-powered tool that generates code based on context and patterns, and its suggestions can be influenced by various factors. It is also important that you have the knowledge on operating and running React Applications which may be needed as you proceed with this exercise.
 
@@ -144,7 +144,6 @@ with the github credentials that were copied over to Notepad in the previous ste
    >**Note:** The above code tells the router to show the `Welcome` component when the URL path is `/welcome`. Now, if you navigate to `http://localhost:3000/welcome` in your web browser (assuming your React app is running on localhost port 3000), you should see your welcome page!
    
    >**Note:** Please note that the placement of the Route component might need to be adjusted based on the exact structure and requirements of your application.
-   >
 
 9. To run your React application, you typically use the command line (also known as the terminal). Here are the steps:
       - Within Visual Studio Code, you can open the terminal by going to the top menu and selecting View -> Terminal **(1)**.
@@ -152,8 +151,12 @@ with the github credentials that were copied over to Notepad in the previous ste
       ```
       cd C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files\src\ContosoTraders.Ui.Website\src
       ``` 
-      - Once you're in your project directory, you can start the application with the `npm start` because the Contoso Traders Application has used npm to 
-
+      - Once you're in your project directory, you can start the application with the `npm start` **(3)** because we need npm to create the Contoso Traders Application. After running the following command, your application should start, and you can view it in your web browser at http://localhost:3000.
+      ```
+      npm run start
+      ```
+      
+   ![Picture1](../media/cl7-ex1-t2-s9.png)
 
 ## Success criteria:
 To complete this challenge successfully:
