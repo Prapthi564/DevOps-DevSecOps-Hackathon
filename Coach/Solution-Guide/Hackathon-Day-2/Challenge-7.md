@@ -151,7 +151,7 @@ with the github credentials that were copied over to Notepad in the previous ste
       ```
       cd C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files\src\ContosoTraders.Ui.Website\src
       ``` 
-      - Once you're in your project directory, you can start the application with the `npm start` **(3)** because we need npm to create the Contoso Traders Application. After running the following command, your application should start, and you can view it in your web browser at http://localhost:3000.
+      - Once you're in your project directory, you can start the application with the `npm start` **(3)** because we need npm to create the Contoso Traders Application. After running the following command within the terminal, your application should start, and you can view it in your web browser at http://localhost:3000.
       ```
       npm run start
       ```
