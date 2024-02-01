@@ -162,7 +162,16 @@ with the github credentials that were copied over to Notepad in the previous ste
 
 ### Task 1: Generate Unit Tests using GitHub Copilot Chat:
 
-1. 
+1. In Visual Studio Code, go to **Explorer (1)** and navigate to `C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files\src\ContosoTraders.Ui.Website\src` and open the `App.js` file.
+
+   ![Picture1](../media/cl7-ex2-t1-s1.png)
+
+2. Select all code lines `[CTRL+A]` within the `App.js` file **(1)** and then paste the following prompt within the GitHub Copilot Chat Panel:
+   ```
+   
+   ```
+
+4. Now navigate to the GitHub Copilot Chat panel, 
 
 ## Success criteria:
 To complete this challenge successfully:
