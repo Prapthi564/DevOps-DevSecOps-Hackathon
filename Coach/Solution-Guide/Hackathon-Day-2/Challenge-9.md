@@ -100,10 +100,11 @@ In this task, you'll explore how secret scanning works and how it generates aler
 ## Success criteria:
 To complete this challenge successfully:
 
-- Successful implementation of GitHub Dependabots for identifying and addressing security vulnerabilities.
-- Setup secreting scanning and updated the code base to resolve the alerts.
+- Appropriate integration and configuration of Microsoft Security DevOps GitHub Action.
+- Successful connection of GitHub environment to Microsoft Defender for Cloud.
 
 ## Additional Resources:
 
-- Refer to [Secret Scanning](https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning) for reference.
-- Refer to [GitHub Dependabot](https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts) for reference.
+- Refer to [Overview of Microsoft Defender for Cloud DevOps Security](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-devops-introduction) for reference.
+- Refer to [Configure the Microsoft Security DevOps GitHub action](https://learn.microsoft.com/en-us/azure/defender-for-cloud/github-action) for reference.
+- Refer to [Connect your GitHub Environment to Microsoft Defender for Cloud](https://learn.microsoft.com/en-us/azure/defender-for-cloud/quickstart-onboard-github) for reference.
