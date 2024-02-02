@@ -378,6 +378,8 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
 
 ## Exercise 4: CI/CD Pipeline Setup and infrastrucure Deployment
 
+### Task 1: Deploy Infrastructure
+
 >**Note:** This exercise is dependent on the completion of Challenge 1 which requires:
    - Updated parameters within `iac/createResources.parameters.json` file.
    - Creation of new Action Secrets named **SERVICEPRINCIPAL**, **SQL_PASSWORD** and **ENVIRONMENT**.
@@ -484,6 +486,71 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
 
     ![](../media/dso2.png) 
 
+### Task 2: Setup CI/CD Workflow
+
+1.  From the Azure Portal Dashboard, click on Resource Groups from the Navigate panel to see the resource groups.
+
+   ![](../media/2dgn9.png) 
+   
+1. Select the **contosotraders-<Deployment-ID>** resource group from the list.
+
+   ![](../media/cl1-t3-s2.png)  
+   
+1. Select the **productsdb** SQL database from the list of resources.
+
+   ![](../media/cl1-t3-s3.png) 
+   
+1. Under the Settings side blade, select **Connection strings** ***(1)*** and copy the **ADO.NET (SQL authentication)** ***(2)*** connection string from the ADO.NET tab. 
+
+   ![](../media/ado-sql-database.png)  
+ 
+1. In your GitHub lab files repository, select the **Settings** tab from the lab files repository.
+
+   ![](../media/cl1-t1-s8.png)
+   
+1. Under **Security**, expand **Secrets and variables** ***(1)*** by clicking the drop-down and selecting **Actions** ***(2)*** from the left navigation bar. Select the edit button for the created secret named **SQL_PASSWORD** ***(3)***.
+
+   ![](../media/cl1-t3-s6.png)
+    
+1. Under the **Actions Secrets/Update secret** page, enter the below-mentioned details, and click on **Update secret** ***(3)***.
+
+   - **Value**: Paste the **ADO.NET (SQL authentication)** that you  have copied in the previous step.
+   
+   ![](../media/cl1-t3-s7.png)
+   
+   >**Note**: Replace `{your_password}` with the ODL User Azure Password. Go to **Environment Details (1)**, click on **Azure credentials (2)**, and copy **Password (3)**.
+   
+   ![](../media/2dgn155.png)   
+   
+1. From your GitHub repository, select the **Actions** ***(1)*** tab. Select the **contoso-traders-app-deployment** ***(2)*** workflow from the side blade, Click on the  **drop-down** ***(3)*** next Run workflow button, and select **Run workflow** ***(4)***.
+
+   ![](../media/2dgn159.png)
+   
+1. Navigate back to the Actions tab and select the **contoso-traders-app-deployment** workflow. This workflow builds the Docker image, which is pushed to the container registry. The same image is pushed to the Azure container application.
+
+   ![](media/2dgn124.png)
+   
+   ![](../media/2dgn165.png)
+
+### Task 3: Test the application and perform rolling updates
+
+1. Navigate to Azure Portal, and click on Resource Groups from the Navigate panel to see the resource groups.
+
+   ![](../media/2dgn9.png) 
+   
+2. Select the **contosotraders-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
+
+   ![](../media/2dgn135.png) 
+   
+3. Select the **contosotraders-ui2<inject key="DeploymentID" enableCopy="false" />** endpoint from the list of resources.
+
+   ![](../media/2dgn127.png) 
+   
+4. Click on the **Endpoint hostname**. It'll open a browser tab where you will be able to verify that the Contoso Traders app has been hosted successfully.
+
+   ![](../media/2dgn128.png) 
+    
+   ![](../media/2dgn162.png) 
 
 ## Success criteria:
 To complete this challenge successfully:
