@@ -211,7 +211,7 @@ with the github credentials that were copied over to Notepad in the previous ste
 
 ### Task 1: Submit Codebase Modifications to GitHub Repository
 
-1.  In a new browser tab, open ```https://www.github.com/login```. From the **Environment Details** page **(1)**, navigate to **License** **(2)** tab and **copy** **(3)** the credentials. Use the same username and password to log into GitHub.
+1. In a new browser tab, open ```https://www.github.com/login```. From the **Environment Details** page **(1)**, navigate to **License** **(2)** tab and **copy** **(3)** the credentials. Use the same username and password to log into GitHub.
 
    ![](../media/dev2.png) 
 
