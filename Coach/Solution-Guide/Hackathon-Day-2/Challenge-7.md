@@ -532,7 +532,7 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
    
    ![](../media/2dgn165.png)
 
-### Task 3: Test the application and perform rolling updates
+### Task 3: Test the application
 
 1. Navigate to Azure Portal, and click on Resource Groups from the Navigate panel to see the resource groups.
 
