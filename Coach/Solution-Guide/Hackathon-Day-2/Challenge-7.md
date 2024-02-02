@@ -274,11 +274,11 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
 
 2. Considering that you have already created the `CodeQL` GitHub Action in challenge 2; select the **Actions** ***(1)*** tab from the GitHub browser tab. Click on **CodeQL** ***(2)*** workflow under the **All workflows** section of the left navigation pane.
 
-   ![](../media/cl7-ex2-t2-s2.png)
+   ![](../media/cl7-ex3-t2-s2.png)
 
 3. Verify Successful Execution of the **CodeQL** GitHub Action for using the `codeql-analysis.yml` Workflow File. The trigger for this action being the recent push from Visual Studio Code. 
 
-   ![](../media/cl7-ex2-t2-s3.png)
+   ![](../media/cl7-ex3-t2-s3.png)
 
 5. If you have not implemented Code Scanning and CodeQL within your repository, follow steps 6 - 11 of this task to perform code review and security checks.
 
