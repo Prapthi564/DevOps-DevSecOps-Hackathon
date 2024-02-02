@@ -98,10 +98,11 @@ In this task, you'll explore how secret scanning works and how it generates aler
 ## Success criteria:
 To complete this challenge successfully:
 
-- Successful implementation of GitHub Dependabots for identifying and addressing security vulnerabilities.
-- Setup secreting scanning and updated the code base to resolve the alerts.
+- Successful effectiveness of policies in enforcing security compliance.
+- Successful integration of compliance scanning into the pipeline.
+- Successful setup and execution of the CI/CD pipeline.
 
 ## Additional Resources:
 
-- Refer to [Secret Scanning](https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning) for reference.
-- Refer to [GitHub Dependabot](https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts) for reference.
+- Refer to [Overview of Azure Policy](https://learn.microsoft.com/en-us/azure/governance/policy/overview) for reference.
+- Refer to [Azure Policy Compliance Scan](https://github.com/marketplace/actions/azure-policy-compliance-scan) for reference.
