@@ -82,9 +82,9 @@ with the github credentials that were copied over to Notepad in the previous ste
 
 4. Within the **CHAT: GITHUB COPILOT** pane, type: `Help me add a welcome page into the current project` and observe the AI response. You can follow the instructions provided by GitHub Copilot towards successfully adding the welcome page as a part of the Contoso Traders Application.
 
-   ![Picture1](../media/cl7-ex1-t2-s3.png)
+   ![Picture1](../media/cl7-ex1-t2-s4.png)
 
-5. Create a new file named `Welcome.js` **(1)** in your `pages` directory ie., within the path `C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files\src\ContosoTraders.Ui.Website\src\pages\welcome` and then add the following code:
+5. Create a new file named `Welcome.js` **(1)** in your `pages` directory ie., within the path `C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files\src\ContosoTraders.Ui.Website\src\pages\welcome` and then add the following code **(2)**:
 
    ```
    import React from 'react';
@@ -146,7 +146,7 @@ with the github credentials that were copied over to Notepad in the previous ste
    >**Note:** Please note that the placement of the Route component might need to be adjusted based on the exact structure and requirements of your application.
 
 9. To run your React application, you typically use the command line (also known as the terminal). Here are the steps:
-      - Within Visual Studio Code, you can open the terminal by going to the top menu and selecting View -> Terminal **(1)**.
+      - Within Visual Studio Code, you can open the terminal by going to the top menu to click on **Terminal** **(1)** and then select **New Termimal (2)**.
       - Navigate to your project directory. You can do this with the `cd` command followed by the path to your project. You can use the below command to navigate to the React application's working directory **(2)**:
       ```
       cd C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files\src\ContosoTraders.Ui.Website\src
@@ -162,7 +162,7 @@ with the github credentials that were copied over to Notepad in the previous ste
 
 ### Task 1: Create and run test cases:
 
-1. In Visual Studio Code, go to **Explorer (1)** and navigate to `C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files\src\ContosoTraders.Ui.Website\src` and open the `App.js` file.
+1. In Visual Studio Code, go to **Explorer** and navigate to `C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files\src\ContosoTraders.Ui.Website\src` and open the `App.js` file.
 
    ![Picture1](../media/cl7-ex2-t1-s1.png)
 
