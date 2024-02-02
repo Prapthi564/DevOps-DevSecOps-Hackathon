@@ -1,4 +1,4 @@
-# Challenge 08: Securing DevOps with Microsoft Defender for Cloud
+# Challenge 09: Securing DevOps with Microsoft Defender for Cloud
 
 ## Introduction
 
