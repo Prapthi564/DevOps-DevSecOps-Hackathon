@@ -207,6 +207,284 @@ with the github credentials that were copied over to Notepad in the previous ste
 
    ![Picture1](../media/cl7-ex2-t1-s8.png)
 
+## Exercise 3: Code Review and Security Check
+
+### Task 1: Submit Codebase Modifications to GitHub Repository
+
+1.  In a new browser tab, open ```https://www.github.com/login```. From the **Environment Details** page **(1)**, navigate to **License** **(2)** tab and **copy** **(3)** the credentials. Use the same username and password to log into GitHub.
+
+   ![](../media/dev2.png) 
+
+2. once logged-in, on the upper-right corner, expand the user **drop-down menu** **(1)** and select **Your repositories** **(2)**.
+
+   ![The `New Repository` creation form in GitHub.](../media/2dg1.png "New Repository Creation Form")
+
+3. Select the repository that you created earlier named, `devsecops`.
+
+   ![](../media/cl7-ex3-t1-s3.png)
+
+4. On the repository's home page, click on **<>Code (1)** and then copy the `HTTPS` web URL link **(2)** of your GitHub repository onto a notepad. This URL will be used as you progress ahead in the following steps.
+
+   ![](../media/cl7-ex3-t1-s4.png)
+
+5. From the GitHub username, note down the **Unique-ID** present in the Username. You'll need this in the upcoming steps.
+
+   ![imported](../media/cl1-t1-s13.png)
+
+6. Navigate back to the **Visual Studio Code** application in which the terminal is already open. In the terminal, click on the **drop-down** button and select **PowerShell** to open a fresh PowerShell terminal tab.
+
+   ![imported-Quick setup screen is displayed with the copy button next to the GitHub URL textbox selected.](../media/2dg4.png "Quick setup screen")
+
+7. In Visual Studio Code, run the below commands in the terminal to set your **email** and **username**, which Git uses for commits. Make sure to replace the GitHub account email and username.
+   
+     ```pwsh
+     cd C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files
+     git config --global user.email "you@example.com"
+     git config --global user.name "Your UserName"
+     ```
+     
+   ![](../media/cl1-t1-s15.png) 
+     
+    Run the below-mentioned command in the terminal. Make sure to replace `your_github_repository-url` with the value you copied in step 4 and `Unique-ID` in step 5.
+
+    Note: This step is done to initialize the folder as a Git repository, commit, and submit contents to the remote GitHub branch “main” in the lab files repository created named `devsecops`. 
+
+      ```pwsh
+      git init
+      git add .
+      git commit -m "Initial commit"
+      git branch -M main
+      git remote add origin<Unique-ID> <your_github_repository-url>
+      git push -u origin<Unique-ID> main
+      ```
+     
+   - If you are asked to authenticate your GitHub account, select **Sign in with your browser**, and you will be prompted with a pop-up window to authorize Git Credential Manager. Click on **Authorize git-ecosystem** to provide access.
+
+       ![](../media/ex2-t3.png)
+       
+   - After you are prompted with the message **Authorization Succeeded**, close the tab and continue with the next task.
+
+### Task 2: Implement Code Scanning and CodeQL
+
+In this task, you'll configure Code scanning and explore CodeQL alerts. Code scanning is a feature that you use to analyze the code in a GitHub repository to find security vulnerabilities and coding errors. Any problems identified by the analysis are shown on GitHub.
+
+**Note**: To perform this task, the GitHub repository should be public. If the repository visibility is private, please go to the settings of the repository and change the visibility to public.
+
+1. Login to GitHub where the `devsecops` repository was created.
+
+2. Considering that you have already created the `CodeQL` GitHub Action in challenge 2; select the **Actions** ***(1)*** tab from the GitHub browser tab. Click on **CodeQL** ***(2)*** workflow under the **All workflows** section of the left navigation pane.
+
+   ![](../media/cl7-ex2-t2-s2.png)
+
+3. Verify Successful Execution of the **CodeQL** GitHub Action for using the `codeql-analysis.yml` Workflow File. The trigger for this action being the recent push from Visual Studio Code. 
+
+   ![](../media/cl7-ex2-t2-s3.png)
+
+5. If you have not implemented Code Scanning and CodeQL within your repository, follow steps 6 - 11 of this task to perform code review and security checks.
+
+6. Select the **settings** ***(1)*** tab from the GitHub browser tab. Click on **code security and analysis** ***(2)*** under the security side blade.
+
+   ![](../media/2dgn168.png)
+
+7. Click on the **Set up** **(1)** button to enable CodeQL analysis, and select the **Advanced** **(2)** option for creating a CodeQL Analysis YAML file.
+
+   ![](../media/2dgn169.png)
+
+8. Update the workflow name to **codeql-analysis.yml** ***(1)*** and review the yaml file. Select **Commit changes** ***(2)***, then select **Commit directly to the main branch** ***(3)***, and click on **Commit new file** ***(4)***.
+  
+   ![](../media/cl2-t1-s3.png)
+
+   ![](../media/ex5-task1-step3b.png)
+
+9. Navigate to the **Actions** ***(1)*** tab, here you can review the **workflow** ***(2)*** run.
+    
+   ![](../media/cl2-t1-s4.png)
+
+10. Navigate to the **Security** ***(1)*** tab and click on **View alerts** ***(2)***.
+   
+   ![](../media/cl2-t1-s5.png)
+
+11. You will be navigated to the **Code scanning** section. You'll be able to visualize the **No code scanning alerts here!**.
+   
+   ![](../media/cl2-t1-s6.png)
+
+### Task 3: Implement Repository security advisories
+
+In this task, you'll enable Repository security advisories. You can use GitHub Security Advisories to privately discuss, fix, and publish information about security vulnerabilities in your repository. Anyone with admin permissions to a repository can create a security advisory.
+
+1. Navigate to the **Security** ***(1)*** tab, select **Advisories** ***(2)*** from the side blade, and click on **New draft security advisory** ***(3)***.
+
+   ![](../media/cl2-t2-s1.png)
+
+2. In the Open a draft security advisory tab, under the Advisory Details section, provide the following details:
+
+   - Title: **Improper Access Control in devsecops/src/TailwindTraders.Ui.Website/src/App.js** ***(1)***
+   - CVE identifier: **Request CVE ID later** ***(2)***
+   - Description: **Add** ***(3)*** the below-mentioned details in the description section.
+   
+   ```
+   Impact
+   What kind of vulnerability is it? Who is impacted?
+
+   HTTP request handlers should not perform expensive operations such as accessing the file system, executing an operating system command, or interacting with a database without limiting the rate at which requests are accepted. Otherwise, the application becomes vulnerable to denial-of-service attacks where an attacker can cause the application to crash or become unresponsive by issuing a large number of requests at the same time.
+
+   Patches
+   Has the problem been patched? What versions should users upgrade to?
+
+   It is patched and rectified the error. Please use 1.2 version
+
+   Workarounds
+   Is there a way for users to fix or re../mediate the vulnerability without upgrading?
+
+   // set up rate limiter: maximum of five requests per minute
+   var RateLimit = require('express-rate-limit');
+   var limiter = new RateLimit({
+   windowMs: 1601000, // 1 minute
+   max: 5
+   });
+
+   // apply rate limiter to all requests
+   app.use(limiter);
+
+   Added the above code in app.js
+
+   References
+   Are there any links users can visit to find out more?
+
+   https://github.com/OWASP/API-Security/blob/master/2019/en/src/0xa4-lack-of-resources-and-rate-limiting.md
+   https://codeql.github.com/codeql-query-help/javascript/js-missing-rate-limiting/
+   ```
+    
+   ![](../media/cl2-t2-s2.png)
+
+3. In the **Affected products** section, provide the following details and click on **Create draft security advisory** ***(7)***   
+ 
+   - Ecosystem: **composer** ***(1)***
+   - Package name: **devsecops/src/TailwindTraders.Ui.Website/src/App.js** ***(2)***
+   - Affected version: **<1.2** ***(3)***
+   - Patched version: **1.2** ***(4)***
+   - Severity: **High** ***(5)***
+   - Common Weakness Enumerator (CWE): **Improper Access Control (CWE-284)** ***(6)***
+  
+   ![](../media/cl2-t2-s3.png)
+
+4. Once the security advisory is created, scroll down and click on **start a temporary private fork**. It is used to collaborate on a patch for this advisory.
+
+    ![](../media/cl2-t2-s4-a.png)
+    
+    ![](../media/cl2-t2-s4-b.png)
+
+5. After having the temporary fork, you can request a CVE. It is used for GitHub reviews and published security advisories. Upon review, we may use this advisory to send Dependabot alerts to affected repositories and redistribute the advisory through our API and Atom feed.
+
+## Exercise 4: CI/CD Pipeline Setup and infrastrucure Deployment
+
+>**Note:** This exercise is dependent on the completion of Challenge 1 which requires:
+   - Updated parameters within `iac/createResources.parameters.json` file.
+   - Creation of new Action Secrets named **SERVICEPRINCIPAL**, **SQL_PASSWORD** and **ENVIRONMENT**.
+   - Updated resource group name in `iac/createResourceGroup.bicep` file.
+   - Updated `RESOURCE_GROUP_NAME` environment variable within `.github/workflow/deploy-infrastructure.yml` file.
+   - If you haven't satisfied the above dependencies, start this exercise by following instructions from step 4 (Ignore steps 1, 2 and 3).
+ 
+1. To run the infrastucture deployment workflow created in challenge 1, perform the following steps and wait for the resources to be deployed within your Azure Portal:
+      - Click on **Actions (1)** within your GitHub repository.
+      - Select the workflow named **contoso-traders-provisioning-deployment (2)**.
+      - Click on **Run workflow (3)**.
+      - Finally, click on **Run workflow (4)**. Ensure that the branch is selected as **main**.
+
+      ![](../media/cl1-t2-s10.png)
+
+2. Navigate to `.github/workflow/update-contoso-traders-App.yml` path, ensure to update the `AKS_NODES_RESOURCE_GROUP_NAME` and`RESOURCE_GROUP_NAME` environment variable by replacing `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
+
+    ![](../media/dso1.png)
+
+3. To update the application, run the workflow by performing the following steps and wait for the resources to be deployed within your azure portal:
+      - Click on **Actions (1)** within your GitHub repository.
+      - Select on the workflow named **update contoso traders app (2)**.
+      - Click on **Run workflow (3)**.
+      - Finally click on **Run workflow (4)**. Ensure that the branch is select as **main**.
+
+    ![](../media/dso2.png) 
+
+4. Within the GitHub repository, navigate to the `iac/createResources.parameters.json` path and update the value of the following parameters:
+   - Replace `deploymentidvalue` with **<inject key="DeploymentID" enableCopy="false" /> (1)**.
+   - Replace `bicepsqlpass` value with **<inject key="AzureAdUserPassword"></inject> (2)**.
+  
+       ![](../media/cl1-t2-s1.png)
+
+5. To create GitHub secrets, in your GitHub lab files repository, click on the **Settings** tab.
+
+      ![](../media/cl1-t2-s2.png)
+
+6. Navigate to **Environment Details** **(1)**, click on **Service Principal Details** **(2)**, and copy the **Subscription ID**, **Tenant ID (Directory ID)**, **Application ID (Client ID)**, and **Secret Key (Client Secret)**.
+
+      ![](../media/ex2-t4-8.png)
+   
+      - Replace the values that you copied in the below JSON. You will be using them in this step.
+      
+      ```json
+      {
+         "clientId": "zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz",
+         "clientSecret": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+         "tenantId": "zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz",
+         "subscriptionId": "zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz"
+      }
+      ```
+
+7. Under **Security**, expand **Secrets and variables** **(1)** by clicking the drop-down and select **Actions** **(2)** blade from the left navigation bar. Select the **New repository secret** **(3)** button.
+
+   ![](../media/exe2-task4-step6-action-setup.png)
+
+8. Under the **Actions Secrets/New secret** page, enter the below-mentioned details and click on **Add secret** **(3)**.
+
+   - **Name** : Enter **SERVICEPRINCIPAL** **(1)**
+   - **Value** : Paste the service principal details in JSON format **(2)**
+   
+   ![](../media/2dgn36.png)
+
+9. To create another secret, under the **Actions Secrets/New secret** page, enter the below-mentioned details and click on **Add secret** ***(3)***.
+
+   - **Name**: Enter **SQL_PASSWORD** ***(1)***
+   - **Value**: Enter **<inject key="AzureAdUserPassword"></inject> (2)**, which would be the same as the Azure AD Password.
+
+   ![](../media/cl1-t2-s6.png)
+
+10. Under the **Actions Secrets/New secret** page, enter the below-mentioned details and click on **Add secret** ***(3)***.
+
+   - **Name** : Enter **ENVIRONMENT** ***(1)***
+   - **Value** : **<inject key="DeploymentID" enableCopy="false" />** (Copy the Deployment ID from the environment details tab) ***(2)***
+   
+   ![](../media/2dgn33.png)
+
+11. Now within the GitHub repository, navigate to the `iac/createResourceGroup.bicep` path and update the resource group name as mentioned below:
+   - Replace `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
+
+   ![](../media/cl1-t2-s8.png)
+
+12. Navigate to the `.github/workflow/deploy-infrastructure.yml` path and ensure to update the `RESOURCE_GROUP_NAME` environment variable by replacing `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
+
+   ![](../media/cl1-t2-s9.png)
+
+13. To run a workflow, perform the following steps and wait for the resources to be deployed within your Azure Portal:
+      - Click on **Actions (1)** within your GitHub repository.
+      - Select the workflow named **contoso-traders-provisioning-deployment (2)**.
+      - Click on **Run workflow (3)**.
+      - Finally, click on **Run workflow (4)**. Ensure that the branch is selected as **main**.
+
+      ![](../media/cl1-t2-s10.png)
+
+14. Navigate to `.github/workflow/update-contoso-traders-App.yml` path, ensure to update the `AKS_NODES_RESOURCE_GROUP_NAME` and`RESOURCE_GROUP_NAME` environment variable by replacing `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
+
+    ![](../media/dso1.png)
+
+15. To run a workflow, perform the following steps and wait for the resources to be deployed within your azure portal:
+      - Click on **Actions (1)** within your GitHub repository.
+      - Select on the workflow named **update contoso traders app (2)**.
+      - Click on **Run workflow (3)**.
+      - Finally click on **Run workflow (4)**. Ensure that the branch is select as **main**.
+
+    ![](../media/dso2.png) 
+
+
 ## Success criteria:
 To complete this challenge successfully:
 
