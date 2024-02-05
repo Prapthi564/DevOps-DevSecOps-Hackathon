@@ -10,7 +10,7 @@ This is the solution guide, which provides all the specific, step-by-step direct
 
 ## Solution Guide
 
-## Accessing the Azure Portal
+### Accessing the Azure Portal
 
 1. To access the Azure Portal, open the Edge browser from inside the environment and navigate to the **[Azure Portal](https://portal.azure.com)**.
 
@@ -26,7 +26,7 @@ This is the solution guide, which provides all the specific, step-by-step direct
 
 1. If a **Welcome to Microsoft Azure** pop-up window appears, click **Maybe Later** to skip the tour.
 
-### Task 1: Connect GitHub Environment to Microsoft Defender for Cloud
+## Task 1: Connect GitHub Environment to Microsoft Defender for Cloud
 
 In this task, you will connect your GitHub organizations on the **Environment settings** page in Microsoft Defender for Cloud. This page provides a simple onboarding experience to auto-discover your GitHub repositories. By connecting your GitHub organizations to Defender for Cloud, you extend the security capabilities of Defender for Cloud to your GitHub resources.
 
@@ -34,46 +34,82 @@ In this task, you will connect your GitHub organizations on the **Environment se
 
    - Defender CSPM features: Defender CSPM customers receive code to cloud contextualized attack paths, risk assessments, and insights to identify the most critical weaknesses that attackers can use to breach their environment. Connecting your GitHub repositories will allow you to contextualize DevOps security findings with your cloud workloads and identify the origin and developer for timely remediation.
 
- 1. From the Azure Portal Dashboard, search for and select **Microsoft Defender for Cloud**
-   
-## Task 2: Connect GitHub Environment to Microsoft Defender for Cloud
-
-In this task, you'll explore how secret scanning works and how it generates alerts. GitHub scans repositories for known types of secrets to prevent fraudulent use of secrets that were accidentally committed.
-
 1. From your GitHub repository, click on the **Settings** tab.
 
    ![](../media/2dg110.png)
     
-1. Select **Code security (1)** from the sidebar and make sure **Secret scanning is enabled (2)**.
+### Task 2: Configure the Microsoft Security DevOps GitHub action
 
-   ![](../media/2dg111.png)   
-    
-1. Navigate back to **Code (1)** and click on the **src (2)** folder.
+Microsoft Security DevOps is a command line application that integrates static analysis tools into the development lifecycle. Security DevOps installs, configures, and runs the latest versions of static analysis tools such as, SDL, security and compliance tools. Security DevOps is data-driven with portable configurations that enable deterministic execution across multiple environments.
 
-   ![](../media/2dg112.png)    
-   
-1. Click on **Add file** and select the **create new file** option.
+1. From the Azure Portal Dashboard, search for and select **Microsoft Defender for Cloud**
 
-   ![](../media/2dg113.png)    
-   
-1. Add a new file with the name **build.docker-compose.yml (1)**, add the code mentioned below **commit** the file. Here, you'll expose the **application ID** of a service principal.
+   ![](../media/cl9-t2-s1.png)
 
-   ```
-   version: "3.4"
-   services:
-   api:
-      build: ./ContosoTraders.Ui.Website/
-      app id: 36540dcd-7bc3-4e16-90ca-4decb9ff8c36
-      app secret: i1R8Q~Hn8dHn86VlWE7xJtLR4FKTIcQBXcebqcv4
-   web:
-      build: ./ContosoTraders.Api.Products
-   ```
-   
-   ![](../media/2dg115.png)   
-   
-1. Select the **Security (1)** tab and click on **Secret scanning (2)** from the sidebar. Here, you'll notice that an alert is generated referring to the same **Application ID** that was exposed in the `build.docker-compose.yml` file. This is how the Secret scanning feature works and generates alerts to notify you.
+2. Select the `devops` repository that was created as a part of the earlier challenges.
 
-   ![](../media/2dg116.png) 
+3. Select the **Actions (1)** tab from your repository home page and then click on **New Workflow (2)**.
+
+   ![](../media/cl9-t2-s3.png)
+
+4. On the Get started with GitHub Actions page, select **set up a workflow yourself**.
+
+   ![](../media/cl9-t2-s4.png)
+
+5. In the text box, enter the name `.msdevopssec.yml` for your workflow file.
+
+   ![](../media/cl9-t2-s5.png)
+
+6. Copy and paste the following action workflow into the Edit new file tab:
+
+  ```
+  name: MSDO windows-latest
+  on:
+    push:
+      branches:
+        - main
+  
+  jobs:
+    sample:
+      name: Microsoft Security DevOps Analysis
+  
+      # MSDO runs on windows-latest.
+      # ubuntu-latest also supported
+      runs-on: windows-latest
+  
+      steps:
+  
+        # Checkout your code repository to scan
+      - uses: actions/checkout@v3
+  
+        # Run analyzers
+      - name: Run Microsoft Security DevOps Analysis
+        uses: microsoft/security-devops-action@latest
+        id: msdo
+        with:
+        # config: string. Optional. A file path to an MSDO configuration file ('*.gdnconfig').
+        # policy: 'GitHub' | 'microsoft' | 'none'. Optional. The name of a well-known Microsoft policy. If no configuration file or list of tools is provided, the policy may instruct MSDO which tools to run. Default: GitHub.
+        # categories: string. Optional. A comma-separated list of analyzer categories to run. Values: 'secrets', 'code', 'artifacts', 'IaC', 'containers. Example: 'IaC,secrets'. Defaults to all.
+        # languages: string. Optional. A comma-separated list of languages to analyze. Example: 'javascript,typescript'. Defaults to all.
+        # tools: string. Optional. A comma-separated list of analyzer tools to run. Values: 'bandit', 'binskim', 'eslint', 'templateanalyzer', 'terrascan', 'trivy'.
+  
+        # Upload alerts to the Security tab
+      - name: Upload alerts to Security tab
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: ${{ steps.msdo.outputs.sarifFile }}
+  
+        # Upload alerts file as a workflow artifact
+      - name: Upload alerts file as a workflow artifact
+        uses: actions/upload-artifact@v3
+        with:  
+          name: alerts
+          path: ${{ steps.msdo.outputs.sarifFile }}
+  ```
+
+7. Select **Start Commit**.
+
+
 
 ## Success criteria:
 To complete this challenge successfully:
