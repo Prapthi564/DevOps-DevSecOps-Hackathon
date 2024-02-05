@@ -142,7 +142,8 @@ Now that you've assigned a built-in policy definition, you can do more with Azur
 4. Under the **Actions Secrets/New secret** page, enter the below-mentioned details and click on **Add secret** **(3)**.
 
    - **Name** : Enter **AZURE_CREDENTIALS** **(1)**
-   - **Value** : Paste the service principal details in JSON format **(2)**
+   - **Secret** : Paste the service principal details in JSON format **(2)**
+   - Click on **Add Secret (3)**
    
    ![](../media/cl8-ex2-t1-s4.png)
 
