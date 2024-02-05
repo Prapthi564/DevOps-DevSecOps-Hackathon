@@ -47,8 +47,8 @@ In this task, you will connect your GitHub organizations on the **Environment se
 
 3. Within the **GitHub Connection** page, enter the following details:
     - **Connector name:**  GitHub-Connector **(1)**
-    - **Subscription:** Select the existing subsscription from the list **(2)**.
-    - **Resource group:** Select the rosource group over which you would want to implement the GitHub connection **(3)**.
+    - **Subscription:** Select the existing subscription from the list **(2)**.
+    - **Resource group:** Select the resource group over which you would want to implement the GitHub connection **(3)**.
     
       >**Note:** The subscription/resource group is the location where Defender for Cloud creates and stores the GitHub connection.
   
@@ -67,7 +67,7 @@ In this task, you will connect your GitHub organizations on the **Environment se
 
    ![](../media/cl9-t1-s5.png)
 
-6. Authorize the permission needed by clicking on **Authorize Microsoft Security DevOps** within the pop-up and ensure that the autorization is successful.
+6. Authorize the permission needed by clicking on **Authorize Microsoft Security DevOps** within the pop-up and ensure that the authorization is successful.
 
    ![](../media/cl9-t1-s6.png)
 
@@ -111,7 +111,7 @@ Microsoft Security DevOps is a command line application that integrates static a
 
    ![](../media/cl9-t2-s3.png)
 
-4. On the Get started with GitHub Actions page, select **set up a workflow yourself**.
+4. On the Get Started with GitHub Actions page, select **set up a workflow yourself**.
 
    ![](../media/cl9-t2-s4.png)
 
