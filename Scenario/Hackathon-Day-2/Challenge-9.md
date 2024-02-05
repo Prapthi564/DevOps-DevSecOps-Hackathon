@@ -13,12 +13,12 @@ Your task is to implement Microsoft Defender for Cloud DevOps security measures 
 
 1. **Configure Microsoft Security DevOps GitHub Action:**
    
-   - Integrate the Microsoft Defender for Cloud GitHub Action into your workflow of your GitHub repository.
+   - Integrate the Microsoft Defender for Cloud GitHub Action into the workflow of your GitHub repository.
    - Create a `.github/workflows/msdevopssec.yml` file in your repository to perform static code analysis, vulnerability scanning, and compliance checks.
   
 2. **View Scanned Results:**
    - Trigger the GitHub Action workflow created in the previous challenge objective to run the Microsoft Defender for Cloud scans.
-   - Review, identify and understand the security findings and recommendations provided by Microsoft Defender for Cloud.
+   - Review, identify, and understand the security findings and recommendations provided by Microsoft Defender for Cloud.
    - Implement fixes or enhancements to address the security findings identified during the scan.
    - Ensure that the GitHub Action workflow passes successfully after addressing the security issues.
   
@@ -56,7 +56,7 @@ To complete this challenge successfully:
 1. Hover your mouse over the `i` **(1)** icon to see the error message and determine the root cause of the failure. Based on the error message, revisit the challenge as necessary, and redo the validation by clicking on the **VALIDATE (3)** button again.
      ![](../media/validate04.png "Validation")
  
-1. If you are still having trouble, you can reach out to the support team via `labs-support@spektrasystems.com` for further assistance. The support team is available to help you to troubleshoot and resolve any technical issues or validation issues that may arise while the lab environment is live.
+1. If you are still having trouble, you can reach out to the support team via `labs-support@spektrasystems.com` for further assistance. The support team is available to help you troubleshoot and resolve any technical issues or validation issues that may arise while the lab environment is live.
 
 ## Conclusion
 Congratulations on completing the **Securing DevOps with Microsoft Defender for Cloud** challenge! Through this challenge you have seamlessly integrated and configured Microsoft Defender for Cloud within a DevOps context, ensuring a secure and resilient software development lifecycle.
