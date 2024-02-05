@@ -21,7 +21,7 @@ Your task is to implement Microsoft Defender for Cloud DevOps security measures 
    - Integrate the Microsoft Defender for Cloud GitHub Action into the workflow of your GitHub repository.
    - Create a `.github/workflows/msdevopssec.yml` file in your repository to perform static code analysis, vulnerability scanning, and compliance checks.
 
-3. **View Scanned Results:**
+3. **Investigate and Remediate:**
    - Trigger the GitHub Action workflow created in the previous challenge objective to run the Microsoft Defender for Cloud scans.
    - Review, identify, and understand the security findings and recommendations provided by Microsoft Defender for Cloud.
    - Implement fixes or enhancements to address the security findings identified during the scan.
