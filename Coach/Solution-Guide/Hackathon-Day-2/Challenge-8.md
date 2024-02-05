@@ -8,53 +8,106 @@ This is the solution guide, which provides all the specific, step-by-step direct
 
 ## Solution Guide
 
-### Task 1: Azure Policy Implementation
+## Exercise 1: Azure Policy Implementation
 
-In this task, you will use Dependabot to track the versions of the packages we use in our GitHub repository and create pull requests to update packages for us.
+### Task 1: Assign a Built-In policy
 
-1. In your lab files GitHub repository, navigate to the **Settings** ***(1)*** tab and select the **Code security and analysis** ***(2)*** under Security from the side blade. Make sure **Dependabot alerts** is **Enabled** ***(3)***, if not, click on **Enable** to Enable Dependabot alerts. Click on **Enable** ***(4)*** to Enable Dependabot security updates.
+In this task, you will enforse compliance with Azure Policy by assigning a policy definition. A policy definition defines under what condition a policy is enforced and what effect to take. In this solution, you will assign the built-in policy definition called **Inherit a tag from the resource group if missing** to add the specified tag with its value from the parent resource group to new or updated resources missing the tag and then implement a new custom policy for the resources that have been deployed with the specific SKU's.
 
-   > **Note**: Enabling the `Dependabot security updates` will also automatically enable `Dependency graph` and `Dependabot alerts`.
+1. Go to the Azure portal to assign policies. Search for and select **Policy**.
 
-   ![The GitHub Repository Security Overview tab.](../media/cl3-t1-s1.png "GitHub Repository Security Overview")
+   ![](../media/cl8-ex1-t1-s1.png)
 
-   > **Note**: The alerts for the repository may take some time to appear. The rest of the steps for this task rely on the alerts being present. You can continue with the next exercise, as this is an independent task and doesn't affect the lab. Please visit this task later and complete it.
+2. Select **Assignments** on the left side of the Azure Policy page. An assignment is a policy that has been assigned to take place within a specific scope.
 
-1. To observe Dependabot issues, navigate to the **Security** ***(1)*** tab and select the **View Dependabot alerts** ***(2)*** link.
+   ![](../media/cl8-ex1-t1-s2.png)
 
-   ![GitHub Dependabot alerts in the Security tab.](../media/cl3-t1-s2.png "GitHub Dependabot alerts")
+3. Select **Assign Policy** from the top of the **Policy - Assignments** page.
 
-1. You should arrive at the `Dependabot alerts` blade in the `Security` tab.
+   ![](../media/cl8-ex1-t1-s3.png)
 
-   ![GitHub Dependabot alerts in the Security tab.](../media/cl3-t1-s3.png "GitHub Dependabot alerts")
+4. On the **Assign Policy** page and **Basics** tab, perform the following steps:
+   - Select the **Scope** by selecting the ellipsis and selecting either a management group or subscription **(1)**. Optionally, select a resource group. A scope determines what resources or grouping of resources the policy assignment gets enforced on.
+   - Click on **Select** at the bottom of the Scope pane **(2)**.
 
-1. Sort the Dependabot alerts by `Package name`. Under the **Package** ***(1)*** dropdown menu, search for **node-forge** ***(2)*** by typing in the search box and selecting **node-forge** ***(3)*** vulnerability.
+   ![](../media/cl8-ex1-t1-s4.png)
 
-   ![Summary of the `handlebars` Dependabot alert in the list of Dependabot alerts.](../media/ex5-t3-node-forge.png "`handlebars` Dependabot alert")
+5. Resources can be excluded based on the **Scope**. **Exclusions** start at one level lower than the level of the **Scope**. **Exclusions** are optional, so leave it blank for now.
 
-1. Select any of the `node-forge` Dependabot alert entries to see the alert details. After reviewing the alert, select **Review security update**.
+6. Select the **Policy definition** ellipsis to open the list of available definitions. You can filter the policy definition Type to Built-in to view all and read their descriptions.
 
-   ![The `handlebars` Dependabot alert detail.](../media/ex5-t3-reviewsu.png "Dependabot alert detail")
-   
-   **Note:** If you see the Create Security Update option, click on it. After it is created, select Review security update. 
+7. Select **Inherit a tag from the resource group if missing**. If you can't find it right away, type **inherit a tag** into the search box and then press ENTER or select out of the search box. Click on **Select** at the bottom of the **Available Definitions** page once you have found and selected the policy definition.
 
-1. Navigate to the **Pull Requests** ***(1)*** tab, find the Dependabot security patch pull request ***(2)***, and merge it to your main branch.
+   ![](../media/cl8-ex1-t1-s7.png)
 
-   ![List of Pull Requests.](../media/cl3-t1-s6.png "Pull Requests")
-   
-1. Click on **Merge pull request**, followed by **Confirm merge**. 
+8. The **Assignment name** is automatically populated with the policy name you selected, but you can change it. For this example, leave **Inherit a tag from the resource group if missing**. You can also add an optional **Description**. The description provides details about this policy assignment.
 
-   ![The Pull Request Merge Button in the Pull Request detail.](../media/ex5-t3-merge-pr.png "Pull Request Merge Button")
-    
-   >**Note**: In case you see any errors with the merge request, retry steps 4 to 6 by selecting any other Dependabot alert.
+9. Leave **Policy enforcement** as **Enabled**. When Disabled, this setting allows testing the outcome of the policy without triggering the effect.
 
-1. Pull the latest changes from your GitHub repository to your local GitHub folder.
+10. **Assigned by** is automatically filled based on who is logged in. This field is optional, so custom values can be entered.
 
-   ```pwsh
-   cd C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files  # This path may vary depending on how
-                                                            # you set up your lab files repository
-   git pull
+11. Select the **Parameters** tab at the top of the wizard.
+
+12. For **Tag Name**, enter **Environment**.
+
+13. Select the **Remediation** tab at the top of the wizard.
+
+14. Leave **Create a remediation task** unchecked. This box allows you to create a task to alter existing resources in addition to new or updated resources.
+
+15. **Create a Managed Identity** is automatically checked since this policy definition uses the modify effect. **Permissions** is set to Contributor automatically based on the policy definition.
+
+16. Select the **Non-compliance messages** tab at the top of the wizard.
+
+17. Set the **Non-compliance message** to **This resource doesn't have the required tag**. This custom message is displayed when a resource is denied or for non-compliant resources during regular evaluation.
+
+18. Select the **Review + create** tab at the top of the wizard.
+
+19. Review your selections, then select **Create** at the bottom of the page.
+
+### Task 2: Implement a new custom policy
+
+Now that you've assigned a built-in policy definition, you can do more with Azure Policy. Next, create a new custom policy to save costs by validating that virtual machines created in your environment can't be in the G series. This way, every time a user in your organization tries to create a virtual machine in the G series, the request is denied.
+
+1. Select **Definitions** under **Authoring** in the left side of the Azure Policy page.
+
+   ![](../media/cl8-ex1-t2-s1.png)
+
+2. Select **+ Policy definition** at the top of the page. This button opens to the **Policy definition** page and enter the following information:
+   - Select the **Definition location** **(1)** by selecting the ellipsis and selecting a subscription. Optionally, select a resource group. A scope determines what resources or grouping of resources the policy assignment gets enforced on.
+   - **Name:** Require VM SKUs not in the G series. **(2)**
+   - **Description:** This policy definition enforces that all virtual machines created in this scope have SKUs other than the G series to reduce cost. **(3)**
+   - **Category:** Create a new catrgory named **Compute**.  **(4)**
+
+   ![](../media/cl8-ex1-t2-s2.png)
+
+3. Copy the following JSON code and then update it for your needs with:
+
+   - The policy parameters.
+   - The policy rules/conditions, in this case - VM SKU size equal to G series
+   - The policy effect, in this case - **Deny**.
+
    ```
+   {
+       "policyRule": {
+           "if": {
+               "allOf": [{
+                       "field": "type",
+                       "equals": "Microsoft.Compute/virtualMachines"
+                   },
+                   {
+                       "field": "Microsoft.Compute/virtualMachines/sku.name",
+                       "like": "Standard_G*"
+                   }
+               ]
+           },
+           "then": {
+               "effect": "deny"
+           }
+       }
+   }
+   ```
+
+   >**Note:** The **field** property in the policy rule must be a supported value. An example of an alias might be `Microsoft.Compute/VirtualMachines/Size`.
    
 ## Task 2: Implement Azure Policy Compliance Scan:
 
