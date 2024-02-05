@@ -38,7 +38,7 @@ In this task, you will connect your GitHub organizations on the **Environment se
 
    ![](../media/2dg110.png)
     
-### Task 2: Configure the Microsoft Security DevOps GitHub action
+### Task 2: Configure the Microsoft Security DevOps GitHub Action
 
 Microsoft Security DevOps is a command line application that integrates static analysis tools into the development lifecycle. Security DevOps installs, configures, and runs the latest versions of static analysis tools such as, SDL, security and compliance tools. Security DevOps is data-driven with portable configurations that enable deterministic execution across multiple environments.
 
@@ -109,7 +109,17 @@ Microsoft Security DevOps is a command line application that integrates static a
 
 7. Select **Start Commit**.
 
+   ![](../media/cl9-t2-s7.png)
 
+8. Click on **Commit new file**.
+
+   ![](../media/cl9-t2-s8.png)
+
+9. Select **Actions** and verify the new action is running.
+
+   ![](../media/cl9-t2-s9.png)
+
+### Task 3: Configure the Microsoft Security DevOps GitHub Action
 
 ## Success criteria:
 To complete this challenge successfully:
