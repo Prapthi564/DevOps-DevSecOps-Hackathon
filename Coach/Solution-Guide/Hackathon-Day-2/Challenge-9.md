@@ -1,4 +1,4 @@
-# Challenge 09: Securing DevOps with Microsoft Defender for Cloud
+# Challenge 09: Implement Microsoft Defender for Cloud DevOps Security 
 
 ## Introduction
 
@@ -10,53 +10,31 @@ This is the solution guide, which provides all the specific, step-by-step direct
 
 ## Solution Guide
 
-### Task 1: Configure Microsoft Security DevOps GitHub Action
+## Accessing the Azure Portal
 
-In this task, you will use Dependabot to track the versions of the packages we use in our GitHub repository and create pull requests to update packages for us.
+1. To access the Azure Portal, open the Edge browser from inside the environment and navigate to the **[Azure Portal](https://portal.azure.com)**.
 
-1. In your lab files GitHub repository, navigate to the **Settings** ***(1)*** tab and select the **Code security and analysis** ***(2)*** under Security from the side blade. Make sure **Dependabot alerts** is **Enabled** ***(3)***, if not, click on **Enable** to Enable Dependabot alerts. Click on **Enable** ***(4)*** to Enable Dependabot security updates.
+1. On the **Sign in to Microsoft Azure** tab, you will see a login screen. Enter the following email/username, and then click on **Next**. 
+   * **Email/Username**: <inject key="AzureAdUserEmail"></inject>
+        
+1. Now enter the following password and click on **Sign in**.
+   * **Password**: <inject key="AzureAdUserPassword"></inject>
+     
+1. If you see the pop-up **Stay Signed in?**, click No.
 
-   > **Note**: Enabling the `Dependabot security updates` will also automatically enable `Dependency graph` and `Dependabot alerts`.
+1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
 
-   ![The GitHub Repository Security Overview tab.](../media/cl3-t1-s1.png "GitHub Repository Security Overview")
+1. If a **Welcome to Microsoft Azure** pop-up window appears, click **Maybe Later** to skip the tour.
 
-   > **Note**: The alerts for the repository may take some time to appear. The rest of the steps for this task rely on the alerts being present. You can continue with the next exercise, as this is an independent task and doesn't affect the lab. Please visit this task later and complete it.
+### Task 1: Connect GitHub Environment to Microsoft Defender for Cloud
 
-1. To observe Dependabot issues, navigate to the **Security** ***(1)*** tab and select the **View Dependabot alerts** ***(2)*** link.
+In this task, you will connect your GitHub organizations on the **Environment settings** page in Microsoft Defender for Cloud. This page provides a simple onboarding experience to auto-discover your GitHub repositories. By connecting your GitHub organizations to Defender for Cloud, you extend the security capabilities of Defender for Cloud to your GitHub resources.
 
-   ![GitHub Dependabot alerts in the Security tab.](../media/cl3-t1-s2.png "GitHub Dependabot alerts")
+   - **Foundational Cloud Security Posture Management (CSPM) features**: You can assess your GitHub security posture through GitHub-specific security recommendations.
 
-1. You should arrive at the `Dependabot alerts` blade in the `Security` tab.
+   - Defender CSPM features: Defender CSPM customers receive code to cloud contextualized attack paths, risk assessments, and insights to identify the most critical weaknesses that attackers can use to breach their environment. Connecting your GitHub repositories will allow you to contextualize DevOps security findings with your cloud workloads and identify the origin and developer for timely remediation.
 
-   ![GitHub Dependabot alerts in the Security tab.](../media/cl3-t1-s3.png "GitHub Dependabot alerts")
-
-1. Sort the Dependabot alerts by `Package name`. Under the **Package** ***(1)*** dropdown menu, search for **node-forge** ***(2)*** by typing in the search box and selecting **node-forge** ***(3)*** vulnerability.
-
-   ![Summary of the `handlebars` Dependabot alert in the list of Dependabot alerts.](../media/ex5-t3-node-forge.png "`handlebars` Dependabot alert")
-
-1. Select any of the `node-forge` Dependabot alert entries to see the alert details. After reviewing the alert, select **Review security update**.
-
-   ![The `handlebars` Dependabot alert detail.](../media/ex5-t3-reviewsu.png "Dependabot alert detail")
-   
-   **Note:** If you see the Create Security Update option, click on it. After it is created, select Review security update. 
-
-1. Navigate to the **Pull Requests** ***(1)*** tab, find the Dependabot security patch pull request ***(2)***, and merge it to your main branch.
-
-   ![List of Pull Requests.](../media/cl3-t1-s6.png "Pull Requests")
-   
-1. Click on **Merge pull request**, followed by **Confirm merge**. 
-
-   ![The Pull Request Merge Button in the Pull Request detail.](../media/ex5-t3-merge-pr.png "Pull Request Merge Button")
-    
-   >**Note**: In case you see any errors with the merge request, retry steps 4 to 6 by selecting any other Dependabot alert.
-
-1. Pull the latest changes from your GitHub repository to your local GitHub folder.
-
-   ```pwsh
-   cd C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files  # This path may vary depending on how
-                                                            # you set up your lab files repository
-   git pull
-   ```
+ 1. From the Azure Portal Dashboard, search for and select **Microsoft Defender for Cloud**
    
 ## Task 2: Connect GitHub Environment to Microsoft Defender for Cloud
 
