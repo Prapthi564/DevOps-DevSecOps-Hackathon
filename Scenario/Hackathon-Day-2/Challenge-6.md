@@ -9,7 +9,7 @@ You need to focus on completing the implementation of the below-mentioned GitHub
 
 **AI Code Review Action**: AI Code Reviewer is a GitHub Action that leverages OpenAI's GPT-4 API to provide intelligent feedback and suggestions on your pull requests. This powerful tool helps improve code quality and saves developers time by automating the code review process.
 
-**AI Security Check for Pull Request**: This GitHub Action uses OpenAI's GPT to analyze code in pull requests and identify potential security and privacy vulnerabilities and comment to the pull request with the findings.
+**AI Security Check for Pull Request**: This GitHub Action uses OpenAI's GPT to analyse code in pull requests and identify potential security and privacy vulnerabilities and comment to the pull request with the findings.
 
 ## Challenge Objectives:
 
@@ -20,7 +20,7 @@ You need to focus on completing the implementation of the below-mentioned GitHub
    - Use the OpenAI API key **<inject key="openAIkey" enableCopy="false" />** to create a GitHub Secret in your repository with the name `OPENAI_API_KEY`. You can find the API key details in Environment details tab of your environment.
    - Create a `.github/workflows/main.yml` file in your repository to successfully implement `AI Code Reviewer` GitHub Action which provides intelligent feedback and suggestions on your pull requests.
 
-2. **Configure and implement AI Security Check for Pull Requests:**
+2. **Configure and implement AI Security Check for Pull Requests: **
    - Use the OpenAI API key **<inject key="openAIkey" enableCopy="false" />** to create a GitHub Secret in your repository with the name `OPENAI_TOKEN`. You can find the API key details in Environment details tab of your environment.
    - Create a new GitHub secret named `GH_TOKEN` with a GitHub Personal Access Token with the `repo` and `write:discussion` scopes enabled.
    - Create a new `./github/workflows/ai-security-check-for-pr.yml` workflow file in your repository to successfully implement `AI Security Check for Pull Requests` GitHub Action which analyzes the code in each pull request targeting the specified branch.
@@ -56,4 +56,4 @@ To complete this challenge successfully:
 1. If you are still having trouble, you can reach out to the support team via `labs-support@spektrasystems.com` for further assistance. The support team is available to help you to troubleshoot and resolve any technical issues or validation issues that may arise while the lab environment is live.
 
 ## Conclusion
-Congratulations on completing the **DevSecOps with AI-Powered GitHub Actions** challenge! Through this challenge you have seamlessly integrated AI-driven GitHub Actions, elevated code quality, security, and developer productivity. In the next challenge, you will focus on using GitHub Copilot Chat to implement/add new features to the exisiting Contoso Traders Application and deploy the changes to Azure through CI/CD. 
+Congratulations on completing the **DevSecOps with AI-Powered GitHub Actions** challenge! Through this challenge you have seamlessly integrated AI-driven GitHub Actions, elevated code quality, security, and developer productivity. In the next challenge, you will focus on using GitHub Copilot Chat to implement/add new features to the existing Contoso Traders Application and deploy the changes to Azure through CI/CD.
