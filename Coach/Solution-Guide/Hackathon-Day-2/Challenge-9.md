@@ -52,7 +52,8 @@ In this task, you will connect your GitHub organizations on the **Environment se
   
     >**Note:** The subscription/resource group is the location where Defender for Cloud creates and stores the GitHub connection.
 
- -  Click on **Next: Select plans > (4)**.
+  - **Location:** Same location as that of the selected resource group **(4)**.
+  - Click on **Next: Select plans > (5)**.
 
    ![](../media/cl9-t1-s3.png)
 
@@ -81,7 +82,6 @@ In this task, you will connect your GitHub organizations on the **Environment se
 8. Select the organizations to install the GitHub application. In this solution flow, we recommend to grant access to **all repositories** to ensure Defender for Cloud can secure your entire GitHub environment. Ensure that it has been installed successfully.
 
    ![](../media/cl9-t1-s8.png)
-
 
 9. For **Edit connector account**, select one of the following:
   -  Select **all existing organizations (1)** to auto-discover all repositories in GitHub organizations where the DevOps security GitHub application is installed.
