@@ -84,11 +84,12 @@ In this task, you'll explore how secret scanning works and how it generates aler
    api:
       build: ./ContosoTraders.Ui.Website/
       app id: 36540dcd-7bc3-4e16-90ca-4decb9ff8c36
-      app secret: i1R8Q~Hn8dHn86VlWE7xJtLR4FKTIcQBXcebqcv4
+      app secret: i1R8Q~Hn8dHn86VlWE7xJtLR4FKTIcQBXcexxxxx
    web:
       build: ./ContosoTraders.Api.Products
    ```
-   
+   >**Note:** Ensure replace the value of the `build` key in above the above code before saving the file.
+
    ![](../media/2dg115.png)   
    
 1. Select the **Security (1)** tab and click on **Secret scanning (2)** from the sidebar. Here, you'll notice that an alert is generated referring to the same **Application ID** that was exposed in the `build.docker-compose.yml` file. This is how the Secret scanning feature works and generates alerts to notify you.
