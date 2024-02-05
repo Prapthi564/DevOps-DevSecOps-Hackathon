@@ -34,7 +34,7 @@ In this task, you will connect your GitHub organizations on the **Environment se
 
    - Defender CSPM features: Defender CSPM customers receive code to cloud contextualized attack paths, risk assessments, and insights to identify the most critical weaknesses that attackers can use to breach their environment. Connecting your GitHub repositories will allow you to contextualize DevOps security findings with your cloud workloads and identify the origin and developer for timely remediation.
 
-1. From the Azure Portal Dashboard, search for and select **Microsoft Defender for Cloud**
+1. From the Azure Portal Dashboard, search for and select **Microsoft Defender for Cloud**.
 
    ![](../media/cl9-t1-s1.png)
 
