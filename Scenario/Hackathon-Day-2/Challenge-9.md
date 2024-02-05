@@ -11,22 +11,22 @@ Your task is to implement Microsoft Defender for Cloud DevOps security measures 
 
 >**Note:** The GitHub account provided whose credentials would be available in the environment details tab, has GitHub Enterprise with GitHub Advanced Security enabled for the ease of execution of this challenge.
 
-1. **Configure Microsoft Security DevOps GitHub Action:**
+1. **Connect GitHub Environment to Microsoft Defender for Cloud:**
+   - Connect your GitHub environment to Microsoft Defender for Cloud.
+   - Extend the security capabilities of Defender for Cloud to your GitHub resources by enabling the **Cloud Security Posture Management (CSPM) features**.
+   - Ensure that the Microsoft Defender for cloud is configured such that it auto-discovers all repositories in GitHub organizations and any future organizations where the DevOps security GitHub application is installed.
+
+2. **Configure Microsoft Security DevOps GitHub Action:**
    
    - Integrate the Microsoft Defender for Cloud GitHub Action into the workflow of your GitHub repository.
    - Create a `.github/workflows/msdevopssec.yml` file in your repository to perform static code analysis, vulnerability scanning, and compliance checks.
-  
-2. **View Scanned Results:**
+
+3. **View Scanned Results:**
    - Trigger the GitHub Action workflow created in the previous challenge objective to run the Microsoft Defender for Cloud scans.
    - Review, identify, and understand the security findings and recommendations provided by Microsoft Defender for Cloud.
    - Implement fixes or enhancements to address the security findings identified during the scan.
    - Ensure that the GitHub Action workflow passes successfully after addressing the security issues.
-  
-3. **Connect GitHub Environment to Microsoft Defender for Cloud:**
-   - Connect your GitHub environment to Microsoft Defender for Cloud.
-   - Extend the security capabilities of Defender for Cloud to your GitHub resources by enabling the **Cloud Security Posture Management (CSPM) features**.
-   - Ensure that the Microsoft Defender for cloud is configured such that it auto-discovers all repositories in GitHub organizations and any future organizations where the DevOps security GitHub application is installed.
-  
+
 ## Success criteria:
 To complete this challenge successfully:
 
