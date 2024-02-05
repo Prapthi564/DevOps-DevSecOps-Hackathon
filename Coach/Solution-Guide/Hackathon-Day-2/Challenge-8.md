@@ -8,7 +8,7 @@ This is the solution guide, which provides all the specific, step-by-step direct
 
 ## Solution Guide
 
-## Exercise 1: Azure Policy Implementation
+## Exercise 1: Implement Security Policies using Azure Policy
 
 ### Task 1: Assign a Built-In policy
 
@@ -108,7 +108,13 @@ Now that you've assigned a built-in policy definition, you can do more with Azur
    ```
 
    >**Note:** The **field** property in the policy rule must be a supported value. An example of an alias might be `Microsoft.Compute/VirtualMachines/Size`.
-   
+
+## Exercise 2: Integrate Compliance Scanning in CI/CD pipeline
+
+### Task 1: Implement Azure Policy Compliance Scan
+
+1. 
+
 ## Success criteria:
 To complete this challenge successfully:
 
