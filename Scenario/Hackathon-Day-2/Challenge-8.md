@@ -8,7 +8,7 @@ In this challenge, you are a DevOps engineer responsible for ensuring the securi
 ## Challenge Objectives:
 
 1. **Implement Security Policies using Azure Policy:**
-   - Implement Azure Policy definiation as code (written in JSON) to enforce security compliance on the resources related to the Contoso Traders Application that have been deployed over Azure. This includes policies for resource tagging, encryption, network security, etc.
+   - Implement Azure Policy definition as code (written in JSON) to enforce security compliance on the resources related to the Contoso Traders Application that have been deployed over Azure. This includes policies for resource tagging, encryption, network security, etc.
    - Ensure that your policies are effective in preventing non-compliant resources from being deployed.
    - Store these policy definitions in a GitHub repository.
    
@@ -45,7 +45,7 @@ To complete this challenge successfully:
 1. Hover your mouse over the `i` **(1)** icon to see the error message and determine the root cause of the failure. Based on the error message, revisit the challenge as necessary, and redo the validation by clicking on the **VALIDATE (3)** button again.
      ![](../media/validate04.png "Validation")
  
-1. If you are still having trouble, you can reach out to the support team via `labs-support@spektrasystems.com` for further assistance. The support team is available to help you to troubleshoot and resolve any technical issues or validation issues that may arise while the lab environment is live.
+1. If you are still having trouble, you can reach out to the support team via `labs-support@spektrasystems.com` for further assistance. The support team is available to help you troubleshoot and resolve any technical issues or validation issues that may arise while the lab environment is live.
 
 ## Conclusion
-Congratulations on completing the **Security Compliance as Code** challenge! Through this challenge  not only implemented security policies using Azure Policy but also emphasized the importance of automating the entire process through CI/CD pipelines thus ensuring continuous compliance in a dynamic cloud environment. The next challenge focuses seamlessly integrating and configuring Microsoft Defender for Cloud within a DevOps context, ensuring a secure and resilient software development lifecycle.
+Congratulations on completing the **Security Compliance as Code** challenge! Through this challenge  not only implemented security policies using Azure Policy but also emphasized the importance of automating the entire process through CI/CD pipelines thus ensuring continuous compliance in a dynamic cloud environment. The next challenge focuses on seamlessly integrating and configuring Microsoft Defender for Cloud within a DevOps context, ensuring a secure and resilient software development lifecycle.
