@@ -7,12 +7,12 @@ In this challenge, you are a DevOps engineer responsible for ensuring the securi
 
 ## Challenge Objectives:
 
-1. **Azure Policy Implementation:**
+1. **Implement Security Policies using Azure Policy:**
    - Implement Azure Policy definiation as code (written in JSON) to enforce security compliance on the resources related to the Contoso Traders Application that have been deployed over Azure. This includes policies for resource tagging, encryption, network security, etc.
    - Ensure that your policies are effective in preventing non-compliant resources from being deployed.
    - Store these policy definitions in a GitHub repository.
    
-2. **GitHub CI/CD Integration:**
+2. **Integrate Compliance Scanning in CI/CD pipeline:**
    - Integrate a compliance scanning step into your GitHub pipeline that checks for policy compliance before allowing deployment.
    - Implement **Azure Policy Compliance Scan** GitHub action within `.github/workflows/workflow.yml` which triggers a policy compliance scan on the provided subscription.
    - Ensure that compliance scans are triggered automatically during the CI/CD process.
