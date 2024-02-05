@@ -129,7 +129,7 @@ Now that you've assigned a built-in policy definition, you can do more with Azur
         "clientSecret": "your-client-secret",
         "tenantId": "your-tenant-id",
         "subscriptionId": "your-subscription-id",
-        "resourceGroup": "your-resource-group",
+        "resourceGroup": "your-resource-group"
       }
       ```
 
