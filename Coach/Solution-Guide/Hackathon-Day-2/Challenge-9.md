@@ -39,29 +39,29 @@ In this task, you will connect your GitHub organizations on the **Environment se
    ![](../media/cl9-t1-s1.png)
 
 2. To add a new environment, perform the following steps:
-  - Select **Environment settings (1)** under the **Management** section from the left navigation pane.
-  - In the **Microsoft Defender for Cloud | Environment settings** page, click on **+ Add environment (2)**.
-  - Select **GitHub (3)** from the list of options.
-
-   ![](../media/cl9-t1-s2.png)
+    - Select **Environment settings (1)** under the **Management** section from the left navigation pane.
+    - In the **Microsoft Defender for Cloud | Environment settings** page, click on **+ Add environment (2)**.
+    - Select **GitHub (3)** from the list of options.
+  
+     ![](../media/cl9-t1-s2.png)
 
 3. Within the **GitHub Connection** page, enter the following details:
-  - **Connector name:**  GitHub-Connector **(1)**
-  - **Subscription:** Select the existing subsscription from the list **(2)**.
-  - **Resource group:** Select the rosource group over which you would want to implement the GitHub connection **(3)**.
+    - **Connector name:**  GitHub-Connector **(1)**
+    - **Subscription:** Select the existing subsscription from the list **(2)**.
+    - **Resource group:** Select the rosource group over which you would want to implement the GitHub connection **(3)**.
+    
+      >**Note:** The subscription/resource group is the location where Defender for Cloud creates and stores the GitHub connection.
   
-    >**Note:** The subscription/resource group is the location where Defender for Cloud creates and stores the GitHub connection.
-
-  - **Location:** Same location as that of the selected resource group **(4)**.
-  - Click on **Next: Select plans > (5)**.
-
-   ![](../media/cl9-t1-s3.png)
+    - **Location:** Same location as that of the selected resource group **(4)**.
+    - Click on **Next: Select plans > (5)**.
+  
+     ![](../media/cl9-t1-s3.png)
 
 4. Configure the Defender CSPM plan status for your GitHub connector.
-  - Ensure that the **Defender CSPM** plan is set to status - **On (1)**.
-  - Click on **Next: Configure access (2)**.
-
-   ![](../media/cl9-t1-s4.png)
+    - Ensure that the **Defender CSPM** plan is set to status - **On (1)**.
+    - Click on **Next: Configure access (2)**.
+  
+     ![](../media/cl9-t1-s4.png)
 
 5. Within the **Configure access** tab, click on **Authorize** to give permissions to the DevOps security app to access your resources.
 
@@ -73,7 +73,7 @@ In this task, you will connect your GitHub organizations on the **Environment se
 
    ![](../media/cl9-t1-s6-b.png)
 
-  >**Note:** After authorization, if you wait too long to install the DevOps security GitHub application, the session will time out and you'll get an error message.
+    >**Note:** After authorization, if you wait too long to install the DevOps security GitHub application, the session will time out and you'll get an error message.
 
 7. Select **Install** to install the DevOps security app on your repository/repositories.
 
@@ -84,10 +84,10 @@ In this task, you will connect your GitHub organizations on the **Environment se
    ![](../media/cl9-t1-s8.png)
 
 9. For **Edit connector account**, select one of the following:
-  -  Select **all existing organizations (1)** to auto-discover all repositories in GitHub organizations where the DevOps security GitHub application is installed.
-  -  Click on **Next: Review and generate > (2)**.
-
-  >**Note:** The **All existing and future organizations** option is used to auto-discover all repositories in GitHub organizations where the DevOps security GitHub application is installed and future organizations where the DevOps security GitHub application is installed.
+    -  Select **all existing organizations (1)** to auto-discover all repositories in GitHub organizations where the DevOps security GitHub application is installed.
+    -  Click on **Next: Review and generate > (2)**.
+  
+    >**Note:** The **All existing and future organizations** option is used to auto-discover all repositories in GitHub organizations where the DevOps security GitHub application is installed and future organizations where the DevOps security GitHub application is installed.
 
    ![](../media/cl9-t1-s9.png)
 
@@ -95,7 +95,7 @@ In this task, you will connect your GitHub organizations on the **Environment se
 
 11. When the process finishes, the GitHub connector appears on your **Environment settings** page.
 
-   ![](../media/cl9-t1-s11.png)
+    ![](../media/cl9-t1-s11.png)
 
 >**Note:** The Defender for Cloud service automatically discovers the organizations where you installed the DevOps security GitHub application.
 
@@ -121,50 +121,50 @@ Microsoft Security DevOps is a command line application that integrates static a
 
 6. Copy and paste the following action workflow into the Edit new file tab:
 
-  ```
-  name: MSDO windows-latest
-  on:
-    push:
-      branches:
-        - main
-  
-  jobs:
-    sample:
-      name: Microsoft Security DevOps Analysis
-  
-      # MSDO runs on windows-latest.
-      # ubuntu-latest also supported
-      runs-on: windows-latest
-  
-      steps:
-  
-        # Checkout your code repository to scan
-      - uses: actions/checkout@v3
-  
-        # Run analyzers
-      - name: Run Microsoft Security DevOps Analysis
-        uses: microsoft/security-devops-action@latest
-        id: msdo
-        with:
-        # config: string. Optional. A file path to an MSDO configuration file ('*.gdnconfig').
-        # policy: 'GitHub' | 'microsoft' | 'none'. Optional. The name of a well-known Microsoft policy. If no configuration file or list of tools is provided, the policy may instruct MSDO which tools to run. Default: GitHub.
-        # categories: string. Optional. A comma-separated list of analyzer categories to run. Values: 'secrets', 'code', 'artifacts', 'IaC', 'containers. Example: 'IaC,secrets'. Defaults to all.
-        # languages: string. Optional. A comma-separated list of languages to analyze. Example: 'javascript,typescript'. Defaults to all.
-        # tools: string. Optional. A comma-separated list of analyzer tools to run. Values: 'bandit', 'binskim', 'eslint', 'templateanalyzer', 'terrascan', 'trivy'.
-  
-        # Upload alerts to the Security tab
-      - name: Upload alerts to Security tab
-        uses: github/codeql-action/upload-sarif@v2
-        with:
-          sarif_file: ${{ steps.msdo.outputs.sarifFile }}
-  
-        # Upload alerts file as a workflow artifact
-      - name: Upload alerts file as a workflow artifact
-        uses: actions/upload-artifact@v3
-        with:  
-          name: alerts
-          path: ${{ steps.msdo.outputs.sarifFile }}
-  ```
+    ```
+    name: MSDO windows-latest
+    on:
+      push:
+        branches:
+          - main
+    
+    jobs:
+      sample:
+        name: Microsoft Security DevOps Analysis
+    
+        # MSDO runs on windows-latest.
+        # ubuntu-latest also supported
+        runs-on: windows-latest
+    
+        steps:
+    
+          # Checkout your code repository to scan
+        - uses: actions/checkout@v3
+    
+          # Run analyzers
+        - name: Run Microsoft Security DevOps Analysis
+          uses: microsoft/security-devops-action@latest
+          id: msdo
+          with:
+          # config: string. Optional. A file path to an MSDO configuration file ('*.gdnconfig').
+          # policy: 'GitHub' | 'microsoft' | 'none'. Optional. The name of a well-known Microsoft policy. If no configuration file or list of tools is provided, the policy may instruct MSDO which tools to run. Default: GitHub.
+          # categories: string. Optional. A comma-separated list of analyzer categories to run. Values: 'secrets', 'code', 'artifacts', 'IaC', 'containers. Example: 'IaC,secrets'. Defaults to all.
+          # languages: string. Optional. A comma-separated list of languages to analyze. Example: 'javascript,typescript'. Defaults to all.
+          # tools: string. Optional. A comma-separated list of analyzer tools to run. Values: 'bandit', 'binskim', 'eslint', 'templateanalyzer', 'terrascan', 'trivy'.
+    
+          # Upload alerts to the Security tab
+        - name: Upload alerts to Security tab
+          uses: github/codeql-action/upload-sarif@v2
+          with:
+            sarif_file: ${{ steps.msdo.outputs.sarifFile }}
+    
+          # Upload alerts file as a workflow artifact
+        - name: Upload alerts file as a workflow artifact
+          uses: actions/upload-artifact@v3
+          with:  
+            name: alerts
+            path: ${{ steps.msdo.outputs.sarifFile }}
+    ```
 
 7. Select **Start Commit**.
 
