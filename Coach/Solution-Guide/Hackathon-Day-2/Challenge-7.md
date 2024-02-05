@@ -60,7 +60,7 @@ with the github credentials that were copied over to Notepad in the previous ste
     ![Picture1](../media/cl7-ex1-t1-s9.png)
    
 
-### Task 2: Create a new file in Visual Studio Code
+### Task 2: Adding a Welcome Page to a React Application using GitHub Copilot
 
 >**NOTE:** It should be noted that the code suggestions offered by GitHub Copilot might not exactly match the screenshots shown within the labguide. GitHub Copilot is an AI-powered tool that generates code based on context and patterns, and its suggestions can be influenced by various factors. It is also important that you have the knowledge on operating and running React Applications which may be needed as you proceed with this exercise.
 
