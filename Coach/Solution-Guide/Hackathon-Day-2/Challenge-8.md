@@ -111,9 +111,97 @@ Now that you've assigned a built-in policy definition, you can do more with Azur
 
 ## Exercise 2: Integrate Compliance Scanning in CI/CD pipeline
 
-### Task 1: Implement Azure Policy Compliance Scan
+### Task 1: Create a GitHub Secret
 
-1. 
+1. To create GitHub secrets, in your GitHub lab files repository, click on the **Settings** tab.
+
+      ![](../media/cl1-t2-s2.png)
+
+2. Navigate to **Environment Details** **(1)** tab of the integrated lab environment, click on **Service Principal Details** **(2)**, and copy the **Subscription ID**, **Tenant ID (Directory ID)**, **Application ID (Client ID)**, and **Secret Key (Client Secret)**.
+
+      ![](../media/ex2-t4-8.png)
+   
+      - Replace the values that you copied in the below JSON. You will be using them in this step.
+      
+      ```json
+      {
+        "clientId": "your-client-id",
+        "clientSecret": "your-client-secret",
+        "tenantId": "your-tenant-id",
+        "subscriptionId": "your-subscription-id",
+        "resourceGroup": "your-resource-group",
+      }
+      ```
+
+   >**Note:** Also ensure to replace `your-subscription-id` and `your-resource-group` within the above secret.
+
+3. Within GitHub, under **Security**, expand **Secrets and variables** **(1)** by clicking the drop-down and select **Actions** **(2)** blade from the left navigation bar. Select the **New repository secret** **(3)** button.
+
+   ![](../media/exe2-task4-step6-action-setup.png)
+
+4. Under the **Actions Secrets/New secret** page, enter the below-mentioned details and click on **Add secret** **(3)**.
+
+   - **Name** : Enter **AZURE_CREDENTIALS** **(1)**
+   - **Value** : Paste the service principal details in JSON format **(2)**
+   
+   ![](../media/cl8-ex2-t1-s4.png)
+
+### Task 2: Implement Azure Policy Compliance Scan
+
+1. In a new browser tab, open ```https://www.github.com/login```. From the **Environment Details** page **(1)**, navigate to **License** **(2)** tab and **copy** **(3)** the credentials. Use the same username and password to log into GitHub.
+
+   ![](../media/dev2.png) 
+
+2. once logged-in, on the upper-right corner, expand the user **drop-down menu** **(1)** and select **Your repositories** **(2)**.
+
+   ![The `New Repository` creation form in GitHub.](../media/2dg1.png "New Repository Creation Form")
+
+3. Select the repository that you created earlier named, `devsecops`.
+
+   ![](../media/cl7-ex3-t1-s3.png)
+
+4. Within a new browser tab, navigate to `https://github.com/marketplace/actions/azure-policy-compliance-scan` to view the **Azure Policy Compliance Scan** GitHub Action from the GitHub MarketPlcae.
+
+5. Go back to your `devsecops` GitHub repository.
+
+6. Navigate to `.github/workflows` directory and create a new file named `complaince-scan.yml`.
+
+7. Paste the following code within the workflow file. The below workflow will trigger a policy compliance scan on the resource group. After the scan is complete, it will fetch the compliance state of resources. The action will fail if there are any non-compliant resources.
+
+   ```
+   # File: .github/workflows/workflow.yml
+
+   on: push
+   
+   jobs:
+     assess-policy-compliance:    
+       runs-on: ubuntu-latest
+       steps:
+       # Azure Login       
+       - name: Login to Azure
+         uses: azure/login@v1
+         with:
+           creds: ${{secrets.AZURE_CREDENTIALS}} 
+       
+       - name: Check for resource compliance
+         uses: azure/policy-compliance-scan@v0
+         with:
+           scopes: |
+             /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/<resource-group-name>               
+           scopes-ignore: |
+             /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/<resource-group-name/providers/<resource-provider-name>
+        
+   ```
+
+   >**Note:** Ensure to Replace the **Subscription ID** and **<resource-group-name** and **<resource-provider-name>** in the above code.
+
+8. Commit the changes within your repository to successfully create the workflow file.
+
+9. Head back to the **GitHub Actions (1)** tab and then select the Action named **Security Complainace Scan (2)**.
+
+   ![](../media/cl8-ex2-t2-s9.png)
+
+10. Make sure all the workflow runs are successful.
 
 ## Success criteria:
 To complete this challenge successfully:
