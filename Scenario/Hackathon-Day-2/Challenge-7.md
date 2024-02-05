@@ -13,7 +13,7 @@ Contoso Traders is a web application for stock trading. In this challenge, as a 
 
 2. **Unit Test Generation with Copilot:**
    - After implementing the feature, you should use GitHub Copilot to generate unit tests for the new functionality which includes assessing the accuracy and completeness of the generated unit tests.
-   - Ensure that the generated test cases are alligning with the code analogy with successful test passes.
+   - Ensure that the generated test cases are aligning with the code analogy with successful test passes.
    - Resolve any unit test failures with the help of GitHub Copilot chat.
 
 3. **Code Review and Security Check:**
@@ -57,4 +57,4 @@ To complete this challenge successfully:
 1. If you are still having trouble, you can reach out to the support team via `labs-support@spektrasystems.com` for further assistance. The support team is available to help you to troubleshoot and resolve any technical issues or validation issues that may arise while the lab environment is live.
 
 ## Conclusion
-Congratulations on completing the **Enhancing Contoso Traders with GitHub Copilot** challenge! Through this challenge you have not only focused on finding and fixing vulnerabilities but also promoted a security-conscious development mindset. The next challenge focuses on implemeting security policies using Azure Policy and integrating compliance scanning within your GitHub CI/CD pipelines.
+Congratulations on completing the **Enhancing Contoso Traders with GitHub Copilot** challenge! Through this challenge you have not only focused on finding and fixing vulnerabilities but also promoted a security-conscious development mindset. The next challenge focuses on implementing security policies using Azure Policy and integrating compliance scanning within your GitHub CI/CD pipelines.
