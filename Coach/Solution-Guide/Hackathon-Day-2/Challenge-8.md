@@ -66,7 +66,7 @@ In this task, you will enforse compliance with Azure Policy by assigning a polic
 
 ### Task 2: Implement a new custom policy
 
-Now that you've assigned a built-in policy definition, you can do more with Azure Policy. Next, create a new custom policy to save costs by validating that virtual machines created in your environment can't be in the G series. This way, every time a user in your organization tries to create a virtual machine in the G series, the request is denied.
+Now that you've assigned a built-in policy definition, you can do more with Azure Policy. Azure Policy enables organizations to enforce governance controls and compliance standards. This guide focuses on implementing a custom policy to restrict resource deployments to the East US region within a designated resource group. By leveraging Azure Policy, organizations can ensure compliance, mitigate risks, and streamline resource management effectively.
 
 1. Select **Definitions** under **Authoring** in the left side of the Azure Policy page.
 
