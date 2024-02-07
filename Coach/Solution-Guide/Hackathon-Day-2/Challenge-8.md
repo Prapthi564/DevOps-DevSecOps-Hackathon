@@ -83,7 +83,7 @@ Now that you've assigned a built-in policy definition, you can do more with Azur
 3. Copy the following JSON code and then update it for your needs with:
 
    - The policy parameters.
-   - The policy rules/conditions, in this case - VM SKU size equal to G series
+   - The policy rules/conditions, in this case - location set to East US.
    - The policy effect, in this case - **Deny**.
 
    ```
@@ -91,8 +91,8 @@ Now that you've assigned a built-in policy definition, you can do more with Azur
        "policyRule": {
           "if": {
             "not": {
-              "field": "location",
-              "in": ["East US"]
+              "field": "Microsoft.Resources/resourceGroups/location",
+              "in": ["eastus"]
             }
           },
           "then": {
@@ -102,7 +102,7 @@ Now that you've assigned a built-in policy definition, you can do more with Azur
    }
    ```
 
-   >**Note:** The **field** property in the policy rule must be a supported value. An example of an alias might be `Microsoft.Compute/VirtualMachines/Size`.
+   >**Note:** The **field** property in the policy rule must be a supported value. An example of alias might be `Microsoft.Compute/VirtualMachines/Size` and `Microsoft.Resources/resourceGroups/location`.
 
 ## Exercise 2: Integrate Compliance Scanning in CI/CD pipeline
 
