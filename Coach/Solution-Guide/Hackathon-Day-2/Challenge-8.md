@@ -74,11 +74,11 @@ Now that you've assigned a built-in policy definition, you can do more with Azur
 
 2. Select **+ Policy definition** at the top of the page. This button opens to the **Policy definition** page and enter the following information:
    - Select the **Definition location** **(1)** by selecting the ellipsis and selecting a subscription. Optionally, select a resource group. A scope determines what resources or grouping of resources the policy assignment gets enforced on.
-   - **Name:** Require VM SKUs not in the G series. **(2)**
-   - **Description:** This policy definition enforces that all virtual machines created in this scope have SKUs other than the G series to reduce cost. **(3)**
-   - **Category:** Create a new catrgory named **Compute**.  **(4)**
+   - **Name:** Restrict deployment to East US region **(2)**
+   - **Description:** This policy ensures that resources are deployed only in the East US region. **(3)**
+   - **Category:** Create a new catrgory named **Region**.  **(4)**
 
-   ![](../media/cl8-ex1-t2-s2.png)
+   ![](../media/cl8-ex1-t2-s2-new.png)
 
 3. Copy the following JSON code and then update it for your needs with:
 
@@ -89,21 +89,16 @@ Now that you've assigned a built-in policy definition, you can do more with Azur
    ```
    {
        "policyRule": {
-           "if": {
-               "allOf": [{
-                       "field": "type",
-                       "equals": "Microsoft.Compute/virtualMachines"
-                   },
-                   {
-                       "field": "Microsoft.Compute/virtualMachines/sku.name",
-                       "like": "Standard_G*"
-                   }
-               ]
-           },
-           "then": {
-               "effect": "deny"
-           }
-       }
+          "if": {
+            "not": {
+              "field": "location",
+              "in": ["East US"]
+            }
+          },
+          "then": {
+            "effect": "deny"
+          }
+        }
    }
    ```
 
