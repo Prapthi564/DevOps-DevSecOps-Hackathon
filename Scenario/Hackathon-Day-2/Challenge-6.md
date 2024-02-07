@@ -23,7 +23,7 @@ You need to focus on completing the implementation of the below-mentioned GitHub
    - Use this OpenAI API key to create a GitHub Secret in your repository with the name `OPENAI_API_KEY`.
    - Create a `.github/workflows/main.yml` file in your repository to successfully implement `AI Code Reviewer` GitHub Action which provides intelligent feedback and suggestions on your pull requests.
 
-2. **Configure and implement AI Security Check for Pull Requests: **
+2. **Configure and implement AI Security Check for Pull Requests:**
    - Use the previously created OpenAI API key to create a GitHub Secret in your repository with the name `OPENAI_TOKEN`.
    - Create a new GitHub secret named `GH_TOKEN` with a GitHub Personal Access Token with the `repo` and `write:discussion` scopes enabled.
    - Create a new `./github/workflows/ai-security-check-for-pr.yml` workflow file in your repository to successfully implement `AI Security Check for Pull Requests` GitHub Action which analyzes the code in each pull request targeting the specified branch.
