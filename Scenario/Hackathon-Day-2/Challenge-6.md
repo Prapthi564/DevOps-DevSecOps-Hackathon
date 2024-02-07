@@ -16,12 +16,15 @@ You need to focus on completing the implementation of the below-mentioned GitHub
 >**Note:** This challenge requires you to sign in/sign up to a free tier OpenAI account. This free-tier provides you with a $5 credit limit that expires within a period of 3 months from the day of account activation.
 
 1. **Configure and implement AI Code Review GitHub Action:**
+   - Sign In/ Sign up to an OpenAI account and create a new secret key (API key).
+     
+      >**Note:** This API key will be used as you move forward in this challenge. Keep it handy!
    
-   - Use the OpenAI API key **<inject key="openAIkey" enableCopy="false" />** to create a GitHub Secret in your repository with the name `OPENAI_API_KEY`. You can find the API key details in Environment details tab of your environment.
+   - Use this OpenAI API key to create a GitHub Secret in your repository with the name `OPENAI_API_KEY`.
    - Create a `.github/workflows/main.yml` file in your repository to successfully implement `AI Code Reviewer` GitHub Action which provides intelligent feedback and suggestions on your pull requests.
 
 2. **Configure and implement AI Security Check for Pull Requests: **
-   - Use the OpenAI API key **<inject key="openAIkey" enableCopy="false" />** to create a GitHub Secret in your repository with the name `OPENAI_TOKEN`. You can find the API key details in Environment details tab of your environment.
+   - Use the previously created OpenAI API key to create a GitHub Secret in your repository with the name `OPENAI_TOKEN`.
    - Create a new GitHub secret named `GH_TOKEN` with a GitHub Personal Access Token with the `repo` and `write:discussion` scopes enabled.
    - Create a new `./github/workflows/ai-security-check-for-pr.yml` workflow file in your repository to successfully implement `AI Security Check for Pull Requests` GitHub Action which analyzes the code in each pull request targeting the specified branch.
   
