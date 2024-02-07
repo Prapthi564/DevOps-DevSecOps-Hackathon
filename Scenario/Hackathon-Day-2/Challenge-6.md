@@ -18,7 +18,7 @@ You need to focus on completing the implementation of the below-mentioned GitHub
 1. **Configure and implement AI Code Review GitHub Action:**
    - Sign In/ Sign up to an OpenAI account and create a new secret key (API key).
      
-      >**Note:** This API key will be used as you move forward in this challenge. Keep it handy!
+      >**Note:** This API key will be used as you move forward in the challenge. Keep it handy!
    
    - Use this OpenAI API key to create a GitHub Secret in your repository with the name `OPENAI_API_KEY`.
    - Create a `.github/workflows/main.yml` file in your repository to successfully implement `AI Code Reviewer` GitHub Action which provides intelligent feedback and suggestions on your pull requests.
