@@ -8,13 +8,13 @@ In this challenge, you are a DevOps engineer responsible for ensuring the securi
 ## Challenge Objectives:
 
 1. **Implement Security Policies using Azure Policy:**
-   - Implement Azure Policy definition as code (written in JSON) to enforce security compliance on the resources related to the Contoso Traders Application that have been deployed over Azure. This includes policies for resource tagging, encryption, network security, etc.
+   - Enforce compliance by assigning *built-in* policy definition called **Inherit a tag from the resource group if missing** to add the specified tag with its value from the parent resource group to new or updated resources missing the tag.
+   - Implement an Azure custom policy to restrict resource deployments to the **East US** region within a designated resource group.
    - Ensure that your policies are effective in preventing non-compliant resources from being deployed.
-   - Store these policy definitions in a GitHub repository.
    
 2. **Integrate Compliance Scanning in CI/CD pipeline:**
    - Integrate a compliance scanning step into your GitHub pipeline that checks for policy compliance before allowing deployment.
-   - Implement **Azure Policy Compliance Scan** GitHub action within `.github/workflows/workflow.yml` which triggers a policy compliance scan on the provided subscription.
+      - Implement **Azure Policy Compliance Scan** GitHub action within `.github/workflows/workflow.yml` which triggers a policy compliance scan on the provided subscription and continue/fail the workflow based on the complaince state of the resources.
    - Ensure that compliance scans are triggered automatically during the CI/CD process.
 
 ## Success criteria:
@@ -22,7 +22,7 @@ To complete this challenge successfully:
 
 - Successful effectiveness of policies in enforcing security compliance.
 - Successful integration of compliance scanning into the pipeline.
-- Successful setup and execution of the CI/CD pipeline.
+- Successful setup and execution of the GitHub Action.
 
 ## Additional Resources:
 
