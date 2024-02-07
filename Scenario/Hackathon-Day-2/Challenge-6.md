@@ -13,7 +13,7 @@ You need to focus on completing the implementation of the below-mentioned GitHub
 
 ## Challenge Objectives:
 
->**Note:** This challenge provides you with a pre-deployed OpenAI resource and its OpenAI API key for a hassle free execution.
+>**Note:** This challenge requires you to sign in/sign up to a free tier OpenAI account. This free-tier provides you with a $5 credit limit that expires within a period of 3 months from the day of account activation.
 
 1. **Configure and implement AI Code Review GitHub Action:**
    
