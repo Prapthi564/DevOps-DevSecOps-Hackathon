@@ -8,7 +8,7 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
 
 ## Solution Guide
 
-## Exercise 1: Feature Addition with GitHub Copilot
+## Exercise 1: Integrate an 'About Us' app component in React using GitHub Copilot
 
 ### Task 1: Sign in to GitHub Copilot in Visual Studio Code
 
