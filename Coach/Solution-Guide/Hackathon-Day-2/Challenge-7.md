@@ -135,6 +135,8 @@ with the github credentials that were copied over to Notepad in the previous ste
    export default AboutUs;
    ```
 
+   >**Note:** Free free to make changes in the above code snippet as per your use case scenario.
+
    >**Note:** Notice that the css rules have been imported into the `AboutUs.js` file using the code, `import "./AboutUs.css";`.
    
    >**Note:** The `AboutUs.js` file is a React component that renders an "About Us" section on a webpage based on the CSS rules that have been defined in `AboutUs.css` file.
@@ -185,7 +187,11 @@ with the github credentials that were copied over to Notepad in the previous ste
    
    - The command `npm i` is a shorthand version of `npm install`. It is used in Node.js environments to install all the dependencies listed in the `package.json` file. These dependencies are libraries or packages that your project needs to run correctly. The installed packages will be placed in a folder named `node_modules` in your project directory.
 
-   - After the installation of all the dependencies, execute the command - `npm run start` to start the application.
+   - After the installation of all the dependencies, execute the command - `npm run start` to start the application. This open a new browser tab over the url path, `http://localhost:3000/`.
+
+15. Observe that the new "About Us" component has been added at the end of the webpage.
+
+   ![Picture1](../media/CL7-EX1-T2-S15.png)
 
 ## Exercise 2: Generate and run Unit Test cases using GitHub Coplilot:
 
