@@ -88,76 +88,94 @@ with the github credentials that were copied over to Notepad in the previous ste
 5. Create a new file named `AboutUs.css` **(1)** in your `src` directory ie., within the path `ContosoTraders.Ui.Website.V2\src` and then add the following code **(2)**:
 
    ```
-   import React from 'react';
+   .about-us {
+       padding: 20px;
+       font-size: 1.2em;
+       line-height: 1.6;
+       color: #333;
+   }
+   
+   .about-us h1 {
+       font-size: 2em;
+       margin-bottom: 0.5em;
+   }
+   ```
 
-   const Welcome = () => {
+   >**Note:** This `AboutUs.css` file contains CSS (Cascading Style Sheets) rules that are used to style HTML elements on a webpage. The specific code you've selected defines styles for elements with the class `about-us` and `h1` elements within elements with the class `about-us`.
+
+   ![Picture1](../media/CL7-EX1-T2-S5.png)
+
+6. Save the newly created `AboutUs.css` file.
+
+7. Now let's build a new component for the application. Create a new file named `AboutUs.js` **(1)** in your `src` directory ie., within the path `ContosoTraders.Ui.Website.V2\src` and then add the following code **(2)**:
+
+   ```
+   import React from "react";
+   import "./AboutUs.css";
+   
+   function AboutUs() {
      return (
-       <div>
-         <h1>Welcome to our site!</h1>
-         <p>This is the welcome page.</p>
+       <div className="container">
+         <div className="about-us">
+           <h1 className="text-center">About Us</h1>
+           <p>
+             Contoso Traders is a leading company in the trading industry. We have
+             been serving our customers for over 20 years with high-quality
+             products and excellent customer service.
+           </p>
+           <p>
+             Our team is dedicated to providing the best service possible. We value
+             our customers and strive to meet their needs.
+           </p>
+         </div>
        </div>
      );
-   };
+   }
    
-   export default Welcome;
+   export default AboutUs;
    ```
 
-   >**Note:** This `Welcome.js` file, defines a new component that will serve as your welcome page. This is where you'll write the code for the same.
-
-   ![Picture1](../media/cl7-ex1-t2-s5.png)
-
-6. Save the newly created `Welcome.js` file.
-
-7. Now we need to import this new component into your `App.js` file. `App.js` is usually the main file in a React application. You'll need to import the Welcome component into the `App.js` file by using the following code:
-
-   ```
-   import Welcome from './pages/welcome/welcome'; // assuming a new directory named `welcome` within `pages`.
-   ```
-
-   ![Picture1](../media/cl7-ex1-t2-s7.png)
-
-8. Next, you must add a new `Route` for the `Welcome` page by using the following code within the `App.js` file:
-
-   ```
-   return (
-     <div>
-       {this.renderWelcomeMessage()}
-       {/* Rest of your app goes here */}
-       <div className="App">
-         <Fragment>
-           <div className="mainHeader">
-             <HeaderMessage type="warning" icon={warningIcon} message="This Is A Demo Store For Testing Purposes — No Orders Shall Be Fulfilled."/>
-             <Appbar quantity={quantity} />
-             {this.props.history.location.pathname === '/' || this.props.history.location.pathname === '/new-arrivals' ?
-               <Header quantity={quantity} />
-               :
-               <div id="box"></div>}
-           </div>
-           <Route path="/welcome" component={Welcome} /> {/* Add this line */}
-         </Fragment>
-       </div>
-     </div>
-   );
-   ```
-
-   ![Picture1](../media/cl7-ex1-t2-s8.png)
-
-   >**Note:** The above code tells the router to show the `Welcome` component when the URL path is `/welcome`. Now, if you navigate to `http://localhost:3000/welcome` in your web browser (assuming your React app is running on localhost port 3000), you should see your welcome page!
+   >**Note:** Notice that the css rules have been imported into the `AboutUs.js` file using the code, `import "./AboutUs.css";`.
    
-   >**Note:** Please note that the placement of the Route component might need to be adjusted based on the exact structure and requirements of your application.
+   >**Note:** The `AboutUs.js` file is a React component that renders an "About Us" section on a webpage based on the CSS rules that have been defined in `AboutUs.css` file.
 
-9. To run your React application, you typically use the command line (also known as the terminal). Here are the steps:
+8. Save the newly created `AboutUs.js` file.
+
+9. Now navigate to the `App.js` file to integrate the "About Us" page that was created in the previous steps.
+
+10. Within the `App.js` file, enter the following code.
+
+   ```
+   import AboutUs from "./AboutUs";
+   import "./App.css";
+   ```
+
+11. Your `App.js` should look similar like the below screenshot:
+
+   ![Picture1](../media/CL7-EX1-T2-S11.png)
+
+12. Scroll down to the end of the code within the `App.js` file and then add the following code to include the newly created `About Us` component.
+
+   ```
+   <AboutUs />
+   ```
+13. Your `App.js` should now look similar like the below screenshot:
+
+   ![Picture1](../media/CL7-EX1-T2-S13.png)
+
+14. To run your React application, you typically use the command line (also known as the terminal). Here are the steps:
       - Within Visual Studio Code, you can open the terminal by going to the top menu to click on **Terminal** **(1)** and then select **New Termimal (2)**.
       - Navigate to your project directory. You can do this with the `cd` command followed by the path to your project. You can use the below command to navigate to the React application's working directory **(2)**:
       ```
-      cd C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files\src\ContosoTraders.Ui.Website\src
+      cd C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files-2\src\ContosoTraders.Ui.Website.V2
       ``` 
       - Once you're in your project directory, you can start the application with the `npm start` **(3)** because we need npm to create the Contoso Traders Application. After running the following command within the terminal, your application should start, and you can view it in your web browser at http://localhost:3000.
+        
       ```
       npm run start
       ```
       
-   ![Picture1](../media/cl7-ex1-t2-s9.png)
+   ![Picture1](../media/CL7-EX1-T2-S14.png)
 
 ## Exercise 2: Generate and run Unit Test cases using GitHub Coplilot:
 
