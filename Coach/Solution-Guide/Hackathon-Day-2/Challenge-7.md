@@ -63,7 +63,7 @@ with the github credentials that were copied over to Notepad in the previous ste
 
 >**NOTE:** It should be noted that the code suggestions offered by GitHub Copilot might not exactly match the screenshots shown within the labguide. GitHub Copilot is an AI-powered tool that generates code based on context and patterns, and its suggestions can be influenced by various factors. It is also important that you have the knowledge on operating and running React Applications which may be needed as you proceed with this exercise.
 
-1. In a new Visual Studio Code window, go to **Explorer (1)** and click on **Open Folder (2)**. Navigate to **C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files-2/** within the file explorer, and select the **ContosoTraders.Ui.Website.V2.Raw** folder.
+1. In a new Visual Studio Code window, go to **Explorer (1)** and click on **Open Folder (2)**. Navigate to **C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files-2/** within the file explorer, and then select the **ContosoTraders.Ui.Website.V2.Raw** folder.
 
     ![Picture1](../media/openfolders.png) 
 
@@ -71,15 +71,21 @@ with the github credentials that were copied over to Notepad in the previous ste
 
    ![Picture1](../media/trust-authors.png)
 
-3. Once the project has loaded, within the explorer pane, navigate to `C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files\src\ContosoTraders.Ui.Website\src` to view the `App.js` file.
+3. Once the project has loaded, within the explorer pane of VS Code, navigate to `Contosotraders.Ui.Website.V2\src` folder to view the `App.js` file.
 
-   ![Picture1](../media/cl7-ex1-t2-s3.png)
+   ![Picture1](../media/CL7-EX1-T2-S3.png)
 
-4. Within the **CHAT: GITHUB COPILOT** pane, type: `Help me add a welcome page into the current project` and observe the AI response. You can follow the instructions provided by GitHub Copilot towards successfully adding the welcome page as a part of the Contoso Traders Application.
+4. Within the **CHAT: GITHUB COPILOT** pane, type: `Help me create the new About Us" page in ContosoTraders.Ui.Website.V2\src` and observe the AI response. You can follow the instructions provided by GitHub Copilot towards successfully adding the About Us page as a part of the sample React application that you have imported into VS Code.
 
-   ![Picture1](../media/cl7-ex1-t2-s4.png)
+   ![Picture1](../media/CL7-EX1-T2-S4.png)
 
-5. Create a new file named `Welcome.js` **(1)** in your `pages` directory ie., within the path `C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files\src\ContosoTraders.Ui.Website\src\pages\welcome` and then add the following code **(2)**:
+>**Disclaimer:** It should be noted that the code suggestions offered by GitHub Copilot might not exactly match the screenshots shown within the labguide. GitHub Copilot is an AI-powered tool that generates code based on context and patterns, and its suggestions can be influenced by various factors. It is also important that you have the knowledge on operating and running React Applications which may be needed as you proceed with this exercise.
+
+>**Note:** However the ease of executability of this challenge, you can open a new folder within VS Code and import the solution folder from the Windows file explorer with path, `C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files-2\`. Select the **src** folder. This solution project has integrated "About Us" page and unit test cases for the same.
+
+>**Note:** If you wish to continue to manually edit the raw project, follow the steps from step 6.
+
+5. Create a new file named `AboutUs.css` **(1)** in your `src` directory ie., within the path `ContosoTraders.Ui.Website.V2\src` and then add the following code **(2)**:
 
    ```
    import React from 'react';
