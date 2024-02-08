@@ -177,6 +177,16 @@ with the github credentials that were copied over to Notepad in the previous ste
       
    ![Picture1](../media/CL7-EX1-T2-S14.png)
 
+>**Note:** If the above command fails, you might need to run the following command :
+
+   ```powershell
+   npm i
+   ```
+   
+   - The command `npm i` is a shorthand version of `npm install`. It is used in Node.js environments to install all the dependencies listed in the `package.json` file. These dependencies are libraries or packages that your project needs to run correctly. The installed packages will be placed in a folder named `node_modules` in your project directory.
+
+   - After the installation of all the dependencies, execute the command - `npm run start` to start the application.
+
 ## Exercise 2: Generate and run Unit Test cases using GitHub Coplilot:
 
 ### Task 1: Create and run test cases:
