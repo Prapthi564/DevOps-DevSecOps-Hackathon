@@ -59,12 +59,11 @@ with the github credentials that were copied over to Notepad in the previous ste
    
     ![Picture1](../media/cl7-ex1-t1-s9.png)
    
-
-### Task 2: Adding a Welcome Page to a React Application using GitHub Copilot
+### Task 2: Integrate an 'About Us' app component in React using GitHub Copilot
 
 >**NOTE:** It should be noted that the code suggestions offered by GitHub Copilot might not exactly match the screenshots shown within the labguide. GitHub Copilot is an AI-powered tool that generates code based on context and patterns, and its suggestions can be influenced by various factors. It is also important that you have the knowledge on operating and running React Applications which may be needed as you proceed with this exercise.
 
-1. In Visual Studio Code, go to **Explorer (1)** and click on **Open Folder (2)**. Navigate to **C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files** within the file explorer, and select the **DevOps-DevSecOps-Hackathon-lab-files** folder.
+1. In a new Visual Studio Code window, go to **Explorer (1)** and click on **Open Folder (2)**. Navigate to **C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files-2/** within the file explorer, and select the **ContosoTraders.Ui.Website.V2.Raw** folder.
 
     ![Picture1](../media/openfolders.png) 
 
