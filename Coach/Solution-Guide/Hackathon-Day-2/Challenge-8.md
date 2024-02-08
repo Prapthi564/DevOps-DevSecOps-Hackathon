@@ -156,7 +156,7 @@ Now that you've assigned a built-in policy definition, you can do more with Azur
 
    ![](../media/cl7-ex3-t1-s3.png)
 
-4. Within a new browser tab, navigate to `https://github.com/marketplace/actions/azure-policy-compliance-scan` to view the **Azure Policy Compliance Scan** GitHub Action from the GitHub MarketPlcae.
+4. Within a new browser tab, navigate to `https://github.com/marketplace/actions/azure-policy-compliance-scan` to view the **Azure Policy Compliance Scan** GitHub Action.
 
 5. Go back to your `devsecops` GitHub repository.
 
