@@ -7,7 +7,7 @@ Contoso Traders is an e-commerce web application. In this challenge, as a DevOps
 
 ## Challenge Objectives:
 
-1. **Feature Addition with GitHub Copilot:**
+1. **Integrate an 'About Us' app component in React using GitHub Copilot:**
    - Use GitHub Copilot to assist you in writing code for the new welcome page feature.
    - Enhance the user interface and design to create an engaging welcome experience.
 
