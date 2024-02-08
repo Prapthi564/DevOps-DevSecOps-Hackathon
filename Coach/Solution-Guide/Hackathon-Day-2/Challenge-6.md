@@ -141,6 +141,8 @@ Here is the solution guide, which provides all the specific, step-by-step direct
 
 6. Commit the changes made to create the workflow file.
 
+   ![](../media/cl6-ex1-t4-s6.png)
+
 7. Click on **Commit new file**.
 
    ![](../media/cl9-t2-s8.png)
@@ -168,7 +170,7 @@ Here is the solution guide, which provides all the specific, step-by-step direct
 
    ![](../media/cl6-ex1-t5-s7.png)
 
-6. Click on the **Actions (1)** tab and then notice that `AI Code Reviewer` workflow has been autoautomatically intiated. Ensure that the workflow does not fail. If so, there may be some vulnerabilities in the code within the recent pull request.  
+6. Click on the **Actions** tab and then notice that `AI Code Reviewer` workflow has been autoautomatically intiated. Ensure that the workflow does not fail. If so, there may be some vulnerabilities in the code within the recent pull request.  
 
    ![](../media/cl6-ex1-t5-s8.png)
 
@@ -268,7 +270,7 @@ Here is the solution guide, which provides all the specific, step-by-step direct
 
 9. Create a Pull request to merge the changes made from the `test` to  `main` branch.
 
-10. Click on the **Actions (1)** tab and then notice that `AI Security Check for Pull Requests` workflow has been autoautomatically intiated. Ensure that the workflow does not fail. If so, there may be some vulnerabilities within the recent pull request.  
+10. Click on the **Actions** tab and then notice that `AI Security Check for Pull Requests` workflow has been autoautomatically intiated. Ensure that the workflow does not fail. If so, there may be some vulnerabilities within the recent pull request.  
 
    ![](../media/cl6-ex2-t2-s10.png)
 
