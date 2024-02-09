@@ -271,7 +271,7 @@ with the github credentials that were copied over to Notepad in the previous ste
 7. In Visual Studio Code, run the below commands in the terminal to set your **email** and **username**, which Git uses for commits. Make sure to replace the GitHub account email and username.
    
      ```pwsh
-     cd C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files
+     cd C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files-2
      git config --global user.email "you@example.com"
      git config --global user.name "Your UserName"
      ```
