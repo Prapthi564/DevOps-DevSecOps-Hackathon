@@ -6,6 +6,22 @@ Contoso Traders is an e-commerce web application. In this challenge, as a DevOps
 
 This is the solution guide that contains all of the comprehensive, step-by-step directions needed to finish the challenge.
 
+## Accessing the Azure Portal
+
+1. To access the Azure Portal, open the Edge browser from inside the environment and navigate to the **[Azure Portal](https://portal.azure.com)**.
+
+1. On the **Sign in to Microsoft Azure** tab, you will see a login screen. Enter the following email/username, and then click on **Next**. 
+   * **Email/Username**: <inject key="AzureAdUserEmail"></inject>
+        
+1. Now enter the following password and click on **Sign in**.
+   * **Password**: <inject key="AzureAdUserPassword"></inject>
+     
+1. If you see the pop-up **Stay Signed in?**, click No.
+
+1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
+
+1. If a **Welcome to Microsoft Azure** pop-up window appears, click **Maybe Later** to skip the tour.
+
 ## Solution Guide
 
 ## Exercise 1: Integrate an 'About Us' app component in React using GitHub Copilot
@@ -407,177 +423,58 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
 
 ### Task 1: Deploy Infrastructure
 
->**Note:** This exercise is dependent on the completion of Challenge 1 which requires:
-   - Updated parameters within `iac/createResources.parameters.json` file.
-   - Creation of new Action Secrets named **SERVICEPRINCIPAL**, **SQL_PASSWORD** and **ENVIRONMENT**.
-   - Updated resource group name in `iac/createResourceGroup.bicep` file.
-   - Updated `RESOURCE_GROUP_NAME` environment variable within `.github/workflow/deploy-infrastructure.yml` file.
-   - If you haven't satisfied the above dependencies, start this exercise by following instructions from step 4 (Ignore steps 1, 2 and 3).
- 
-1. To run the infrastucture deployment workflow created in challenge 1, perform the following steps and wait for the resources to be deployed within your Azure Portal:
-      - Click on **Actions (1)** within your GitHub repository.
-      - Select the workflow named **contoso-traders-provisioning-deployment (2)**.
-      - Click on **Run workflow (3)**.
-      - Finally, click on **Run workflow (4)**. Ensure that the branch is selected as **main**.
+1. Login to your Azure portal wih the credentials provided in the **Environment Details** tab of the integrated CloudLabs Environment.
 
-      ![](../media/cl1-t2-s10.png)
+2. In the global search bar, search for and select **Static Web Pages**
 
-2. Navigate to `.github/workflow/update-contoso-traders-App.yml` path, ensure to update the `AKS_NODES_RESOURCE_GROUP_NAME` and`RESOURCE_GROUP_NAME` environment variable by replacing `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
+3. Click on **+ Create** to create a new Static Web App.
 
-    ![](../media/dso1.png)
+4. In the **Basics tab** of the **Create Static Web App** page, enter the following details:
+   - **Subscription:** Select the available subscription **(1)**.
+   - **Resource Group:** Create a new resource group named - **Static-Web-App (2)**.
+   - **Name:** `React-Static-Web-App` **(3)**.
+   - **Plan type:** Select **Free (4)**.
+   - **Region for Azure Functions API and staging environments:** Select **East US 2 (5)**.
+   - **Source:** Select **GitHub (6)**
+   - **GitHub account:** Connect to your GitHub account which has the `devsecops-2` repository with tehe React application files **(7)**.
+   - **Organization:** Select your assigned Github organization **(8)**.
+   - **Repository:** Select `devsecops-2` **(9)**.
+   - **Branch:** `Main` **(10)**.
+   - **Build presets:** Search for and select **React (11)**.
+   - **App location:** `/` **(12)**.
 
-3. To update the application, run the workflow by performing the following steps and wait for the resources to be deployed within your azure portal:
-      - Click on **Actions (1)** within your GitHub repository.
-      - Select on the workflow named **update contoso traders app (2)**.
-      - Click on **Run workflow (3)**.
-      - Finally click on **Run workflow (4)**. Ensure that the branch is select as **main**.
-
-    ![](../media/dso2.png) 
-
-4. Within the GitHub repository, navigate to the `iac/createResources.parameters.json` path and update the value of the following parameters:
-   - Replace `deploymentidvalue` with **<inject key="DeploymentID" enableCopy="false" /> (1)**.
-   - Replace `bicepsqlpass` value with **<inject key="AzureAdUserPassword"></inject> (2)**.
-  
-       ![](../media/cl1-t2-s1.png)
-
-5. To create GitHub secrets, in your GitHub lab files repository, click on the **Settings** tab.
-
-      ![](../media/cl1-t2-s2.png)
-
-6. Navigate to **Environment Details** **(1)**, click on **Service Principal Details** **(2)**, and copy the **Subscription ID**, **Tenant ID (Directory ID)**, **Application ID (Client ID)**, and **Secret Key (Client Secret)**.
-
-      ![](../media/ex2-t4-8.png)
+      >**Note:** `/` refers to the root directory of the GitHub repository. Ensure that the location is specified appropriately as per your GitHub file structure.
    
-      - Replace the values that you copied in the below JSON. You will be using them in this step.
-      
-      ```json
-      {
-         "clientId": "zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz",
-         "clientSecret": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
-         "tenantId": "zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz",
-         "subscriptionId": "zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz"
-      }
-      ```
+   - Leave the other fields at default and then click on **Review + Create (13)**.
+   - Finally, click on **Create** on the **Review + create** page to create the static web app.
 
-7. Under **Security**, expand **Secrets and variables** **(1)** by clicking the drop-down and select **Actions** **(2)** blade from the left navigation bar. Select the **New repository secret** **(3)** button.
-
-   ![](../media/exe2-task4-step6-action-setup.png)
-
-8. Under the **Actions Secrets/New secret** page, enter the below-mentioned details and click on **Add secret** **(3)**.
-
-   - **Name** : Enter **SERVICEPRINCIPAL** **(1)**
-   - **Value** : Paste the service principal details in JSON format **(2)**
+    ![](../media/CL7-EX4-T1-S4.png)
    
-   ![](../media/2dgn36.png)
+    ![](../media/CL7-EX4-T1-S4-b.png)
 
-9. To create another secret, under the **Actions Secrets/New secret** page, enter the below-mentioned details and click on **Add secret** ***(3)***.
+5. Once the deployment is successful, click on **Go to resource**.
 
-   - **Name**: Enter **SQL_PASSWORD** ***(1)***
-   - **Value**: Enter **<inject key="AzureAdUserPassword"></inject> (2)**, which would be the same as the Azure AD Password.
+    ![](../media/CL7-EX4-T1-S5.png)
 
-   ![](../media/cl1-t2-s6.png)
+6. Navigate back to your `devsecops-2` repository on the GitHub portal and click on the **Actions** tab.
 
-10. Under the **Actions Secrets/New secret** page, enter the below-mentioned details and click on **Add secret** ***(3)***.
+    ![](../media/CL7-EX4-T1-S6.png)
 
-   - **Name** : Enter **ENVIRONMENT** ***(1)***
-   - **Value** : **<inject key="DeploymentID" enableCopy="false" />** (Copy the Deployment ID from the environment details tab) ***(2)***
-   
-   ![](../media/2dgn33.png)
+7. Ensure that your **Azure Static Web Apps CI/CD** workflow has a successful run status.
 
-11. Now within the GitHub repository, navigate to the `iac/createResourceGroup.bicep` path and update the resource group name as mentioned below:
-   - Replace `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
+    ![](../media/CL7-EX4-T1-S7.png)
 
-   ![](../media/cl1-t2-s8.png)
+8. Navigate back to your Azure portal on the overview page of the recently created Static Web App and click on the **URL**
 
-12. Navigate to the `.github/workflow/deploy-infrastructure.yml` path and ensure to update the `RESOURCE_GROUP_NAME` environment variable by replacing `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
+    ![](../media/CL7-EX4-T1-S8.png)
 
-   ![](../media/cl1-t2-s9.png)
+9. The URL redirects you to a new browser tab with the React Application up and running.
 
-13. To run a workflow, perform the following steps and wait for the resources to be deployed within your Azure Portal:
-      - Click on **Actions (1)** within your GitHub repository.
-      - Select the workflow named **contoso-traders-provisioning-deployment (2)**.
-      - Click on **Run workflow (3)**.
-      - Finally, click on **Run workflow (4)**. Ensure that the branch is selected as **main**.
+    ![](../media/CL7-EX4-T1-S9.png)
 
-      ![](../media/cl1-t2-s10.png)
+10. Click on **Get Started** and scroll down within your static web app to view the integrated **About Us** page.
 
-14. Navigate to `.github/workflow/update-contoso-traders-App.yml` path, ensure to update the `AKS_NODES_RESOURCE_GROUP_NAME` and`RESOURCE_GROUP_NAME` environment variable by replacing `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
-
-    ![](../media/dso1.png)
-
-15. To run a workflow, perform the following steps and wait for the resources to be deployed within your azure portal:
-      - Click on **Actions (1)** within your GitHub repository.
-      - Select on the workflow named **update contoso traders app (2)**.
-      - Click on **Run workflow (3)**.
-      - Finally click on **Run workflow (4)**. Ensure that the branch is select as **main**.
-
-    ![](../media/dso2.png) 
-
-### Task 2: Setup CI/CD Workflow
-
-1.  From the Azure Portal Dashboard, click on Resource Groups from the Navigate panel to see the resource groups.
-
-   ![](../media/2dgn9.png) 
-   
-1. Select the **contosotraders-<Deployment-ID>** resource group from the list.
-
-   ![](../media/cl1-t3-s2.png)  
-   
-1. Select the **productsdb** SQL database from the list of resources.
-
-   ![](../media/cl1-t3-s3.png) 
-   
-1. Under the Settings side blade, select **Connection strings** ***(1)*** and copy the **ADO.NET (SQL authentication)** ***(2)*** connection string from the ADO.NET tab. 
-
-   ![](../media/ado-sql-database.png)  
- 
-1. In your GitHub lab files repository, select the **Settings** tab from the lab files repository.
-
-   ![](../media/cl1-t1-s8.png)
-   
-1. Under **Security**, expand **Secrets and variables** ***(1)*** by clicking the drop-down and selecting **Actions** ***(2)*** from the left navigation bar. Select the edit button for the created secret named **SQL_PASSWORD** ***(3)***.
-
-   ![](../media/cl1-t3-s6.png)
-    
-1. Under the **Actions Secrets/Update secret** page, enter the below-mentioned details, and click on **Update secret** ***(3)***.
-
-   - **Value**: Paste the **ADO.NET (SQL authentication)** that you  have copied in the previous step.
-   
-   ![](../media/cl1-t3-s7.png)
-   
-   >**Note**: Replace `{your_password}` with the ODL User Azure Password. Go to **Environment Details (1)**, click on **Azure credentials (2)**, and copy **Password (3)**.
-   
-   ![](../media/2dgn155.png)   
-   
-1. From your GitHub repository, select the **Actions** ***(1)*** tab. Select the **contoso-traders-app-deployment** ***(2)*** workflow from the side blade, Click on the  **drop-down** ***(3)*** next Run workflow button, and select **Run workflow** ***(4)***.
-
-   ![](../media/2dgn159.png)
-   
-1. Navigate back to the Actions tab and select the **contoso-traders-app-deployment** workflow. This workflow builds the Docker image, which is pushed to the container registry. The same image is pushed to the Azure container application.
-
-   ![](media/2dgn124.png)
-   
-   ![](../media/2dgn165.png)
-
-### Task 3: Test the application
-
-1. Navigate to Azure Portal, and click on Resource Groups from the Navigate panel to see the resource groups.
-
-   ![](../media/2dgn9.png) 
-   
-2. Select the **contosotraders-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
-
-   ![](../media/2dgn135.png) 
-   
-3. Select the **contosotraders-ui2<inject key="DeploymentID" enableCopy="false" />** endpoint from the list of resources.
-
-   ![](../media/2dgn127.png) 
-   
-4. Click on the **Endpoint hostname**. It'll open a browser tab where you will be able to verify that the Contoso Traders app has been hosted successfully.
-
-   ![](../media/2dgn128.png) 
-    
-   ![](../media/2dgn162.png) 
+    ![](../media/CL7-EX4-T1-S10.png)
 
 ## Success criteria:
 To complete this challenge successfully:
