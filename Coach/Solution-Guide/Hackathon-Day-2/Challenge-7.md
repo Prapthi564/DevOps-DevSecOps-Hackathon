@@ -419,7 +419,7 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
 
 5. After having the temporary fork, you can request a CVE. It is used for GitHub reviews and published security advisories. Upon review, we may use this advisory to send Dependabot alerts to affected repositories and redistribute the advisory through our API and Atom feed.
 
-## Exercise 4: CI/CD Pipeline Setup and infrastrucure Deployment
+## Exercise 4: CI/CD Pipeline Setup and Infrastrucure Deployment
 
 ### Task 1: Deploy Infrastructure
 
