@@ -15,7 +15,7 @@ In this challenge, you will be imporving a React Application. As a DevOps engine
    - Enhance the user interface by designing and integrating an **About Us** page app component within the existing imported React application using **GitHub Copilot**
    - Ensure that the React Application is up and running with the newly integrated **About Us** page, locally on `http://localhost:3000/`.
 
-2. **Unit Test Generation with Copilot:**
+2. **Generate and run Unit Test cases using GitHub Coplilot:**
    - Generate Unit Test cases using GitHub Copilot for the `WelcomePopup.js` file present in the path `ContosoTraders.Ui.Wesite.V2/src/`.
         - Create a new test file named `WelcomePopup.test.js` to run the unit test cases.
    - Ensure that the generated test cases are aligning with the code analogy with successful test passes.
