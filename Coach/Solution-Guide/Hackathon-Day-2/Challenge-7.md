@@ -252,33 +252,37 @@ with the github credentials that were copied over to Notepad in the previous ste
 
    ![The `New Repository` creation form in GitHub.](../media/2dg1.png "New Repository Creation Form")
 
-3. Select the repository that you created earlier named, `devsecops`.
+3. Next to the search criteria, locate and select the **New** button.
 
-   ![](../media/cl7-ex3-t1-s3.png)
+   ![The `New Repository` creation form in GitHub.](../media/ex2-t3-3-git.png "New Repository Creation Form")
 
-4. On the repository's home page, click on **<>Code (1)** and then copy the `HTTPS` web URL link **(2)** of your GitHub repository onto a notepad. This URL will be used as you progress ahead in the following steps.
+4. On the **Create a new repository** screen, name the repository ```devsecops-2``` **(1)**, select **Public** **(2)**, and click on the **Create repository** **(3)** button.
 
-   ![](../media/cl7-ex3-t1-s4.png)
+   ![](../media/CL7-EX3-T1-S4.png) 
 
-5. From the GitHub username, note down the **Unique-ID** present in the Username. You'll need this in the upcoming steps.
+5. On the **Quick setup** screen, copy the **HTTPS** GitHub URL for your new repository and **save it** in a notepad for future use.
 
-   ![imported](../media/cl1-t1-s13.png)
+   ![](../media/CL7-EX3-T1-S5.png)
 
-6. Navigate back to the **Visual Studio Code** application in which the terminal is already open. In the terminal, click on the **drop-down** button and select **PowerShell** to open a fresh PowerShell terminal tab.
+6. From the GitHub username, note down the **Unique-ID** present in the Username. You'll need this in the upcoming steps.
+
+   ![](../media/CL7-EX3-T1-S5.png)
+
+7. Navigate back to the **Visual Studio Code** application in which the terminal is already open. In the terminal, click on the **drop-down** button and select **PowerShell** to open a fresh PowerShell terminal tab.
 
    ![imported-Quick setup screen is displayed with the copy button next to the GitHub URL textbox selected.](../media/2dg4.png "Quick setup screen")
 
-7. In Visual Studio Code, run the below commands in the terminal to set your **email** and **username**, which Git uses for commits. Make sure to replace the GitHub account email and username.
+8. In Visual Studio Code, run the below commands in the terminal to set your **email** and **username**, which Git uses for commits. Make sure to replace the GitHub account email and username.
    
      ```pwsh
-     cd C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files-2
+     cd C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files-2\src\ContosoTraders.Ui.Website.V2
      git config --global user.email "you@example.com"
      git config --global user.name "Your UserName"
      ```
      
    ![](../media/cl1-t1-s15.png) 
      
-    Run the below-mentioned command in the terminal. Make sure to replace `your_github_repository-url` with the value you copied in step 4 and `Unique-ID` in step 5.
+    Run the below-mentioned command in the terminal. Make sure to replace `your_github_repository-url` with the value you copied in step 5 and `Unique-ID` in step 6.
 
     Note: This step is done to initialize the folder as a Git repository, commit, and submit contents to the remote GitHub branch “main” in the lab files repository created named `devsecops`. 
 
@@ -303,41 +307,31 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
 
 **Note**: To perform this task, the GitHub repository should be public. If the repository visibility is private, please go to the settings of the repository and change the visibility to public.
 
-1. Login to GitHub where the `devsecops` repository was created.
+1. Login to GitHub where the `devsecops-2` repository was created.
 
-2. Considering that you have already created the `CodeQL` GitHub Action in challenge 2; select the **Actions** ***(1)*** tab from the GitHub browser tab. Click on **CodeQL** ***(2)*** workflow under the **All workflows** section of the left navigation pane.
+2. Select the **settings** ***(1)*** tab from the GitHub browser tab. Click on **code security and analysis** ***(2)*** under the security side blade.
 
-   ![](../media/cl7-ex3-t2-s2.png)
+   ![](../media/2dgn168.png)  
 
-3. Verify Successful Execution of the **CodeQL** GitHub Action for using the `codeql-analysis.yml` Workflow File. The trigger for this action being the recent push from Visual Studio Code. 
+3. Click on the **Set up** **(1)** button to enable CodeQL analysis, and select the **Advanced** **(2)** option for creating a CodeQL Analysis YAML file.
 
-   ![](../media/cl7-ex3-t2-s3.png)
+   ![](../media/2dgn169.png)   
 
-5. If you have not implemented Code Scanning and CodeQL within your repository, follow steps 6 - 11 of this task to perform code review and security checks.
-
-6. Select the **settings** ***(1)*** tab from the GitHub browser tab. Click on **code security and analysis** ***(2)*** under the security side blade.
-
-   ![](../media/2dgn168.png)
-
-7. Click on the **Set up** **(1)** button to enable CodeQL analysis, and select the **Advanced** **(2)** option for creating a CodeQL Analysis YAML file.
-
-   ![](../media/2dgn169.png)
-
-8. Update the workflow name to **codeql-analysis.yml** ***(1)*** and review the yaml file. Select **Commit changes** ***(2)***, then select **Commit directly to the main branch** ***(3)***, and click on **Commit new file** ***(4)***.
+4. Update the workflow name to **codeql-analysis.yml** ***(1)*** and review the yaml file. Select **Commit changes** ***(2)***, then select **Commit directly to the main branch** ***(3)***, and click on **Commit new file** ***(4)***.
   
    ![](../media/cl2-t1-s3.png)
 
-   ![](../media/ex5-task1-step3b.png)
+   ![](../media/ex5-task1-step3b.png) 
 
-9. Navigate to the **Actions** ***(1)*** tab, here you can review the **workflow** ***(2)*** run.
+5. Navigate to the **Actions** ***(1)*** tab, here you can review the **workflow** ***(2)*** run.
     
-   ![](../media/cl2-t1-s4.png)
+   ![](../media/cl2-t1-s4.png) 
 
-10. Navigate to the **Security** ***(1)*** tab and click on **View alerts** ***(2)***.
+6. Navigate to the **Security** ***(1)*** tab and click on **View alerts** ***(2)***.
    
    ![](../media/cl2-t1-s5.png)
 
-11. You will be navigated to the **Code scanning** section. You'll be able to visualize the **No code scanning alerts here!**.
+7. You will be navigated to the **Code scanning** section. You'll be able to visualize the **No code scanning alerts here!**.
    
    ![](../media/cl2-t1-s6.png)
 
