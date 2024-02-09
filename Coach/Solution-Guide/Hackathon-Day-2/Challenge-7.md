@@ -345,7 +345,7 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
 
 2. In the Open a draft security advisory tab, under the Advisory Details section, provide the following details:
 
-   - Title: **Improper Access Control in devsecops/src/TailwindTraders.Ui.Website/src/App.js** ***(1)***
+   - Title: **Improper Access Control in devsecops-2/src/App.js** ***(1)***
    - CVE identifier: **Request CVE ID later** ***(2)***
    - Description: **Add** ***(3)*** the below-mentioned details in the description section.
    
@@ -382,22 +382,22 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
    https://codeql.github.com/codeql-query-help/javascript/js-missing-rate-limiting/
    ```
     
-   ![](../media/cl2-t2-s2.png)
+   ![](../media/CL7-EX3-T3-S2.png)
 
 3. In the **Affected products** section, provide the following details and click on **Create draft security advisory** ***(7)***   
  
    - Ecosystem: **composer** ***(1)***
-   - Package name: **devsecops/src/TailwindTraders.Ui.Website/src/App.js** ***(2)***
+   - Package name: **devsecops-2/src/App.js** ***(2)***
    - Affected version: **<1.2** ***(3)***
    - Patched version: **1.2** ***(4)***
    - Severity: **High** ***(5)***
    - Common Weakness Enumerator (CWE): **Improper Access Control (CWE-284)** ***(6)***
   
-   ![](../media/cl2-t2-s3.png)
+   ![](../media/CL7-EX3-T3-S3.png)
 
 4. Once the security advisory is created, scroll down and click on **start a temporary private fork**. It is used to collaborate on a patch for this advisory.
 
-    ![](../media/cl2-t2-s4-a.png)
+    ![](../media/CL7-EX3-T3-S4-a.png)
     
     ![](../media/cl2-t2-s4-b.png)
 
