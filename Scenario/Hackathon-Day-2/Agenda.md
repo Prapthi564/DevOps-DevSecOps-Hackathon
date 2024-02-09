@@ -19,6 +19,6 @@
 | 17:00 - 18:30 | **Resilience Testing using Azure Load Testing and Azure Chaos Studio - 90 min** |   Complete [Challenge 05](https://github.com/CloudLabs-MOC/DevOps-DevSecOp-challenge-labs/blob/main/Scenario/Hackathon-Day-1/Challenge-5.md)             |
 | 18:30 - 18:45 | **Validate Challenge 05 Completion, Q&A** | Discussion, etc.           |
 | 19:00 - 19:40 | **Challenge 06: DevSecOps with AI-Powered GitHub Actions - 40 min**   | Complete [Challenge 06](https://github.com/CloudLabs-MOC/DevOps-DevSecOps-Hackathon/blob/main/Scenario/Hackathon-Day-2/Challenge-6.md)             |
-| 19:40 - 20:40 | **Challenge 07: Enhancing Contoso Traders with GitHub Copilot - 60 min**   | Complete [Challenge 07](https://github.com/CloudLabs-MOC/DevOps-DevSecOps-Hackathon/blob/main/Scenario/Hackathon-Day-2/Challenge-7.md)             |
+| 19:40 - 20:40 | **Challenge 07: Integrate 'About Us' Page with GitHub Copilot in React Application - 60 min**   | Complete [Challenge 07](https://github.com/CloudLabs-MOC/DevOps-DevSecOps-Hackathon/blob/main/Scenario/Hackathon-Day-2/Challenge-7.md)             |
 | 20:40 - 21:40 | **Challenge 08: Security Compliance as Code - 60 min**   | Complete [Challenge 08](https://github.com/CloudLabs-MOC/DevOps-DevSecOps-Hackathon/blob/main/Scenario/Hackathon-Day-2/Challenge-8.md)    |
 | 21:40 - 22:40 | **Challenge 09: Securing DevOps with Microsoft Defender for Cloud - 30 min**   | Complete [Challenge 09](https://github.com/CloudLabs-MOC/DevOps-DevSecOps-Hackathon/blob/main/Scenario/Hackathon-Day-2/Challenge-9.md)    |
