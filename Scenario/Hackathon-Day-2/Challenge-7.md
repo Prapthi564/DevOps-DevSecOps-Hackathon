@@ -3,16 +3,21 @@
 ### Estimated Time: 60 minutes
 
 ### Introduction:
-Contoso Traders is an e-commerce web application. In this challenge, as a DevOps engineer, your focus is to seamlessly implement and test new features with Copilot, ensuring accuracy and alignment. Conduct a thorough code review and enhance security using GitHub Advanced Security's CodeQL. Streamline development with a GitHub Actions CI/CD pipeline for Contoso Traders, ensuring efficient and secure deployment.
+In this challenge, you will be imporving a React Application. As a DevOps engineer, your focus is to seamlessly implement and test new app features with Copilot, ensuring accuracy and alignment. Conduct a thorough code review and enhance security using GitHub Advanced Security's CodeQL. Streamline development with a GitHub Actions CI/CD pipeline for Contoso Traders, ensuring efficient and secure deployment.
 
 ## Challenge Objectives:
 
+>**Note:** In this challenge, you are provided with a simple React application present in the path `C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files-2\ContosoTraders.Ui.Website.V2.Raw`.
+
 1. **Integrate an 'About Us' app component in React using GitHub Copilot:**
-   - Use GitHub Copilot to assist you in writing code for the new welcome page feature.
-   - Enhance the user interface and design to create an engaging welcome experience.
+   - You are provided with a simple React application which needs to be deployed and hosted on Azure.
+   - You can navigate to the `C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files-2\ContosoTraders.Ui.Website.V2.Raw` directory and then ensure to select the `ContosoTraders.Ui.Website.V2` folder to import the complete code base of the application.
+   - Enhance the user interface by designing and integrating an **About Us** page app component within the existing imported React application using **GitHub Copilot**
+   - Ensure that the React Application is up and running with the newly integrated **About Us** page, locally on `http://localhost:3000/`.
 
 2. **Unit Test Generation with Copilot:**
-   - After implementing the feature, you should use GitHub Copilot to generate unit tests for the new functionality which includes assessing the accuracy and completeness of the generated unit tests.
+   - Generate Unit Test cases using GitHub Copilot for the `WelcomePopup.js` file present in the path `ContosoTraders.Ui.Wesite.V2/src/`.
+        - Create a new test file named `WelcomePopup.test.js` to run the unit test cases.
    - Ensure that the generated test cases are aligning with the code analogy with successful test passes.
    - Resolve any unit test failures with the help of GitHub Copilot chat.
 
@@ -21,9 +26,9 @@ Contoso Traders is an e-commerce web application. In this challenge, as a DevOps
    >**Hint:** Focus areas include code readability, adherence to best practices, and ensuring that the new feature aligns with the existing codebase.
    - Run a security check on the newly implemented code using GitHub Advanced Security features thus resolving any alerts to vulnerabilities and catch any potential security issues using CodeQL over the repository.
 
-4. **CI/CD Pipeline Setup and Deployment:**
-   - Set up a GitHub Actions CI/CD pipeline for Contoso Traders hosted on GitHub.
-   - The pipeline should include steps for building, testing, and deploying the new feature to the hosted application on Azure.
+4. **CI/CD Pipeline Setup and Infrastructure Deployment:**
+   - Host the React Application with the new app component over Azure using **Static Web Apps** through GitHub Actions.
+   - Ensure that the **Azure Static Web Apps CI/CD** GitHub workflow is successful.
 
 ## Success criteria:
 To complete this challenge successfully:
