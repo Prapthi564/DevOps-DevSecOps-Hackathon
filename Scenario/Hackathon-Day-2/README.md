@@ -2,7 +2,7 @@
 
 Welcome to the DevSecOps Mastery with GitHub Hackathon! This event is your gateway to mastering DevSecOps practices within a modern application environment. We have crafted this hackathon to provide you with a robust learning experience, focused on Contoso Traders, a hypothetical e-commerce company using a React front-end, .NET back-end, and various microservices, container services, AI-powered GitHub Actions, undersatnding of Security compliance as code and mastering the usage of GitHub Copilot.
 
-Your goal is to integrate DevSecOps practices into Contoso Traders' existing e-commerce application. As you navigate through various challenges, you will gain practical experience in implementing DevSecOps in an application built with a modern tech stack.
+Your goal is to integrate DevSecOps practices while deploying existing React Applications existing. As you navigate through various challenges, you will gain practical experience in implementing DevSecOps in an application built with a modern tech stack.
 
 
 ## Learning Objectives
@@ -55,19 +55,19 @@ This hackathon adopts a challenge-based format, offering you a unique opportunit
    - Configure and implement AI Security Check for Pull Requests.
   
 7. **Challenge 07: Enhancing Contoso Traders with GitHub Copilot**
-   - Feature Addition with GitHub Copilot.
+   - Integrate an 'About Us' app component in React using GitHub Copilot.
    - Unit Test Generation with Copilot.
    - Code Review and Security Check.
-   - CI/CD Pipeline Setup and Deployment.
+   - CI/CD Pipeline Setup and Infrastructure Deployment.
   
-8. **Challenge 08: ecurity Compliance as Code**
-   - Azure Policy Implementation.
-   - GitHub CI/CD Integration.
+8. **Challenge 08: Security Compliance as Code**
+   - Implement Security Policies using Azure Policy.
+   - Integrate Compliance Scanning in CI/CD pipeline.
   
 9. **Challenge 09: Securing DevOps with Microsoft Defender for Cloud**
-   - Configure Microsoft Security DevOps GitHub Action.
-   - View Scanned Results.
    - Connect GitHub Environment to Microsoft Defender for Cloud.
+   - Configure Microsoft Security DevOps GitHub Action.
+   - Investigate and Remediate.
 
 Each challenge comes with its own set of tasks and objectives.
 
