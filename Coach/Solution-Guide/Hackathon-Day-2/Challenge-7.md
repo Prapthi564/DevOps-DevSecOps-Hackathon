@@ -77,7 +77,7 @@ with the github credentials that were copied over to Notepad in the previous ste
    
 ### Task 2: Integrate an 'About Us' app component in React using GitHub Copilot
 
->**NOTE:** It should be noted that the code suggestions offered by GitHub Copilot might not exactly match the screenshots shown within the labguide. GitHub Copilot is an AI-powered tool that generates code based on context and patterns, and its suggestions can be influenced by various factors. It is also important that you have the knowledge on operating and running React Applications which may be needed as you proceed with this exercise.
+  >**NOTE:** It should be noted that the code suggestions offered by GitHub Copilot might not exactly match the screenshots shown within the labguide. GitHub Copilot is an AI-powered tool that generates code based on context and patterns, and its suggestions can be influenced by various factors. It is also important that you have the knowledge on operating and running React Applications which may be needed as you proceed with this exercise.
 
 1. In a new Visual Studio Code window, go to **Explorer (1)** and click on **Open Folder (2)**. Navigate to **C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files-2/** within the file explorer, and then select the **ContosoTraders.Ui.Website.V2.Raw** folder.
 
@@ -95,11 +95,11 @@ with the github credentials that were copied over to Notepad in the previous ste
 
    ![Picture1](../media/CL7-EX1-T2-S4.png)
 
->**Disclaimer:** It should be noted that the code suggestions offered by GitHub Copilot might not exactly match the screenshots shown within the labguide. GitHub Copilot is an AI-powered tool that generates code based on context and patterns, and its suggestions can be influenced by various factors. It is also important that you have the knowledge on operating and running React Applications which may be needed as you proceed with this exercise.
+  >**Disclaimer:** It should be noted that the code suggestions offered by GitHub Copilot might not exactly match the screenshots shown within the labguide. GitHub Copilot is an AI-powered tool that generates code based on context and patterns, and its suggestions can be influenced by various factors. It is also important that you have the knowledge on operating and running React Applications which may be needed as you proceed with this exercise.
 
->**Note:** However the ease of executability of this challenge, you can open a new folder within VS Code and import the solution folder from the Windows file explorer with path, `C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files-2\`. Select the **src** folder. This solution project has integrated "About Us" page and unit test cases for the same.
+  >**Note:** However the ease of executability of this challenge, you can open a new folder within VS Code and import the solution folder from the Windows file explorer with path, `C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files-2\`. Select the **src** folder. This solution project has integrated "About Us" page and unit test cases for the same.
 
->**Note:** If you wish to continue to manually edit the raw project, follow the steps from step 6.
+  >**Note:** If you wish to continue to manually edit the raw project, follow the steps from step 6.
 
 5. Create a new file named `AboutUs.css` **(1)** in your `src` directory ie., within the path `ContosoTraders.Ui.Website.V2\src` and then add the following code **(2)**:
 
@@ -163,23 +163,23 @@ with the github credentials that were copied over to Notepad in the previous ste
 
 10. Within the `App.js` file, enter the following code.
 
-   ```
-   import AboutUs from "./AboutUs";
-   import "./App.css";
-   ```
+     ```
+     import AboutUs from "./AboutUs";
+     import "./App.css";
+     ```
 
 11. Your `App.js` should look similar like the below screenshot:
 
-   ![Picture1](../media/CL7-EX1-T2-S11.png)
+     ![Picture1](../media/CL7-EX1-T2-S11.png)
 
 12. Scroll down to the end of the code within the `App.js` file and then add the following code to include the newly created `About Us` component.
 
-   ```
-   <AboutUs />
-   ```
+     ```
+     <AboutUs />
+     ```
 13. Your `App.js` should now look similar like the below screenshot:
 
-   ![Picture1](../media/CL7-EX1-T2-S13.png)
+     ![Picture1](../media/CL7-EX1-T2-S13.png)
 
 14. To run your React application, you typically use the command line (also known as the terminal). Here are the steps:
       - Within Visual Studio Code, you can open the terminal by going to the top menu to click on **Terminal** **(1)** and then select **New Termimal (2)**.
@@ -193,21 +193,21 @@ with the github credentials that were copied over to Notepad in the previous ste
       npm run start
       ```
       
-   ![Picture1](../media/CL7-EX1-T2-S14.png)
+     ![Picture1](../media/CL7-EX1-T2-S14.png)
 
->**Note:** If the above command fails, you might need to run the following command :
+    >**Note:** If the above command fails, you might need to run the following command :
 
-   ```powershell
-   npm i
-   ```
+     ```powershell
+     npm i
+     ```
    
-   - The command `npm i` is a shorthand version of `npm install`. It is used in Node.js environments to install all the dependencies listed in the `package.json` file. These dependencies are libraries or packages that your project needs to run correctly. The installed packages will be placed in a folder named `node_modules` in your project directory.
+     - The command `npm i` is a shorthand version of `npm install`. It is used in Node.js environments to install all the dependencies listed in the `package.json` file. These dependencies are libraries or packages that your project needs to run correctly. The installed packages will be placed in a folder named `node_modules` in your project directory.
 
-   - After the installation of all the dependencies, execute the command - `npm run start` to start the application. This open a new browser tab over the url path, `http://localhost:3000/`.
+     - After the installation of all the dependencies, execute the command - `npm run start` to start the application. This open a new browser tab over the url path, `http://localhost:3000/`.
 
 15. Observe that the new "About Us" component has been added at the end of the webpage.
 
-   ![Picture1](../media/CL7-EX1-T2-S15.png)
+     ![Picture1](../media/CL7-EX1-T2-S15.png)
 
 ## Exercise 2: Generate and run Unit Test cases using GitHub Coplilot:
 
