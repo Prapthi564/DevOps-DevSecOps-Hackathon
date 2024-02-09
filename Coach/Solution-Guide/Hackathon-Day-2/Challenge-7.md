@@ -282,7 +282,7 @@ with the github credentials that were copied over to Notepad in the previous ste
 
 6. From the GitHub username, note down the **Unique-ID** present in the Username. You'll need this in the upcoming steps.
 
-   ![](../media/CL7-EX3-T1-S5.png)
+   ![](../media/cl1-t1-s13.png)
 
 7. Navigate back to the **Visual Studio Code** application in which the terminal is already open. In the terminal, click on the **drop-down** button and select **PowerShell** to open a fresh PowerShell terminal tab.
 
