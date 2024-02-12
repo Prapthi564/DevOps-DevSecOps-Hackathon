@@ -1,8 +1,8 @@
 # DevOps/DevSecOps Challenge - Day 2 Hackathon
 
-Welcome to the DevSecOps Mastery with GitHub Hackathon! This event is your gateway to mastering DevSecOps practices within a modern application environment. We have crafted this hackathon to provide you with a robust learning experience, focused on Contoso Traders, a hypothetical e-commerce company using a React front-end, .NET back-end, and various microservices, container services, AI-powered GitHub Actions, undersatnding of Security compliance as code and mastering the usage of GitHub Copilot.
+Welcome to the DevSecOps Mastery with GitHub Hackathon! This event is your gateway to mastering DevSecOps practices within a modern application environment. We have crafted this hackathon to provide you with a robust learning experience, focused on Contoso Traders, a hypothetical e-commerce company using a React front-end, .NET back-end, and various microservices, container services, AI-powered GitHub Actions, understanding of Security compliance as code and mastering the usage of GitHub Copilot.
 
-Your goal is to integrate DevSecOps practices while deploying existing React Applications existing. As you navigate through various challenges, you will gain practical experience in implementing DevSecOps in an application built with a modern tech stack.
+Your goal is to integrate DevSecOps practices while deploying existing React Applications. As you navigate through various challenges, you will gain practical experience in implementing DevSecOps in an application built with a modern tech stack.
 
 
 ## Learning Objectives
@@ -13,14 +13,14 @@ Participating in this hackathon, you will:
 - Enhance code security and manage dependencies effectively.
 - Integrate and optimize monitoring solutions using Azure Monitor and Application Insights.
 - Execute resilience testing to ensure the robustness of the application.
-- Intergrate the usage of AI-powered GitHub actions to have a good hold on the security checks and complaince of pipelines.
+- Integrate the usage of AI-powered GitHub actions to have a good hold on the security checks and compliance of pipelines.
 - Master the usage of GitHub Copilot to leverage the power of AI towards code completion and testing.
 
 ## Hackathon Format: Challenge Based
 This hackathon adopts a challenge-based format, offering you a unique opportunity to learn while dealing with practical problems. Each challenge includes one or more self-contained tasks, designed to test and enhance your skills in specific aspects of DevSecOps. You will approach these challenges by:
 
 - Analyzing the problem statement.
-- Strategizing your approach to find the most effective solution.
+- Strategize your approach to find the most effective solution.
 - Leveraging the provided lab environment and GitHub technologies.
 - Collaborating with peers to refine and implement your solutions.
 
