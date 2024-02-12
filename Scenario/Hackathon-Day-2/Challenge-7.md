@@ -3,7 +3,7 @@
 ### Estimated Time: 60 minutes
 
 ### Introduction:
-In this challenge, you will be imporving a React Application. As a DevOps engineer, your focus is to seamlessly implement and test new app features with Copilot, ensuring accuracy and alignment. Conduct a thorough code review and enhance security using GitHub Advanced Security's CodeQL. Streamline development with a GitHub Actions CI/CD pipeline for a React application, ensuring efficient and secure deployment.
+In this challenge, you will be improving a React Application. As a DevOps engineer, your focus is to seamlessly implement and test new app features with Copilot, ensuring accuracy and alignment. Conduct a thorough code review and enhance security using GitHub Advanced Security's CodeQL. Streamline development with a GitHub Actions CI/CD pipeline for a React application, ensuring efficient and secure deployment.
 
 ## Challenge Objectives:
 
