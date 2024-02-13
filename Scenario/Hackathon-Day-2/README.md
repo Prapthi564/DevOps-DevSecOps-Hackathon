@@ -36,7 +36,7 @@ This hackathon adopts a challenge-based format, offering you a unique opportunit
    - Implement CodeQL alerts and handle security advisories.
    - Mitigate security risks identified in dependencies.
        
-3. **Challenge 03: GitHub Advanced Security - Dependency Management and Secret Scanning**:
+3. **Challenge 03: GitHub Advanced Security - Dependency Management and Secret Scanning**
     - Analyze and manage dependencies for security risks.
     - Implement Dependabot for automated package updates.
     - Use secret scanning to secure sensitive information.
