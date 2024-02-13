@@ -193,7 +193,7 @@ Now that you've assigned a built-in policy definition, you can do more with Azur
 
 8. Commit the changes within your repository to successfully create the workflow file.
 
-9. Head back to the **GitHub Actions (1)** tab and then select the Action named **Security Complainace Scan (2)**.
+9. Head back to the **GitHub Actions (1)** tab and then select the Action named **Security Compliance Scan (2)**.
 
    ![](../media/cl8-ex2-t2-s9.png)
 
