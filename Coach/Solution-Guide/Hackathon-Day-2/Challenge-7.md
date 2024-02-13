@@ -65,7 +65,7 @@ with the github credentials that were copied over to Notepad in the previous ste
    
    >**Note:** If you get another pop-up stating **Allow an extension to open this URI**, please click on **Open**.
 
-1. You will be able to see in the bottom right corner that Github Copilot has been activated.
+1. You will be able to see in the bottom right corner that GitHub Copilot has been activated.
 
    ![Picture1](../media/cl7-ex1-t1-s8.png)
 
