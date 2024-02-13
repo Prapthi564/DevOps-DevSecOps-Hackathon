@@ -81,7 +81,7 @@ Here is the solution guide, which provides all the specific, step-by-step direct
 
 ### Task 3: Create a new GitHub repository secret
 
-1. Sign in to GitHub using the credentials provided in the environment detail tab of the integrated lab environment or via the credentaials provided at the beginning of this solution guide.
+1. Sign in to GitHub using the credentials provided in the environment detail tab of the integrated lab environment or via the credentials provided at the beginning of this solution guide.
 
 2. Select the `devops` repository that was created as a part of the earlier challenges.
 
