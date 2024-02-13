@@ -147,7 +147,7 @@ Here is the solution guide, which provides all the specific, step-by-step direct
 
    ![](../media/cl9-t2-s8.png)
 
-### Task 5: Create a pull request to intiate workflow
+### Task 5: Create a pull request to initiate workflow
 
 1. To create a new branch, click on the **Switch branch (1)** dropdown menu and click on **View all branches (2)**.
   
