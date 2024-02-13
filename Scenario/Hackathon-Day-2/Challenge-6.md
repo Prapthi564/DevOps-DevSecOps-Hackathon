@@ -31,7 +31,7 @@ You need to focus on completing the implementation of the below-mentioned GitHub
 ## Success criteria:
 To complete this challenge successfully:
 
-- Successful implementation of the `AI Code Review Action` and generation of of review comments based on the AI's response and added to the pull request.
+- Successful implementation of the `AI Code Review Action` and generation of review comments based on the AI's response and added to the pull request.
 - Successful implementation of the `AI Security Check for Pull Requests` and generation of comments to the pull requests based on AI's analysis of the code.
 
 ## Additional Resources:
