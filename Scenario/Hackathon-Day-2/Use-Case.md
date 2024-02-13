@@ -5,7 +5,7 @@ As an innovative player in the e-commerce industry, Contoso Traders is committed
 
 Your mission as a participant is to learn, apply, and showcase your skills in various aspects of DevSecOps using the .NET framework, React, and various microservices. By utilizing GitHub and Azure technologies, you will face real-world challenges that Contoso Traders encounters in its daily operations. We rely on your innovative thinking and problem-solving abilities to:
 
-### Integrate and Enhance DevSecOps Practices for Contoso Traders:
+### Integrate and Enhance DevSecOps Practices:
 
 1. **Implement Efficient CI/CD Pipelines:**
     - Develop and set up robust Continuous Integration and Continuous Deployment (CI/CD) workflows using GitHub Actions. Focus on automating the build, test, and deployment processes for Contoso Traders’ e-commerce platform.
