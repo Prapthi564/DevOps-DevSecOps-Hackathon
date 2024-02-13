@@ -9,7 +9,7 @@ Your mission as a participant is to learn, apply, and showcase your skills in va
 
 1. **Implement Efficient CI/CD Pipelines:**
     - Develop and set up robust Continuous Integration and Continuous Deployment (CI/CD) workflows using GitHub Actions. Focus on automating the build, test, and deployment processes for Contoso Traders’ e-commerce platform.
-Strengthen Code and Dependency Security:
+Strengthen Code and Dependency Security.
 
 2. **Strengthen Code and Dependency Security:**
     - Utilize GitHub Advanced Security features to enhance code security. Implement CodeQL for code analysis, manage dependencies, and perform secret scanning to protect sensitive data.
