@@ -75,7 +75,7 @@ Here is the solution guide, which provides all the specific, step-by-step direct
 
     ![](../media/cl6-ex1-t2-s5.png)
 
-6. You wil now notice that the new API key, `GitHub Action Key` now appears in the lest of **API keys**.
+6. You will now notice that the new API key, `GitHub Action Key` now appears in the lest of **API keys**.
 
     ![](../media/cl6-ex1-t2-s6.png)
 
