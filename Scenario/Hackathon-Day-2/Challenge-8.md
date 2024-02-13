@@ -14,7 +14,7 @@ In this challenge, you are a DevOps engineer responsible for ensuring the securi
    
 2. **Integrate Compliance Scanning in CI/CD pipeline:**
    - Integrate a compliance scanning step into your GitHub pipeline that checks for policy compliance before allowing deployment.
-      - Implement **Azure Policy Compliance Scan** GitHub action within `.github/workflows/workflow.yml` which triggers a policy compliance scan on the provided subscription and continue/fail the workflow based on the complaince state of the resources.
+      - Implement **Azure Policy Compliance Scan** GitHub action within `.github/workflows/workflow.yml` which triggers a policy compliance scan on the provided subscription and continue/fail the workflow based on the compliance state of the resources.
    - Ensure that compliance scans are triggered automatically during the CI/CD process.
 
 ## Success criteria:
