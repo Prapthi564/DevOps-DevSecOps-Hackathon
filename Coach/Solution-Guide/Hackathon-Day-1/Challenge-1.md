@@ -252,7 +252,7 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
    
 1. Navigate back to the Actions tab and select the **contoso-traders-app-deployment** workflow. This workflow builds the Docker image, which is pushed to the container registry. The same image is pushed to the Azure container application.
 
-   ![](media/2dgn124.png)
+   ![](../media/2dgn124.png)
    
    ![](../media/2dgn165.png)
    
