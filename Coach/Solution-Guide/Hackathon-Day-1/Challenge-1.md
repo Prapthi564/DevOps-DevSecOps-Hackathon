@@ -131,8 +131,8 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
 ### Task 2: Deploy Infrastructure
 
 1. Within the GitHub repository, navigate to the `iac/createResources.parameters.json` path and update the value of the following parameters:
-   - Replace `deploymentidvalue` with **<inject key="DeploymentID" enableCopy="false" /> (1)**.
-   - Replace `bicepsqlpass` value with **<inject key="AzureAdUserPassword"></inject> (2)**.
+   - Replace `deploymentidvalue` with **DeploymentID** present under the **Environment Details** tab.
+   - Replace `bicepsqlpass` with **AzureAdUserPassword** present under the **Environment Details** tab.
   
        ![](../media/cl1-t2-s1.png)
 
