@@ -36,7 +36,7 @@ Here is the solution guide, which provides all the specific, step-by-step direct
    ![](../media/cl6-ex1-t1-s1.png)
 
 2. Within the **Welcome back** page,
-    - If you already have an OpenAI account pre-created, you can go ahead signing into OpenAI using the following sign in options as shown in the below screenshot.
+    - If you already have an OpenAI account pre-created, you can go ahead signing into OpenAI using the following sign-in options as shown in the below screenshot.
 
       ![](../media/cl6-ex1-t1-s2-a.png)
 
@@ -46,15 +46,15 @@ Here is the solution guide, which provides all the specific, step-by-step direct
 
       ![](../media/cl6-ex1-t1-s2-b.png)
 
-      >**Note:** Upon creation of a new OpenAI account, the free-tier provides you with a $5 credit limit that expires within a period of 3 months from the day of account activation.
+      >**Note:** Upon creation of a new OpenAI account, the free tier provides you with a $5 credit limit that expires within a period of 3 months from the day of account activation.
 
 ### Task 2: Create an OpenAI secret key
 
-1. Once you have successfully logged into your OpenAI account, you will be auto directed to the overview page of the OpenAI platform. If not, you can navigate to the OpenAI platform using the following link, **[OpenAI platform](https://platform.openai.com/docs/overview)**.
+1. Once you have successfully logged into your OpenAI account, you will be auto-directed to the overview page of the OpenAI platform. If not, you can navigate to the OpenAI platform using the following link, **[OpenAI platform](https://platform.openai.com/docs/overview)**.
 
     ![](../media/cl6-ex1-t2-s1.png)
 
-2. Hover your cursor over the left navigation tool bar to expand the pane and click on **API keys**.
+2. Hover your cursor over the left navigation toolbar to expand the pane and click on **API keys**.
 
     ![](../media/cl6-ex1-t2-s2.png)
 
@@ -83,7 +83,7 @@ Here is the solution guide, which provides all the specific, step-by-step direct
 
 1. Sign in to GitHub using the credentials provided in the environment detail tab of the integrated lab environment or via the credentials provided at the beginning of this solution guide.
 
-2. Select the `devops` repository that was created as a part of the earlier challenges.
+2. Select the `devsecops` repository that was created as a part of the earlier challenges.
 
 3. Under **Security**, expand **Secrets and variables** **(1)** by clicking the drop-down and select **Actions** **(2)** blade from the left navigation bar. Select the **New repository secret** **(3)** button.
 
@@ -92,13 +92,25 @@ Here is the solution guide, which provides all the specific, step-by-step direct
 4. Under the **Actions Secrets/New secret** page, enter the below-mentioned details and click on **Add secret** **(3)**.
 
    - **Name** : Enter **OPENAI_API_KEY** **(1)**
-   - **Value** : Paste the OpenAI secret value that was copied earlier over to the notepad **(2)**.
+   - **Value**: Paste the OpenAI secret value that was copied earlier over to the notepad **(2)**.
 
    ![](../media/cl6-ex1-t3-s4.png)
 
 ### Task 4: Configure the AI Code Review GitHub Action
 
-1. Login to GitHub and select the `devops` repository that was created as a part of the earlier challenges.
+1. Navigate to the following repo and fork it.
+
+   ```
+   https://github.com/freeedcom/ai-codereviewer
+   ```
+
+   ![](../media1/fork-ai-code.png)
+
+1. Click on **Setting** **(1)**, rename the repo name to **ai-code-reviewer** **(2)** and click on **Rename** **(3)** button. 
+
+   ![](../media1/edit-ai-code.png)
+
+1. Navigate back to the `devsecops` repository that was created as a part of the earlier challenges.
 
 2. Select the **Actions (1)** tab from your repository home page and then click on **New Workflow (2)**.
 
@@ -112,7 +124,7 @@ Here is the solution guide, which provides all the specific, step-by-step direct
 
    ![](../media/cl6-ex1-t4-s4.png)
 
-5. Copy and paste the following action workflow into the Edit new file tab:
+5. Copy and paste the following action workflow into the Edit New file tab:
 
     ```
     name: AI Code Reviewer
@@ -139,9 +151,9 @@ Here is the solution guide, which provides all the specific, step-by-step direct
               exclude: "**/*.json, **/*.md" # Optional: exclude patterns separated by commas
     ```
 
-6. Commit the changes made to create the workflow file.
+6. Rename `your-username` with a GitHub **username** and Commit the changes made to create the workflow file.
 
-   ![](../media/cl6-ex1-t4-s6.png)
+   ![](../media/ai-code-edit.png)
 
 7. Click on **Commit new file**.
 
@@ -166,11 +178,15 @@ Here is the solution guide, which provides all the specific, step-by-step direct
 
 4. Navigate to the newly created `Test` branch.
 
-5. Create a Pull request to merge the changes made from the `test` to  `main` branch.
+5. Select `.github/workflows` and click on `ai-code-review.yml`.
+
+6. At the end of the line add a **space** or click on **enter**. 
+
+7. Create a Pull request to merge the changes made from the `test` to  `main` branch.
 
    ![](../media/cl6-ex1-t5-s7.png)
 
-6. Click on the **Actions** tab and then notice that `AI Code Reviewer` workflow has been autoautomatically intiated. Ensure that the workflow does not fail. If so, there may be some vulnerabilities in the code within the recent pull request.  
+8. Click on the **Actions** tab and then notice that `AI Code Reviewer` workflow has been auto automatically initiated. Ensure that the workflow does not fail. If so, there may be some vulnerabilities in the code within the recent pull request.  
 
    ![](../media/cl6-ex1-t5-s8.png)
 
@@ -180,7 +196,7 @@ Here is the solution guide, which provides all the specific, step-by-step direct
 
 1. Sign in to GitHub using the credentials provided in the environment detail tab of the integrated lab environment or via the credentials provided at the beginning of this solution guide.
 
-2. Select the `devops` repository that was created as a part of the earlier challenges.
+2. Select the `devsecops` repository that was created as a part of the earlier challenges.
 
 3. Under **Security**, expand **Secrets and variables** **(1)** by clicking the drop-down and select **Actions** **(2)** blade from the left navigation bar. Select the **New repository secret** **(3)** button.
 
@@ -195,7 +211,7 @@ Here is the solution guide, which provides all the specific, step-by-step direct
 
 ### Task 2: Configure GitHub Action
 
-1. Login to GitHub and select the `devops` repository that was created as a part of the earlier challenges.
+1. Login to GitHub and select the `devsecops` repository that was created as a part of the earlier challenges.
 
 2. Select the **Actions (1)** tab from your repository home page and then click on **New Workflow (2)**.
 
@@ -266,11 +282,13 @@ Here is the solution guide, which provides all the specific, step-by-step direct
 
    ![](../media/cl9-t2-s8.png)
 
-8. Navigate to the newly created `Test` branch.
+8. Select `.github/workflows` and click on `ai-code-review.yml`.
 
-9. Create a Pull request to merge the changes made from the `test` to  `main` branch.
+9. At the end of the line add a **space** or click on **enter**. 
 
-10. Click on the **Actions** tab and then notice that `AI Security Check for Pull Requests` workflow has been autoautomatically intiated. Ensure that the workflow does not fail. If so, there may be some vulnerabilities within the recent pull request. Refer to the run details for the GitHub Actions that has failed.
+10. Create a Pull request to merge the changes made from the `test` to  `main` branch.
+
+11. Click on the **Actions** tab and then notice that `AI Security Check for Pull Requests` workflow has been autoautomatically initiated. Ensure that the workflow does not fail. If so, there may be some vulnerabilities within the recent pull request. Refer to the run details for the GitHub Actions that have failed.
 
    ![](../media/cl6-ex2-t2-s10.png)
 
@@ -282,6 +300,6 @@ To complete this challenge successfully:
 
 ## Additional Resources:
 
-- Refer to [Overview of Microsoft Defender for Cloud DevOps Security](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-devops-introduction) for reference.
-- Refer to [Configure the Microsoft Security DevOps GitHub action](https://learn.microsoft.com/en-us/azure/defender-for-cloud/github-action) for reference.
+- Refer to [Overview of Microsoft Defender for Cloud devsecops Security](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-devsecops-introduction) for reference.
+- Refer to [Configure the Microsoft Security devsecops GitHub action](https://learn.microsoft.com/en-us/azure/defender-for-cloud/github-action) for reference.
 - Refer to [Connect your GitHub Environment to Microsoft Defender for Cloud](https://learn.microsoft.com/en-us/azure/defender-for-cloud/quickstart-onboard-github) for reference.
