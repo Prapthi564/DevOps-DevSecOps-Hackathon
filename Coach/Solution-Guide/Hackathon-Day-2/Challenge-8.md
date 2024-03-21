@@ -91,7 +91,7 @@ Now that you've assigned a built-in policy definition, you can do more with Azur
        "policyRule": {
           "if": {
             "not": {
-              "field": "Microsoft.Resources/resourceGroups/location",
+              "field": "location",
               "in": ["eastus"]
             }
           },
@@ -104,11 +104,13 @@ Now that you've assigned a built-in policy definition, you can do more with Azur
 
    >**Note:** The **field** property in the policy rule must be a supported value. An example of alias might be `Microsoft.Compute/VirtualMachines/Size` and `Microsoft.Resources/resourceGroups/location`.
 
+1. In the **Policy | Definition** search bar Search and seelct for **Restrict deployment to East US region**. 
+
 ## Exercise 2: Integrate Compliance Scanning in CI/CD pipeline
 
 ### Task 1: Create a GitHub Secret
 
-1. To create GitHub secrets, in your GitHub lab files repository, click on the **Settings** tab.
+1. Navigate back to `devsecops` to create GitHub secrets, in your GitHub lab files repository, and click on the **Settings** tab.
 
       ![](../media/cl1-t2-s2.png)
 
@@ -128,7 +130,7 @@ Now that you've assigned a built-in policy definition, you can do more with Azur
       }
       ```
 
-   >**Note:** Also ensure to replace `your-subscription-id` and `your-resource-group` within the above secret.
+   >**Note:** Also ensure to replace `your-subscription-id` and `your-resource-group` within any of the available resources group name with the above secret.
 
 3. Within GitHub, under **Security**, expand **Secrets and variables** **(1)** by clicking the drop-down and select **Actions** **(2)** blade from the left navigation bar. Select the **New repository secret** **(3)** button.
 
