@@ -434,23 +434,22 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
    - **Resource Group:** Create a new resource group named - **Static-Web-App (2)**.
    - **Name:** `React-Static-Web-App` **(3)**.
    - **Plan type:** Select **Free (4)**.
-   - **Region for Azure Functions API and staging environments:** Select **East US 2 (5)**.
-   - **Source:** Select **GitHub (6)**
+   - **Source:** Select **GitHub (5)**
    - **GitHub account:** Connect to your GitHub account which has the `devsecops-2` repository with tehe React application files **(7)**.
-   - **Organization:** Select your assigned Github organization **(8)**.
-   - **Repository:** Select `devsecops-2` **(9)**.
-   - **Branch:** `Main` **(10)**.
-   - **Build presets:** Search for and select **React (11)**.
-   - **App location:** `/` **(12)**.
+   - **Organization:** Select your assigned Github organization **(6)**.
+   - **Repository:** Select `devsecops-2` **(7)**.
+   - **Branch:** `Main` **(8)**.
+   - **Build presets:** Search for and select **Custom (9)**.
+   - **App location:** `/` **(10)**.
 
       >**Note:** `/` refers to the root directory of the GitHub repository. Ensure that the location is specified appropriately as per your GitHub file structure.
    
    - Leave the other fields at default and then click on **Review + Create (13)**.
    - Finally, click on **Create** on the **Review + create** page to create the static web app.
 
-    ![](../media/CL7-EX4-T1-S4.png)
+    ![](../media1/CL7-EX4-T1-S4.png)
    
-    ![](../media/CL7-EX4-T1-S4-b.png)
+    ![](../media1/CL7-EX4-T1-S4-b.png)
 
 5. Once the deployment is successful, click on **Go to resource**.
 
