@@ -53,35 +53,29 @@ In this task, you will connect your GitHub organizations on the **Environment se
       >**Note:** The subscription/resource group is the location where Defender for Cloud creates and stores the GitHub connection.
   
     - **Location:** Same location as that of the selected resource group **(4)**.
-    - Click on **Next: Select plans > (5)**.
+    - Click on **Next: Configure access > (5)**.
   
-     ![](../media/cl9-t1-s3.png)
-
-4. Configure the Defender CSPM plan status for your GitHub connector.
-    - Ensure that the **Defender CSPM** plan is set to status - **On (1)**.
-    - Click on **Next: Configure access (2)**.
-  
-     ![](../media/cl9-t1-s4.png)
+     ![](../media1/cl9-t1-s3.png)
 
 5. Within the **Configure access** tab, click on **Authorize** to give permissions to the DevOps security app to access your resources.
 
-   ![](../media/cl9-t1-s5.png)
+   ![](../media1/cl9-t1-s5.png)
 
 6. Authorize the permission needed by clicking on **Authorize Microsoft Security DevOps** within the pop-up and ensure that the authorization is successful.
 
    ![](../media/cl9-t1-s6.png)
 
-   ![](../media/cl9-t1-s6-b.png)
+   ![](../media1/cl9-t1-s6-b.png)
 
     >**Note:** After authorization, if you wait too long to install the DevOps security GitHub application, the session will time out and you'll get an error message.
 
 7. Select **Install** to install the DevOps security app on your repository/repositories.
 
-   ![](../media/cl9-t1-s7.png)
+   ![](../media1/cl9-t1-s7.png)
 
 8. Select the organizations to install the GitHub application. In this solution flow, we recommend to grant access to **all repositories** to ensure Defender for Cloud can secure your entire GitHub environment. Ensure that it has been installed successfully.
 
-   ![](../media/cl9-t1-s8.png)
+   ![](../media1/cl9-t1-s8.png)
 
 9. For **Edit connector account**, select one of the following:
     -  Select **all existing organizations (1)** to auto-discover all repositories in GitHub organizations where the DevOps security GitHub application is installed.
@@ -89,7 +83,7 @@ In this task, you will connect your GitHub organizations on the **Environment se
   
     >**Note:** The **All existing and future organizations** option is used to auto-discover all repositories in GitHub organizations where the DevOps security GitHub application is installed and future organizations where the DevOps security GitHub application is installed.
 
-   ![](../media/cl9-t1-s9.png)
+   ![](../media1/cl9-t1-s9.png)
 
 10. On the **Review and generate** tab, click on **Create** to successfully create the GitHub connection.
 
