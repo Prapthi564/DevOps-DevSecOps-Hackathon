@@ -38,7 +38,7 @@ In this task, you will enforce compliance with Azure Policy by assigning a polic
 
 7. Select **Inherit a tag from the resource group if missing**. If you can't find it right away, type **inherit a tag** into the search box and then press ENTER or select out of the search box. Click on **Select** at the bottom of the **Available Definitions** page once you have found and selected the policy definition.
 
-   ![](../media/cl8-ex1-t1-s7.png)
+   ![](../media1/add-policy.png)
 
 8. The **Assignment name** is automatically populated with the policy name you selected, but you can change it. For this example, leave **Inherit a tag from the resource group if missing**. You can also add an optional **Description**. The description provides details about this policy assignment.
 
@@ -104,7 +104,19 @@ Now that you've assigned a built-in policy definition, you can do more with Azur
 
    >**Note:** The **field** property in the policy rule must be a supported value. An example of alias might be `Microsoft.Compute/VirtualMachines/Size` and `Microsoft.Resources/resourceGroups/location`.
 
+1. Select **Definitions** on the left side of the Azure Policy page.
+
 1. In the **Policy | Definition** search bar Search and seelct for **Restrict deployment to East US region**. 
+
+   ![](../media1/custom-policy.png)
+
+1. In **Restrict deployment to East US region** page, click on **Assign policy**. 
+
+   ![](../media1/assign-custom-policy.png)
+
+1. In the **Basics** page of Restrict deployment to East US region, **Exclusions** start at one level lower than the level of the **Scope**. **Exclusions** are optional, so leave it blank for now. click on **Review + Create**.   
+
+   ![](../media1/custom-policy-basic.png)
 
 ## Exercise 2: Integrate Compliance Scanning in CI/CD pipeline
 
@@ -142,7 +154,7 @@ Now that you've assigned a built-in policy definition, you can do more with Azur
    - **Secret** : Paste the service principal details in JSON format **(2)**
    - Click on **Add Secret (3)**
    
-   ![](../media/cl8-ex2-t1-s4.png)
+   ![](../media1/azure-cred.png)
 
 ### Task 2: Implement Azure Policy Compliance Scan
 
