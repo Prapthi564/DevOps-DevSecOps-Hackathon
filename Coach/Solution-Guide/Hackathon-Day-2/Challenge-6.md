@@ -153,7 +153,7 @@ Here is the solution guide, which provides all the specific, step-by-step direct
 
 6. Rename `your-username` with a GitHub **username** and Commit the changes made to create the workflow file.
 
-   ![](../media/ai-code-edit.png)
+   ![](../media1/ai-code-edit.png)
 
 7. Click on **Commit new file**.
 
@@ -282,15 +282,17 @@ Here is the solution guide, which provides all the specific, step-by-step direct
 
    ![](../media/cl9-t2-s8.png)
 
-8. Select `.github/workflows` and click on `ai-code-review.yml`.
+8. Navigate back to `Test` branch that you created.
 
-9. At the end of the line add a **space** or click on **enter**. 
+9. Select `.github/workflows` and click on `ai-code-review.yml`.
 
-10. Create a Pull request to merge the changes made from the `test` to  `main` branch.
+10. At the end of the line add a **space** or click on **enter**. 
+
+11. Create a Pull request to merge the changes made from the `test` to  `main` branch.
 
 11. Click on the **Actions** tab and then notice that `AI Security Check for Pull Requests` workflow has been autoautomatically initiated. Ensure that the workflow does not fail. If so, there may be some vulnerabilities within the recent pull request. Refer to the run details for the GitHub Actions that have failed.
 
-   ![](../media/cl6-ex2-t2-s10.png)
+    ![](../media/cl6-ex2-t2-s10.png)
 
 ## Success criteria:
 To complete this challenge successfully:
