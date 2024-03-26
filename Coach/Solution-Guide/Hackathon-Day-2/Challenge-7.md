@@ -423,7 +423,7 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
 
 ### Task 1: Deploy Infrastructure
 
-1. Login to your Azure portal wih the credentials provided in the **Environment Details** tab of the integrated CloudLabs Environment.
+1. Login to your Azure portal with the credentials provided in the **Environment Details** tab of the integrated CloudLabs Environment.
 
 2. In the global search bar, search for and select **Static Web Pages**
 
@@ -435,12 +435,12 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
    - **Name:** `React-Static-Web-App` **(3)**.
    - **Plan type:** Select **Free (4)**.
    - **Source:** Select **GitHub (5)**
-   - **GitHub account:** Connect to your GitHub account which has the `devsecops-2` repository with tehe React application files **(7)**.
-   - **Organization:** Select your assigned Github organization **(6)**.
-   - **Repository:** Select `devsecops-2` **(7)**.
-   - **Branch:** `Main` **(8)**.
-   - **Build presets:** Search for and select **Custom (9)**.
-   - **App location:** `/` **(10)**.
+   - **GitHub account:** Connect to your GitHub account which has the `devsecops-2` repository with tehe React application files **(6)**.
+   - **Organization:** Select your assigned Github organization **(7)**.
+   - **Repository:** Select `devsecops-2` **(8)**.
+   - **Branch:** `Main` **(9)**.
+   - **Build presets:** Search for and select **React (10)**.
+   - **App location:** `/` **(11)**.
 
       >**Note:** `/` refers to the root directory of the GitHub repository. Ensure that the location is specified appropriately as per your GitHub file structure.
    
@@ -449,7 +449,7 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
 
     ![](../media1/CL7-EX4-T1-S4.png)
    
-    ![](../media1/CL7-EX4-T1-S4-b.png)
+    ![](../media1/CL7-EX4-T1-S4-b1.png)
 
 5. Once the deployment is successful, click on **Go to resource**.
 
