@@ -52,13 +52,15 @@ Here is the solution guide, which provides all the specific, step-by-step direct
 
 1. Once you have successfully logged into your OpenAI account, you will be auto-directed to the overview page of the OpenAI platform. If not, you can navigate to the OpenAI platform using the following link, **[OpenAI platform](https://platform.openai.com/docs/overview)**.
 
-    ![](../media/cl6-ex1-t2-s1.png)
+1. Go to the profile icon in the top right corner and select **Your profile**.
+   
+    ![](../media/cl6-ex1-t2-s11.png)
 
 2. Hover your cursor over the left navigation toolbar to expand the pane and click on **API keys**.
 
     ![](../media/cl6-ex1-t2-s2.png)
 
-3. Within the **API keys** page, click on **+ Create new secret key**.
+3. Under **User API keys** page, click on **+ Create new secret key**.
 
     ![](../media/cl6-ex1-t2-s3.png)
 
