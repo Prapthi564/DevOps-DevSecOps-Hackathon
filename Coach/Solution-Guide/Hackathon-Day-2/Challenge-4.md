@@ -23,16 +23,16 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
 
    >**Note**: Please use the above-mentioned credentials to log in to Azure.
    
-```
-
-Connect-AzAccount 
-
-$RGname = <update the existing RG name>
-
-cd C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files\iac
-
-New-AzResourceGroupDeployment -Name "createresource" -TemplateFile "monitoringinfra.bicep" -TemplateParameterFile "monitoringinfra.parameters.json" -ResourceGroup $RGname
-```
+   ```
+   
+   Connect-AzAccount 
+   
+   $RGname = <update the existing RG name>
+   
+   cd C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files\iac
+   
+   New-AzResourceGroupDeployment -Name "createresource" -TemplateFile "monitoringinfra.bicep" -TemplateParameterFile "monitoringinfra.parameters.json" -ResourceGroup $RGname
+   ```
 
 ### Task 2: Monitoring using Application Insights
 
