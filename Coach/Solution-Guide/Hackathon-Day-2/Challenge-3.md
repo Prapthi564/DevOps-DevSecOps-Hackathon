@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In this challenge, attendee/user will continue to focus on implementing crucial GitHub Advanced security features like GitHub Dependabots and Secret Scanning.
+In this challenge, attendees/users will continue to focus on implementing crucial GitHub Advanced security features like GitHub Dependabots and Secret Scanning.
 
 This is the solution guide, which provides all the specific, step-by-step directions needed to do the task.
 
@@ -88,7 +88,7 @@ In this task, you'll explore how secret scanning works and how it generates aler
    web:
       build: ./ContosoTraders.Api.Products
    ```
-   >**Note:** Ensure replace the value of the `build` key in above the above code before saving the file.
+   >**Note:** Ensure to replace the value of the `build` key in above the above code before saving the file.
 
    ![](../media/cl3-t2-s5.png)   
    
