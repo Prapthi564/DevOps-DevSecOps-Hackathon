@@ -21,11 +21,11 @@ You need to focus on completing the implementation of the below-mentioned securi
 
 3. On the **Sign into GitHub tab**, you will see a login screen. Enter the following email/username and then click on **Next**.
 
-   - **Email/Username:** 
+   - **Email/Username:**  <inject key="GitHubUsername"></inject>
 
 1. Now enter the following password and click on **Sign in**.
 
-   - **Password:** 
+   - **Password:**  <inject key="GitHubPassword"></inject>
 
 ## Challenge Objectives:
 
@@ -38,14 +38,14 @@ You need to focus on completing the implementation of the below-mentioned securi
    - Resolve the generated alerts, if any.
 
 2. **Implement Repository security advisories:**
-   -  Set up Repository security advisory features for App.js package. Use the `devsecops/src/TailwindTraders.Ui.Website/src/App.js` path while configuring the affected products.
+   -  Set up Repository security advisory features for the App.js package. Use the `devsecops/src/TailwindTraders.Ui.Website/src/App.js` path while configuring the affected products.
 
   
 ## Success criteria:
 To complete this challenge successfully:
 
    - Verify the implementation of setting up Code Scanning and CodeQL via alerts.
-   - Configure the Repository security advisories feature and create temporary private fork.
+   - Configure the Repository security advisories feature and create a temporary private fork.
 
 
 ## Additional Resources:
