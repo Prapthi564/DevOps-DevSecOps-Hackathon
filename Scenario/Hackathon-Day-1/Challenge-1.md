@@ -79,7 +79,7 @@ You are a DevOps engineer tasked with setting up a robust Continuous Integration
   
 4. **Test the application and perform rolling updates:**
    - Navigate to the Azure Portal and check the application status using Azure Endpoint.
-   - Update the workflow file to initiate Action run on changes to the GitHub repository.
+   - Update the workflow file to initiate an Action run on changes to the GitHub repository.
   
 ## Success criteria:
 To complete this challenge successfully:
@@ -116,7 +116,3 @@ Here are a few documentation and guides to assist you in completing the challeng
 
 ## Conclusion:
 Congratulations on completing the **Continuous Integration and Deployment for Contoso Traders using GitHub Actions** challenge. You have successfully verified the configuration of a GitHub repository, established a functional CI/CD workflow, and utilized GitHub Actions to deploy the .NET application. In the next challenge, you will look into implementing security features offered by GitHub.
-
-
-
-
