@@ -76,7 +76,7 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
    Patches
    Has the problem been patched? What versions should users upgrade to?
 
-   It is patched and rectified the error. Please use 1.2 version
+   It is patched and rectified the error. Please use the 1.2 version
 
    Workarounds
    Is there a way for users to fix or re../mediate the vulnerability without upgrading?
@@ -125,7 +125,7 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
 To complete this challenge successfully:
 
    - Verify the implementation of Implement Code Scanning and CodeQL.
-   - Configure the Repository security advisories feature and create temporary private fork.
+   - Configure the Repository security advisories feature and create a temporary private fork.
 
 ## Additional Resources:
 
