@@ -51,7 +51,9 @@ You are a DevOps engineer tasked with setting up a robust Continuous Integration
    - Using Visual Studio code, connect to the GitHub repository that you created in the earlier step and push the application code base to your GitHub repository.
 
 2. **Deploy Infrastructure:**
+
    - In the GitHub repository, navigate to the `iac/createResources.parameters.json` path and update the value of the following parameters.
+
      - Replace `deploymentidvalue` with **<inject key="DeploymentID" enableCopy="false" />**.
 
      - Replace `bicepsqlpass` value with **<inject key="AzureAdUserPassword"></inject>**.
@@ -67,6 +69,7 @@ You are a DevOps engineer tasked with setting up a robust Continuous Integration
        >**Hint**: You can also find the deployment ID and the Azure AD password within the environment details tab of your integrated lab guide.
 
    - In the GitHub repository, navigate to the `iac/createResourceGroup.bicep` path and update the resource group name as mentioned below:
+   
       - Replace `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
 
    - Within your repository, navigate to `.github/workflow/deploy-infrastructure.yml` path and ensure to update the `RESOURCE_GROUP_NAME` environment variable by replacing `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.

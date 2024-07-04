@@ -10,12 +10,14 @@ In this challenge, you will be improving a React Application. As a DevOps engine
 >**Note:** In this challenge, you are provided with a simple React application present in the path `C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files-2\ContosoTraders.Ui.Website.V2.Raw`.
 
 1. **Integrate an 'About Us' app component in React using GitHub Copilot:**
+
    - You are provided with a simple React application which needs to be deployed and hosted on Azure.
    - You can navigate to the `C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files-2\ContosoTraders.Ui.Website.V2.Raw` directory and then ensure to select the `ContosoTraders.Ui.Website.V2` folder to import the complete code base of the application.
    - Enhance the user interface by designing and integrating an **About Us** page app component within the existing imported React application using **GitHub Copilot**.
    - Ensure that the React Application is up and running with the newly integrated **About Us** page, locally on `http://localhost:3000/`.
 
 2. **Generate and run Unit Test cases using GitHub Copilot:**
+
    - Generate Unit Test cases using GitHub Copilot for the `WelcomePopup.js` file present in the path `ContosoTraders.Ui.Wesite.V2/src/`.
         - Create a new test file named `WelcomePopup.test.js` to run the unit test cases.
    - Ensure that the generated test cases are aligning with the code analogy with successful test passes.
@@ -52,11 +54,13 @@ To complete this challenge successfully:
 1. If the validation status displays **Success** for all the validation steps, **congratulations!**. This means that you have successfully completed the challenge.
  
      ![](../media/validate02.png "Validation")
+
 1. If the validation status displays **Fail**, **don't worry!** This could mean that you did not perform the challenge correctly.
  
      ![](../media/validate03.png "Validation")
  
 1. Hover your mouse over the `i` **(1)** icon to see the error message and determine the root cause of the failure. Based on the error message, revisit the challenge as necessary, and redo the validation by clicking on the **VALIDATE (3)** button again.
+
      ![](../media/validate04.png "Validation")
  
 1. If you are still having trouble, you can reach out to the support team via `labs-support@spektrasystems.com` for further assistance. The support team is available to help you to troubleshoot and resolve any technical issues or validation issues that may arise while the lab environment is live.

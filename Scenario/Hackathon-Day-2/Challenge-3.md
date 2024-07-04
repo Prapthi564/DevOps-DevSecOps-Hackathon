@@ -20,6 +20,7 @@ In the previous challenge, you configured a few of the GitHub Advanced security 
    - Track and resolve any of the dependabots alert.
   
 3. **Implement Secret Scanning:**
+
    - Enable the Secret Scanning security feature to the existing GitHub repository.
    - Check the working of the feature by exposing the application ID of a service principal and resolving the alerts.
   
@@ -43,11 +44,13 @@ To complete this challenge successfully:
 1. If the validation status displays **Success** for all the validation steps, **congratulations!** This means that you have successfully completed the challenge.
  
      ![](../media/validate02.png "Validation")
+
 1. If the validation status displays **Fail**, **don't worry!** This could mean that you did not perform the challenge correctly.
  
      ![](../media/validate03.png "Validation")
  
 1. Hover your mouse over the `i` **(1)** icon to see the error message and determine the root cause of the failure. Based on the error message, revisit the challenge as necessary, and redo the validation by clicking on the **VALIDATE (3)** button again.
+
      ![](../media/validate04.png "Validation")
  
 1. If you are still having trouble, you can reach out to the support team via `labs-support@spektrasystems.com` for further assistance. The support team is available to help you troubleshoot and resolve any technical issues or validation issues that may arise while the lab environment is live.

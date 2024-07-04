@@ -12,6 +12,7 @@ Your task is to implement Microsoft Defender for Cloud DevOps security measures 
 >**Note:** The GitHub account provided whose credentials would be available in the environment details tab, has GitHub Enterprise with GitHub Advanced Security enabled for the ease of execution of this challenge.
 
 1. **Connect GitHub Environment to Microsoft Defender for Cloud:**
+
    - Connect your GitHub environment to Microsoft Defender for Cloud.
    - Extend the security capabilities of Defender for Cloud to your GitHub resources by enabling the **Cloud Security Posture Management (CSPM) features**.
    - Ensure that the Microsoft Defender for cloud is configured such that it auto-discovers all repositories in GitHub organizations and any future organizations where the DevOps security GitHub application is installed.
@@ -22,6 +23,7 @@ Your task is to implement Microsoft Defender for Cloud DevOps security measures 
    - Create a `.github/workflows/msdevopssec.yml` file in your repository to perform static code analysis, vulnerability scanning, and compliance checks.
 
 3. **Investigate and Remediate:**
+
    - Trigger the GitHub Action workflow created in the previous challenge objective to run Microsoft Defender for Cloud scans.
    - Review, identify, and understand the security findings and recommendations provided by Microsoft Defender for Cloud.
    - Implement fixes or enhancements to address the security findings identified during the scan.
@@ -48,11 +50,13 @@ To complete this challenge successfully:
 1. If the validation status displays **Success** for all the validation steps, **congratulations!**. This means that you have successfully completed the challenge.
  
      ![](../media/validate02.png "Validation")
+
 1. If the validation status displays **Fail**, **don't worry!** This could mean that you did not perform the challenge correctly.
  
      ![](../media/validate03.png "Validation")
  
 1. Hover your mouse over the `i` **(1)** icon to see the error message and determine the root cause of the failure. Based on the error message, revisit the challenge as necessary, and redo the validation by clicking on the **VALIDATE (3)** button again.
+
      ![](../media/validate04.png "Validation")
  
 1. If you are still having trouble, you can reach out to the support team via `labs-support@spektrasystems.com` for further assistance. The support team is available to help you troubleshoot and resolve any technical issues or validation issues that may arise while the lab environment is live.
