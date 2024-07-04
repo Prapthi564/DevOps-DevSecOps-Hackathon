@@ -12,7 +12,7 @@ In this challenge, you will integrate Azure's monitoring tools—Azure Monitor a
 
 1. **Setup Monitoring Infrastructure:**
 
-   - Create and set up Application Insights for the Contoso traders application using Key vault.
+   - Create and set up Application Insights for the Contoso traders application using Key Vault.
 
 2. **Dashboard Creation:**
    - Design comprehensive dashboards for real-time visualization of application health and performance metrics.
@@ -25,7 +25,7 @@ In this challenge, you will integrate Azure's monitoring tools—Azure Monitor a
 ## Success criteria:
 To complete this challenge successfully:
 
-- Verify the Monitoring dashboards where data should be populated based on usage of Contoso traders application.
+- Verify the Monitoring dashboards where data should be populated based on the usage of the Contoso trader's application.
 
 ## Additional Resources:
 
