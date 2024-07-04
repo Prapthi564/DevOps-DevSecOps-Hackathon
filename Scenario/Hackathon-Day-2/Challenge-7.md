@@ -11,8 +11,8 @@ In this challenge, you will be improving a React Application. As a DevOps engine
 
 1. **Integrate an 'About Us' app component in React using GitHub Copilot:**
 
-   - You are provided with a simple React application which needs to be deployed and hosted on Azure.
-   - You can navigate to the `C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files-2\ContosoTraders.Ui.Website.V2.Raw` directory and then ensure to select the `ContosoTraders.Ui.Website.V2` folder to import the complete code base of the application.
+   - You are provided with a simple React application that needs to be deployed and hosted on Azure.
+   - You can navigate to the `C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files-2\ContosoTraders.Ui.Website.V2.Raw` directory and then ensure to select the `ContosoTraders.Ui.Website.V2.Raw` folder to import the complete code base of the application.
    - Enhance the user interface by designing and integrating an **About Us** page app component within the existing imported React application using **GitHub Copilot**.
    - Ensure that the React Application is up and running with the newly integrated **About Us** page, locally on `http://localhost:3000/`.
 
@@ -24,11 +24,13 @@ In this challenge, you will be improving a React Application. As a DevOps engine
    - Resolve any unit test failures with the help of GitHub Copilot chat.
 
 3. **Code Review and Security Check:**
+   
    - Perform a code review and on the new feature implemented using GitHub Copilot.
    >**Hint:** Focus areas include code readability, adherence to best practices, and ensuring that the new feature aligns with the existing codebase.
    - Run a security check on the newly implemented code using GitHub Advanced Security features thus resolving any alerts to vulnerabilities and catch any potential security issues using CodeQL over the repository.
 
-4. **CI/CD Pipeline Setup and Infrastructure Deployment:**
+5. **CI/CD Pipeline Setup and Infrastructure Deployment:**
+   
    - Host the React Application with the new app component over Azure using **Static Web Apps** through GitHub Actions.
    - Ensure that the **Azure Static Web Apps CI/CD** GitHub workflow is successful.
 
