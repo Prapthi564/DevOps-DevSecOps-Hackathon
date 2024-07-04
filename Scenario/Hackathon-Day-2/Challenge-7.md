@@ -1,4 +1,4 @@
-# Challenge 07: Integrate 'About Us' Page with GitHub Copilot in React Application  
+# Challenge 07: Integrate the 'About Us' Page with GitHub Copilot in the React Application  
 
 ### Estimated Time: 60 minutes
 
@@ -15,7 +15,7 @@ In this challenge, you will be improving a React Application. As a DevOps engine
    - Enhance the user interface by designing and integrating an **About Us** page app component within the existing imported React application using **GitHub Copilot**.
    - Ensure that the React Application is up and running with the newly integrated **About Us** page, locally on `http://localhost:3000/`.
 
-2. **Generate and run Unit Test cases using GitHub Coplilot:**
+2. **Generate and run Unit Test cases using GitHub Copilot:**
    - Generate Unit Test cases using GitHub Copilot for the `WelcomePopup.js` file present in the path `ContosoTraders.Ui.Wesite.V2/src/`.
         - Create a new test file named `WelcomePopup.test.js` to run the unit test cases.
    - Ensure that the generated test cases are aligning with the code analogy with successful test passes.
@@ -62,4 +62,4 @@ To complete this challenge successfully:
 1. If you are still having trouble, you can reach out to the support team via `labs-support@spektrasystems.com` for further assistance. The support team is available to help you to troubleshoot and resolve any technical issues or validation issues that may arise while the lab environment is live.
 
 ## Conclusion
-Congratulations on completing the **Enhancing Contoso Traders with GitHub Copilot** challenge! Through this challenge you have not only focused on finding and fixing vulnerabilities but also promoted a security-conscious development mindset. The next challenge focuses on implementing security policies using Azure Policy and integrating compliance scanning within your GitHub CI/CD pipelines.
+Congratulations on completing the **Enhancing Contoso Traders with GitHub Copilot** challenge! Through this challenge, you have not only focused on finding and fixing vulnerabilities but also promoted a security-conscious development mindset. The next challenge focuses on implementing security policies using Azure Policy and integrating compliance scanning within your GitHub CI/CD pipelines.
