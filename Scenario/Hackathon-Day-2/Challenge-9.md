@@ -14,9 +14,7 @@ Your task is to implement Microsoft Defender for Cloud DevOps security measures 
 1. **Connect GitHub Environment to Microsoft Defender for Cloud:**
 
    - Connect your GitHub environment to Microsoft Defender for Cloud.
-     
-   > **Note**: Navigate to the environment settings of Microsoft Defender for cloud and from the **+ Add environment** drop-down select **GitHub** to Connect your GitHub account.
-     
+   >**Note**: Navigate to the environment settings of Microsoft Defender for cloud and from the **+ Add environment** drop-down select **GitHub** to Connect your GitHub account.
    - Extend the security capabilities of Defender for Cloud to your GitHub resources by enabling the **Cloud Security Posture Management (CSPM) features**.
    - Ensure that the Microsoft Defender for cloud is configured such that it auto-discovers all repositories in GitHub organizations and any future organizations where the DevOps security GitHub application is installed.
 
