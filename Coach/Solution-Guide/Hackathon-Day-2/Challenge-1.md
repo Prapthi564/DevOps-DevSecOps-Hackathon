@@ -42,11 +42,11 @@ Here's the solution guide, which includes detailed step-by-step instructions req
 
 In this task, you will log in to an account on [GitHub](https://github.com) and use `git` to add lab files to a new repository.
 
-1. In a new browser tab, open ```https://www.github.com/login```. From the **Environment Details** page **(1)**, navigate to **License** **(2)** tab and **copy** **(3)** the credentials. Use the same username and password to log into GitHub.
+1. In a new browser tab, open [GitHub](https://www.github.com/login). From the **Environment Details** page **(1)**, navigate to **License** **(2)** tab and **copy** **(3)** the credentials. Use the same username and password to log into GitHub.
 
    ![](../media/dev2.png) 
    
-1. For **Device Verification Code**, use the same credentials as in the previous step, open `http://outlook.office.com/` in a private window, and enter the same username and password used for the GitHub Account login. Copy the verification code and Paste it into Device verification.
+1. For **Device Verification Code**, use the same credentials as in the previous step, open [Outlook](http://outlook.office.com/) in a private window, and enter the same username and password used for the GitHub Account login. Copy the verification code and Paste it into Device verification.
 
    ![](../media/2dgn154.png) 
     
@@ -132,7 +132,9 @@ In this task, you will log in to an account on [GitHub](https://github.com) and 
 ### Task 2: Deploy Infrastructure
 
 1. Within the GitHub repository, navigate to the `iac/createResources.parameters.json` path and update the value of the following parameters:
+
    - Replace `deploymentidvalue` with **<inject key="DeploymentID" enableCopy="false" /> (1)**.
+
    - Replace `bicepsqlpass` value with **<inject key="AzureAdUserPassword"></inject> (2)**.
   
        ![](../media/cl1-t2-s1.png)
@@ -141,7 +143,7 @@ In this task, you will log in to an account on [GitHub](https://github.com) and 
 
       ![](../media/cl1-t2-s2.png)
 
- 3. Navigate to **Environment Details** **(1)**, click on **Service Principal Details** **(2)**, and copy the **Subscription ID**, **Tenant ID (Directory ID)**, **Application ID (Client ID)**, and **Secret Key (Client Secret)**.
+3. Navigate to **Environment Details** **(1)**, click on **Service Principal Details** **(2)**, and copy the **Subscription ID**, **Tenant ID (Directory ID)**, **Application ID (Client ID)**, and **Secret Key (Client Secret)**.
 
       ![](../media/ex2-t4-8.png)
    
@@ -170,6 +172,7 @@ In this task, you will log in to an account on [GitHub](https://github.com) and 
 6. To create another secret, under the **Actions Secrets/New secret** page, enter the below-mentioned details and click on **Add secret** ***(3)***.
 
    - **Name**: Enter **SQL_PASSWORD** ***(1)***
+
    - **Value**: Enter **<inject key="AzureAdUserPassword"></inject> (2)**, which would be the same as the Azure AD Password.
 
    ![](../media/cl1-t2-s6.png)
@@ -177,11 +180,13 @@ In this task, you will log in to an account on [GitHub](https://github.com) and 
 7. Under the **Actions Secrets/New secret** page, enter the below-mentioned details and click on **Add secret** ***(3)***.
 
    - **Name** : Enter **ENVIRONMENT** ***(1)***
+
    - **Value** : **<inject key="DeploymentID" enableCopy="false" />** (Copy the Deployment ID from the environment details tab) ***(2)***
    
    ![](../media/2dgn33.png)
 
 8. Now within the GitHub repository, navigate to the `iac/createResourceGroup.bicep` path and update the resource group name as mentioned below:
+
    - Replace `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
 
    ![](../media/cl1-t2-s8.png)
@@ -191,13 +196,13 @@ In this task, you will log in to an account on [GitHub](https://github.com) and 
    ![](../media/cl1-t2-s9.png)
 
 10. To run a workflow, perform the following steps and wait for the resources to be deployed within your Azure Portal:
+
       - Click on **Actions (1)** within your GitHub repository.
       - Select the workflow named **contoso-traders-provisioning-deployment (2)**.
       - Click on **Run workflow (3)**.
       - Finally, click on **Run workflow (4)**. Ensure that the branch is selected as **main**.
 
       ![](../media/cl1-t2-s10.png)
-
 
 11. Navigate to `.github/workflow/update-contoso-traders-App.yml` path, ensure to update the `AKS_NODES_RESOURCE_GROUP_NAME` and`RESOURCE_GROUP_NAME` environment variable by replacing `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
 
@@ -253,11 +258,11 @@ In this task, you will log in to an account on [GitHub](https://github.com) and 
    
 1. Navigate back to the Actions tab and select the **contoso-traders-app-deployment** workflow. This workflow builds the Docker image, which is pushed to the container registry. The same image is pushed to the Azure container application.
 
-   ![](media/2dgn124.png)
+   ![](../media/2dgn124.png)
    
    ![](../media/2dgn165.png)
    
-   **Note**: If the workflow **fails** due to the **npm install** job, follow steps 13 to 15. Otherwise, continue from step 16. 
+   >**Note**: If the workflow **fails** due to the **npm install** job, follow steps 13 to 15. Otherwise, continue from step 16. 
    
 1. From the GitHub browser tab, follow the steps given below and click on **Create codespace on main** ***(3)***.
 

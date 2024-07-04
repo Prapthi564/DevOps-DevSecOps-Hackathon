@@ -26,9 +26,11 @@ You are a DevOps engineer tasked with setting up a robust Continuous Integration
 1. To access the Azure Portal, open the Edge browser from inside the environment and navigate to **[Azure Portal](https://portal.azure.com)**.
 
 1. On the **Sign in to Microsoft Azure** tab, you will see a login screen. Enter the following email/username and then click on **Next**. 
+
    * Email/Username: <inject key="AzureAdUserEmail"></inject>
         
 1. Now enter the following password and click on **Sign in**.
+
    * Password: <inject key="AzureAdUserPassword"></inject>
      
 1. If you see the pop-up **Stay Signed in?**, click No.
@@ -42,6 +44,7 @@ You are a DevOps engineer tasked with setting up a robust Continuous Integration
 >**Note:** Only use GitHub and GitHub Actions for CI/CD; no usage of Azure DevOps or any external CI/CD services.
 
 1. **Setup a GitHub repository:**
+
    - Create a new GitHub repository with public access permission.
    - You are provided with an e-commerce application named Contoso Traders, which needs to be deployed and hosted on Azure.
    - You can navigate to the `C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files` directory and find the complete code base of the application.
@@ -50,10 +53,15 @@ You are a DevOps engineer tasked with setting up a robust Continuous Integration
 2. **Deploy Infrastructure:**
    - In the GitHub repository, navigate to the `iac/createResources.parameters.json` path and update the value of the following parameters.
      - Replace `deploymentidvalue` with **<inject key="DeploymentID" enableCopy="false" />**.
+
      - Replace `bicepsqlpass` value with **<inject key="AzureAdUserPassword"></inject>**.
+
      - Create GitHub secrets with the same name as mentioned below.
+
         - **SERVICEPRINCIPAL**: Create a secret to store service principal details. You can find the details in the Environment details tab of your environment.
+
         - **SQL_PASSWORD**: You need to store **<inject key="AzureAdUserPassword"></inject>(Azure AD user password)** as a secret.
+        
         - **ENVIRONMENT**: Create a secret to store the deployment ID which is **<inject key="DeploymentID" enableCopy="false" />**.
        
        >**Hint**: You can also find the deployment ID and the Azure AD password within the environment details tab of your integrated lab guide.

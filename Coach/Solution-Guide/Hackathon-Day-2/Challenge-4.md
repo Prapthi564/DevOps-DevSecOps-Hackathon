@@ -22,6 +22,7 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
    - **Password:** <inject key="GitHubPassword"></inject>
 
    >**Note**: Please use the above-mentioned credentials to log in to Azure.
+   
 ```
 
 Connect-AzAccount 

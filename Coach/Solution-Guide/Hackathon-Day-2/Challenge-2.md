@@ -113,15 +113,16 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
   
    ![](../media/cl2-t2-s3.png)
    
- 1. Once the security advisory is created, scroll down and click on **start a temporary private fork**. It is used to collaborate on a patch for this advisory.
+1. Once the security advisory is created, scroll down and click on **start a temporary private fork**. It is used to collaborate on a patch for this advisory.
 
     ![](../media/cl2-t2-s4-a.png)
     
     ![](../media/cl2-t2-s4-b.png)
   
- 1. After having the temporary fork, you can request a CVE. It is used for GitHub reviews and published security advisories. Upon review, we may use this advisory to send Dependabot alerts to affected repositories and redistribute the advisory through our API and Atom feed.
+1. After having the temporary fork, you can request a CVE. It is used for GitHub reviews and published security advisories. Upon review, we may use this advisory to send Dependabot alerts to affected repositories and redistribute the advisory through our API and Atom feed.
 
- ## Success criteria:
+## Success criteria:
+
 To complete this challenge successfully:
 
    - Verify the implementation of Implement Code Scanning and CodeQL.

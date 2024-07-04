@@ -15,6 +15,7 @@ This is the solution guide, which provides all the specific, step-by-step direct
 1. To access the Azure Portal, open the Edge browser from inside the environment and navigate to the **[Azure Portal](https://portal.azure.com)**.
 
 1. On the **Sign in to Microsoft Azure** tab, you will see a login screen. Enter the following email/username, and then click on **Next**. 
+
    * **Email/Username**: <inject key="AzureAdUserEmail"></inject>
         
 1. Now enter the following password and click on **Sign in**.
@@ -55,7 +56,7 @@ In this task, you will connect your GitHub organizations on the **Environment se
     - **Location:** Same location as that of the selected resource group **(4)**.
     - Click on **Next: Configure access > (5)**.
   
-     ![](../media1/cl9-t1-s3.png)
+      ![](../media1/cl9-t1-s3.png)
 
 5. Within the **Configure access** tab, click on **Authorize** to give permissions to the DevOps security app to access your resources.
 
