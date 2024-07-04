@@ -23,10 +23,12 @@ Here's the solution guide, which includes detailed step-by-step instructions req
 
 1. To access the Azure Portal, open the Edge browser from inside the environment and navigate to the **[Azure Portal](https://portal.azure.com)**.
 
-1. On the **Sign in to Microsoft Azure** tab, you will see a login screen. Enter the following email/username, and then click on **Next**. 
+1. On the **Sign in to Microsoft Azure** tab, you will see a login screen. Enter the following email/username, and then click on **Next**.
+   
    * **Email/Username**: <inject key="AzureAdUserEmail"></inject>
         
 1. Now enter the following password and click on **Sign in**.
+   
    * **Password**: <inject key="AzureAdUserPassword"></inject>
      
 1. If you see the pop-up **Stay Signed in?**, click No.
@@ -39,7 +41,7 @@ Here's the solution guide, which includes detailed step-by-step instructions req
 
 ### Task 1: Setup a GitHub repository
 
-In this task, you will login to an account on [GitHub](https://github.com) and use `git` to add lab files to a new repository.
+In this task, you will log in to an account on [GitHub](https://github.com) and use `git` to add lab files to a new repository.
 
 1. In a new browser tab, open ```https://www.github.com/login```. From the **Environment Details** page **(1)**, navigate to **License** **(2)** tab and **copy** **(3)** the credentials. Use the same username and password to log into GitHub.
 
@@ -202,11 +204,11 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
 
     ![](../media/dso1.png) 
 
-12. To run a workflow, perform the following steps and wait for the resources to be deployed within your azure portal:
+12. To run a workflow, perform the following steps and wait for the resources to be deployed within your Azure portal:
       - Click on **Actions (1)** within your GitHub repository.
       - Select on the workflow named **update contoso traders app (2)**.
       - Click on **Run workflow (3)**.
-      - Finally click on **Run workflow (4)**. Ensure that the branch is select as **main**.
+      - Finally click on **Run workflow (4)**. Ensure that the branch is selected as **main**.
 
     ![](../media/dso2.png) 
 
