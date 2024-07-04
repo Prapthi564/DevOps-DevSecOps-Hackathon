@@ -33,7 +33,7 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
 
    ![Picture1](../media/cl7-ex1-t1-s1.png)
    
-1. At the bottom right corner, click on **Sign in to GitHub** prompt that appears.
+1. At the bottom right corner, click on the **Sign in to GitHub** prompt that appears.
 
    ![Picture1](../media/cl7-ex1-t1-s2.png)
 
@@ -41,7 +41,7 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
 
    ![Picture1](../media/cl7-ex1-t1-s3.png)
 
-1. In the sign-in to GitHub page in edge browser, enter the **GitHub UserEmail** and **GitHub Password** and click on **Sign in**.
+1. In the sign-in to GitHub page in Edge browser, enter the **GitHub UserEmail** and **GitHub Password** and click on **Sign in**.
 
    ![Picture1](../media/cl7-ex1-t1-s4.png)
 
@@ -50,7 +50,7 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
    ![](../media/cl7-ex1-t1-s4-b.png)
 
 1. Next, to get the authentication code, sign in to Outlook in the Lab VM through an **InPrivate** window (https://outlook.office365.com/mail/)
-with the github credentials that were copied over to Notepad in the previous step. After logging into Outlook within the Lab Virtual Machine, locate the most recent email that contains the verification code, and then select **Verify** to return to the login screen.
+with the GitHub credentials that were copied over to Notepad in the previous step. After logging into Outlook within the Lab Virtual Machine, locate the most recent email that contains the verification code, and then select **Verify** to return to the login screen.
 
    >**Note:** The email containing the verification code can sometimes creep into the archive/spam folders within your Outlook.
 
@@ -98,7 +98,7 @@ with the github credentials that were copied over to Notepad in the previous ste
 
   >**Disclaimer:** It should be noted that the code suggestions offered by GitHub Copilot might not exactly match the screenshots shown within the labguide. GitHub Copilot is an AI-powered tool that generates code based on context and patterns, and its suggestions can be influenced by various factors. It is also important that you have the knowledge on operating and running React Applications which may be needed as you proceed with this exercise.
 
-  >**Note:** However the ease of executability of this challenge, you can open a new folder within VS Code and import the solution folder from the Windows file explorer with path, `C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files-2\`. Select the **src** folder. This solution project has integrated "About Us" page and unit test cases for the same.
+  >**Note:** However the ease of executability of this challenge, you can open a new folder within VS Code and import the solution folder from the Windows file explorer with path, `C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files-2\`. Select the **src** folder. This solution project has integrated the "About Us" page and unit test cases for the same.
 
   >**Note:** If you wish to continue to manually edit the raw project, follow the steps from step 6.
 
@@ -154,7 +154,7 @@ with the github credentials that were copied over to Notepad in the previous ste
 
    >**Note:** Free free to make changes in the above code snippet as per your use case scenario.
 
-   >**Note:** Notice that the css rules have been imported into the `AboutUs.js` file using the code, `import "./AboutUs.css";`.
+   >**Note:** Notice that the CSS rules have been imported into the `AboutUs.js` file using the code, `import "./AboutUs.css";`.
    
    >**Note:** The `AboutUs.js` file is a React component that renders an "About Us" section on a webpage based on the CSS rules that have been defined in `AboutUs.css` file.
 
@@ -214,7 +214,7 @@ with the github credentials that were copied over to Notepad in the previous ste
 
 ### Task 1: Create and run test cases:
 
-1. In Visual Studio Code, go to **Explorer** and navigate to path `ContosoTraders.Ui.Website.V2\src\components` and open the `WelcomePopup.js` file.
+1. In Visual Studio Code, go to **Explorer** and navigate to the path `ContosoTraders.Ui.Website.V2\src\components` and open the `WelcomePopup.js` file.
 
    ![Picture1](../media/CL7-EX2-T1-S1.png)
 
@@ -265,7 +265,7 @@ with the github credentials that were copied over to Notepad in the previous ste
 
    ![](../media/dev2.png) 
 
-2. once logged-in, on the upper-right corner, expand the user **drop-down menu** **(1)** and select **Your repositories** **(2)**.
+2. once logged in, on the upper-right corner, expand the user **drop-down menu** **(1)** and select **Your repositories** **(2)**.
 
    ![The `New Repository` creation form in GitHub.](../media/2dg1.png "New Repository Creation Form")
 
