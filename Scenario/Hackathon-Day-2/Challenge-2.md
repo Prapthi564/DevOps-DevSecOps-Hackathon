@@ -21,12 +21,11 @@ You need to focus on completing the implementation of the below-mentioned securi
 
 3. On the **Sign into GitHub tab**, you will see a login screen. Enter the following email/username and then click on **Next**.
 
-   - **Email/Username:** 
+   - **Email/Username:**  <inject key="GitHubUsername"></inject>
 
 1. Now enter the following password and click on **Sign in**.
 
-   - **Password:** 
-
+   - **Password:**  <inject key="GitHubPassword"></inject>
 
 ## Challenge Objectives:
 
@@ -41,13 +40,12 @@ You need to focus on completing the implementation of the below-mentioned securi
 2. **Implement Repository security advisories:**
    -  Set up Repository security advisory features for App.js package. Use the `devsecops/src/TailwindTraders.Ui.Website/src/App.js` path while configuring the affected products.
 
-  
+ 
 ## Success criteria:
 To complete this challenge successfully:
 
    - Verify the implementation of setting up Code Scanning and CodeQL via alerts.
-   - Configure the Repository security advisories feature and create temporary private fork.
-
+   - Configure the Repository security advisories feature and create a temporary private fork.
 
 ## Additional Resources:
 
@@ -73,7 +71,6 @@ Here are a few documentation and guides to assist you in completing the challeng
      ![](../media/validate04.png "Validation")
  
 1. If you are still having trouble, you can reach out to the support team via `labs-support@spektrasystems.com` for further assistance. The support team is available to help you troubleshoot and resolve any technical issues or validation issues that may arise while the lab environment is live.
-
 
 ## Conclusion
 Congratulations on successfully completing the **GitHub Advanced Security - Implement Code Security Enhancements** challenge. You've taken crucial steps to ensure the security and integrity of your codebase, especially when dealing with sensitive customer data. As you continue developing the e-commerce platform, consider regularly reviewing and updating your security measures. Stay informed about new security features and best practices offered by GitHub to ensure that your repository remains resilient to emerging threats. In this next challenge, you will explore and implement more GitHub advanced security features.
