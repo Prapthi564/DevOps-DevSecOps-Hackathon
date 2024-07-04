@@ -17,9 +17,11 @@ In the previous challenge, you configured a few of the GitHub Advanced security 
 1. **Configure Dependabot Alerts:**
 
    -  Use Dependabot and configure it to track the versions of the packages used in your GitHub repository and create pull requests to update packages for us.
-   - Track and resolve any of the dependabots alert.
+   - Track and resolve any of the dependabots alerts.
   
-3. **Implement Secret Scanning:**
+   >**Note:** Enabling the Dependabot security updates will also automatically enable the Dependency graph and Dependabot alerts.
+  
+2. **Implement Secret Scanning:**
 
    - Enable the Secret Scanning security feature to the existing GitHub repository.
    - Check the working of the feature by exposing the application ID of a service principal and resolving the alerts.
