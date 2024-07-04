@@ -99,7 +99,7 @@ In this task, you'll explore how secret scanning works and how it generates aler
 To complete this challenge successfully:
 
 - Successful implementation of GitHub Dependabots for identifying and addressing security vulnerabilities.
-- Setup secreting scanning and updated the code base to resolve the alerts.
+- Set up secreting scanning and updated the code base to resolve the alerts.
 
 ## Additional Resources:
 
