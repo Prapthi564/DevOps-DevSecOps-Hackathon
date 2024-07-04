@@ -14,7 +14,7 @@ In this challenge, you are a DevOps engineer responsible for ensuring the securi
    
 2. **Integrate Compliance Scanning in CI/CD pipeline:**
    - Integrate a compliance scanning step into your GitHub pipeline that checks for policy compliance before allowing deployment.
-      - Implement **Azure Policy Compliance Scan** GitHub action within `.github/workflows/workflow.yml` which triggers a policy compliance scan on the provided subscription and continue/fail the workflow based on the compliance state of the resources.
+      - Implement **Azure Policy Compliance Scan** GitHub action within `.github/workflows/workflow.yml` which triggers a policy compliance scan on the provided subscription and continues/fails the workflow based on the compliance state of the resources.
    - Ensure that compliance scans are triggered automatically during the CI/CD process.
 
 ## Success criteria:
@@ -38,11 +38,13 @@ To complete this challenge successfully:
 1. If the validation status displays **Success** for all the validation steps, **congratulations!**. This means that you have successfully completed the challenge.
  
      ![](../media/validate02.png "Validation")
+   
 1. If the validation status displays **Fail**, **don't worry!** This could mean that you did not perform the challenge correctly.
  
      ![](../media/validate03.png "Validation")
  
 1. Hover your mouse over the `i` **(1)** icon to see the error message and determine the root cause of the failure. Based on the error message, revisit the challenge as necessary, and redo the validation by clicking on the **VALIDATE (3)** button again.
+   
      ![](../media/validate04.png "Validation")
  
 1. If you are still having trouble, you can reach out to the support team via `labs-support@spektrasystems.com` for further assistance. The support team is available to help you troubleshoot and resolve any technical issues or validation issues that may arise while the lab environment is live.
