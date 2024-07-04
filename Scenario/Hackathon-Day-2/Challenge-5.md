@@ -53,5 +53,3 @@ Here are a few documentation and guides to assist you in completing the challeng
 
 ## Conclusion
 Congratulations on completing the **Resilience Testing using Azure Load Testing and Azure Chaos Studio** challenge! You learned about the implementation of Azure Load testing and experimented in Azure Chaos Studio. 
-
-Congratulations! You have successfully completed all the challenges. 
