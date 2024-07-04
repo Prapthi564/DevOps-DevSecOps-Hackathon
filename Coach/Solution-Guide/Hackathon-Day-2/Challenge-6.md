@@ -71,7 +71,7 @@ Here is the solution guide, which provides all the specific, step-by-step direct
 
     ![](../media/cl6-ex1-t2-s4.png)
 
-5. Upon creation of a new secret, save your key by clicking on the **Copy** button and pasting it on your notepad for a handy access.
+5. Upon creation of a new secret, save your key by clicking on the **Copy** button and pasting it on your notepad for handy access.
 
     **Note:** For safety reasons, **you won't be able to view the secret value again** once the **Save your key** page is closed.
 
@@ -207,7 +207,7 @@ Here is the solution guide, which provides all the specific, step-by-step direct
 4. Under the **Actions Secrets/New secret** page, enter the below-mentioned details and click on **Add secret** **(3)**.
 
    - **Name** : Enter **OPENAI_TOKEN** **(1)**
-   - **Value** : Paste the OpenAI secret value that was created and copied over to the notepad in the previous exercise. **(2)**.
+   - **Value**: Paste the OpenAI secret value that was created and copied over to the notepad in the previous exercise. **(2)**.
 
    ![](../media/cl6-ex1-t3-s4.png)
 
