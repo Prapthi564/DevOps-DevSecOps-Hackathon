@@ -61,6 +61,18 @@ You are a DevOps engineer tasked with setting up a robust Continuous Integration
      - Create GitHub secrets with the same name as mentioned below.
 
         - **SERVICEPRINCIPAL**: Create a secret to store service principal details. You can find the details in the Environment details tab of your environment.
+          
+    
+        > **Hint:** Use the following format to store service principal details
+   
+        ```json
+         {
+            "clientId": "zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz",
+            "clientSecret": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+            "tenantId": "zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz",
+            "subscriptionId": "zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz"
+         }
+        ```
 
         - **SQL_PASSWORD**: You need to store **<inject key="AzureAdUserPassword"></inject>(Azure AD user password)** as a secret.
         
@@ -83,11 +95,15 @@ You are a DevOps engineer tasked with setting up a robust Continuous Integration
 3. **Setup CI/CD Workflow:**
 
    - Update the previously created GitHub secret with the following value:
+     
       - **SQL_PASSWORD**: ADO.NET (SQL authentication) connection string of `productsdb` SQL database.
+
+   > **Hint**: You can also find the `productsdb` SQL database in the Azure portal.
 
    - In the GitHub repository, navigate to  **.github/workflow** where you will be able to find the yaml workflow. This YAML file is partially updated, you need to update the YAML files with the right steps and complete the workflow. This workflow should deploy the application to Azure. 
   
 4. **Test the application and perform rolling updates:**
+   
    - Navigate to the Azure Portal and check the application status using Azure Endpoint.
    - Update the workflow file to initiate an Action run on changes to the GitHub repository.
   
