@@ -27,7 +27,6 @@ You need to focus on completing the implementation of the below-mentioned securi
 
    - **Password:** 
 
-
 ## Challenge Objectives:
 
 > **Note**: Use the same GitHub repository that you created in the last challenge.
