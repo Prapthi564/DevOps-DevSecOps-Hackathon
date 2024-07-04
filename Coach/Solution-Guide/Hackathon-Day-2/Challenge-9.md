@@ -73,7 +73,7 @@ In this task, you will connect your GitHub organizations on the **Environment se
 
    ![](../media1/cl9-t1-s7.png)
 
-8. Select the organizations to install the GitHub application. In this solution flow, we recommend to grant access to **all repositories** to ensure Defender for Cloud can secure your entire GitHub environment. Ensure that it has been installed successfully.
+8. Select the organizations to install the GitHub application. In this solution flow, we recommend granting access to **all repositories** to ensure Defender for Cloud can secure your entire GitHub environment. Ensure that it has been installed successfully.
 
    ![](../media1/cl9-t1-s8.png)
 
@@ -95,7 +95,7 @@ In this task, you will connect your GitHub organizations on the **Environment se
 
 ### Task 2: Configure the Microsoft Security DevOps GitHub Action
 
-Microsoft Security DevOps is a command line application that integrates static analysis tools into the development lifecycle. Security DevOps installs, configures, and runs the latest versions of static analysis tools such as, SDL, security and compliance tools. Security DevOps is data-driven with portable configurations that enable deterministic execution across multiple environments.
+Microsoft Security DevOps is a command-line application that integrates static analysis tools into the development lifecycle. Security DevOps installs, configures, and runs the latest versions of static analysis tools such as SDL, security, and compliance tools. Security DevOps is data-driven with portable configurations that enable deterministic execution across multiple environments.
 
 1. Sign in to GitHub using the credentials provided in the environment detail tab of the integrated lab environment.
 
