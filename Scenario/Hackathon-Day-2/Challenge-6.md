@@ -9,7 +9,7 @@ You need to focus on completing the implementation of the below-mentioned GitHub
 
 **AI Code Review Action**: AI Code Reviewer is a GitHub Action that leverages OpenAI's GPT-4 API to provide intelligent feedback and suggestions on your pull requests. This powerful tool helps improve code quality and saves developers time by automating the code review process.
 
-**AI Security Check for Pull Request**: This GitHub Action uses OpenAI's GPT to analyse code in pull requests and identify potential security and privacy vulnerabilities and comment to the pull request with the findings.
+**AI Security Check for Pull Request**: This GitHub Action uses OpenAI's GPT to analyse code in pull requests and identify potential security and privacy vulnerabilities and comment on the pull request with the findings.
 
 ## Challenge Objectives:
 
@@ -36,7 +36,6 @@ To complete this challenge successfully:
 
 ## Additional Resources:
 
-
 - Refer to [AI Code Review Action](https://github.com/marketplace/actions/ai-code-review-action) for reference.
 - Refer to [AI Security Check for Pull Request](https://github.com/marketplace/actions/ai-security-check-for-pull-request) for reference.
 
@@ -56,7 +55,7 @@ To complete this challenge successfully:
 1. Hover your mouse over the `i` **(1)** icon to see the error message and determine the root cause of the failure. Based on the error message, revisit the challenge as necessary, and redo the validation by clicking on the **VALIDATE (3)** button again.
      ![](../media/validate04.png "Validation")
  
-1. If you are still having trouble, you can reach out to the support team via `labs-support@spektrasystems.com` for further assistance. The support team is available to help you to troubleshoot and resolve any technical issues or validation issues that may arise while the lab environment is live.
+1. If you are still having trouble, you can reach out to the support team via `labs-support@spektrasystems.com` for further assistance. The support team is available to help you troubleshoot and resolve any technical issues or validation issues that may arise while the lab environment is live.
 
 ## Conclusion
-Congratulations on completing the **DevSecOps with AI-Powered GitHub Actions** challenge! Through this challenge you have seamlessly integrated AI-driven GitHub Actions, elevated code quality, security, and developer productivity. In the next challenge, you will focus on using GitHub Copilot Chat to implement/add new features to the existing Contoso Traders Application and deploy the changes to Azure through CI/CD.
+Congratulations on completing the **DevSecOps with AI-Powered GitHub Actions** challenge! Through this challenge, you have seamlessly integrated AI-driven GitHub Actions, elevated code quality, security, and developer productivity. In the next challenge, you will focus on using GitHub Copilot Chat to implement/add new features to the existing Contoso Traders Application and deploy the changes to Azure through CI/CD.
