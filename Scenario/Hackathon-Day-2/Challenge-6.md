@@ -17,7 +17,7 @@ You need to focus on completing the implementation of the below-mentioned GitHub
 
 1. **Configure and implement AI Code Review GitHub Action:**
 
-   - Sign In/ Sign up to an OpenAI account and create a new secret key (API key).
+   - Sign In/ Sign up to an **[OpenAI](https://openai.com/)** account and create a new secret key (API key) .
      
       >**Note:** This API key will be used as you move forward in the challenge. Keep it handy!
    
