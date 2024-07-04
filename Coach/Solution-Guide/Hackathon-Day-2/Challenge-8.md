@@ -27,42 +27,43 @@ In this task, you will enforce compliance with Azure Policy by assigning a polic
    ![](../media/cl8-ex1-t1-s3.png)
 
 4. On the **Assign Policy** page and **Basics** tab, perform the following steps:
+   
    - Select the **Scope** by selecting the ellipsis and selecting either a management group or subscription **(1)**. Optionally, select a resource group. A scope determines what resources or grouping of resources the policy assignment gets enforced on.
    - Click on **Select** at the bottom of the Scope pane **(2)**.
 
    ![](../media/cl8-ex1-t1-s4.png)
 
-5. Resources can be excluded based on the **Scope**. **Exclusions** start at one level lower than the level of the **Scope**. **Exclusions** are optional, so leave it blank for now.
+6. Resources can be excluded based on the **Scope**. **Exclusions** start at one level lower than the level of the **Scope**. **Exclusions** are optional, so leave it blank for now.
 
-6. Select the **Policy definition** ellipsis to open the list of available definitions. You can filter the policy definition Type to Built-in to view all and read their descriptions.
+7. Select the **Policy definition** ellipsis to open the list of available definitions. You can filter the policy definition Type to Built-in to view all and read their descriptions.
 
-7. Select **Inherit a tag from the resource group if missing**. If you can't find it right away, type **inherit a tag** into the search box and then press ENTER or select out of the search box. Click on **Select** at the bottom of the **Available Definitions** page once you have found and selected the policy definition.
+8. Select **Inherit a tag from the resource group if missing**. If you can't find it right away, type **inherit a tag** into the search box and then press ENTER or select out of the search box. Click on **Select** at the bottom of the **Available Definitions** page once you have found and selected the policy definition.
 
    ![](../media1/add-policy.png)
 
-8. The **Assignment name** is automatically populated with the policy name you selected, but you can change it. For this example, leave **Inherit a tag from the resource group if missing**. You can also add an optional **Description**. The description provides details about this policy assignment.
+9. The **Assignment name** is automatically populated with the policy name you selected, but you can change it. For this example, leave **Inherit a tag from the resource group if missing**. You can also add an optional **Description**. The description provides details about this policy assignment.
 
-9. Leave **Policy enforcement** as **Enabled**. When Disabled, this setting allows testing the outcome of the policy without triggering the effect.
+10. Leave **Policy enforcement** as **Enabled**. When Disabled, this setting allows testing the outcome of the policy without triggering the effect.
 
-10. **Assigned by** is automatically filled based on who is logged in. This field is optional, so custom values can be entered.
+11. **Assigned by** is automatically filled based on who is logged in. This field is optional, so custom values can be entered.
 
-11. Select the **Parameters** tab at the top of the wizard.
+12. Select the **Parameters** tab at the top of the wizard.
 
-12. For **Tag Name**, enter **Environment**.
+13. For **Tag Name**, enter **Environment**.
 
-13. Select the **Remediation** tab at the top of the wizard.
+14. Select the **Remediation** tab at the top of the wizard.
 
-14. Leave **Create a remediation task** unchecked. This box allows you to create a task to alter existing resources in addition to new or updated resources.
+15. Leave **Create a remediation task** unchecked. This box allows you to create a task to alter existing resources in addition to new or updated resources.
 
-15. **Create a Managed Identity** is automatically checked since this policy definition uses the modify effect. **Permissions** is set to Contributor automatically based on the policy definition.
+16. **Create a Managed Identity** is automatically checked since this policy definition uses the modify effect. **Permissions** is set to Contributor automatically based on the policy definition.
 
-16. Select the **Non-compliance messages** tab at the top of the wizard.
+17. Select the **Non-compliance messages** tab at the top of the wizard.
 
-17. Set the **Non-compliance message** to **This resource doesn't have the required tag**. This custom message is displayed when a resource is denied or for non-compliant resources during regular evaluation.
+18. Set the **Non-compliance message** to **This resource doesn't have the required tag**. This custom message is displayed when a resource is denied or for non-compliant resources during regular evaluation.
 
-18. Select the **Review + create** tab at the top of the wizard.
+19. Select the **Review + create** tab at the top of the wizard.
 
-19. Review your selections, then select **Create** at the bottom of the page.
+20. Review your selections, then select **Create** at the bottom of the page.
 
 ### Task 2: Implement a new custom policy
 
