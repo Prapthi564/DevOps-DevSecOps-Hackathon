@@ -31,7 +31,6 @@ To complete this challenge successfully:
 
 ## Additional Resources:
 
-
 - Refer to [Secret Scanning](https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning) for reference.
 - Refer to [GitHub Dependabot](https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts) for reference.
 
