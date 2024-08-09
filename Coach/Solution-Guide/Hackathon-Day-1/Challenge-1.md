@@ -99,6 +99,8 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
 
    ![Quick setup screen is displayed with the copy button next to the GitHub URL textbox selected.](../media/2dg4.png "Quick setup screen")
 
+   >**Note**: If the terminal is not open by default, please navigate to the terminal and click on new terminal.
+
 1. In Visual Studio Code, run the below commands in the terminal to set your **email** and **username**, which Git uses for commits. Make sure to replace the GitHub account email and username.
    
      ```pwsh
@@ -130,7 +132,7 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
 
 ### Task 2: Deploy Infrastructure
 
-1. Within the GitHub repository, navigate to the `iac/createResources.parameters.json` path and update the value of the following parameters:
+1. Within the GitHub repository, navigate to the `iac/createResources.parameters.json` path and update the value of the following parameters, once updated click commit changes to save the file:
    - Replace `deploymentidvalue` with **DeploymentID** present under the **Environment Details** tab.
    - Replace `bicepsqlpass` with **AzureAdUserPassword** present under the **Environment Details** tab.
   
@@ -185,7 +187,7 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
 
    ![](../media/cl1-t2-s8.png)
 
-9. Navigate to the `.github/workflow/deploy-infrastructure.yml` path and ensure to update the `RESOURCE_GROUP_NAME` environment variable by replacing `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
+9. Navigate to the `.github/workflow/deploy-infrastructure.yml` path and ensure to update the `RESOURCE_GROUP_NAME` environment variable by replacing `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**, once updated click commit changes to save the file:
 
    ![](../media/cl1-t2-s9.png)
 
@@ -198,7 +200,7 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
       ![](../media/cl1-t2-s10.png)
 
 
-11. Navigate to `.github/workflow/update-contoso-traders-App.yml` path, ensure to update the `AKS_NODES_RESOURCE_GROUP_NAME` and`RESOURCE_GROUP_NAME` environment variable by replacing `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
+11. Navigate to `.github/workflow/update-contoso-traders-App.yml` path, ensure to update the `AKS_NODES_RESOURCE_GROUP_NAME` and`RESOURCE_GROUP_NAME` environment variable by replacing `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**, once updated click commit changes to save the file:
 
     ![](../media/dso1.png) 
 
