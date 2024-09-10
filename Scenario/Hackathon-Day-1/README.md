@@ -9,10 +9,7 @@ Your goal is to integrate DevSecOps practices into Contoso Traders' existing e-c
 
 By participating in this hackathon, you will:
 
-- Master the art of Continuous Integration and Deployment (CI/CD) for .NET applications using GitHub Actions.
-- Enhance code security and manage dependencies effectively.
-- Integrate and optimize monitoring solutions using Azure Monitor and Application Insights.
-- Execute resilience testing to ensure the robustness of the application.
+Master the art of Continuous Integration and Deployment (CI/CD) for .NET applications using GitHub Actions. Enhance code security and manage dependencies effectively. Integrate and optimize monitoring solutions with Azure Monitor and Application Insights. Execute resilience testing to ensure application robustness. Utilize AI-powered GitHub Actions to strengthen security checks and compliance within pipelines. Leverage GitHub Copilot to harness AI for improved code completion and testing efficiency
 
 ## Hackathon Format: Challenge Based
 This hackathon adopts a challenge-based format, offering you a unique opportunity to learn while dealing with practical problems. Each challenge includes one or more self-contained tasks, designed to test and enhance your skills in specific aspects of DevSecOps. You will approach these challenges by:
