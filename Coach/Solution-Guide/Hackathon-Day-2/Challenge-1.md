@@ -94,7 +94,7 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
 
 1. On the **Quick setup** screen, copy the **HTTPS** GitHub URL for your new repository and **save it** in a notepad for future use.
 
-   ![](../media/cl1-t1-s12.png)
+   ![](../media/ex1-task1-4.png)
    
 1. From the GitHub username, note down the **Unique-ID** present in the Username. You'll need this in the upcoming steps.
 
