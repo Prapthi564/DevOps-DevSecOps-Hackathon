@@ -50,9 +50,13 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
 
    ![](../media/2dgn154.png) 
     
-1. In the upper-right corner, expand the user **drop-down menu** **(1)** and select **Your repositories** **(2)**.
+1. In the upper-right corner, expand the user **drop-down menu**.
 
-   ![The `New Repository` creation form in GitHub.](../media/2dg1.png "New Repository Creation Form")
+   ![The `New Repository` creation form in GitHub.](../media/Ex1-task1-1.png "New Repository Creation Form")
+
+1. Then select **Your repositories**.
+
+   ![The `New Repository` creation form in GitHub.](../media/ex1-task1-2.png "New Repository Creation Form")
 
 1. Next to the search criteria, locate and select the **New** button.
 
