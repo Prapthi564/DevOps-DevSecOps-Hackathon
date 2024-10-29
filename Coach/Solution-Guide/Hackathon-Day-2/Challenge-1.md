@@ -60,7 +60,7 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
 
 1. Next to the search criteria, locate and select the **New** button.
 
-   ![The `New Repository` creation form in GitHub.](../media/ex2-t3-3-git.png "New Repository Creation Form")
+   ![The `New Repository` creation form in GitHub.](../media/ex1-task1-3.png "New Repository Creation Form")
 
 1. On the **Create a new repository** screen, name the repository ```devsecops``` **(1)**, select **Public** **(2)**, and click on the **Create repository** **(3)** button.
 
