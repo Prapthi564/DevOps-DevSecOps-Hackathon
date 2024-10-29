@@ -100,9 +100,9 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
 
    ![](../media/cl1-t1-s13.png) 
    
-1. Navigate back to the **Visual Studio Code** application in which the terminal is already open. In the terminal, click on the **drop-down** button and select **PowerShell** to open a fresh PowerShell terminal tab.
+1. Navigate  to the **Visual Studio Code** application . Click on **...** at the top and select **Terminal** from the **drop-down** and choose **New Terminal**,this opens a fresh PowerShell terminal tab.
 
-   ![Quick setup screen is displayed with the copy button next to the GitHub URL textbox selected.](../media/2dg4.png "Quick setup screen")
+   ![Quick setup screen is displayed with the copy button next to the GitHub URL textbox selected.](../media/ex1-task1-5.png "Quick setup screen")
 
 1. In Visual Studio Code, run the below commands in the terminal to set your **email** and **username**, which Git uses for commits. Make sure to replace the GitHub account email and username.
    
