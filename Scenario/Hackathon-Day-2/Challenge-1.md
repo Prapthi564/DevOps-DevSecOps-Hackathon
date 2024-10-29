@@ -61,9 +61,9 @@ You are a DevOps engineer tasked with setting up a robust Continuous Integration
    - In the GitHub repository, navigate to the `iac/createResourceGroup.bicep` path and update the resource group name as mentioned below:
       - Replace `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
 
-   - Within your repository, navigate to `.github/workflow/deploy-infrastructure.yml` path and ensure to update the `RESOURCE_GROUP_NAME` environment variable by replacing `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
+   - Within your repository, navigate to `.github/workflows/deploy-infrastructure.yml` path and ensure to update the `RESOURCE_GROUP_NAME` environment variable by replacing `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
      
-   - Within your repository, navigate to `.github/workflow/Update-contoso-Traders-App.yml` path, ensure to update the `RESOURCE_GROUP_NAME`, and `AKS_NODES_RESOURCE_GROUP_NAME` environment variable by replacing `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
+   - Within your repository, navigate to `.github/workflows/Update-contoso-Traders-App.yml` path, ensure to update the `RESOURCE_GROUP_NAME`, and `AKS_NODES_RESOURCE_GROUP_NAME` environment variable by replacing `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
    
    -  Run the workflow named `contoso-traders-provisioning-deployment` and `update contoso Traders app`, using GitHub Actions.
    
