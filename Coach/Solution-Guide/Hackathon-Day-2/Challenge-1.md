@@ -100,7 +100,7 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
 
    ![](../media/cl1-t1-s13.png) 
    
-1. Navigate  to the **Visual Studio Code** application . Click on **...** at the top and select **Terminal** from the **drop-down** and choose **New Terminal**,this opens a fresh PowerShell terminal tab.
+1. Navigate  to the **Visual Studio Code (1)** application . Click on **... (2)** at the top and select **Terminal (3)** from the **drop-down** and choose **New Terminal (4)**, this opens a fresh PowerShell terminal tab.
 
    ![Quick setup screen is displayed with the copy button next to the GitHub URL textbox selected.](../media/ex1-task1-5.png "Quick setup screen")
 
