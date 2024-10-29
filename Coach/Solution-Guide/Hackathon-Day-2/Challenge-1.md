@@ -194,7 +194,7 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
 
    ![](../media/cl1-t2-s8.png)
 
-9. Navigate to the `.github/workflow/deploy-infrastructure.yml` path and ensure to update the `RESOURCE_GROUP_NAME` environment variable by replacing `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
+9. Navigate to the `.github/workflows/deploy-infrastructure.yml` path and ensure to update the `RESOURCE_GROUP_NAME` environment variable by replacing `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
 
    ![](../media/cl1-t2-s9.png)
 
@@ -207,7 +207,7 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
       ![](../media/cl1-t2-s10.png)
 
 
-11. Navigate to `.github/workflow/update-contoso-traders-App.yml` path, ensure to update the `AKS_NODES_RESOURCE_GROUP_NAME` and`RESOURCE_GROUP_NAME` environment variable by replacing `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
+11. Navigate to `.github/workflows/update-contoso-traders-App.yml` path, ensure to update the `AKS_NODES_RESOURCE_GROUP_NAME` and`RESOURCE_GROUP_NAME` environment variable by replacing `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
 
     ![](../media/dso1.png) 
 
