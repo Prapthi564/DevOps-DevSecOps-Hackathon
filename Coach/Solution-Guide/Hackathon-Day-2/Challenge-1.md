@@ -128,10 +128,14 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
       ```
      
    - If you are asked to authenticate your GitHub account, select **Sign in with your browser**, and you will be prompted with a pop-up window to authorize Git Credential Manager. Click on **Authorize git-ecosystem** to provide access.
+  
+       ![](../media/ex1-task1-6.png)
 
        ![](../media/ex2-t3.png)
        
    - After you are prompted with the message **Authorization Succeeded**, close the tab and continue with the next task.
+
+     ![](../media/ex1-task1-7.png)
 
 ### Task 2: Deploy Infrastructure
 
