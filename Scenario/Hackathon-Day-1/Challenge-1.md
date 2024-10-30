@@ -48,18 +48,17 @@ You are a DevOps engineer tasked with setting up a robust Continuous Integration
    - Using Visual Studio code, connect to the GitHub repository that you created in the earlier step and push the application code base to your GitHub repository.
 
 2. **Deploy Infrastructure:**
-   - In the GitHub repository, navigate to the `iac/createResources.parameters.json` path and update the value of the following parameters.
-     - Replace `deploymentidvalue` with **<inject key="DeploymentID" enableCopy="false" />**.
-     - Replace `bicepsqlpass` value with **<inject key="AzureAdUserPassword"></inject>**.
+   - In the GitHub repository, navigate to the setting and add github action secreat and variable as below.
      - Create GitHub secrets with the same name as mentioned below.
         - **SERVICEPRINCIPAL**: Create a secret to store service principal details. You can find the details in the Environment details tab of your environment.
-        - **SQL_PASSWORD**: You need to store **<inject key="AzureAdUserPassword"></inject>(Azure AD user password)** as a secret.
-        - **ENVIRONMENT**: Create a secret to store the deployment ID which is **<inject key="DeploymentID" enableCopy="false" />**.
+        - **SQLPASSWORD**: Add you SQL password that you want to keep
+     
+     - Create GitHub variables with the same name as mentioned below.
+        - **DEPLOYMENTREGION**: Add you deployment region where you want to get the resources deployed.
+        - **SUFFIX**: Create a secret to store the deployment ID which is **<inject key="DeploymentID" enableCopy="false" />**.
        
        >**Hint**: You can also find the deployment ID and the Azure AD password within the environment details tab of your integrated lab guide.
 
-   - In the GitHub repository, navigate to the `iac/createResourceGroup.bicep` path and update the resource group name as mentioned below:
-      - Replace `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
 
    - Within your repository, navigate to `.github/workflow/deploy-infrastructure.yml` path and ensure to update the `RESOURCE_GROUP_NAME` environment variable by replacing `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
      
