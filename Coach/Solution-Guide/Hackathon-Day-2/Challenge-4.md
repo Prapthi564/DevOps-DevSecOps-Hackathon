@@ -42,7 +42,7 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
    ```
    
    >**Note:** Make sure you are in the directory where the Bicep template and parameters file resides. 
-              cd C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files\iac
+    If not switch to the directory cd C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files\iac
    
 1. Run the following command to initiate the deployment using the Bicep template and parameters file:
 
@@ -51,7 +51,7 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
    ```
 1. Monitor the output in the terminal , and wait for until the deployment is succeeded.
 
-   ![](../media/ex4-task1-3.png)
+   ![](../media/ex4-task1-5.png)
    
 ### Task 2: Monitoring using Application Insights
 
