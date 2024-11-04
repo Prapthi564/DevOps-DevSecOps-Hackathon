@@ -194,12 +194,8 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
   
      ![](../media/ex1-task1-12.png) 
 
-10. Now within the GitHub repository, navigate to the `iac/createResourceGroup.bicep` path and update the resource group name as mentioned below:
-   - Replace `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
 
-   ![](../media/cl1-t2-s8.png)
-
-11. Navigate to the `.github/workflows/deploy-infrastructure.yml` path and ensure to update the `RESOURCE_GROUP_NAME` environment variable by replacing `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
+10. Navigate to the `.github/workflows/deploy-infrastructure.yml` path and ensure to update the `RESOURCE_GROUP_NAME` environment variable by replacing `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
 
    ![](../media/cl1-t2-s9.png)
 
