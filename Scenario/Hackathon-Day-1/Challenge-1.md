@@ -59,9 +59,6 @@ You are a DevOps engineer tasked with setting up a robust Continuous Integration
        
        >**Hint**: You can also find the deployment ID and the Azure AD password within the environment details tab of your integrated lab guide.
 
-   - In the GitHub repository, navigate to the `iac/createResourceGroup.bicep` path and update the resource group name as mentioned below:
-      - Replace `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
-
    - Within your repository, navigate to `.github/workflow/deploy-infrastructure.yml` path and ensure to update the `RESOURCE_GROUP_NAME` environment variable by replacing `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
      
    - Within your repository, navigate to `.github/workflow/Update-contoso-Traders-App.yml` path, ensure to update the `RESOURCE_GROUP_NAME`, and `AKS_NODES_RESOURCE_GROUP_NAME` environment variable by replacing `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
