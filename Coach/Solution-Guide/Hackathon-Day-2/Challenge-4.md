@@ -29,30 +29,28 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
    ```
    Connect-AzAccount
    ```
-   >**Note**: Please use the above-mentioned credentials to login to Azure.
-   
+   >**Note**: Please use the below-mentioned credentials to login to Azure.
       - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
       - **Password:** <inject key="AzureAdUserPassword"></inject>
       
-1. Set the Resource Group Name before running the deployment command. You can do this by assigning it directly in the terminal. Replace
+1. Set the Resource Group Name before running the deployment command. set the  $RGname as **contoso-traders-rg<inject key="Deploymentid" enableCopy="false" />**
 
    ```
    $RGname = <update the existing RG name>
-   ``` 
-
-1. Change the directory to where your Bicep template and parameters file are located.
-
    ```
+   ```
+   >**Note:** Make sure you are in the directory where the Bicep template and parameters file resides. 
    cd C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files\iac
    ```
 1. Run the following command to initiate the deployment using the Bicep template and parameters file:
+
    ```
    New-AzResourceGroupDeployment -Name "createresource" -TemplateFile "monitoringinfra.bicep" -TemplateParameterFile "monitoringinfra.parameters.json" -ResourceGroup $RGname
    ```
 
 ### Task 2: Monitoring using Application Insights
 
-1. In the Azure Portal, navigate to the **contosotraders-<inject key="Deploymentid" enableCopy="false" />** **(1)** resource group and select the **Application Insights** resource with the name  **contoso-traders-aivalue** **(2)**.
+1. In the Azure Portal, navigate to the **contoso-traders-rg<inject key="Deploymentid" enableCopy="false" />** **(1)** resource group and select the **Application Insights** resource with the name  **contoso-traders-ai<inject key="Deploymentid" enableCopy="false" />** **(2)**.
 
    ![](../media/cl4-t2-s1.png)
    
