@@ -139,17 +139,11 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
 
 ### Task 2: Deploy Infrastructure
 
-1. Within the GitHub repository, navigate to the `iac/createResources.parameters.json` path and update the value of the following parameters:
-   - Replace `deploymentidvalue` with **<inject key="DeploymentID" enableCopy="false" /> (1)**.
-   - Replace `bicepsqlpass` value with **<inject key="AzureAdUserPassword"></inject> (2)**.
-  
-       ![](../media/cl1-t2-s1.png)
-
-2. To create GitHub secrets, in your GitHub lab files repository, click on the **Settings** tab.
+1. In the GitHub repository, navigate to the setting and add github action secreat and variable. To create GitHub secrets, in your GitHub lab files repository, click on the **Settings** tab.
 
       ![](../media/cl1-t2-s2.png)
 
- 3. Navigate to **Environment Details** **(1)**, click on **Service Principal Details** **(2)**, and copy the **Subscription ID**, **Tenant ID (Directory ID)**, **Application ID (Client ID)**, and **Secret Key (Client Secret)**.
+2. Navigate to **Environment Details** **(1)**, click on **Service Principal Details** **(2)**, and copy the **Subscription ID**, **Tenant ID (Directory ID)**, **Application ID (Client ID)**, and **Secret Key (Client Secret)**.
 
       ![](../media/ex2-t4-8.png)
    
@@ -164,41 +158,52 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
       }
       ```
 
-4. Under **Security**, expand **Secrets and variables** **(1)** by clicking the drop-down and select **Actions** **(2)** blade from the left navigation bar. Select the **New repository secret** **(3)** button.
+3. Under **Security**, expand **Secrets and variables** **(1)** by clicking the drop-down and select **Actions** **(2)** blade from the left navigation bar. Select the **New repository secret** **(3)** button.
 
    ![](../media/exe2-task4-step6-action-setup.png)
 
-5. Under the **Actions Secrets/New secret** page, enter the below-mentioned details and click on **Add secret** **(3)**.
+4. Under the **Actions Secrets/New secret** page, enter the below-mentioned details and click on **Add secret** **(3)**.
 
    - **Name** : Enter **SERVICEPRINCIPAL** **(1)**
    - **Value** : Paste the service principal details in JSON format **(2)**
    
    ![](../media/2dgn36.png)
 
-6. To create another secret, under the **Actions Secrets/New secret** page, enter the below-mentioned details and click on **Add secret** ***(3)***.
+5. To create another secret, under the **Actions Secrets/New secret** page, enter the below-mentioned details and click on **Add secret** ***(3)***.
 
-   - **Name**: Enter **SQL_PASSWORD** ***(1)***
+   - **Name**: Enter **SQLPASSWORD** ***(1)***
    - **Value**: Enter **<inject key="AzureAdUserPassword"></inject> (2)**, which would be the same as the Azure AD Password.
 
-   ![](../media/cl1-t2-s6.png)
+   ![](../media/ex1-task1-11.png)
 
-7. Under the **Actions Secrets/New secret** page, enter the below-mentioned details and click on **Add secret** ***(3)***.
-
-   - **Name** : Enter **ENVIRONMENT** ***(1)***
-   - **Value** : **<inject key="DeploymentID" enableCopy="false" />** (Copy the Deployment ID from the environment details tab) ***(2)***
+6. To create Variables, under the **Actions Secrets/New secret** page, switch to **Variables (1)** and then click on **New repository variable (2)**.
    
-   ![](../media/2dgn33.png)
+   ![](../media/ex1-task1-9.png)
 
-8. Now within the GitHub repository, navigate to the `iac/createResourceGroup.bicep` path and update the resource group name as mentioned below:
+7. Under **Actions variables / New variable** , enter the below-mentioned details and click on **Add variable** ***(3)***.
+
+   - **Name**: Enter **DEPLOYMENTREGION** ***(1)***
+   - **Value**: Add the deployment region where you want to get the resources deployed. **(2)**
+   
+    ![](../media/ex1-task1-10.png)
+
+8. To create another **Variable** click on **New repository variable ,Under **Actions variables / New variable** , enter the below-mentioned details and click on **Add variable** ***(3)***.
+
+   - **Name**: Enter **SUFFIX** ***(1)***
+   - **Value**: Create a secret to store the deployment ID which is **<inject key="DeploymentID" enableCopy="false" />**. **(2)**
+  
+     ![](../media/ex1-task1-12.png) 
+
+10. Now within the GitHub repository, navigate to the `iac/createResourceGroup.bicep` path and update the resource group name as mentioned below:
    - Replace `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
 
    ![](../media/cl1-t2-s8.png)
 
-9. Navigate to the `.github/workflows/deploy-infrastructure.yml` path and ensure to update the `RESOURCE_GROUP_NAME` environment variable by replacing `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
+11. Navigate to the `.github/workflows/deploy-infrastructure.yml` path and ensure to update the `RESOURCE_GROUP_NAME` environment variable by replacing `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
 
    ![](../media/cl1-t2-s9.png)
 
-10. To run a workflow, perform the following steps and wait for the resources to be deployed within your Azure Portal:
+11. To run a workflow, perform the following steps and wait for the resources to be deployed within your Azure Portal:
       - Click on **Actions (1)** within your GitHub repository.
       - Select the workflow named **contoso-traders-provisioning-deployment (2)**.
       - Click on **Run workflow (3)**.
@@ -207,11 +212,11 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
       ![](../media/cl1-t2-s10.png)
 
 
-11. Navigate to `.github/workflows/update-contoso-traders-App.yml` path, ensure to update the `AKS_NODES_RESOURCE_GROUP_NAME` and`RESOURCE_GROUP_NAME` environment variable by replacing `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
+12. Navigate to `.github/workflows/update-contoso-traders-App.yml` path, ensure to update the `AKS_NODES_RESOURCE_GROUP_NAME` and`RESOURCE_GROUP_NAME` environment variable by replacing `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
 
     ![](../media/dso1.png) 
 
-12. To run a workflow, perform the following steps and wait for the resources to be deployed within your azure portal:
+13. To run a workflow, perform the following steps and wait for the resources to be deployed within your azure portal:
       - Click on **Actions (1)** within your GitHub repository.
       - Select on the workflow named **update contoso traders app (2)**.
       - Click on **Run workflow (3)**.
