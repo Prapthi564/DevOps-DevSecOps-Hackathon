@@ -16,7 +16,7 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
 
     ![](../media/ex4-task1-1.png)
 
-1. Navigate to **C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files\iac (1)** path ,  select **iac (2)** and click on **Open folder(3)**.
+1. Navigate to **C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files\iac (1)** path ,  select **iac (2)** and click on **Open folder (3)**.
 
     ![](../media/ex4-task1-2.png)
 
@@ -24,7 +24,7 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
 
    >**Note**: You can also find the deployment ID within the environment details tab of your integrated lab guide.
 
-1. Open a new terminal in VS Code and run the following command to log in to your Azure account:
+1. In the VS Code Terminal, run the following command to log in to your Azure account:
 
    ```
    Connect-AzAccount
@@ -33,28 +33,31 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
       - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
       - **Password:** <inject key="AzureAdUserPassword"></inject>
       
-1. Set the Resource Group Name before running the deployment command. set the  $RGname as **contoso-traders-rg<inject key="Deploymentid" enableCopy="false" />**
+1. Set the Resource Group Name before running the deployment command. set the  **$RGname** as **contoso-traders-rg<inject key="Deploymentid" enableCopy="false" />**
 
    ```
    $RGname = <update the existing RG name>
    ```
-   ```
+   
    >**Note:** Make sure you are in the directory where the Bicep template and parameters file resides. 
-   cd C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files\iac
-   ```
+              cd C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files\iac
+   
 1. Run the following command to initiate the deployment using the Bicep template and parameters file:
 
    ```
    New-AzResourceGroupDeployment -Name "createresource" -TemplateFile "monitoringinfra.bicep" -TemplateParameterFile "monitoringinfra.parameters.json" -ResourceGroup $RGname
    ```
+1. Monitor the output in the terminal , and wait for until the deployment is succeeded.
 
+   
+   
 ### Task 2: Monitoring using Application Insights
 
 1. In the Azure Portal, navigate to the **contoso-traders-rg<inject key="Deploymentid" enableCopy="false" />** **(1)** resource group and select the **Application Insights** resource with the name  **contoso-traders-ai<inject key="Deploymentid" enableCopy="false" />** **(2)**.
 
    ![](../media/cl4-t2-s1.png)
    
-1. From the Overview of **contoso-traders-aivalue** Application Insights resource, you can set the **Show data for last** as per your requirement of monitoring insights.
+1. From the Overview of **contoso-traders-ai<inject key="Deploymentid" enableCopy="false" />** Application Insights resource, you can set the **Show data for last** as per your requirement of monitoring insights.
 
    ![](../media/cl4-t2-s2.png)
    
