@@ -192,33 +192,17 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
    - **Name**: Enter **SUFFIX** ***(1)***
    - **Value**: Create a secret to store the deployment ID which is **<inject key="DeploymentID" enableCopy="false" />**. **(2)**
   
-     ![](../media/ex1-task1-12.png) 
+     ![](../media/ex1-task1-12.png)
+     
 
-
-10. Navigate to the `.github/workflows/deploy-infrastructure.yml` path and ensure to update the `RESOURCE_GROUP_NAME` environment variable by replacing `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
-
-   ![](../media/cl1-t2-s9.png)
-
-11. To run a workflow, perform the following steps and wait for the resources to be deployed within your Azure Portal:
+10. To run a workflow, perform the following steps and wait for the resources to be deployed within your Azure Portal:
       - Click on **Actions (1)** within your GitHub repository.
-      - Select the workflow named **contoso-traders-provisioning-deployment (2)**.
+      - Select the workflow named **contoso-traders-cloud-testing (2)**.
       - Click on **Run workflow (3)**.
       - Finally, click on **Run workflow (4)**. Ensure that the branch is selected as **main**.
 
       ![](../media/cl1-t2-s10.png)
 
-
-12. Navigate to `.github/workflows/update-contoso-traders-App.yml` path, ensure to update the `AKS_NODES_RESOURCE_GROUP_NAME` and`RESOURCE_GROUP_NAME` environment variable by replacing `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
-
-    ![](../media/dso1.png) 
-
-13. To run a workflow, perform the following steps and wait for the resources to be deployed within your azure portal:
-      - Click on **Actions (1)** within your GitHub repository.
-      - Select on the workflow named **update contoso traders app (2)**.
-      - Click on **Run workflow (3)**.
-      - Finally click on **Run workflow (4)**. Ensure that the branch is select as **main**.
-
-    ![](../media/dso2.png) 
 
 ### Task 3: Setup CI/CD Workflow
 
