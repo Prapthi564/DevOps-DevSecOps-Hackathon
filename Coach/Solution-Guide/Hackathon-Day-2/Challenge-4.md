@@ -20,10 +20,12 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
 
     ![](../media/ex4-task1-2.png)
 
-1. Open the **monitoringinfra.parameters.json (1)** file. Locate the env parameter in the JSON file and update its value with the **deployment ID (2).** and then save.
+1. Open the **monitoringinfra.parameters.json (1)** file. Locate the env parameter in the JSON file and update its value with the **deployment ID (2).** and then save. 
 
-   >**Note**: You can also find the deployment ID within the environment details tab of your integrated lab guide.
+   >**Note**: You can find the deployment ID within the environment details tab of your integrated lab guide.
 
+   ![](../media/ex4-task1-3.png)
+   
 1. In the VS Code Terminal, run the following command to log in to your Azure account:
 
    ```
@@ -49,17 +51,17 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
    ```
 1. Monitor the output in the terminal , and wait for until the deployment is succeeded.
 
-   
+   ![](../media/ex4-task1-3.png)
    
 ### Task 2: Monitoring using Application Insights
 
 1. In the Azure Portal, navigate to the **contoso-traders-rg<inject key="Deploymentid" enableCopy="false" />** **(1)** resource group and select the **Application Insights** resource with the name  **contoso-traders-ai<inject key="Deploymentid" enableCopy="false" />** **(2)**.
 
-   ![](../media/cl4-t2-s1.png)
+   ![](../media/ex4-task1-6.png)
    
-1. From the Overview of **contoso-traders-ai<inject key="Deploymentid" enableCopy="false" />** Application Insights resource, you can set the **Show data for last** as per your requirement of monitoring insights.
+1. From the **Overview (1)** of **contoso-traders-ai<inject key="Deploymentid" enableCopy="false" />** Application Insights resource, you can set the **Show data for last (2)** as per your requirement of monitoring insights.
 
-   ![](../media/cl4-t2-s2.png)
+   ![](../media/ex4-task1-7.png)
    
 1. In the first graph, you can see the number of failed requests for Application access.
 
