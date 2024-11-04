@@ -48,7 +48,7 @@ You are a DevOps engineer tasked with setting up a robust Continuous Integration
    - Using Visual Studio code, connect to the GitHub repository that you created in the earlier step and push the application code base to your GitHub repository.
 
 2. **Deploy Infrastructure:**
-   - In the GitHub repository, navigate to the setting and add github action secreat and variable as below.
+   - In the GitHub repository, navigate to the setting and add github action secrets and variable as below.
      - Create GitHub secrets with the same name as mentioned below.
         - **SERVICEPRINCIPAL**: Create a secret to store service principal details. You can find the details in the Environment details tab of your environment.
         - **SQLPASSWORD**: You need to store **<inject key="AzureAdUserPassword"></inject>(Azure AD user password)** as a secret. 
