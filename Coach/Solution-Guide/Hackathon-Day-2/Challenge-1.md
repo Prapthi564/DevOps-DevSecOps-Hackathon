@@ -174,9 +174,9 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
    - **Name**: Enter **SQLPASSWORD** ***(1)***
    - **Value**: Enter **<inject key="AzureAdUserPassword"></inject> (2)**, which would be the same as the Azure AD Password.
 
-   ![](../media/ex1-task1-11.png)
+   ![](../media/ex-task1-11.png)
 
-6. To create Variables, under the **Actions Secrets/New secret** page, switch to **Variables (1)** and then click on **New repository variable (2)**.
+6. To create Variables, under the **Actions secrets and variables** page, switch to **Variables (1)** and then click on **New repository variable (2)**.
    
    ![](../media/ex1-task1-9.png)
 
@@ -187,7 +187,7 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
    
     ![](../media/ex1-task1-10.png)
 
-8. To create another **Variable** click on **New repository variable ,Under **Actions variables / New variable** , enter the below-mentioned details and click on **Add variable** ***(3)***.
+8. To create another **Variable** click on **New repository variable** ,Under **Actions variables / New variable** , enter the below-mentioned details and click on **Add variable** ***(3)***.
 
    - **Name**: Enter **SUFFIX** ***(1)***
    - **Value**: Create a secret to store the deployment ID which is **<inject key="DeploymentID" enableCopy="false" />**. **(2)**
