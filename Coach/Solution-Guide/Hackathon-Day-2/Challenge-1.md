@@ -123,10 +123,10 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
       git add .
       git commit -m "Initial commit"
       git branch -M main
-      git remote add origin<Unique-ID> <your_github_repository-url>
-      git push -u origin<Unique-ID> main
+      git remote add origin-<Unique-ID> <your_github_repository-url>
+      git push -u origin-<Unique-ID> main
       ```
-     
+      
    - If you are asked to authenticate your GitHub account, select **Sign in with your browser**, and you will be prompted with a pop-up window to authorize Git Credential Manager. Click on **Authorize git-ecosystem** to provide access.
   
        ![](../media/ex1-task1-6.png)
@@ -201,7 +201,7 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
       - Click on **Run workflow (3)**.
       - Finally, click on **Run workflow (4)**. Ensure that the branch is selected as **main**.
 
-      ![](../media/cl1-t2-s10.png)
+      ![](../media/ex1-task1-15.png)
 
 
 ### Task 3: Setup CI/CD Workflow
