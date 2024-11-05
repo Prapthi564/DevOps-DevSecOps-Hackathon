@@ -216,7 +216,7 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
    
 1. Select the **productsdb** SQL database from the list of resources.
 
-   ![](../media/cl1-t3-s3.png) 
+   ![](../media/ex1-task1-14.png) 
    
 1. Under the Settings side blade, select **Connection strings** ***(1)*** and copy the **ADO.NET (SQL authentication)** ***(2)*** connection string from the ADO.NET tab. 
 
