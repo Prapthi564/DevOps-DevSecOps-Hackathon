@@ -80,7 +80,7 @@ In this task, you'll explore how secret scanning works and how it generates aler
 
    ![](../media/2dg113.png)    
    
-1. Add a new file with the name **build.docker-compose.yml (1)**, add the code mentioned below **commit** the file. Here, you'll expose the **application ID** of a service principal.
+1. Add a new file with the name **build.docker-compose.yml (1)**, add the code **(2)** mentioned below and click on **commit (3)** the file. Here, you'll expose the **application ID** of a service principal.
 
    ```
    version: "3.4"
