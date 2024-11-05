@@ -210,9 +210,9 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
 
    ![](../media/2dgn9.png) 
    
-1. Select the **contosotraders-<Deployment-ID>** resource group from the list.
+1. Select the **contoso-traders-rg<Deployment-ID>** resource group from the list.
 
-   ![](../media/cl1-t3-s2.png)  
+   ![](../media/ex1.task1.13.png)  
    
 1. Select the **productsdb** SQL database from the list of resources.
 
@@ -230,11 +230,11 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
 
    ![](../media/ex1-task3-1.png)
     
-1. Under the **Actions Secrets/Update secret** page, enter the below-mentioned details, and click on **Update secret** ***(3)***.
+1. Under the **Actions Secrets/Update secret** page, enter the below-mentioned details, and click on **Update secret.**
 
    - **Value**: Paste the **ADO.NET (SQL authentication)** that you  have copied in the previous step.
    
-   ![](../media/cl1-t3-s7.png)
+   ![](../media/ex1-task3-2.png)
    
    >**Note**: Replace `{your_password}` with the ODL User Azure Password. Go to **Environment Details (1)**, click on **Azure credentials (2)**, and copy **Password (3)**.
    
