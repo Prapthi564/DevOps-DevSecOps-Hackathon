@@ -226,9 +226,9 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
 
    ![](../media/cl1-t1-s8.png)
    
-1. Under **Security**, expand **Secrets and variables** ***(1)*** by clicking the drop-down and selecting **Actions** ***(2)*** from the left navigation bar. Select the edit button for the created secret named **SQL_PASSWORD** ***(3)***.
+1. Under **Security**, expand **Secrets and variables** ***(1)*** by clicking the drop-down and selecting **Actions** ***(2)*** from the left navigation bar. Select the edit button for the created secret named **SQLPASSWORD** ***(3)***.
 
-   ![](../media/cl1-t3-s6.png)
+   ![](../media/ex1-task3-1.png)
     
 1. Under the **Actions Secrets/Update secret** page, enter the below-mentioned details, and click on **Update secret** ***(3)***.
 
