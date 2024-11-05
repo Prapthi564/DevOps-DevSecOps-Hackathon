@@ -234,7 +234,7 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
 
    - **Value**: Paste the **ADO.NET (SQL authentication)** that you  have copied in the previous step.
    
-   ![](../media/ex1-task3-2.png)
+      ![](../media/ex1-task3-2.png)
    
    >**Note**: Replace `{your_password}` with the ODL User Azure Password. Go to **Environment Details (1)**, click on **Azure credentials (2)**, and copy **Password (3)**.
    
@@ -250,7 +250,7 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
    
    ![](../media/2dgn165.png)
    
-   **Note**: If the workflow **fails** due to the **npm install** job, follow steps 13 to 15. Otherwise, continue from step 16. 
+   >**Note**: If the workflow **fails** due to the **npm install** job, follow steps 13 to 15. Otherwise, continue from step 16. 
    
 1. From the GitHub browser tab, follow the steps given below and click on **Create codespace on main** ***(3)***.
 
@@ -284,7 +284,7 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
 
    ![](../media/2dgn9.png) 
    
-2. Select the **contosotraders-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
+2. Select the **contoso traders-rg<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
 
    ![](../media/2dgn135.png) 
    
@@ -305,9 +305,9 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
    - Click on **Code** ***(1)***, 
    - Select the **Codespace** ***(2)*** tab
 
-   ![](../media/ex2-kc-codespace.png)
+     ![](../media/ex2-kc-codespace.png)
    
-   >**Note**: In case you have created a codespace in a previous task. Click on the **+** button to create a new codespace.
+     >**Note**: In case you have created a codespace in a previous task. Click on the **+** button to create a new codespace.
    
 6. You'll be redirected to a new codespace tab in the browser. Please wait until the codespace is configured.
 
