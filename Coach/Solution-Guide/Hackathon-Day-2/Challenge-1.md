@@ -201,7 +201,7 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
       - Click on **Run workflow (3)**.
       - Finally, click on **Run workflow (4)**. Ensure that the branch is selected as **main**.
 
-      ![](../media/ex1-task1-15.png)
+        ![](../media/ex1-task1-15.png)
 
 
 ### Task 3: Setup CI/CD Workflow
@@ -212,7 +212,7 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
    
 1. Select the **contoso-traders-rg<Deployment-ID>** resource group from the list.
 
-   ![](../media/ex1.task1.13.png)  
+   ![](../media/ex1-task1-13.png)  
    
 1. Select the **productsdb** SQL database from the list of resources.
 
