@@ -64,15 +64,19 @@ In this task, you'll explore how secret scanning works and how it generates aler
 
    ![](../media/2dg110.png)
     
-1. Select **Code security (1)** from the sidebar and make sure **Secret scanning is enabled (2)**.
+1. Select **Code security** from the sidebar.
 
-   ![](../media/2dg111.png)   
+   ![](../media/ex3-task2-1.png)
+
+1. Scroll down ,make sure **Secret scanning is enabled**.
+
+   ![](../media/ex3-task2-2.png)
     
 1. Navigate back to **Code (1)** and click on the **src (2)** folder.
 
    ![](../media/2dg112.png)    
    
-1. Click on **Add file** and select the **create new file** option.
+1. Click on **Add file (1)** and select the **create new file (2)** option.
 
    ![](../media/2dg113.png)    
    
