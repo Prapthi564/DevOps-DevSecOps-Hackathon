@@ -16,7 +16,7 @@ In this task, you'll create an Azure Load Testing instance and run a test using 
 
    ![](../media/ex5-task1-1.png)
 
-1. From the overview of the **contoso-traders-ui2<inject key="DeploymentID" enableCopy="false" />** endpoint, copy the **Endpoint hostname** **(2)** and paste it into the notepad for later use in the task.
+1. From the overview of the **contoso-traders-ui2<inject key="DeploymentID" enableCopy="false" />** endpoint, copy the **Endpoint hostname** and paste it into the notepad for later use in the task.
 
    ![](../media/cl5-t1-s2.png)
 
