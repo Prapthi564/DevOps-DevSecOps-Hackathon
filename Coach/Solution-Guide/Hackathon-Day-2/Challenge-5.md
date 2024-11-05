@@ -30,13 +30,13 @@ In this task, you'll create an Azure Load Testing instance and run a test using 
 
 1. Within the **Basics** tab of the **Create a load testing resource**, enter the following details. Click on **Review + create**
    - **Subscription**: Select the available subscription provided **(1)**.
-   - **Resource group**: Select **contosotraders-<inject key="DeploymentID" /> (2)**
+   - **Resource group**: Select **contoso-traders-rg<inject key="DeploymentID" /> (2)**
    - **Name**: Enter **contoso-traders-loadtest-<inject key="DeploymentID" /> (3)**
    -  **Region**: **East US (4)**
    -  Click on **Review + create (5)**
    - Finally, click on **Create**.
 
-   ![](../media/createloadtesting-1.png)
+   ![](../media/ex5-task1-2.png)
 
 1. On the left-hand side pane, select **Tests** ***(1)***, and click on **+ Create** ***(2)***, and select **Create a URL-based test (3)**.
 
