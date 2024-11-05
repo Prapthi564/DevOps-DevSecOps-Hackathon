@@ -167,14 +167,14 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
    - **Name** : Enter **SERVICEPRINCIPAL** **(1)**
    - **Value** : Paste the service principal details in JSON format **(2)**
    
-   ![](../media/2dgn36.png)
+      ![](../media/2dgn36.png)
 
 5. To create another secret, under the **Actions Secrets/New secret** page, enter the below-mentioned details and click on **Add secret** ***(3)***.
 
    - **Name**: Enter **SQLPASSWORD** ***(1)***
    - **Value**: Enter **<inject key="AzureAdUserPassword"></inject> (2)**, which would be the same as the Azure AD Password.
 
-   ![](../media/ex-task1-11.png)
+      ![](../media/ex-task1-11.png)
 
 6. To create Variables, under the **Actions secrets and variables** page, switch to **Variables (1)** and then click on **New repository variable (2)**.
    
@@ -185,7 +185,7 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
    - **Name**: Enter **DEPLOYMENTREGION** ***(1)***
    - **Value**: Add the deployment region where you want to get the resources deployed. **(2)**
    
-    ![](../media/ex1-task1-10.png)
+     ![](../media/ex1-task1-10.png)
 
 8. To create another **Variable** click on **New repository variable** ,Under **Actions variables / New variable** , enter the below-mentioned details and click on **Add variable** ***(3)***.
 
