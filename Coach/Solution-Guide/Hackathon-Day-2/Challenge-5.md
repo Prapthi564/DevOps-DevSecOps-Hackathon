@@ -65,9 +65,9 @@ In this task, your objective is to incorporate Targets and establish an Experime
 
    ![](../media/ex5-task2-1.png)
       
-1. From the drop-down menu, select the **contosotraders-<inject key="DeploymentID" enableCopy="false" />** resource group.
+1. From the drop-down menu, select the **contoso-traders-rg<inject key="DeploymentID" enableCopy="false" />** resource group.
  
-   ![](../media/chaos-studio.png)
+   ![](../media/ex5-task2-2.png)
      
 1. Click on the **contoso-traders-aks<inject key="DeploymentID" enableCopy="false" />** **(1)** **Kubernetes service** instance, and from the drop-down for **Enable Targets** **(2)**, choose **Enable service-direct targets (All resources)** **(3)**.
 
