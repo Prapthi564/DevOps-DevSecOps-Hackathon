@@ -257,7 +257,7 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
    - Click on **Code** ***(1)***, 
    - Select the **Codespace** ***(2)*** tab
 
-   ![](../media/ex2-kc-codespace.png)
+     ![](../media/ex2-kc-codespace.png)
    
 1. Run the below-mentioned commands in the **Terminal**. You'll set the node version to node 14.
 
@@ -284,11 +284,11 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
 
    ![](../media/2dgn9.png) 
    
-2. Select the **contoso traders-rg<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
+2. Select the **contoso-traders-rg<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
 
    ![](../media/2dgn135.png) 
    
-3. Select the **contosotraders-ui2<inject key="DeploymentID" enableCopy="false" />** endpoint from the list of resources.
+3. Select the **contoso-traders-ui2<inject key="DeploymentID" enableCopy="false" />** endpoint from the list of resources.
 
    ![](../media/2dgn127.png) 
    
