@@ -16,7 +16,7 @@ In this task, you will use Dependabot to track the versions of the packages we u
 
    > **Note**: Enabling the `Dependabot security updates` will also automatically enable `Dependency graph` and `Dependabot alerts`.
 
-   ![The GitHub Repository Security Overview tab.](../media/cl3-t1-s1.png "GitHub Repository Security Overview")
+   ![The GitHub Repository Security Overview tab.](../media/ex3-task1-1.png "GitHub Repository Security Overview")
 
    > **Note**: The alerts for the repository may take some time to appear. The rest of the steps for this task rely on the alerts being present. You can continue with the next exercise, as this is an independent task and doesn't affect the lab. Please visit this task later and complete it.
 
