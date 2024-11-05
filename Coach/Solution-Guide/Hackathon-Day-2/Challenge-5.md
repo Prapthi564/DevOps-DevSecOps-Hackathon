@@ -42,7 +42,8 @@ In this task, you'll create an Azure Load Testing instance and run a test using 
 
    ![](../media/url-load-test.png)
 
-1. On the **Create a URL-based test** page, under the basic tab, paste the **Endpoint URL** as Test URL ***(1)***, leave the rest as default, and then click on **Review + create (2)**, followed by **Create**.
+1. On the **Create a URL-based test** page, under the Basics tab, uncheck **Enable advanced settings** 
+ paste the **Endpoint URL** as Test URL ***(1)***, leave the rest as default, and then click on **Review + create (2)**, followed by **Create**.
 
    ![](../media/url-load-test-1.png)
 
@@ -60,9 +61,9 @@ In this task, your objective is to incorporate Targets and establish an Experime
    
    ![](../media/Ex6-T2-S1.1.png)
 
-1. In the **Azure Chaos Studio**, select **Targets** on the left menu.
+1. In the **Azure Chaos Studio**, Expand **Experiment management (1)** on the left menu and select **Targets**.
 
-   ![](../media/Ex6-T2-S2.png)
+   ![](../media/ex5-task2-1.png)
       
 1. From the drop-down menu, select the **contosotraders-<inject key="DeploymentID" enableCopy="false" />** resource group.
  
