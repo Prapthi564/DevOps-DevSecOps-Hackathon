@@ -193,7 +193,7 @@ Here is the solution guide, which provides all the specific, step-by-step direct
               exclude: "**/*.json, **/*.md" # Optional: exclude patterns separated by commas
     ```
 
-7. Rename `your-username` with a GitHub **username (1)** and Commit the changes made to create the workflow file by clicking on **Commit changes (2).
+7. Rename `your-username` with a GitHub **username (1)** and Commit the changes made to create the workflow file by clicking on **Commit changes (2)**.
 
    ![](../media1/ai-code-edit.png)
 
@@ -216,21 +216,43 @@ Here is the solution guide, which provides all the specific, step-by-step direct
    - **Source:** Select `main` **(2)**.
    - Click on **Create new branch (3)**
 
-   ![](../media/cl6-ex1-t5-s3.png)
+     ![](../media/ex6-task1-12.png)
 
 4. Navigate to the newly created `Test` branch.
 
-5. Select `.github/workflows` and click on `ai-code-review.yml`.
+   ![](../media/ex6-task1-13.png)
 
-6. At the end of the line add a **space** or click on **enter**. 
+6. Select **.github (1)**, expand **workflows (2)** click on **ai-code-review.yml (3)**.
 
-7. Create a Pull request to merge the changes made from the `test` to  `main` branch.
+    ![](../media/ex6-task1-14.png)
 
-   ![](../media/cl6-ex1-t5-s7.png)
+1. on the `ai-code-review.yml` file check on **pencil icon** at the top right corner in order to edit the file.
 
-8. Click on the **Actions** tab and then notice that `AI Code Reviewer` workflow has been auto automatically initiated. Ensure that the workflow does not fail. If so, there may be some vulnerabilities in the code within the recent pull request.  
+   ![](../media/ex6-task1-17.png)
 
-   ![](../media/cl6-ex1-t5-s8.png)
+8. At the end of the line add a **space** or click on **enter** and click on **Commit changes.**
+
+   ![](../media/ex6-task1-15.png)
+
+1. Click on **Commit changes.**
+
+   ![](../media/ex6-task1-16.png)
+
+10. To Create a Pull request to merge the changes made from the `test` to  `main` branch. Click on **Pull request**
+
+   ![](../media/ex6-task1-16.png)
+
+1. Click on **New pull request.**
+
+   ![](../media/ex6-task1-19.png)
+
+1. Here at the Comparing changes page, make sure you have selected **main (1)** for the base and **Test (2)** for compare , Then click on **Create pull request (3).**
+
+   ![](../media/ex6-task1-20.png)
+
+11. Click on the **Actions** tab and then notice that `AI Code Reviewer` workflow has been auto automatically initiated. Ensure that the workflow does not fail. If so, there may be some vulnerabilities in the code within the recent pull request.  
+
+   ![](../media/ex6-task1-22.png)
 
 ## Exercise 2: Configure and implement AI Security Check for Pull Requests
 
