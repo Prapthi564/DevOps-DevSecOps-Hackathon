@@ -26,6 +26,13 @@ Your task is to implement Microsoft Defender for Cloud DevOps security measures 
    - Review, identify, and understand the security findings and recommendations provided by Microsoft Defender for Cloud.
    - Implement fixes or enhancements to address the security findings identified during the scan.
    - Ensure that the GitHub Action workflow passes successfully after addressing the security issues.
+  
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com We are available 24/7 to help
+   
+   <validation step="29fc4baa-5102-4c9d-8f5b-4aec7f5e7ce9" />
 
 ## Success criteria:
 To complete this challenge successfully:
@@ -40,23 +47,6 @@ To complete this challenge successfully:
 - Refer to [Configure the Microsoft Security DevOps GitHub action](https://learn.microsoft.com/en-us/azure/defender-for-cloud/github-action) for reference.
 - Refer to [Connect your GitHub Environment to Microsoft Defender for Cloud](https://learn.microsoft.com/en-us/azure/defender-for-cloud/quickstart-onboard-github) for reference.
 
-## Challenge Validations:
-
-1. After completing the challenge, you need to visit the **Lab Validation (1)** tab and click on the **VALIDATE (2)** button under Actions to perform the validation steps. Verify that you have met the success criteria of the challenge. 
- 
-    ![](../media/validate01.png "Validation")
- 
-1. If the validation status displays **Success** for all the validation steps, **congratulations!**. This means that you have successfully completed the challenge.
- 
-     ![](../media/validate02.png "Validation")
-1. If the validation status displays **Fail**, **don't worry!** This could mean that you did not perform the challenge correctly.
- 
-     ![](../media/validate03.png "Validation")
- 
-1. Hover your mouse over the `i` **(1)** icon to see the error message and determine the root cause of the failure. Based on the error message, revisit the challenge as necessary, and redo the validation by clicking on the **VALIDATE (3)** button again.
-     ![](../media/validate04.png "Validation")
- 
-1. If you are still having trouble, you can reach out to the support team via `labs-support@spektrasystems.com` for further assistance. The support team is available to help you troubleshoot and resolve any technical issues or validation issues that may arise while the lab environment is live.
 
 ## Conclusion
 Congratulations on completing the **Securing DevOps with Microsoft Defender for Cloud** challenge! Through this challenge you have seamlessly integrated and configured Microsoft Defender for Cloud within a DevOps context, ensuring a secure and resilient software development lifecycle.
