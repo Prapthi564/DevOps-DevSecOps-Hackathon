@@ -433,7 +433,7 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
    - **Name:** `React-Static-Web-App` **(3)**.
    - **Plan type:** Select **Free (4)**.
    - **Source:** Select **GitHub (5)**
-   - **GitHub account:** Connect to your GitHub account which has the `devsecops-2` repository with tehe React application files **(6)**.
+   - **GitHub account:** Connect to your GitHub account which has the `devsecops-2` repository with the React application files **(6)**.
    - **Organization:** Select your assigned Github organization **(7)**.
    - **Repository:** Select `devsecops-2` **(8)**.
    - **Branch:** `Main` **(9)**.
