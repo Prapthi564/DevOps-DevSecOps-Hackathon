@@ -102,7 +102,7 @@ In this task, you will connect your GitHub organizations on the **Environment se
 
 12. When the process finishes, the GitHub connector appears on your **Environment settings** page.
 
-    ![](../media/cl9-t1-s11.png)
+    ![](../media/ex9-7.png)
 
 >**Note:** The Defender for Cloud service automatically discovers the organizations where you installed the DevOps security GitHub application.
 
