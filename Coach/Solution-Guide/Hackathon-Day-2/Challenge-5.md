@@ -63,7 +63,7 @@ In this task, your objective is to incorporate Targets and establish an Experime
    
    ![](../media/Ex6-T2-S1.1.png)
 
-1. In the **Azure Chaos Studio**, Expand **Experiment management (1)** on the left menu and select **Targets**.
+1. In the **Azure Chaos Studio**, Expand **Experiment management (1)** on the left menu and select **Targets (2)**.
 
    ![](../media/ex5-task2-1.png)
       
