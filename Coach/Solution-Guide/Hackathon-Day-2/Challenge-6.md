@@ -250,7 +250,7 @@ Here is the solution guide, which provides all the specific, step-by-step direct
 
    ![](../media/ex6-task1-20.png)
 
-1. Click on the **Actions** tab and then notice that `AI Code Reviewer` workflow has been auto automatically initiated. Ensure that the workflow does not fail. If so, there may be some vulnerabilities in the code within the recent pull request.  
+1. Click on the **Actions** tab and then notice that `AI Code Reviewer` workflow has been automatically initiated. Ensure that the workflow does not fail. If so, there may be some vulnerabilities in the code within the recent pull request.  
 
    ![](../media/ex6-task1-22.png)
 
@@ -262,16 +262,16 @@ Here is the solution guide, which provides all the specific, step-by-step direct
 
 2. Select the `devsecops` repository that was created as a part of the earlier challenges.
 
-3. Under **Security**, expand **Secrets and variables** **(1)** by clicking the drop-down and select **Actions** **(2)** blade from the left navigation bar. Select the **New repository secret** **(3)** button.
+3. Under **Security (1)**, expand **Secrets and variables** **(2)** by clicking the drop-down and select **Actions** **(3)** blade from the left navigation bar. Select the **New repository secret** **(4)** button.
 
-   ![](../media/exe2-task4-step6-action-setup.png)
+   ![](../media/ex6-task1-23.png)
 
 4. Under the **Actions Secrets/New secret** page, enter the below-mentioned details and click on **Add secret** **(3)**.
 
    - **Name** : Enter **OPENAI_TOKEN** **(1)**
    - **Value** : Paste the OpenAI secret value that was created and copied over to the notepad in the previous exercise. **(2)**.
 
-   ![](../media/cl6-ex1-t3-s4.png)
+   ![](../media/ex6-task1-23.png)
 
 ### Task 2: Configure GitHub Action
 
@@ -342,17 +342,21 @@ Here is the solution guide, which provides all the specific, step-by-step direct
 
 6. Commit the changes made to create the workflow file.
 
-7. Click on **Commit new file**.
+   ![](../media/ex6-task1-cm.png)
 
-   ![](../media/cl9-t2-s8.png)
+8. Click on **Commit changes**.
 
-8. Navigate back to `Test` branch that you created.
+   ![](../media/ex6-cm1.png)
 
-9. Select `.github/workflows` and click on `ai-code-review.yml`.
+9. Navigate back to `Test` branch that you created.
 
-10. At the end of the line add a **space** or click on **enter**. 
+   ![](../media/ex6-task1-25.png)
 
-11. Create a Pull request to merge the changes made from the `test` to  `main` branch.
+11. Select `.github/workflows` and click on `ai-code-review.yml`.
+
+12. At the end of the line add a **space** or click on **enter**. 
+
+13. Create a Pull request to merge the changes made from the `test` to  `main` branch.
 
 11. Click on the **Actions** tab and then notice that `AI Security Check for Pull Requests` workflow has been autoautomatically initiated. Ensure that the workflow does not fail. If so, there may be some vulnerabilities within the recent pull request. Refer to the run details for the GitHub Actions that have failed.
 
