@@ -99,7 +99,7 @@ Here is the solution guide, which provides all the specific, step-by-step direct
     - **Permissions:** Select `All` **(3)**
     - Click on **Create secret key (4)**
 
-    ![](../media/ex6-task1-5.png)
+      ![](../media/ex6-task1-5.png)
 
 10. Upon creation of a new secret, save your key by clicking on the **Copy** button and pasting it on your notepad for a handy access.
 
