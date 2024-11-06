@@ -17,18 +17,32 @@ In this challenge, you will be improving a React Application. As a DevOps engine
 
 2. **Generate and run Unit Test cases using GitHub Coplilot:**
    - Generate Unit Test cases using GitHub Copilot for the `WelcomePopup.js` file present in the path `ContosoTraders.Ui.Wesite.V2/src/`.
-        - Create a new test file named `WelcomePopup.test.js` to run the unit test cases.
+   - Create a new test file named `WelcomePopup.test.js` to run the unit test cases.
    - Ensure that the generated test cases are aligning with the code analogy with successful test passes.
-   - Resolve any unit test failures with the help of GitHub Copilot chat.
+   - Resolve any unit test failures with the help of GitHub Copilot chat. 
 
 3. **Code Review and Security Check:**
    - Perform a code review and on the new feature implemented using GitHub Copilot.
    >**Hint:** Focus areas include code readability, adherence to best practices, and ensuring that the new feature aligns with the existing codebase.
    - Run a security check on the newly implemented code using GitHub Advanced Security features thus resolving any alerts to vulnerabilities and catch any potential security issues using CodeQL over the repository.
+  
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com We are available 24/7 to help
 
-4. **CI/CD Pipeline Setup and Infrastructure Deployment:**
+   <validation step="57cac581-c65d-4cb5-bcca-97ffc04a16b9" />
+
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com We are available 24/7 to help
+
+   <validation step="a15539e5-4a36-44f6-99a6-921117427d4d" />
+      
+5. **CI/CD Pipeline Setup and Infrastructure Deployment:**
    - Host the React Application with the new app component over Azure using **Static Web Apps** through GitHub Actions.
-   - Ensure that the **Azure Static Web Apps CI/CD** GitHub workflow is successful.
+   - Ensure that the **Azure Static Web Apps CI/CD** GitHub workflow is successful. 
 
 ## Success criteria:
 To complete this challenge successfully:
