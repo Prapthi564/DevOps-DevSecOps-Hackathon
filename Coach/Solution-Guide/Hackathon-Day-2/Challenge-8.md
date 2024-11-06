@@ -121,7 +121,7 @@ Now that you've assigned a built-in policy definition, you can do more with Azur
 
 1. This will navigate you to the **Restrict deployment to East US region** Page.
   
-   >**Note:**If your not on **Restrict deployment to East US region** Page perform Step 6 and Step 7
+   >Note: If your not on **Restrict deployment to East US region** Page perform Step 6 and Step 7
 
    ![](../media/ex8-task1-14.png)
 
