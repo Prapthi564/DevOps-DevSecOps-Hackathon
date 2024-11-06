@@ -199,7 +199,7 @@ Here is the solution guide, which provides all the specific, step-by-step direct
 
 8. Click on **Commit changes**.
 
-   ![](../media/cl9-t2-s8.png)
+   ![](../media/ex-common.png)
 
 ### Task 5: Create a pull request to initiate workflow
 
