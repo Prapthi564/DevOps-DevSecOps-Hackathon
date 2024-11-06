@@ -38,14 +38,19 @@ In this task, you will connect your GitHub organizations on the **Environment se
 
    ![](../media/cl9-t1-s1.png)
 
-2. To add a new environment, perform the following steps:
-    - Select **Environment settings (1)** under the **Management** section from the left navigation pane.
-    - In the **Microsoft Defender for Cloud | Environment settings** page, click on **+ Add environment (2)**.
-    - Select **GitHub (3)** from the list of options.
-  
-     ![](../media/cl9-t1-s2.png)
+1. In the left pane , expand **Management (1)**  and then select **Environment settings (2).**
 
-3. Within the **GitHub Connection** page, enter the following details:
+   ![](../media/ex9-1.png)
+
+3. To add a new environment, perform the following steps:
+   
+    - In the **Microsoft Defender for Cloud | Environment settings** page, click on **+ Add environment (1)**.
+    - Select **GitHub (2)** from the list of options.
+  
+     ![](../media/ex9-2.png)
+
+5. Within the **GitHub Connection** page, enter the following details:
+   
     - **Connector name:**  GitHub-Connector **(1)**
     - **Subscription:** Select the existing subscription from the list **(2)**.
     - **Resource group:** Select the resource group over which you would want to implement the GitHub connection **(3)**.
@@ -57,11 +62,11 @@ In this task, you will connect your GitHub organizations on the **Environment se
   
      ![](../media1/cl9-t1-s3.png)
 
-5. Within the **Configure access** tab, click on **Authorize** to give permissions to the DevOps security app to access your resources.
+7. Within the **Configure access** tab, click on **Authorize** to give permissions to the DevOps security app to access your resources.
 
    ![](../media1/cl9-t1-s5.png)
 
-6. Authorize the permission needed by clicking on **Authorize Microsoft Security DevOps** within the pop-up and ensure that the authorization is successful.
+8. Authorize the permission needed by clicking on **Authorize Microsoft Security DevOps** within the pop-up and ensure that the authorization is successful.
 
    ![](../media/cl9-t1-s6.png)
 
@@ -69,15 +74,15 @@ In this task, you will connect your GitHub organizations on the **Environment se
 
     >**Note:** After authorization, if you wait too long to install the DevOps security GitHub application, the session will time out and you'll get an error message.
 
-7. Select **Install** to install the DevOps security app on your repository/repositories.
+9. Select **Install** to install the DevOps security app on your repository/repositories.
 
    ![](../media1/cl9-t1-s7.png)
 
-8. Select the organizations to install the GitHub application. In this solution flow, we recommend to grant access to **all repositories** to ensure Defender for Cloud can secure your entire GitHub environment. Ensure that it has been installed successfully.
+10. Select the organizations to install the GitHub application. In this solution flow, we recommend to grant access to **all repositories** to ensure Defender for Cloud can secure your entire GitHub environment. Ensure that it has been installed successfully.
 
    ![](../media1/cl9-t1-s8.png)
 
-9. For **Edit connector account**, select one of the following:
+11. For **Edit connector account**, select one of the following:
     -  Select **all existing organizations (1)** to auto-discover all repositories in GitHub organizations where the DevOps security GitHub application is installed.
     -  Click on **Next: Review and generate > (2)**.
   
@@ -85,9 +90,9 @@ In this task, you will connect your GitHub organizations on the **Environment se
 
    ![](../media1/cl9-t1-s9.png)
 
-10. On the **Review and generate** tab, click on **Create** to successfully create the GitHub connection.
+11. On the **Review and generate** tab, click on **Create** to successfully create the GitHub connection.
 
-11. When the process finishes, the GitHub connector appears on your **Environment settings** page.
+12. When the process finishes, the GitHub connector appears on your **Environment settings** page.
 
     ![](../media/cl9-t1-s11.png)
 
