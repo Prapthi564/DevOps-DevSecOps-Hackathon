@@ -42,10 +42,12 @@ In this task, you will enforce compliance with Azure Policy by assigning a polic
 
    ![](../media/ex8-task1-5.png)
 
-9. The **Assignment name** is automatically populated with the policy name you selected, but you can change it. For this example, leave **Inherit a tag from the resource group if missing**. You can also add an optional **Description**. The description provides details about this policy assignment.
+9. The **Assignment name (1)** is automatically populated with the policy name you selected, but you can change it. For this example, leave **Inherit a tag from the resource group if missing**. You can also add an optional **Description (2)**. The description provides details about this policy assignment.
 
-10. Leave **Policy enforcement** as **Enabled**. When Disabled, this setting allows testing the outcome of the policy without triggering the effect.
+10. Leave **Policy enforcement** as **Enabled (3)**. When Disabled, this setting allows testing the outcome of the policy without triggering the effect.
 
+   ![](../media/ex8-task1-10.png)
+   
 12. Select the **Parameters (1)** tab at the top of the wizard.
 
 13. For **Tag Name**, enter **Environment (2)**.
