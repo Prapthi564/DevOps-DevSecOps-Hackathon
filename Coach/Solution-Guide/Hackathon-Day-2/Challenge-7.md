@@ -445,11 +445,11 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
    - Leave the other fields at default and then click on **Review + Create (12)**.
    - Finally, click on **Create** on the **Review + create** page to create the static web app.
 
-     ![](../media1/ex7-task1-6.png)
+     ![](../media/ex7-task1-6.png)
    
-     ![](../media1/ex7-task1-8.png)
+     ![](../media/ex7-task1-8.png)
 
-     ![](../media1/ex7-task1-7.png)
+     ![](../media/ex7-task1-7.png)
 
 6. Once the deployment is successful, click on **Go to resource**.
 
