@@ -174,7 +174,7 @@ Now that you've assigned a built-in policy definition, you can do more with Azur
    - **Secret** : Paste the service principal details in JSON format **(2)**
    - Click on **Add Secret (3)**
    
-   ![](../media1/azure-cred.png)
+     ![](../media1/azure-cred.png)
 
 ### Task 2: Implement Azure Policy Compliance Scan
 
@@ -182,7 +182,7 @@ Now that you've assigned a built-in policy definition, you can do more with Azur
 
    ![](../media/dev2.png) 
 
-2. once logged-in, on the upper-right corner, expand the user **drop-down menu** **(1)** and select **Your repositories** **(2)**.
+2. Once logged-in, on the upper-right corner, expand the user **drop-down menu** **(1)** and select **Your repositories** **(2)**.
 
    ![The `New Repository` creation form in GitHub.](../media/2dg1.png "New Repository Creation Form")
 
@@ -198,7 +198,7 @@ Now that you've assigned a built-in policy definition, you can do more with Azur
 
    ![](../media/ex8-task1-16.png)
 
-1. create a new file named `complaince-scan.yml`
+1. Create a new file named `complaince-scan.yml`
 
    ![](../media/ex8-task1-16.1.png)
 
@@ -241,7 +241,7 @@ Now that you've assigned a built-in policy definition, you can do more with Azur
 
 12. Head back to the **GitHub Actions (1)** tab and then select the Action named **Security Compliance Scan (2)**.
 
-   ![](../media/cl8-ex2-t2-s9.png)
+    ![](../media/cl8-ex2-t2-s9.png)
 
 11. Make sure all the workflow runs are successful.
 
