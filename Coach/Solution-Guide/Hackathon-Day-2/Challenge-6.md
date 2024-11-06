@@ -47,6 +47,20 @@ Here is the solution guide, which provides all the specific, step-by-step direct
     - If you are new to OpenAI and do not have an account created, click on **Sign up** within the *Welcome back* page to create a new free-tier account. 
 
       ![](../media/cl6-ex1-t1-s2-b.png)
+  
+    - After clicking Sign Up on the welcome page:
+
+        - Enter your email address – You can use your GitHub **Email address (1)** and click on **Continue (2)**.
+
+         ![](../media/ex6-task1-2.png)
+
+        - Enter your password – Use your GitHub **Password (1)** and click on **Continue (2).**
+     
+          ![](../media/ex6-task1-3.png)
+  
+        - A page will appear with the message "Verify your email". open http://outlook.office.com/ in a private window, and enter the Github username and password  open the email from OpenAI, and click the verification link inside to complete the setup process.
+     
+          ![](../media/ex6-task1-3.1.png)
 
       >**Note:** Upon creation of a new OpenAI account, the free tier provides you with a $5 credit limit that expires within a period of 3 months from the day of account activation.
 
