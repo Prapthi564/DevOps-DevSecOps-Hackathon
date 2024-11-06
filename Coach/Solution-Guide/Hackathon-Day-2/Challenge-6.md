@@ -271,7 +271,7 @@ Here is the solution guide, which provides all the specific, step-by-step direct
    - **Name** : Enter **OPENAI_TOKEN** **(1)**
    - **Value** : Paste the OpenAI secret value that was created and copied over to the notepad in the previous exercise. **(2)**.
 
-   ![](../media/ex6-task1-23.png)
+     ![](../media/ex6-task1-24.png)
 
 ### Task 2: Configure GitHub Action
 
@@ -360,7 +360,7 @@ Here is the solution guide, which provides all the specific, step-by-step direct
 
 11. Click on the **Actions** tab and then notice that `AI Security Check for Pull Requests` workflow has been autoautomatically initiated. Ensure that the workflow does not fail. If so, there may be some vulnerabilities within the recent pull request. Refer to the run details for the GitHub Actions that have failed.
 
-    ![](../media/cl6-ex2-t2-s10.png)
+    ![](../media/ex6-task1-26.png)
 
 ## Success criteria:
 To complete this challenge successfully:
