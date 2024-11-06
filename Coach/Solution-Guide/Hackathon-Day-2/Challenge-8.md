@@ -83,7 +83,7 @@ Now that you've assigned a built-in policy definition, you can do more with Azur
 
    ![](../media/ex8-task1-11.png)
 
-2.  This button opens to the **Policy definition** page and enter the following information:
+1.  This button opens to the **Policy definition** page and enter the following information:
       - Select the **Definition location** **(1)** by selecting the ellipsis and select the Subscription and click on **Select**. A scope determines what resources or grouping of resources the policy assignment gets enforced on.
       - **Name:** Restrict deployment to East US region **(2)**
       - **Description:** This policy ensures that resources are deployed only in the East US region. **(3)**
@@ -91,7 +91,7 @@ Now that you've assigned a built-in policy definition, you can do more with Azur
 
         ![](../media/ex8-task1-12.png)
 
-3. Copy the following JSON code and then update it for your needs with:
+1. Copy the following JSON code and then update it for your needs with:
 
    - The policy parameters.
    - The policy rules/conditions, in this case - location set to East US.
@@ -117,7 +117,7 @@ Now that you've assigned a built-in policy definition, you can do more with Azur
 
 1. Once the json code is updated. Click on **Save.**
 
-   ![](../media/ex8-task1-13.png)
+   ![](../media/ex8-0.1.png)
 
 1. This will navigate you to the **Restrict deployment to East US region** Page.
   
