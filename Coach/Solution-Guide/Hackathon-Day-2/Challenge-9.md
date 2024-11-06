@@ -86,7 +86,7 @@ In this task, you will connect your GitHub organizations on the **Environment se
 
    ![](../media/ex9-4.png)
    
-11. Select the organizations to install the GitHub application. In this solution flow, we recommend to grant access to **all repositories** to ensure Defender for Cloud can secure your entire GitHub environment. Ensure that it has been installed successfully.
+1. Ensure that it has been installed successfully.
 
    ![](../media1/cl9-t1-s8.png)
 
