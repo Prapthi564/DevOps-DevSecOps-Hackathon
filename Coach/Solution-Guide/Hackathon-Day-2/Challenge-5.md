@@ -167,8 +167,8 @@ In this task, your objective is to incorporate Targets and establish an Experime
 ## Success criteria:
 To complete this challenge successfully:
 
-   -Completion of Load Test and Results Analysis: Azure Load Testing is configured, the test runs successfully, and Client-side metrics are reviewed, providing insights into performance under load.
-   -Execution of Chaos Experiment: A Chaos Experiment in Azure Chaos Studio is configured with the specified faults, executed successfully, and results are reviewed to confirm resilience.
+   - Completion of Load Test and Results Analysis: Azure Load Testing is configured, the test runs successfully, and Client-side metrics are reviewed, providing insights into performance under load.
+   - Execution of Chaos Experiment: A Chaos Experiment in Azure Chaos Studio is configured with the specified faults, executed successfully, and results are reviewed to confirm resilience.
 
 ## Additional Resources:
 
