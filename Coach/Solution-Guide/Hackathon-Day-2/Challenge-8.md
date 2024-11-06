@@ -78,17 +78,17 @@ In this task, you will enforce compliance with Azure Policy by assigning a polic
 
 Now that you've assigned a built-in policy definition, you can do more with Azure Policy. Azure Policy enables organizations to enforce governance controls and compliance standards. This guide focuses on implementing a custom policy to restrict resource deployments to the East US region within a designated resource group. By leveraging Azure Policy, organizations can ensure compliance, mitigate risks, and streamline resource management effectively.
 
-1. Select **Definitions** under **Authoring** in the left side of the Azure Policy page.
+1. Select **Definitions (1)** under **Authoring** in the left side of the Azure Policy page. Then click on ****+ Policy definition (2)** at the top of the page.
 
-   ![](../media/cl8-ex1-t2-s1.png)
+   ![](../media/ex8-task1-11.png)
 
-2. Select **+ Policy definition** at the top of the page. This button opens to the **Policy definition** page and enter the following information:
-   - Select the **Definition location** **(1)** by selecting the ellipsis and selecting a subscription. Optionally, select a resource group. A scope determines what resources or grouping of resources the policy assignment gets enforced on.
+2.  This button opens to the **Policy definition** page and enter the following information:
+   - Select the **Definition location** **(1)** by selecting the ellipsis and select the Subscription and click on **Select**. A scope determines what resources or grouping of resources the policy assignment gets enforced on.
    - **Name:** Restrict deployment to East US region **(2)**
    - **Description:** This policy ensures that resources are deployed only in the East US region. **(3)**
    - **Category:** Create a new catrgory named **Region**.  **(4)**
 
-   ![](../media/cl8-ex1-t2-s2-new.png)
+      ![](../media/ex8-task1-12.png)
 
 3. Copy the following JSON code and then update it for your needs with:
 
@@ -114,9 +114,17 @@ Now that you've assigned a built-in policy definition, you can do more with Azur
 
    >**Note:** The **field** property in the policy rule must be a supported value. An example of alias might be `Microsoft.Compute/VirtualMachines/Size` and `Microsoft.Resources/resourceGroups/location`.
 
-1. Select **Definitions** on the left side of the Azure Policy page.
+1. Once the json code is updated. Click on **Save.**
 
-1. In the **Policy | Definition** search bar Search and seelct for **Restrict deployment to East US region**. 
+    ![](../media/ex8-task1-13.png)
+
+1. This will navigate you to the **Restrict deployment to East US region** Page. If not perform Step 4 and Step 5
+
+   ![](../media/ex8-task1-14.png)
+
+1. Select **Definitions (1)** on the left side of the Azure Policy page.
+
+1. In the **Policy | Definition** search bar Search **Restrict deployment to East US region (2)** and select for **Restrict deployment to East US region (3)**. 
 
    ![](../media1/custom-policy.png)
 
@@ -124,7 +132,7 @@ Now that you've assigned a built-in policy definition, you can do more with Azur
 
    ![](../media1/assign-custom-policy.png)
 
-1. In the **Basics** page of Restrict deployment to East US region, **Exclusions** start at one level lower than the level of the **Scope**. **Exclusions** are optional, so leave it blank for now. click on **Review + Create**.   
+1. In the **Basics** page of Restrict deployment to East US region, **Exclusions** start at one level lower than the level of the **Scope**. **Exclusions** are optional, so leave it blank for now. click on **Review + Create** followed by **Create**.   
 
    ![](../media1/custom-policy-basic.png)
 
