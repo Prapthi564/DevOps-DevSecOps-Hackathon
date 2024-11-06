@@ -167,9 +167,8 @@ In this task, your objective is to incorporate Targets and establish an Experime
 ## Success criteria:
 To complete this challenge successfully:
 
-- Successful integration of Azure Monitor and Application Insights within the application environment, ensuring seamless data collection and monitoring capabilities.
-- Selection and configuration of key performance metrics relevant to the application's functionality and performance goals.
-- Establishment of effective alerting mechanisms with well-defined thresholds, ensuring timely notifications for potential issues or deviations in monitored metrics.
+   -Completion of Load Test and Results Analysis: Azure Load Testing is configured, the test runs successfully, and Client-side metrics are reviewed, providing insights into performance under load.
+   -Execution of Chaos Experiment: A Chaos Experiment in Azure Chaos Studio is configured with the specified faults, executed successfully, and results are reviewed to confirm resilience.
 
 ## Additional Resources:
 
