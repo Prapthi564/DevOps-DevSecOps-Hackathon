@@ -47,7 +47,7 @@ In this task, you will connect your GitHub organizations on the **Environment se
     - In the **Microsoft Defender for Cloud | Environment settings** page, click on **+ Add environment (1)**.
     - Select **GitHub (2)** from the list of options.
   
-     ![](../media/ex9-2.png)
+      ![](../media/ex9-2.png)
 
 5. Within the **GitHub Connection** page, enter the following details:
    
