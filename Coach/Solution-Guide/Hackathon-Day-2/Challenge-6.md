@@ -31,7 +31,7 @@ Here is the solution guide, which provides all the specific, step-by-step direct
 
 ### Task 1: Sign In/Sign Up to an OpenAI Account
 
-1. Navigate to the **[OpenAI Platform](https://platform.openai.com/login?launch)** in order to login to **OpenAI Account.**
+1. Navigate to the **[OpenAI](https://platform.openai.com/login?launch)** in order to login to **OpenAI Account.**
    
 3. Within the **Welcome back** page,
     - If you already have an OpenAI account pre-created, you can go ahead signing into OpenAI using the following sign-in options as shown in the below screenshot.
