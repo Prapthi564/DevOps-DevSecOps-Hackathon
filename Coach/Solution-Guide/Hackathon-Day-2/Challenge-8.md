@@ -37,7 +37,7 @@ In this task, you will enforce compliance with Azure Policy by assigning a polic
 
 7. Select the **Policy definition** ellipsis to open the list of available definitions. You can filter the policy definition Type to Built-in to view all and read their descriptions.
 
-   [](../media/ex8-0.png)
+   [](../media/ex8.png)
 
 8. Select **Inherit a tag from the resource group if missing**. If you can't find it right away, type **Inherit a tag from the resource group if missing (1)** into the search box and then press ENTER. Select the Policy result fetched **Inherit a tag from the resource group if missing (2)** and then Click on **Add (3)** at the bottom of the **Available Definitions** page once you have found and selected the policy definition.
 
