@@ -58,6 +58,8 @@ Here is the solution guide, which provides all the specific, step-by-step direct
      
           ![](../media/ex6-task1-3.png)
   
+          >**Note:** You can find the GitHub credentials from the Environment Details page of the integrated lab environment, navigate to License tab.
+  
         - A page will appear with the message "Verify your email". open http://outlook.office.com/ in a private window, provide the Github username and password, open the email from OpenAI, and click the verification link inside to complete the setup process. 
      
           ![](../media/ex6-task1-3.1.png)
@@ -115,46 +117,56 @@ Here is the solution guide, which provides all the specific, step-by-step direct
 
 2. Select the `devsecops` repository that was created as a part of the earlier challenges.
 
-3. Under **Security**, expand **Secrets and variables** **(1)** by clicking the drop-down and select **Actions** **(2)** blade from the left navigation bar. Select the **New repository secret** **(3)** button.
+3. Under **Security (1)**, expand **Secrets and variables** **(2)** by clicking the drop-down and select **Actions** **(3)** blade from the left navigation bar. Select the **New repository secret** **(4)** button.
 
-   ![](../media/exe2-task4-step6-action-setup.png)
+   ![](../media/ex6-task1-8.png)
 
 4. Under the **Actions Secrets/New secret** page, enter the below-mentioned details and click on **Add secret** **(3)**.
 
    - **Name** : Enter **OPENAI_API_KEY** **(1)**
    - **Value**: Paste the OpenAI secret value that was copied earlier over to the notepad **(2)**.
 
-   ![](../media/cl6-ex1-t3-s4.png)
+     ![](../media/cl6-ex1-t3-s4.png)
 
 ### Task 4: Configure the AI Code Review GitHub Action
 
-1. Navigate to the following repo and fork it.
+1. Open a new tab and paste the below URL which will Navigate to the following repo and fork it.
 
    ```
    https://github.com/freeedcom/ai-codereviewer
    ```
 
-   ![](../media1/fork-ai-code.png)
+   ![](../media1/ex6-task1-forkrepo.png)
 
-1. Click on **Setting** **(1)**, rename the repo name to **ai-code-reviewer** **(2)** and click on **Rename** **(3)** button. 
+1. Click on **Fork (1)** and then select **Create a new fork (2).**
+
+   ![](../media1/ex6-task1-9.png)
+
+1. Uncheck **Copy the main branch only (1)** and click on **Create fork (2)**
+
+   ![](../media1/ex6-task1-10.png)
+   
+1. Click on **Settings** **(1)**, rename the repo name to **ai-code-reviewer** **(2)** and click on **Rename** **(3)** button. 
 
    ![](../media1/edit-ai-code.png)
 
 1. Navigate back to the `devsecops` repository that was created as a part of the earlier challenges.
 
-2. Select the **Actions (1)** tab from your repository home page and then click on **New Workflow (2)**.
+   ![](../media1/ex6-task1-11.png)
+
+3. Select the **Actions (1)** tab from your repository home page and then click on **New Workflow (2)**.
 
    ![](../media/cl9-t2-s3.png)
 
-3. On the Get Started with GitHub Actions page, select **set up a workflow yourself**.
+4. On the Get Started with GitHub Actions page, select **set up a workflow yourself**.
 
    ![](../media/cl9-t2-s4.png)
 
-4. In the text box, enter the name `ai-code-review.yml` for your workflow file.
+5. In the text box, enter the name `ai-code-review.yml` for your workflow file.
 
    ![](../media/cl6-ex1-t4-s4.png)
 
-5. Copy and paste the following action workflow into the Edit New file tab:
+6. Copy and paste the following action workflow into the Edit New file tab:
 
     ```
     name: AI Code Reviewer
@@ -181,11 +193,11 @@ Here is the solution guide, which provides all the specific, step-by-step direct
               exclude: "**/*.json, **/*.md" # Optional: exclude patterns separated by commas
     ```
 
-6. Rename `your-username` with a GitHub **username** and Commit the changes made to create the workflow file.
+7. Rename `your-username` with a GitHub **username (1)** and Commit the changes made to create the workflow file by clicking on **Commit changes (2).
 
    ![](../media1/ai-code-edit.png)
 
-7. Click on **Commit new file**.
+8. Click on **Commit changes**.
 
    ![](../media/cl9-t2-s8.png)
 
