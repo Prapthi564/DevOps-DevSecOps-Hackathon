@@ -52,7 +52,7 @@ Here is the solution guide, which provides all the specific, step-by-step direct
 
         - Enter your email address – You can use your GitHub **Email address (1)** and click on **Continue (2)**.
 
-         ![](../media/ex6-task1-2.png)
+          ![](../media/ex6-task1-2.png)
 
         - Enter your password – Use your GitHub **Password (1)** and click on **Continue (2).**
      
