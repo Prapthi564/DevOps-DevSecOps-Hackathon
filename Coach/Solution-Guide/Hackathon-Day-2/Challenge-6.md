@@ -21,7 +21,7 @@ Here is the solution guide, which provides all the specific, step-by-step direct
 
    - **Email/Username:** <inject key="GitHubUsername"></inject>
 
-1. Now enter the following password and click on **Sign in**.
+4. Now enter the following password and click on **Sign in**.
 
    - **Password:** <inject key="GitHubPassword"></inject>
 
@@ -31,17 +31,19 @@ Here is the solution guide, which provides all the specific, step-by-step direct
 
 ### Task 1: Sign In/Sign Up to an OpenAI Account
 
-1. Navigate to the **[OpenAI](https://openai.com/)** and click on **Log in**.
-
-   ![](../media/cl6-ex1-t1-s1.png)
-
-2. Within the **Welcome back** page,
+1. Navigate to the **[OpenAI Platform](https://platform.openai.com/login?launch)** in order to login to **OpenAI Account.**
+   
+3. Within the **Welcome back** page,
     - If you already have an OpenAI account pre-created, you can go ahead signing into OpenAI using the following sign-in options as shown in the below screenshot.
 
       ![](../media/cl6-ex1-t1-s2-a.png)
 
       >**Note:** Ensure that your OpenAI account has active credits for the generation and usage of API keys.
 
+    - After providing the user email and password, you will be prompted to select an access option. Choose **API** to proceed.
+
+      ![](../media/ex6-task1-0.1.png)
+      
     - If you are new to OpenAI and do not have an account created, click on **Sign up** within the *Welcome back* page to create a new free-tier account. 
 
       ![](../media/cl6-ex1-t1-s2-b.png)
