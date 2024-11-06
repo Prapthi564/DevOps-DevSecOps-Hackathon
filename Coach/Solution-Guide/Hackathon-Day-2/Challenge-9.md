@@ -173,13 +173,13 @@ Microsoft Security DevOps is a command line application that integrates static a
             path: ${{ steps.msdo.outputs.sarifFile }}
     ```
 
-7. Select **Start Commit**.
+7. Select **Commit changes**.
 
-   ![](../media/cl9-t2-s7.png)
+   ![](../media/ex9-5.png)
 
-8. Click on **Commit new file**.
+8. Click on **Commit changes**.
 
-   ![](../media/cl9-t2-s8.png)
+   ![](../media/ex9-6.png)
 
 9. Select **Actions** and verify the new action is running.
 
