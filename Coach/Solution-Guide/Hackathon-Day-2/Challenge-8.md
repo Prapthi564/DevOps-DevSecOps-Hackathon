@@ -46,7 +46,7 @@ In this task, you will enforce compliance with Azure Policy by assigning a polic
 
 10. Leave **Policy enforcement** as **Enabled (3)**. When Disabled, this setting allows testing the outcome of the policy without triggering the effect.
 
-   ![](../media/ex8-task1-10.png)
+    ![](../media/ex8-task1-10.png)
    
 12. Select the **Parameters (1)** tab at the top of the wizard.
 
