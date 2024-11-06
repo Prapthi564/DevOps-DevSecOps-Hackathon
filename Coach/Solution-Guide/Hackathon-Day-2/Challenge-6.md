@@ -226,7 +226,7 @@ Here is the solution guide, which provides all the specific, step-by-step direct
 
     ![](../media/ex6-task1-14.png)
 
-1. on the `ai-code-review.yml` file check on **pencil icon** at the top right corner in order to edit the file.
+1. on the `ai-code-review.yml` file click on **pencil icon** at the top right corner in order to edit the file.
 
    ![](../media/ex6-task1-17.png)
 
@@ -240,7 +240,7 @@ Here is the solution guide, which provides all the specific, step-by-step direct
 
 10. To Create a Pull request to merge the changes made from the `test` to  `main` branch. Click on **Pull request**
 
-   ![](../media/ex6-task1-16.png)
+   ![](../media/ex6-task1-18.png)
 
 1. Click on **New pull request.**
 
@@ -250,7 +250,7 @@ Here is the solution guide, which provides all the specific, step-by-step direct
 
    ![](../media/ex6-task1-20.png)
 
-11. Click on the **Actions** tab and then notice that `AI Code Reviewer` workflow has been auto automatically initiated. Ensure that the workflow does not fail. If so, there may be some vulnerabilities in the code within the recent pull request.  
+1. Click on the **Actions** tab and then notice that `AI Code Reviewer` workflow has been auto automatically initiated. Ensure that the workflow does not fail. If so, there may be some vulnerabilities in the code within the recent pull request.  
 
    ![](../media/ex6-task1-22.png)
 
