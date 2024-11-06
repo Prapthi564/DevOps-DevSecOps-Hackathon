@@ -80,7 +80,7 @@ In this task, you'll explore how secret scanning works and how it generates aler
 
    ![](../media/2dg113.png)    
    
-1. Add a new file with the name **build.docker-compose.yml (1)**, add the code **(2)** mentioned below and click on **commit (3)** the file. Here, you'll expose the **application ID** of a service principal.
+1. Add a new file with the name **build.docker-compose.yml (1)**, add the code **(2)** mentioned below and click on **Commit changes** at the right corner. Here, you'll expose the **application ID** of a service principal.
 
    ```
    version: "3.4"
@@ -98,7 +98,7 @@ In this task, you'll explore how secret scanning works and how it generates aler
 
 1. Click on **Commit changes.**
 
-   ![](../media/ex6-task1-16.png)
+   ![](../media/ex-common.png)
    
 1. Select the **Security (1)** tab and click on **Secret scanning (2)** from the sidebar. Here, you'll notice that an alert is generated referring to the same **Application ID** that was exposed in the `build.docker-compose.yml` file. This is how the Secret scanning feature works and generates alerts to notify you.
 
