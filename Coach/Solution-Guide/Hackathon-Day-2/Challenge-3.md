@@ -94,7 +94,11 @@ In this task, you'll explore how secret scanning works and how it generates aler
    ```
    >**Note:** Ensure replace the value of the `build` key in above the above code before saving the file.
 
-   ![](../media/cl3-t2-s5.png)   
+   ![](../media/ex3-task2-3.png)
+
+1. Click on **Commit changes.**
+
+   ![](../media/ex6-task1-16.png)
    
 1. Select the **Security (1)** tab and click on **Secret scanning (2)** from the sidebar. Here, you'll notice that an alert is generated referring to the same **Application ID** that was exposed in the `build.docker-compose.yml` file. This is how the Secret scanning feature works and generates alerts to notify you.
 
