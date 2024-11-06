@@ -136,15 +136,15 @@ Here is the solution guide, which provides all the specific, step-by-step direct
    https://github.com/freeedcom/ai-codereviewer
    ```
 
-   ![](../media1/ex6-task1-forkrepo.png)
-
+   ![](../media/ex6-task1-forkrepo.png)
+  
 1. Click on **Fork (1)** and then select **Create a new fork (2).**
 
-   ![](../media1/ex6-task1-9.png)
+   ![](../media/ex6-task1-9.png)
 
 1. Uncheck **Copy the main branch only (1)** and click on **Create fork (2)**
 
-   ![](../media1/ex6-task1-10.png)
+   ![](../media/ex6-task1-10.png)
    
 1. Click on **Settings** **(1)**, rename the repo name to **ai-code-reviewer** **(2)** and click on **Rename** **(3)** button. 
 
@@ -152,7 +152,7 @@ Here is the solution guide, which provides all the specific, step-by-step direct
 
 1. Navigate back to the `devsecops` repository that was created as a part of the earlier challenges.
 
-   ![](../media1/ex6-task1-11.png)
+   ![](../media/ex6-task1-11.png)
 
 3. Select the **Actions (1)** tab from your repository home page and then click on **New Workflow (2)**.
 
