@@ -96,7 +96,7 @@ In this task, you will connect your GitHub organizations on the **Environment se
   
     >**Note:** The **All existing and future organizations** option is used to auto-discover all repositories in GitHub organizations where the DevOps security GitHub application is installed and future organizations where the DevOps security GitHub application is installed.
 
-   ![](../media1/cl9-t1-s9.png)
+      ![](../media1/cl9-t1-s9.png)
 
 11. On the **Review and generate** tab, click on **Create** to successfully create the GitHub connection.
 
