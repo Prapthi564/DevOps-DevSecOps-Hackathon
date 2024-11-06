@@ -331,7 +331,7 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
 
    ![](../media/ex2-task1-2.png)     
 
-4. Update the workflow name to **codeql-analysis.yml** ***(1)*** and review the yaml file. Select **Commit changes** ***(2)***, then select **Commit directly to the main branch** ***(3)***, and click on **Commit new file** ***(4)***.
+4. Update the workflow name to **codeql-analysis.yml** ***(1)*** and review the yaml file. Select **Commit changes** ***(2)***, then select **Commit directly to the main branch** ***(3)***, and click on **Commit changes** ***(4)***.
   
    ![](../media/cl2-t1-s3.png)
 
@@ -347,7 +347,7 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
 
 7. You will be navigated to the **Code scanning** section. You'll be able to visualize the **No code scanning alerts here!**.
    
-   ![](../media/cl2-t1-s6.png)
+   ![](../media/ex7-task1-5.png)
 
 ### Task 3: Implement Repository security advisories
 
