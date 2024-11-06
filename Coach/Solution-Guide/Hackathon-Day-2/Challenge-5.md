@@ -42,8 +42,8 @@ In this task, you'll create an Azure Load Testing instance and run a test using 
 
    ![](../media/ex5-task1-3.png)
 
-1. On the **Create a URL-based test** page, under the Basics tab, uncheck **Enable advanced settings** 
- paste the **Endpoint URL** as Test URL ***(1)***, leave the rest as default, and then click on **Review + create (2)**, followed by **Create**.
+1. On the **Create a URL-based test** page, under the Basics tab, uncheck **Enable advanced settings** to reveal the Test URL setting.
+ Paste the **Endpoint URL** as Test URL **(1)**, leave the rest as default, and then click on **Review + create (2)**, followed by **Create**.
 
    ![](../media/url-load-test-1.png)
 
