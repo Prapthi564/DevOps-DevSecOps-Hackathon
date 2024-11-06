@@ -62,7 +62,7 @@ Here is the solution guide, which provides all the specific, step-by-step direct
      
           ![](../media/ex6-task1-3.1.png)
   
-        - Navigate back to the login page provide Github username and password, You will be prompted to provide details like **Full Name** and **Date of Bith** and click on **Agree** this will navigate you the Open AI Platform.
+        - Navigate back to the login page provide Github username and password, You will be prompted to provide details like **Full Name** and **Date of Bith** then click on **Agree** this will navigate you the Open AI Platform.
 
       >**Note:** Upon creation of a new OpenAI account, the free tier provides you with a $5 credit limit that expires within a period of 3 months from the day of account activation.
 
@@ -72,30 +72,32 @@ Here is the solution guide, which provides all the specific, step-by-step direct
 
 1. Go to the profile icon in the top right corner and select **Your profile**.
    
-    ![](../media/cl6-ex1-t2-s11.png)
+    ![](../media/ex6-afterlogin.png)
 
 2. Hover your cursor over the left navigation toolbar to expand the pane and click on **API keys**.
 
-    ![](../media/cl6-ex1-t2-s2.png)
+    ![](../media/ex6-apikeys.png)
 
-3. Under **User API keys** page, click on **+ Create new secret key**.
+3. In order to create **API key**, its required to Verify it with your phone number.Click on **Start verification** ,provide you phone number and click on **Send code**. Enter the
+
+4. Under **User API keys** page, click on **+ Create new secret key**.
 
     ![](../media/cl6-ex1-t2-s3.png)
 
-4. On the **Create new secret key** pop-up, configure the following:
+5. On the **Create new secret key** pop-up, configure the following:
     - **Name:** `GitHub Action Key` **(1)**
     - **Permissions:** Select `All` **(2)**
     - Click on **Create Secret key (3)**
 
     ![](../media/cl6-ex1-t2-s4.png)
 
-5. Upon creation of a new secret, save your key by clicking on the **Copy** button and pasting it on your notepad for a handy access.
+6. Upon creation of a new secret, save your key by clicking on the **Copy** button and pasting it on your notepad for a handy access.
 
     **Note:** For safety reasons, **you won't be able to view the secret value again** once the **Save your key** page is closed.
 
     ![](../media/cl6-ex1-t2-s5.png)
 
-6. You will now notice that the new API key, `GitHub Action Key` now appears in the list of **API keys**.
+7. You will now notice that the new API key, `GitHub Action Key` now appears in the list of **API keys**.
 
     ![](../media/cl6-ex1-t2-s6.png)
 
