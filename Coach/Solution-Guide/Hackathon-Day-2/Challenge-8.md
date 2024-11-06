@@ -164,9 +164,9 @@ Now that you've assigned a built-in policy definition, you can do more with Azur
 
    >**Note:** Also ensure to replace `your-subscription-id` and `your-resource-group` within any of the available resources group name with the above secret.
 
-3. Within GitHub, under **Security**, expand **Secrets and variables** **(1)** by clicking the drop-down and select **Actions** **(2)** blade from the left navigation bar. Select the **New repository secret** **(3)** button.
+3. Within GitHub, under **Settings (1)**, expand **Secrets and variables** **(2)** by clicking the drop-down and select **Actions** **(3)** blade from the left navigation bar. Select the **New repository secret** **(4)** button.
 
-   ![](../media/exe2-task4-step6-action-setup.png)
+   ![](../media/ex8-task1-15.png)
 
 4. Under the **Actions Secrets/New secret** page, enter the below-mentioned details and click on **Add secret** **(3)**.
 
@@ -194,9 +194,15 @@ Now that you've assigned a built-in policy definition, you can do more with Azur
 
 5. Go back to your `devsecops` GitHub repository.
 
-6. Navigate to `.github/workflows` directory and create a new file named `complaince-scan.yml`.
+6. Navigate to `.github/workflows` directory and click on **Create a new file.**.
 
-7. Paste the following code within the workflow file. The below workflow will trigger a policy compliance scan on the resource group. After the scan is complete, it will fetch the compliance state of resources. The action will fail if there are any non-compliant resources.
+   ![](../media/ex8-task1-16.png)
+
+1. create a new file named `complaince-scan.yml`
+
+   ![](../media/ex8-task1-16.1.png)
+
+8. Paste the following code within the workflow file. The below workflow will trigger a policy compliance scan on the resource group. After the scan is complete, it will fetch the compliance state of resources. The action will fail if there are any non-compliant resources.
 
    ```
    # File: .github/workflows/workflow.yml
@@ -225,13 +231,19 @@ Now that you've assigned a built-in policy definition, you can do more with Azur
 
    >**Note:** Ensure to Replace the **Subscription ID** and **<resource-group-name** and **<resource-provider-name>** in the above code.
 
-8. Commit the changes within your repository to successfully create the workflow file.
+9. To Commit the changes within your repository to successfully create the workflow file. Click on **Commit changes.**
 
-9. Head back to the **GitHub Actions (1)** tab and then select the Action named **Security Compliance Scan (2)**.
+    ![](../media/ex8-task1-17.png)
+
+10. Click on **Commit changes**
+
+    ![](../media/ex8-task1-19.png)
+
+12. Head back to the **GitHub Actions (1)** tab and then select the Action named **Security Compliance Scan (2)**.
 
    ![](../media/cl8-ex2-t2-s9.png)
 
-10. Make sure all the workflow runs are successful.
+11. Make sure all the workflow runs are successful.
 
 ## Success criteria:
 To complete this challenge successfully:
