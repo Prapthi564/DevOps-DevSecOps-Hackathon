@@ -73,19 +73,23 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
 
   >**NOTE:** It should be noted that the code suggestions offered by GitHub Copilot might not exactly match the screenshots shown within the labguide. GitHub Copilot is an AI-powered tool that generates code based on context and patterns, and its suggestions can be influenced by various factors. It is also important that you have the knowledge on operating and running React Applications which may be needed as you proceed with this exercise.
 
-1. In a new Visual Studio Code window, go to **Explorer (1)** and click on **Open Folder (2)**. Navigate to **C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files-2/** within the file explorer, and then select the **ContosoTraders.Ui.Website.V2.Raw** folder.
+1. In a new Visual Studio Code window, click on **File (1)** at the top left corner and then select **Open Folder (2)**.
 
-    ![Picture1](../media/openfolders.png) 
+    ![](../media/ex4-task1-1.png)
 
-2. Ensure to click on **Yes, I trust the authors** within the pop-up to successfully import the CloudLabs folder into VS Code.
+3. Navigate to **C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files-2/ (1)** within the file explorer, and then select the **ContosoTraders.Ui.Website.V2.Raw (2)** folder, and then click on **Select folder (3)**
+
+    ![Picture1](../media/ex7-task1-1.png) 
+
+4. Ensure to click on **Yes, I trust the authors** within the pop-up to successfully import the CloudLabs folder into VS Code.
 
    ![Picture1](../media/trust-authors.png)
 
-3. Once the project has loaded, within the explorer pane of VS Code, navigate to `Contosotraders.Ui.Website.V2\src` folder to view the `App.js` file.
+5. Once the project has loaded, within the explorer pane of VS Code, navigate to `Contosotraders.Ui.Website.V2\src` folder to view the `App.js` file.
 
    ![Picture1](../media/CL7-EX1-T2-S3.png)
 
-4. Within the **CHAT: GITHUB COPILOT** pane, type: `Help me create the new About Us" page in ContosoTraders.Ui.Website.V2\src` and observe the AI response. You can follow the instructions provided by GitHub Copilot towards successfully adding the About Us page as a part of the sample React application that you have imported into VS Code.
+6. Within the **CHAT: GITHUB COPILOT** pane, type: `Help me create the new About Us" page in ContosoTraders.Ui.Website.V2\src` and observe the AI response. You can follow the instructions provided by GitHub Copilot towards successfully adding the About Us page as a part of the sample React application that you have imported into VS Code.
 
    ![Picture1](../media/CL7-EX1-T2-S4.png)
 
@@ -272,7 +276,7 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
 
 5. On the **Quick setup** screen, copy the **HTTPS** GitHub URL for your new repository and **save it** in a notepad for future use.
 
-   ![](../media/CL7-EX3-T1-S5.png)
+   ![](../media/ex7-task1-3.png)
 
 6. From the GitHub username, note down the **Unique-ID** present in the Username. You'll need this in the upcoming steps.
 
@@ -290,7 +294,7 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
      git config --global user.name "Your UserName"
      ```
      
-   ![](../media/cl1-t1-s15.png) 
+   ![](../media/ex7-task1-4.png) 
      
     Run the below-mentioned command in the terminal. Make sure to replace `your_github_repository-url` with the value you copied in step 5 and `Unique-ID` in step 6.
 
@@ -301,8 +305,8 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
       git add .
       git commit -m "Initial commit"
       git branch -M main
-      git remote add origin<Unique-ID> <your_github_repository-url>
-      git push -u origin<Unique-ID> main
+      git remote add origin-<Unique-ID> <your_github_repository-url>
+      git push -u origin-<Unique-ID> main
       ```
      
    - If you are asked to authenticate your GitHub account, select **Sign in with your browser**, and you will be prompted with a pop-up window to authorize Git Credential Manager. Click on **Authorize git-ecosystem** to provide access.
