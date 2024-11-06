@@ -49,9 +49,9 @@ In this task, you'll create an Azure Load Testing instance and run a test using 
 
 1. Once the test run starts, wait until it completes. When the test run finishes, the status will update to **Done**. At this point, you’ll be able to view the Client-side metrics. Explore the given metrics output.
 
-   ![](../media/ex5-task1-4.jpg)
+   ![](../media/ex5-task1-4.png)
 
-   ![](../media/ex5-task1-5.jpg) 
+   ![](../media/ex5-task1-5.png) 
    
    **Note**: In case the test fails due to `The test was stopped due to a high error rate, check your script and try again. If the issue persists, raise a ticket with a support error. This is expected, as sometimes the load on the application exceeds the defined throughput.
      
