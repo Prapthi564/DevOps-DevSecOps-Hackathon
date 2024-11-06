@@ -238,9 +238,9 @@ Here is the solution guide, which provides all the specific, step-by-step direct
 
    ![](../media/ex6-task1-16.png)
 
-10. To Create a Pull request to merge the changes made from the `test` to  `main` branch. Click on **Pull request**
+10. To Create a Pull request to merge the changes made from the `test` to  `main` branch. Click on **Pull requests**
 
-   ![](../media/ex6-task1-18.png)
+    ![](../media/ex6-task1-18.png)
 
 1. Click on **New pull request.**
 
