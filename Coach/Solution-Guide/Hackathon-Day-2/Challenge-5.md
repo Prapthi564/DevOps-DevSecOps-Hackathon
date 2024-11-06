@@ -38,7 +38,7 @@ In this task, you'll create an Azure Load Testing instance and run a test using 
 
    ![](../media/ex5-task1-2.png)
 
-1. On the left-hand side pane, Expand **Tests** ***(1)*** then select **Tests** ***(2)***, click on **+ Create** ***(3)***, and select **Create a URL-based test (4)**.
+1. On the left-hand side pane, Expand **Tests** **(1)** then select **Tests** **(2)**, click on **+ Create** **(3)**, and select **Create a URL-based test (4)**.
 
    ![](../media/ex5-task1-3.png)
 
