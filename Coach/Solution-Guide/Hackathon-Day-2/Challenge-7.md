@@ -442,34 +442,36 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
 
       >**Note:** `/` refers to the root directory of the GitHub repository. Ensure that the location is specified appropriately as per your GitHub file structure.
    
-   - Leave the other fields at default and then click on **Review + Create (13)**.
+   - Leave the other fields at default and then click on **Review + Create (12)**.
    - Finally, click on **Create** on the **Review + create** page to create the static web app.
 
-    ![](../media1/CL7-EX4-T1-S4.png)
+     ![](../media1/ex7-task1-6.png)
    
-    ![](../media1/CL7-EX4-T1-S4-b1.png)
+     ![](../media1/ex7-task1-8.png)
 
-5. Once the deployment is successful, click on **Go to resource**.
+     ![](../media1/ex7-task1-7.png)
+
+6. Once the deployment is successful, click on **Go to resource**.
 
     ![](../media/CL7-EX4-T1-S5.png)
 
-6. Navigate back to your `devsecops-2` repository on the GitHub portal and click on the **Actions** tab.
+7. Navigate back to your `devsecops-2` repository on the GitHub portal and click on the **Actions** tab.
 
     ![](../media/CL7-EX4-T1-S6.png)
 
-7. Ensure that your **Azure Static Web Apps CI/CD** workflow has a successful run status.
+8. Ensure that your **Azure Static Web Apps CI/CD** workflow has a successful run status.
 
     ![](../media/CL7-EX4-T1-S7.png)
 
-8. Navigate back to your Azure portal on the overview page of the recently created Static Web App and click on the **URL**
+9. Navigate back to your Azure portal on the overview page of the recently created Static Web App and click on the **URL**
 
     ![](../media/CL7-EX4-T1-S8.png)
 
-9. The URL redirects you to a new browser tab with the React Application up and running.
+10. The URL redirects you to a new browser tab with the React Application up and running.
 
     ![](../media/CL7-EX4-T1-S9.png)
 
-10. Click on **Get Started** and scroll down within your static web app to view the integrated **About Us** page.
+11. Click on **Get Started** and scroll down within your static web app to view the integrated **About Us** page.
 
     ![](../media/CL7-EX4-T1-S10.png)
 
