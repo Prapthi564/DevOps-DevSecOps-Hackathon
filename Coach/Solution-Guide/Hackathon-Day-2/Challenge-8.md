@@ -18,51 +18,59 @@ In this task, you will enforce compliance with Azure Policy by assigning a polic
 
    ![](../media/cl8-ex1-t1-s1.png)
 
-2. Select **Assignments** on the left side of the Azure Policy page. An assignment is a policy that has been assigned to take place within a specific scope.
+2. Expand **Authoring (1)** and Select **Assignments (2)** on the left side of the Azure Policy page. An assignment is a policy that has been assigned to take place within a specific scope.
 
-   ![](../media/cl8-ex1-t1-s2.png)
+   ![](../media/ex8-task1-1.png)
 
 3. Select **Assign Policy** from the top of the **Policy - Assignments** page.
 
-   ![](../media/cl8-ex1-t1-s3.png)
+   ![](../media/ex8-task1-2.png)
 
 4. On the **Assign Policy** page and **Basics** tab, perform the following steps:
-   - Select the **Scope** by selecting the ellipsis and selecting either a management group or subscription **(1)**. Optionally, select a resource group. A scope determines what resources or grouping of resources the policy assignment gets enforced on.
-   - Click on **Select** at the bottom of the Scope pane **(2)**.
+   - Select the **Scope** by selecting the ellipsis and selecting either a management group or subscription **(1)**. Optionally, select a **Resource Group (2)**. A scope determines what resources or grouping of resources the policy assignment gets enforced on.
+   - Click on **Select (3)** at the bottom of the Scope pane.
 
-   ![](../media/cl8-ex1-t1-s4.png)
+   ![](../media/ex8-task1-3.png)
 
 5. Resources can be excluded based on the **Scope**. **Exclusions** start at one level lower than the level of the **Scope**. **Exclusions** are optional, so leave it blank for now.
 
 6. Select the **Policy definition** ellipsis to open the list of available definitions. You can filter the policy definition Type to Built-in to view all and read their descriptions.
 
-7. Select **Inherit a tag from the resource group if missing**. If you can't find it right away, type **inherit a tag** into the search box and then press ENTER or select out of the search box. Click on **Select** at the bottom of the **Available Definitions** page once you have found and selected the policy definition.
+   [](../media/ex8-task1-4.png)
 
-   ![](../media1/add-policy.png)
+8. Select **Inherit a tag from the resource group if missing**. If you can't find it right away, type **Inherit a tag from the resource group if missing (1)** into the search box and then press ENTER. Select the Policy result fetched **Inherit a tag from the resource group if missing (2)** and then Click on **Add (3)** at the bottom of the **Available Definitions** page once you have found and selected the policy definition.
 
-8. The **Assignment name** is automatically populated with the policy name you selected, but you can change it. For this example, leave **Inherit a tag from the resource group if missing**. You can also add an optional **Description**. The description provides details about this policy assignment.
+   ![](../media1/ex8-task1-5.png)
 
-9. Leave **Policy enforcement** as **Enabled**. When Disabled, this setting allows testing the outcome of the policy without triggering the effect.
+9. The **Assignment name** is automatically populated with the policy name you selected, but you can change it. For this example, leave **Inherit a tag from the resource group if missing**. You can also add an optional **Description**. The description provides details about this policy assignment.
 
-10. **Assigned by** is automatically filled based on who is logged in. This field is optional, so custom values can be entered.
+10. Leave **Policy enforcement** as **Enabled**. When Disabled, this setting allows testing the outcome of the policy without triggering the effect.
 
-11. Select the **Parameters** tab at the top of the wizard.
+12. Select the **Parameters (1)** tab at the top of the wizard.
 
-12. For **Tag Name**, enter **Environment**.
+13. For **Tag Name**, enter **Environment (2)**.
 
-13. Select the **Remediation** tab at the top of the wizard.
+    ![](../media1/ex8-task1-6.png)
 
-14. Leave **Create a remediation task** unchecked. This box allows you to create a task to alter existing resources in addition to new or updated resources.
+15. Select the **Remediation (1)** tab at the top of the wizard.
 
-15. **Create a Managed Identity** is automatically checked since this policy definition uses the modify effect. **Permissions** is set to Contributor automatically based on the policy definition.
+16. Leave **Create a remediation task (2)** unchecked. This box allows you to create a task to alter existing resources in addition to new or updated resources.
 
-16. Select the **Non-compliance messages** tab at the top of the wizard.
+17. **Create a Managed Identity (3)** is automatically checked since this policy definition uses the modify effect. **Permissions** is set to Contributor automatically based on the policy definition.
 
-17. Set the **Non-compliance message** to **This resource doesn't have the required tag**. This custom message is displayed when a resource is denied or for non-compliant resources during regular evaluation.
+    ![](../media1/ex8-task1-7.png)
+     
+18. Select the **Non-compliance messages (1)** tab at the top of the wizard.
 
-18. Select the **Review + create** tab at the top of the wizard.
+19. Set the **Non-compliance message** to **This resource doesn't have the required tag (2)**. This custom message is displayed when a resource is denied or for non-compliant resources during regular evaluation.
 
-19. Review your selections, then select **Create** at the bottom of the page.
+    ![](../media1/ex8-task1-8.png)
+
+21. Select the **Review + create (1)** tab at the top of the wizard.
+
+22. Review your selections, then select **Create (2)** at the bottom of the page.
+
+    ![](../media1/ex8-task1-9.png)
 
 ### Task 2: Implement a new custom policy
 
