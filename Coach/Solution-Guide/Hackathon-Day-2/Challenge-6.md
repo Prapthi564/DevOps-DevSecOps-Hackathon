@@ -78,26 +78,36 @@ Here is the solution guide, which provides all the specific, step-by-step direct
 
     ![](../media/ex6-apikeys.png)
 
-3. In order to create **API key**, its required to Verify it with your phone number.Click on **Start verification** ,provide you phone number and click on **Send code**. Enter the
+3. In order to create **API key**, its required to Verify it with your phone number.Click on **Start verification,**
 
-4. Under **User API keys** page, click on **+ Create new secret key**.
+   ![](../media/ex6-task1-4.png)
+
+4. Provide your Phone Number and click on **Send Code.**
+
+   ![](../media/ex6-phoneno.png)
+
+5. Enter the Verification code that has been sent to the Phone number.
+
+   ![](../media/ex6-code.png)
+
+7. Under **User API keys** page, click on **+ Create new secret key**.
 
     ![](../media/cl6-ex1-t2-s3.png)
 
-5. On the **Create new secret key** pop-up, configure the following:
+8. On the **Create new secret key** pop-up, configure the following:
     - **Name:** `GitHub Action Key` **(1)**
     - **Permissions:** Select `All` **(2)**
     - Click on **Create Secret key (3)**
 
     ![](../media/cl6-ex1-t2-s4.png)
 
-6. Upon creation of a new secret, save your key by clicking on the **Copy** button and pasting it on your notepad for a handy access.
+9. Upon creation of a new secret, save your key by clicking on the **Copy** button and pasting it on your notepad for a handy access.
 
     **Note:** For safety reasons, **you won't be able to view the secret value again** once the **Save your key** page is closed.
 
     ![](../media/cl6-ex1-t2-s5.png)
 
-7. You will now notice that the new API key, `GitHub Action Key` now appears in the list of **API keys**.
+10. You will now notice that the new API key, `GitHub Action Key` now appears in the list of **API keys**.
 
     ![](../media/cl6-ex1-t2-s6.png)
 
