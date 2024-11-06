@@ -53,9 +53,9 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
 
    ![Picture1](../media/ex7-task1-0.3.png)
 
-1. ou will encounter a pop-up prompt. Click **Open** to proceed.
+1. You will encounter a pop-up prompt. Click **Open** to proceed.
 
-   ![Picture1](../media/cl7-ex1-t1-s4.png)
+   ![Picture1](../media/ex7-task1-0.4.png)
 
    >**Note:** If you get another pop-up stating **Allow an extension to open this URI**, please click on **Open**.
 
