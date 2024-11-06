@@ -51,7 +51,7 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
   
 1. You will be navigated to the **Code scanning** section. You'll be able to visualize the **No code scanning alerts here!**.
    
-   ![](../media/cl2-t1-s6.png)
+   ![](../media/ex-noalert.png)
     
 ## Task 2: Implement Repository security advisories:
  
