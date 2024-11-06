@@ -60,7 +60,7 @@ In this task, you will connect your GitHub organizations on the **Environment se
     - **Location:** Same location as that of the selected resource group **(4)**.
     - Click on **Next: Configure access > (5)**.
   
-     ![](../media1/cl9-t1-s3.png)
+      ![](../media1/cl9-t1-s3.png)
 
 7. Within the **Configure access** tab, click on **Authorize** to give permissions to the DevOps security app to access your resources.
 
@@ -78,7 +78,15 @@ In this task, you will connect your GitHub organizations on the **Environment se
 
    ![](../media1/cl9-t1-s7.png)
 
-10. Select the organizations to install the GitHub application. In this solution flow, we recommend to grant access to **all repositories** to ensure Defender for Cloud can secure your entire GitHub environment. Ensure that it has been installed successfully.
+1. You will be prompted to select you GitHub account.
+
+    ![](../media1/ex9-3.png)
+
+1. Click on **Install**.
+
+   ![](../media1/ex9-4.png)
+   
+11. Select the organizations to install the GitHub application. In this solution flow, we recommend to grant access to **all repositories** to ensure Defender for Cloud can secure your entire GitHub environment. Ensure that it has been installed successfully.
 
    ![](../media1/cl9-t1-s8.png)
 
