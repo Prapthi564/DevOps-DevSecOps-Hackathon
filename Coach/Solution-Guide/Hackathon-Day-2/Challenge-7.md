@@ -437,7 +437,7 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
    - **Organization:** Select your assigned Github organization **(7)**.
    - **Repository:** Select `devsecops-2` **(8)**.
    - **Branch:** `Main` **(9)**.
-   - **Build presets:** Search for and select **React (10)**.
+   - **Build presets:** Search for and select **React (detected) (10)**.
    - **App location:** `/` **(11)**.
 
       >**Note:** `/` refers to the root directory of the GitHub repository. Ensure that the location is specified appropriately as per your GitHub file structure.
