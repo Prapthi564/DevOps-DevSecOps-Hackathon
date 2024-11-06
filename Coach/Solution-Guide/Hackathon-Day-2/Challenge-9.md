@@ -24,7 +24,7 @@ This is the solution guide, which provides all the specific, step-by-step direct
 
 1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
 
-1. If a **Welcome to Microsoft Azure** pop-up window appears, click **Maybe Later** to skip the tour.
+1. If a **Welcome to Microsoft Azure** pop-up window appears, click **Cancel** to skip the tour.
 
 ## Task 1: Connect GitHub Environment to Microsoft Defender for Cloud
 
@@ -38,14 +38,19 @@ In this task, you will connect your GitHub organizations on the **Environment se
 
    ![](../media/cl9-t1-s1.png)
 
-2. To add a new environment, perform the following steps:
-    - Select **Environment settings (1)** under the **Management** section from the left navigation pane.
-    - In the **Microsoft Defender for Cloud | Environment settings** page, click on **+ Add environment (2)**.
-    - Select **GitHub (3)** from the list of options.
-  
-     ![](../media/cl9-t1-s2.png)
+1. In the left pane , expand **Management (1)**  and then select **Environment settings (2).**
 
-3. Within the **GitHub Connection** page, enter the following details:
+   ![](../media/ex9-1.png)
+
+3. To add a new environment, perform the following steps:
+   
+    - In the **Microsoft Defender for Cloud | Environment settings** page, click on **+ Add environment (1)**.
+    - Select **GitHub (2)** from the list of options.
+  
+      ![](../media/ex9-2.png)
+
+5. Within the **GitHub Connection** page, enter the following details:
+   
     - **Connector name:**  GitHub-Connector **(1)**
     - **Subscription:** Select the existing subscription from the list **(2)**.
     - **Resource group:** Select the resource group over which you would want to implement the GitHub connection **(3)**.
@@ -55,13 +60,13 @@ In this task, you will connect your GitHub organizations on the **Environment se
     - **Location:** Same location as that of the selected resource group **(4)**.
     - Click on **Next: Configure access > (5)**.
   
-     ![](../media1/cl9-t1-s3.png)
+      ![](../media1/cl9-t1-s3.png)
 
-5. Within the **Configure access** tab, click on **Authorize** to give permissions to the DevOps security app to access your resources.
+7. Within the **Configure access** tab, click on **Authorize** to give permissions to the DevOps security app to access your resources.
 
    ![](../media1/cl9-t1-s5.png)
 
-6. Authorize the permission needed by clicking on **Authorize Microsoft Security DevOps** within the pop-up and ensure that the authorization is successful.
+8. Authorize the permission needed by clicking on **Authorize Microsoft Security DevOps** within the pop-up and ensure that the authorization is successful.
 
    ![](../media/cl9-t1-s6.png)
 
@@ -69,27 +74,35 @@ In this task, you will connect your GitHub organizations on the **Environment se
 
     >**Note:** After authorization, if you wait too long to install the DevOps security GitHub application, the session will time out and you'll get an error message.
 
-7. Select **Install** to install the DevOps security app on your repository/repositories.
+9. Select **Install** to install the DevOps security app on your repository/repositories.
 
    ![](../media1/cl9-t1-s7.png)
 
-8. Select the organizations to install the GitHub application. In this solution flow, we recommend to grant access to **all repositories** to ensure Defender for Cloud can secure your entire GitHub environment. Ensure that it has been installed successfully.
+1. You will be prompted to select you GitHub account.
+
+    ![](../media/ex9-3.png)
+
+1. Click on **Install**.
+
+   ![](../media/ex9-4.png)
+   
+1. Ensure that it has been installed successfully.
 
    ![](../media1/cl9-t1-s8.png)
 
-9. For **Edit connector account**, select one of the following:
-    -  Select **all existing organizations (1)** to auto-discover all repositories in GitHub organizations where the DevOps security GitHub application is installed.
+11. For **Edit connector account**, select one of the following:
+    -  Select **All existing and future organizations (1)** to auto-discover all repositories in GitHub organizations where the DevOps security GitHub application is installed.
     -  Click on **Next: Review and generate > (2)**.
   
     >**Note:** The **All existing and future organizations** option is used to auto-discover all repositories in GitHub organizations where the DevOps security GitHub application is installed and future organizations where the DevOps security GitHub application is installed.
 
-   ![](../media1/cl9-t1-s9.png)
+      ![](../media/ex9-8.png)
 
-10. On the **Review and generate** tab, click on **Create** to successfully create the GitHub connection.
+11. On the **Review and generate** tab, click on **Create** to successfully create the GitHub connection.
 
-11. When the process finishes, the GitHub connector appears on your **Environment settings** page.
+12. When the process finishes, the GitHub connector appears on your **Environment settings** page.
 
-    ![](../media/cl9-t1-s11.png)
+    ![](../media/ex9-7.png)
 
 >**Note:** The Defender for Cloud service automatically discovers the organizations where you installed the DevOps security GitHub application.
 
@@ -160,13 +173,13 @@ Microsoft Security DevOps is a command line application that integrates static a
             path: ${{ steps.msdo.outputs.sarifFile }}
     ```
 
-7. Select **Start Commit**.
+7. Select **Commit changes**.
 
-   ![](../media/cl9-t2-s7.png)
+   ![](../media/ex9-5.png)
 
-8. Click on **Commit new file**.
+8. Click on **Commit changes**.
 
-   ![](../media/cl9-t2-s8.png)
+   ![](../media/ex9-6.png)
 
 9. Select **Actions** and verify the new action is running.
 

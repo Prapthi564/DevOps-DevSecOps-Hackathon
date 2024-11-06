@@ -34,7 +34,7 @@ Here's the solution guide, which includes detailed step-by-step instructions req
 
 1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
 
-1. If a **Welcome to Microsoft Azure** pop-up window appears, click **Maybe Later** to skip the tour.
+1. If a **Welcome to Microsoft Azure** pop-up window appears, click **Cancel** to skip the tour.
 
 ## Solution Guide 
 
@@ -50,13 +50,17 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
 
    ![](../media/2dgn154.png) 
     
-1. In the upper-right corner, expand the user **drop-down menu** **(1)** and select **Your repositories** **(2)**.
+1. In the upper-right corner, expand the user **drop-down menu**.
 
-   ![The `New Repository` creation form in GitHub.](../media/2dg1.png "New Repository Creation Form")
+   ![The `New Repository` creation form in GitHub.](../media/Ex1-task1-1.png "New Repository Creation Form")
+
+1. Then select **Your repositories**.
+
+   ![The `New Repository` creation form in GitHub.](../media/ex1-task1-2.png "New Repository Creation Form")
 
 1. Next to the search criteria, locate and select the **New** button.
 
-   ![The `New Repository` creation form in GitHub.](../media/ex2-t3-3-git.png "New Repository Creation Form")
+   ![The `New Repository` creation form in GitHub.](../media/ex1-task1-3.png "New Repository Creation Form")
 
 1. On the **Create a new repository** screen, name the repository ```devsecops``` **(1)**, select **Public** **(2)**, and click on the **Create repository** **(3)** button.
 
@@ -90,15 +94,15 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
 
 1. On the **Quick setup** screen, copy the **HTTPS** GitHub URL for your new repository and **save it** in a notepad for future use.
 
-   ![](../media/cl1-t1-s12.png)
+   ![](../media/ex1-task1-4.png)
    
 1. From the GitHub username, note down the **Unique-ID** present in the Username. You'll need this in the upcoming steps.
 
    ![](../media/cl1-t1-s13.png) 
    
-1. Navigate back to the **Visual Studio Code** application in which the terminal is already open. In the terminal, click on the **drop-down** button and select **PowerShell** to open a fresh PowerShell terminal tab.
+1. Navigate  to the **Visual Studio Code (1)** application . Click on **... (2)** at the top and select **Terminal (3)** from the **drop-down** and choose **New Terminal (4)**, this opens a fresh PowerShell terminal tab.
 
-   ![Quick setup screen is displayed with the copy button next to the GitHub URL textbox selected.](../media/2dg4.png "Quick setup screen")
+   ![Quick setup screen is displayed with the copy button next to the GitHub URL textbox selected.](../media/ex1-task1-5.png "Quick setup screen")
 
 1. In Visual Studio Code, run the below commands in the terminal to set your **email** and **username**, which Git uses for commits. Make sure to replace the GitHub account email and username.
    
@@ -119,29 +123,27 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
       git add .
       git commit -m "Initial commit"
       git branch -M main
-      git remote add origin<Unique-ID> <your_github_repository-url>
-      git push -u origin<Unique-ID> main
+      git remote add origin-<Unique-ID> <your_github_repository-url>
+      git push -u origin-<Unique-ID> main
       ```
-     
+      
    - If you are asked to authenticate your GitHub account, select **Sign in with your browser**, and you will be prompted with a pop-up window to authorize Git Credential Manager. Click on **Authorize git-ecosystem** to provide access.
+  
+       ![](../media/ex1-task1-6.png)
 
        ![](../media/ex2-t3.png)
        
    - After you are prompted with the message **Authorization Succeeded**, close the tab and continue with the next task.
 
+     ![](../media/ex1-task1-7.png)
+
 ### Task 2: Deploy Infrastructure
 
-1. Within the GitHub repository, navigate to the `iac/createResources.parameters.json` path and update the value of the following parameters:
-   - Replace `deploymentidvalue` with **<inject key="DeploymentID" enableCopy="false" /> (1)**.
-   - Replace `bicepsqlpass` value with **<inject key="AzureAdUserPassword"></inject> (2)**.
-  
-       ![](../media/cl1-t2-s1.png)
-
-2. To create GitHub secrets, in your GitHub lab files repository, click on the **Settings** tab.
+1. In the GitHub repository, navigate to the setting and add github action secreat and variable. To create GitHub secrets, in your GitHub lab files repository, click on the **Settings** tab.
 
       ![](../media/cl1-t2-s2.png)
 
- 3. Navigate to **Environment Details** **(1)**, click on **Service Principal Details** **(2)**, and copy the **Subscription ID**, **Tenant ID (Directory ID)**, **Application ID (Client ID)**, and **Secret Key (Client Secret)**.
+2. Navigate to **Environment Details** **(1)**, click on **Service Principal Details** **(2)**, and copy the **Subscription ID**, **Tenant ID (Directory ID)**, **Application ID (Client ID)**, and **Secret Key (Client Secret)**.
 
       ![](../media/ex2-t4-8.png)
    
@@ -156,60 +158,51 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
       }
       ```
 
-4. Under **Security**, expand **Secrets and variables** **(1)** by clicking the drop-down and select **Actions** **(2)** blade from the left navigation bar. Select the **New repository secret** **(3)** button.
+3. Under **Security**, expand **Secrets and variables** **(1)** by clicking the drop-down and select **Actions** **(2)** blade from the left navigation bar. Select the **New repository secret** **(3)** button.
 
    ![](../media/exe2-task4-step6-action-setup.png)
 
-5. Under the **Actions Secrets/New secret** page, enter the below-mentioned details and click on **Add secret** **(3)**.
+4. Under the **Actions Secrets/New secret** page, enter the below-mentioned details and click on **Add secret** **(3)**.
 
    - **Name** : Enter **SERVICEPRINCIPAL** **(1)**
    - **Value** : Paste the service principal details in JSON format **(2)**
    
-   ![](../media/2dgn36.png)
+      ![](../media/2dgn36.png)
 
-6. To create another secret, under the **Actions Secrets/New secret** page, enter the below-mentioned details and click on **Add secret** ***(3)***.
+5. To create another secret, under the **Actions Secrets/New secret** page, enter the below-mentioned details and click on **Add secret** ***(3)***.
 
-   - **Name**: Enter **SQL_PASSWORD** ***(1)***
+   - **Name**: Enter **SQLPASSWORD** ***(1)***
    - **Value**: Enter **<inject key="AzureAdUserPassword"></inject> (2)**, which would be the same as the Azure AD Password.
 
-   ![](../media/cl1-t2-s6.png)
+      ![](../media/ex-task1-11.png)
 
-7. Under the **Actions Secrets/New secret** page, enter the below-mentioned details and click on **Add secret** ***(3)***.
-
-   - **Name** : Enter **ENVIRONMENT** ***(1)***
-   - **Value** : **<inject key="DeploymentID" enableCopy="false" />** (Copy the Deployment ID from the environment details tab) ***(2)***
+6. To create Variables, under the **Actions secrets and variables** page, switch to **Variables (1)** and then click on **New repository variable (2)**.
    
-   ![](../media/2dgn33.png)
+   ![](../media/ex1-task1-9.png)
 
-8. Now within the GitHub repository, navigate to the `iac/createResourceGroup.bicep` path and update the resource group name as mentioned below:
-   - Replace `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
+7. Under **Actions variables / New variable** , enter the below-mentioned details and click on **Add variable** ***(3)***.
 
-   ![](../media/cl1-t2-s8.png)
+   - **Name**: Enter **DEPLOYMENTREGION** ***(1)***
+   - **Value**: Add the deployment region where you want to get the resources deployed. **(2)**
+   
+     ![](../media/ex1-task1-10.png)
 
-9. Navigate to the `.github/workflow/deploy-infrastructure.yml` path and ensure to update the `RESOURCE_GROUP_NAME` environment variable by replacing `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
+8. To create another **Variable** click on **New repository variable** ,Under **Actions variables / New variable** , enter the below-mentioned details and click on **Add variable** ***(3)***.
 
-   ![](../media/cl1-t2-s9.png)
+   - **Name**: Enter **SUFFIX** ***(1)***
+   - **Value**: Create a secret to store the deployment ID which is **<inject key="DeploymentID" enableCopy="false" />**. **(2)**
+  
+     ![](../media/ex1-task1-12.png)
+     
 
 10. To run a workflow, perform the following steps and wait for the resources to be deployed within your Azure Portal:
       - Click on **Actions (1)** within your GitHub repository.
-      - Select the workflow named **contoso-traders-provisioning-deployment (2)**.
+      - Select the workflow named **contoso-traders-cloud-testing (2)**.
       - Click on **Run workflow (3)**.
       - Finally, click on **Run workflow (4)**. Ensure that the branch is selected as **main**.
 
-      ![](../media/cl1-t2-s10.png)
+        ![](../media/ex1-task1-15.png)
 
-
-11. Navigate to `.github/workflow/update-contoso-traders-App.yml` path, ensure to update the `AKS_NODES_RESOURCE_GROUP_NAME` and`RESOURCE_GROUP_NAME` environment variable by replacing `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
-
-    ![](../media/dso1.png) 
-
-12. To run a workflow, perform the following steps and wait for the resources to be deployed within your azure portal:
-      - Click on **Actions (1)** within your GitHub repository.
-      - Select on the workflow named **update contoso traders app (2)**.
-      - Click on **Run workflow (3)**.
-      - Finally click on **Run workflow (4)**. Ensure that the branch is select as **main**.
-
-    ![](../media/dso2.png) 
 
 ### Task 3: Setup CI/CD Workflow
 
@@ -217,13 +210,13 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
 
    ![](../media/2dgn9.png) 
    
-1. Select the **contosotraders-<Deployment-ID>** resource group from the list.
+1. Select the **contoso-traders-rg<Deployment-ID>** resource group from the list.
 
-   ![](../media/cl1-t3-s2.png)  
+   ![](../media/ex1-task1-13.png)  
    
 1. Select the **productsdb** SQL database from the list of resources.
 
-   ![](../media/cl1-t3-s3.png) 
+   ![](../media/ex1-task1-14.png) 
    
 1. Under the Settings side blade, select **Connection strings** ***(1)*** and copy the **ADO.NET (SQL authentication)** ***(2)*** connection string from the ADO.NET tab. 
 
@@ -233,15 +226,15 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
 
    ![](../media/cl1-t1-s8.png)
    
-1. Under **Security**, expand **Secrets and variables** ***(1)*** by clicking the drop-down and selecting **Actions** ***(2)*** from the left navigation bar. Select the edit button for the created secret named **SQL_PASSWORD** ***(3)***.
+1. Under **Security**, expand **Secrets and variables** ***(1)*** by clicking the drop-down and selecting **Actions** ***(2)*** from the left navigation bar. Select the edit button for the created secret named **SQLPASSWORD** ***(3)***.
 
-   ![](../media/cl1-t3-s6.png)
+   ![](../media/ex1-task3-1.png)
     
-1. Under the **Actions Secrets/Update secret** page, enter the below-mentioned details, and click on **Update secret** ***(3)***.
+1. Under the **Actions Secrets/Update secret** page, enter the below-mentioned details, and click on **Update secret.**
 
    - **Value**: Paste the **ADO.NET (SQL authentication)** that you  have copied in the previous step.
    
-   ![](../media/cl1-t3-s7.png)
+      ![](../media/ex1-task3-2.png)
    
    >**Note**: Replace `{your_password}` with the ODL User Azure Password. Go to **Environment Details (1)**, click on **Azure credentials (2)**, and copy **Password (3)**.
    
@@ -257,14 +250,14 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
    
    ![](../media/2dgn165.png)
    
-   **Note**: If the workflow **fails** due to the **npm install** job, follow steps 13 to 15. Otherwise, continue from step 16. 
+   >**Note**: If the workflow **fails** due to the **npm install** job, follow steps 13 to 15. Otherwise, continue from step 16. 
    
 1. From the GitHub browser tab, follow the steps given below and click on **Create codespace on main** ***(3)***.
 
    - Click on **Code** ***(1)***, 
    - Select the **Codespace** ***(2)*** tab
 
-   ![](../media/ex2-kc-codespace.png)
+     ![](../media/ex2-kc-codespace.png)
    
 1. Run the below-mentioned commands in the **Terminal**. You'll set the node version to node 14.
 
@@ -291,11 +284,11 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
 
    ![](../media/2dgn9.png) 
    
-2. Select the **contosotraders-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
+2. Select the **contoso-traders-rg<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
 
    ![](../media/2dgn135.png) 
    
-3. Select the **contosotraders-ui2<inject key="DeploymentID" enableCopy="false" />** endpoint from the list of resources.
+3. Select the **contoso-traders-ui2<inject key="DeploymentID" enableCopy="false" />** endpoint from the list of resources.
 
    ![](../media/2dgn127.png) 
    
@@ -312,9 +305,9 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
    - Click on **Code** ***(1)***, 
    - Select the **Codespace** ***(2)*** tab
 
-   ![](../media/ex2-kc-codespace.png)
+     ![](../media/ex2-kc-codespace.png)
    
-   >**Note**: In case you have created a codespace in a previous task. Click on the **+** button to create a new codespace.
+     >**Note**: In case you have created a codespace in a previous task. Click on the **+** button to create a new codespace.
    
 6. You'll be redirected to a new codespace tab in the browser. Please wait until the codespace is configured.
 

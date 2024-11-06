@@ -21,7 +21,7 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
 
 1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
 
-1. If a **Welcome to Microsoft Azure** pop-up window appears, click **Maybe Later** to skip the tour.
+1. If a **Welcome to Microsoft Azure** pop-up window appears, click **Cancel** to skip the tour.
 
 ## Solution Guide
 
@@ -33,37 +33,30 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
 
    ![Picture1](../media/cl7-ex1-t1-s1.png)
    
-1. At the bottom right corner, click on **Sign in to GitHub** prompt that appears.
+1. At the left pane , click on **Extensions**. 
 
-   ![Picture1](../media/cl7-ex1-t1-s2.png)
+   ![Picture1](../media/ex7-task1-0.0.png)
+
+1. At the search bar of the Extensions type **Github (1)**, select the **Github Copilot (2)** Extension and then click on **install (3).**
+
+   ![Picture1](../media/ex7-task1-0.1.png)
+   
+1. Once the installation is successfull, a pop appears to sign-in. Click on **Sign in to GitHub**
+
+   ![Picture1](../media/ex7-task1-0.2.png)
 
 1. Next, once you get the popup, click on **Allow**.
 
    ![Picture1](../media/cl7-ex1-t1-s3.png)
 
-1. In the sign-in to GitHub page in edge browser, enter the **GitHub UserEmail** and **GitHub Password** and click on **Sign in**.
+1. On the **select user to authorize** page in the edge browser, click on **Continue**
 
-   ![Picture1](../media/cl7-ex1-t1-s4.png)
-
-   >**Note:** Navigate to the **Environment** tab to view the key-value pairs of the **GitHub UserEmail**, and **GitHub Password**. You can use the copy buttons under the actions column to have the values copied instantly. Alternatively, it is suggested to have the values copied over onto a notepad for easy accessibility. 
-
-   ![](../media/cl7-ex1-t1-s4-b.png)
-
-1. Next, to get the authentication code, sign in to Outlook in the Lab VM through an **InPrivate** window (https://outlook.office365.com/mail/)
-with the github credentials that were copied over to Notepad in the previous step. After logging into Outlook within the Lab Virtual Machine, locate the most recent email that contains the verification code, and then select **Verify** to return to the login screen.
-
-   >**Note:** The email containing the verification code can sometimes creep into the archive/spam folders within your Outlook.
-
-   ![Picture1](../media/cl7-ex1-t1-s5.png)
-
-1. Next, click on **Authorize Visual-Studio-Code** to provide additional permissions to GitHub for VS Code on the following page if asked for, as shown in the screenshot below:
-
-   ![Picture1](../media/cl7-ex1-t1-s6.png)
+   ![Picture1](../media/ex7-task1-0.3.png)
 
 1. You will encounter a pop-up prompt. Click **Open** to proceed.
 
-   ![Picture1](../media/cl7-ex1-t1-s7.png)
-   
+   ![Picture1](../media/ex7-task1-0.4.png)
+
    >**Note:** If you get another pop-up stating **Allow an extension to open this URI**, please click on **Open**.
 
 1. You will be able to see in the bottom right corner that GitHub Copilot has been activated.
@@ -74,25 +67,29 @@ with the github credentials that were copied over to Notepad in the previous ste
 
 1. Verify if **GitHub Copilot Chat** is installed. If its installed, the below icon should appear in the left navigation pane.
    
-    ![Picture1](../media/cl7-ex1-t1-s9.png)
+    ![Picture1](../media/ex7-task1-0.5.png)
    
 ### Task 2: Integrate an 'About Us' app component in React using GitHub Copilot
 
   >**NOTE:** It should be noted that the code suggestions offered by GitHub Copilot might not exactly match the screenshots shown within the labguide. GitHub Copilot is an AI-powered tool that generates code based on context and patterns, and its suggestions can be influenced by various factors. It is also important that you have the knowledge on operating and running React Applications which may be needed as you proceed with this exercise.
 
-1. In a new Visual Studio Code window, go to **Explorer (1)** and click on **Open Folder (2)**. Navigate to **C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files-2/** within the file explorer, and then select the **ContosoTraders.Ui.Website.V2.Raw** folder.
+1. In a new Visual Studio Code window, click on **File (1)** at the top left corner and then select **Open Folder (2)**.
 
-    ![Picture1](../media/openfolders.png) 
+    ![](../media/ex4-task1-1.png)
 
-2. Ensure to click on **Yes, I trust the authors** within the pop-up to successfully import the CloudLabs folder into VS Code.
+3. Navigate to **C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files-2/ (1)** within the file explorer, and then select the **ContosoTraders.Ui.Website.V2.Raw (2)** folder, and then click on **Select folder (3)**
+
+    ![Picture1](../media/ex7-task1-1.png) 
+
+4. Ensure to click on **Yes, I trust the authors** within the pop-up to successfully import the CloudLabs folder into VS Code.
 
    ![Picture1](../media/trust-authors.png)
 
-3. Once the project has loaded, within the explorer pane of VS Code, navigate to `Contosotraders.Ui.Website.V2\src` folder to view the `App.js` file.
+5. Once the project has loaded, within the explorer pane of VS Code, navigate to `Contosotraders.Ui.Website.V2\src` folder to view the `App.js` file.
 
    ![Picture1](../media/CL7-EX1-T2-S3.png)
 
-4. Within the **CHAT: GITHUB COPILOT** pane, type: `Help me create the new About Us" page in ContosoTraders.Ui.Website.V2\src` and observe the AI response. You can follow the instructions provided by GitHub Copilot towards successfully adding the About Us page as a part of the sample React application that you have imported into VS Code.
+6. Within the **CHAT: GITHUB COPILOT** pane, type: `Help me create the new About Us" page in ContosoTraders.Ui.Website.V2\src` and observe the AI response. You can follow the instructions provided by GitHub Copilot towards successfully adding the About Us page as a part of the sample React application that you have imported into VS Code.
 
    ![Picture1](../media/CL7-EX1-T2-S4.png)
 
@@ -279,7 +276,7 @@ with the github credentials that were copied over to Notepad in the previous ste
 
 5. On the **Quick setup** screen, copy the **HTTPS** GitHub URL for your new repository and **save it** in a notepad for future use.
 
-   ![](../media/CL7-EX3-T1-S5.png)
+   ![](../media/ex7-task1-3.png)
 
 6. From the GitHub username, note down the **Unique-ID** present in the Username. You'll need this in the upcoming steps.
 
@@ -297,7 +294,7 @@ with the github credentials that were copied over to Notepad in the previous ste
      git config --global user.name "Your UserName"
      ```
      
-   ![](../media/cl1-t1-s15.png) 
+   ![](../media/ex7-task1-4.png) 
      
     Run the below-mentioned command in the terminal. Make sure to replace `your_github_repository-url` with the value you copied in step 5 and `Unique-ID` in step 6.
 
@@ -308,8 +305,8 @@ with the github credentials that were copied over to Notepad in the previous ste
       git add .
       git commit -m "Initial commit"
       git branch -M main
-      git remote add origin<Unique-ID> <your_github_repository-url>
-      git push -u origin<Unique-ID> main
+      git remote add origin-<Unique-ID> <your_github_repository-url>
+      git push -u origin-<Unique-ID> main
       ```
      
    - If you are asked to authenticate your GitHub account, select **Sign in with your browser**, and you will be prompted with a pop-up window to authorize Git Credential Manager. Click on **Authorize git-ecosystem** to provide access.
@@ -326,15 +323,15 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
 
 1. Login to GitHub where the `devsecops-2` repository was created.
 
-2. Select the **settings** ***(1)*** tab from the GitHub browser tab. Click on **code security and analysis** ***(2)*** under the security side blade.
+2. Select the **settings** ***(1)*** tab from the GitHub browser tab. Click on **Code security** ***(2)*** under the security side blade.
 
-   ![](../media/2dgn168.png)  
+   ![](../media/ex2-task1-1.png) 
 
 3. Click on the **Set up** **(1)** button to enable CodeQL analysis, and select the **Advanced** **(2)** option for creating a CodeQL Analysis YAML file.
 
-   ![](../media/2dgn169.png)   
+   ![](../media/ex2-task1-2.png)     
 
-4. Update the workflow name to **codeql-analysis.yml** ***(1)*** and review the yaml file. Select **Commit changes** ***(2)***, then select **Commit directly to the main branch** ***(3)***, and click on **Commit new file** ***(4)***.
+4. Update the workflow name to **codeql-analysis.yml** ***(1)*** and review the yaml file. Select **Commit changes** ***(2)***, then select **Commit directly to the main branch** ***(3)***, and click on **Commit changes** ***(4)***.
   
    ![](../media/cl2-t1-s3.png)
 
@@ -350,7 +347,7 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
 
 7. You will be navigated to the **Code scanning** section. You'll be able to visualize the **No code scanning alerts here!**.
    
-   ![](../media/cl2-t1-s6.png)
+   ![](../media/ex7-task1-5.png)
 
 ### Task 3: Implement Repository security advisories
 
@@ -436,43 +433,45 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
    - **Name:** `React-Static-Web-App` **(3)**.
    - **Plan type:** Select **Free (4)**.
    - **Source:** Select **GitHub (5)**
-   - **GitHub account:** Connect to your GitHub account which has the `devsecops-2` repository with tehe React application files **(6)**.
+   - **GitHub account:** Connect to your GitHub account which has the `devsecops-2` repository with the React application files **(6)**.
    - **Organization:** Select your assigned Github organization **(7)**.
    - **Repository:** Select `devsecops-2` **(8)**.
    - **Branch:** `Main` **(9)**.
-   - **Build presets:** Search for and select **React (10)**.
+   - **Build presets:** Search for and select **React (detected) (10)**.
    - **App location:** `/` **(11)**.
 
       >**Note:** `/` refers to the root directory of the GitHub repository. Ensure that the location is specified appropriately as per your GitHub file structure.
    
-   - Leave the other fields at default and then click on **Review + Create (13)**.
+   - Leave the other fields at default and then click on **Review + Create (12)**.
    - Finally, click on **Create** on the **Review + create** page to create the static web app.
 
-    ![](../media1/CL7-EX4-T1-S4.png)
+     ![](../media/ex7-task1-6.png)
    
-    ![](../media1/CL7-EX4-T1-S4-b1.png)
+     ![](../media/ex7-task1-8.png)
 
-5. Once the deployment is successful, click on **Go to resource**.
+     ![](../media/ex7-task1-7.png)
+
+6. Once the deployment is successful, click on **Go to resource**.
 
     ![](../media/CL7-EX4-T1-S5.png)
 
-6. Navigate back to your `devsecops-2` repository on the GitHub portal and click on the **Actions** tab.
+7. Navigate back to your `devsecops-2` repository on the GitHub portal and click on the **Actions** tab.
 
     ![](../media/CL7-EX4-T1-S6.png)
 
-7. Ensure that your **Azure Static Web Apps CI/CD** workflow has a successful run status.
+8. Ensure that your **Azure Static Web Apps CI/CD** workflow has a successful run status.
 
     ![](../media/CL7-EX4-T1-S7.png)
 
-8. Navigate back to your Azure portal on the overview page of the recently created Static Web App and click on the **URL**
+9. Navigate back to your Azure portal on the overview page of the recently created Static Web App and click on the **URL**
 
     ![](../media/CL7-EX4-T1-S8.png)
 
-9. The URL redirects you to a new browser tab with the React Application up and running.
+10. The URL redirects you to a new browser tab with the React Application up and running.
 
     ![](../media/CL7-EX4-T1-S9.png)
 
-10. Click on **Get Started** and scroll down within your static web app to view the integrated **About Us** page.
+11. Click on **Get Started** and scroll down within your static web app to view the integrated **About Us** page.
 
     ![](../media/CL7-EX4-T1-S10.png)
 

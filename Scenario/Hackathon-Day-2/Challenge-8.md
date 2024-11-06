@@ -17,6 +17,13 @@ In this challenge, you are a DevOps engineer responsible for ensuring the securi
       - Implement **Azure Policy Compliance Scan** GitHub action within `.github/workflows/workflow.yml` which triggers a policy compliance scan on the provided subscription and continue/fail the workflow based on the compliance state of the resources.
    - Ensure that compliance scans are triggered automatically during the CI/CD process.
 
+     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+     > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+     > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+     > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com We are available 24/7 to help
+
+     <validation step="c4116d8a-97eb-4c0f-9e24-2077e5ea6a49" />
+     
 ## Success criteria:
 To complete this challenge successfully:
 
@@ -29,23 +36,6 @@ To complete this challenge successfully:
 - Refer to [Overview of Azure Policy](https://learn.microsoft.com/en-us/azure/governance/policy/overview) for reference.
 - Refer to [Azure Policy Compliance Scan](https://github.com/marketplace/actions/azure-policy-compliance-scan) for reference.
 
-## Challenge Validations:
-
-1. After completing the challenge, you need to visit the **Lab Validation (1)** tab and click on the **VALIDATE (2)** button under Actions to perform the validation steps. Verify that you have met the success criteria of the challenge. 
- 
-    ![](../media/validate01.png "Validation")
- 
-1. If the validation status displays **Success** for all the validation steps, **congratulations!**. This means that you have successfully completed the challenge.
- 
-     ![](../media/validate02.png "Validation")
-1. If the validation status displays **Fail**, **don't worry!** This could mean that you did not perform the challenge correctly.
- 
-     ![](../media/validate03.png "Validation")
- 
-1. Hover your mouse over the `i` **(1)** icon to see the error message and determine the root cause of the failure. Based on the error message, revisit the challenge as necessary, and redo the validation by clicking on the **VALIDATE (3)** button again.
-     ![](../media/validate04.png "Validation")
- 
-1. If you are still having trouble, you can reach out to the support team via `labs-support@spektrasystems.com` for further assistance. The support team is available to help you troubleshoot and resolve any technical issues or validation issues that may arise while the lab environment is live.
 
 ## Conclusion
 Congratulations on completing the **Security Compliance as Code** challenge! Through this challenge not only implemented security policies using Azure Policy but also emphasized the importance of automating the entire process through CI/CD pipelines thus ensuring continuous compliance in a dynamic cloud environment. The next challenge focuses on seamlessly integrating and configuring Microsoft Defender for Cloud within a DevOps context, ensuring a secure and resilient software development lifecycle.

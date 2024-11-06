@@ -12,11 +12,11 @@ This is the solution guide, which provides all the specific, step-by-step direct
 
 In this task, you will use Dependabot to track the versions of the packages we use in our GitHub repository and create pull requests to update packages for us.
 
-1. In your lab files GitHub repository, navigate to the **Settings** ***(1)*** tab and select the **Code security and analysis** ***(2)*** under Security from the side blade. Make sure **Dependabot alerts** is **Enabled** ***(3)***, if not, click on **Enable** to Enable Dependabot alerts. Click on **Enable** ***(4)*** to Enable Dependabot security updates.
+1. In your lab files GitHub repository, navigate to the **Settings** ***(1)*** tab and select the **Code security** ***(2)*** under Security from the side blade. Make sure **Dependabot alerts** is **Enabled** ***(3)***, if not, click on **Enable** to Enable Dependabot alerts. Click on **Enable** ***(4)*** to Enable Dependabot security updates.
 
    > **Note**: Enabling the `Dependabot security updates` will also automatically enable `Dependency graph` and `Dependabot alerts`.
 
-   ![The GitHub Repository Security Overview tab.](../media/cl3-t1-s1.png "GitHub Repository Security Overview")
+   ![The GitHub Repository Security Overview tab.](../media/ex3-task1-1.png "GitHub Repository Security Overview")
 
    > **Note**: The alerts for the repository may take some time to appear. The rest of the steps for this task rely on the alerts being present. You can continue with the next exercise, as this is an independent task and doesn't affect the lab. Please visit this task later and complete it.
 
@@ -64,19 +64,23 @@ In this task, you'll explore how secret scanning works and how it generates aler
 
    ![](../media/2dg110.png)
     
-1. Select **Code security (1)** from the sidebar and make sure **Secret scanning is enabled (2)**.
+1. Select **Code security** from the sidebar.
 
-   ![](../media/2dg111.png)   
+   ![](../media/ex3-task2-1.png)
+
+1. Scroll down ,make sure **Secret scanning is enabled**.
+
+   ![](../media/ex3-task2-2.png)
     
 1. Navigate back to **Code (1)** and click on the **src (2)** folder.
 
    ![](../media/2dg112.png)    
    
-1. Click on **Add file** and select the **create new file** option.
+1. Click on **Add file (1)** and select the **create new file (2)** option.
 
    ![](../media/2dg113.png)    
    
-1. Add a new file with the name **build.docker-compose.yml (1)**, add the code mentioned below **commit** the file. Here, you'll expose the **application ID** of a service principal.
+1. Add a new file with the name **build.docker-compose.yml (1)**, add the code **(2)** mentioned below and click on **Commit changes** at the right corner. Here, you'll expose the **application ID** of a service principal.
 
    ```
    version: "3.4"
@@ -90,7 +94,11 @@ In this task, you'll explore how secret scanning works and how it generates aler
    ```
    >**Note:** Ensure replace the value of the `build` key in above the above code before saving the file.
 
-   ![](../media/cl3-t2-s5.png)   
+   ![](../media/ex3-task2-3.png)
+
+1. Click on **Commit changes.**
+
+   ![](../media/ex-common.png)
    
 1. Select the **Security (1)** tab and click on **Secret scanning (2)** from the sidebar. Here, you'll notice that an alert is generated referring to the same **Application ID** that was exposed in the `build.docker-compose.yml` file. This is how the Secret scanning feature works and generates alerts to notify you.
 

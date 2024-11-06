@@ -27,15 +27,15 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
 
 **Note**: To perform this task, the GitHub repository should be public. If the repository visibility is private, please go to the settings of the repository and change the visibility to public.
    
-1. Select the **settings** ***(1)*** tab from the GitHub browser tab. Click on **code security and analysis** ***(2)*** under the security side blade.
+1. Select the **settings** ***(1)*** tab from the GitHub browser tab. Click on **Code security** ***(2)*** under the security side blade.
 
-   ![](../media/2dgn168.png)  
+   ![](../media/ex2-task1-1.png)  
    
 1. Click on the **Set up** **(1)** button to enable CodeQL analysis, and select the **Advanced** **(2)** option for creating a CodeQL Analysis YAML file.
 
-   ![](../media/2dgn169.png)      
+   ![](../media/ex2-task1-2.png)      
 
-1. Update the workflow name to **codeql-analysis.yml** ***(1)*** and review the yaml file. Select **Commit changes** ***(2)***, then select **Commit directly to the main branch** ***(3)***, and click on **Commit new file** ***(4)***.
+1. Update the workflow name to **codeql-analysis.yml** ***(1)*** and review the yaml file. Select **Commit changes** ***(2)***, then select **Commit directly to the main branch** ***(3)***, and click on **Commit changes** ***(4)***.
   
    ![](../media/cl2-t1-s3.png)
 
@@ -51,7 +51,7 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
   
 1. You will be navigated to the **Code scanning** section. You'll be able to visualize the **No code scanning alerts here!**.
    
-   ![](../media/cl2-t1-s6.png)
+   ![](../media/ex-noalert.png)
     
 ## Task 2: Implement Repository security advisories:
  

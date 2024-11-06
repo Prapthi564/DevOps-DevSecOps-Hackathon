@@ -12,11 +12,11 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
 
 In this task, you'll create an Azure Load Testing instance and run a test using a JMeter file.
 
-1. In the Azure Portal, navigate to the **contosotraders-<inject key="DeploymentID" enableCopy="false" />** resource group and select the **Endpoint** resource with the name  **contoso-traders-ui2<inject key="DeploymentID" />**.
+1. In the Azure Portal, navigate to the **contoso-traders-rg<inject key="DeploymentID" enableCopy="false" /> (1)** resource group and select the **Endpoint** resource with the name  **contoso-traders-ui2<inject key="DeploymentID" /> (2)**.
 
-   ![](../media/cl5-t1-s1.png)
+   ![](../media/ex5-task1-1.png)
 
-1. From the overview of the **contoso-traders-ui2<inject key="DeploymentID" enableCopy="false" />** endpoint, copy the **Endpoint hostname** **(2)** and paste it into the notepad for later use in the task.
+1. From the overview of the **contoso-traders-ui2<inject key="DeploymentID" enableCopy="false" />** endpoint, copy the **Endpoint hostname** and paste it into the notepad for later use in the task.
 
    ![](../media/cl5-t1-s2.png)
 
@@ -29,26 +29,30 @@ In this task, you'll create an Azure Load Testing instance and run a test using 
    ![](../media/createloadtesting.png)
 
 1. Within the **Basics** tab of the **Create a load testing resource**, enter the following details. Click on **Review + create**
+   
    - **Subscription**: Select the available subscription provided **(1)**.
-   - **Resource group**: Select **contosotraders-<inject key="DeploymentID" /> (2)**
+   - **Resource group**: Select **contoso-traders-rg<inject key="DeploymentID" /> (2)**
    - **Name**: Enter **contoso-traders-loadtest-<inject key="DeploymentID" /> (3)**
-   -  **Region**: **East US (4)**
-   -  Click on **Review + create (5)**
+   - **Region**: **East US (4)**
+   - Click on **Review + create (5)**
    - Finally, click on **Create**.
 
-   ![](../media/createloadtesting-1.png)
+     ![](../media/ex5-task1-2.png)
 
-1. On the left-hand side pane, select **Tests** ***(1)***, and click on **+ Create** ***(2)***, and select **Create a URL-based test (3)**.
+1. On the left-hand side pane, Expand **Tests** **(1)** then select **Tests** **(2)**, click on **+ Create** **(3)**, and select **Create a URL-based test (4)**.
 
-   ![](../media/url-load-test.png)
+   ![](../media/ex5-task1-3.png)
 
-1. On the **Create a URL-based test** page, under the basic tab, paste the **Endpoint URL** as Test URL ***(1)***, leave the rest as default, and then click on **Review + create (2)**, followed by **Create**.
+1. On the **Create a URL-based test** page, under the Basics tab, uncheck **Enable advanced settings** to reveal the Test URL setting.
+ Paste the **Endpoint URL** as **Test URL** **(1)**, leave the rest as default, and then click on **Review + create (2)**, followed by **Create**.
 
    ![](../media/url-load-test-1.png)
 
-1. The test run will start, and once the test run is completed, you will be able to see the **Client-side metrics**. Explore the given metrics output.
+1. Once the test run starts, wait until it completes. When the test run finishes, the status will update to **Done**. At this point, you’ll be able to view the Client-side metrics. Explore the given metrics output.
 
-   ![](../media/dglt4.jpg)
+   ![](../media/ex5-task1-4.png)
+
+   ![](../media/ex5-task1-5.png) 
    
    **Note**: In case the test fails due to `The test was stopped due to a high error rate, check your script and try again. If the issue persists, raise a ticket with a support error. This is expected, as sometimes the load on the application exceeds the defined throughput.
      
@@ -60,13 +64,13 @@ In this task, your objective is to incorporate Targets and establish an Experime
    
    ![](../media/Ex6-T2-S1.1.png)
 
-1. In the **Azure Chaos Studio**, select **Targets** on the left menu.
+1. In the **Azure Chaos Studio**, Expand **Experiment management (1)** on the left menu and select **Targets (2)**.
 
-   ![](../media/Ex6-T2-S2.png)
+   ![](../media/ex5-task2-1.png)
       
-1. From the drop-down menu, select the **contosotraders-<inject key="DeploymentID" enableCopy="false" />** resource group.
+1. From the drop-down menu, select the **contoso-traders-rg<inject key="DeploymentID" enableCopy="false" />** resource group.
  
-   ![](../media/chaos-studio.png)
+   ![](../media/ex5-task2-2.png)
      
 1. Click on the **contoso-traders-aks<inject key="DeploymentID" enableCopy="false" />** **(1)** **Kubernetes service** instance, and from the drop-down for **Enable Targets** **(2)**, choose **Enable service-direct targets (All resources)** **(3)**.
 
@@ -164,9 +168,8 @@ In this task, your objective is to incorporate Targets and establish an Experime
 ## Success criteria:
 To complete this challenge successfully:
 
-- Successful integration of Azure Monitor and Application Insights within the application environment, ensuring seamless data collection and monitoring capabilities.
-- Selection and configuration of key performance metrics relevant to the application's functionality and performance goals.
-- Establishment of effective alerting mechanisms with well-defined thresholds, ensuring timely notifications for potential issues or deviations in monitored metrics.
+   - Completion of Load Test and Results Analysis: Azure Load Testing is configured, the test runs successfully, and Client-side metrics are reviewed, providing insights into performance under load.
+   - Execution of Chaos Experiment: A Chaos Experiment in Azure Chaos Studio is configured with the specified faults, executed successfully, and results are reviewed to confirm resilience.
 
 ## Additional Resources:
 

@@ -21,7 +21,7 @@ Here is the solution guide, which provides all the specific, step-by-step direct
 
    - **Email/Username:** <inject key="GitHubUsername"></inject>
 
-1. Now enter the following password and click on **Sign in**.
+4. Now enter the following password and click on **Sign in**.
 
    - **Password:** <inject key="GitHubPassword"></inject>
 
@@ -31,20 +31,40 @@ Here is the solution guide, which provides all the specific, step-by-step direct
 
 ### Task 1: Sign In/Sign Up to an OpenAI Account
 
-1. Navigate to the **[OpenAI](https://openai.com/)** and click on **Log in**.
-
-   ![](../media/cl6-ex1-t1-s1.png)
-
-2. Within the **Welcome back** page,
+1. Navigate to the **[OpenAI](https://platform.openai.com/login?launch)** in order to login to **OpenAI Account.**
+   
+3. Within the **Welcome back** page,
     - If you already have an OpenAI account pre-created, you can go ahead signing into OpenAI using the following sign-in options as shown in the below screenshot.
 
       ![](../media/cl6-ex1-t1-s2-a.png)
 
       >**Note:** Ensure that your OpenAI account has active credits for the generation and usage of API keys.
 
+    - After providing the user email and password, you will be prompted to select an access option. Choose **API** to proceed.
+
+      ![](../media/ex6-task1-0.1.png)
+      
     - If you are new to OpenAI and do not have an account created, click on **Sign up** within the *Welcome back* page to create a new free-tier account. 
 
       ![](../media/cl6-ex1-t1-s2-b.png)
+  
+    - After clicking Sign Up on the welcome page:
+
+        - Enter your email address – You can use your GitHub **Email address (1)** and click on **Continue (2)**.
+
+          ![](../media/ex6-task1-2.png)
+
+        - Enter your password – Use your GitHub **Password (1)** and click on **Continue (2).**
+     
+          ![](../media/ex6-task1-3.png)
+  
+          >**Note:** You can find the GitHub credentials from the Environment Details page of the integrated lab environment, navigate to License tab.
+  
+        - A page will appear with the message "Verify your email". open http://outlook.office.com/ in a private window, provide the Github username and password, open the email from OpenAI, and click the verification link inside to complete the setup process. 
+     
+          ![](../media/ex6-task1-3.1.png)
+  
+        - Navigate back to the login page provide Github username and password, You will be prompted to provide details like **Full Name** and **Date of Bith** then click on **Agree** this will navigate you the Open AI Platform.
 
       >**Note:** Upon creation of a new OpenAI account, the free tier provides you with a $5 credit limit that expires within a period of 3 months from the day of account activation.
 
@@ -54,32 +74,42 @@ Here is the solution guide, which provides all the specific, step-by-step direct
 
 1. Go to the profile icon in the top right corner and select **Your profile**.
    
-    ![](../media/cl6-ex1-t2-s11.png)
+    ![](../media/ex6-afterlogin.png)
 
 2. Hover your cursor over the left navigation toolbar to expand the pane and click on **API keys**.
 
-    ![](../media/cl6-ex1-t2-s2.png)
+    ![](../media/ex6-apikeys.png)
 
-3. Under **User API keys** page, click on **+ Create new secret key**.
+3. In order to create **API key**, its required to Verify it with your phone number.Click on **Start verification.**
 
-    ![](../media/cl6-ex1-t2-s3.png)
+   ![](../media/ex6-task1-4.png)
 
-4. On the **Create new secret key** pop-up, configure the following:
+4. Provide your Phone Number and click on **Send code.**
+
+   ![](../media/ex6-phoneno.png)
+
+5. Enter the Verification code that has been sent to the Phone number.
+
+   ![](../media/ex6-code.png)
+
+8. On the **Create new secret key** pop-up, configure the following:
+   
     - **Name:** `GitHub Action Key` **(1)**
-    - **Permissions:** Select `All` **(2)**
-    - Click on **Create Secret key (3)**
+    - **Project:** Select **Default project (2)** from the drop down.
+    - **Permissions:** Select `All` **(3)**
+    - Click on **Create secret key (4)**
 
-    ![](../media/cl6-ex1-t2-s4.png)
+      ![](../media/ex6-task1-5.png)
 
-5. Upon creation of a new secret, save your key by clicking on the **Copy** button and pasting it on your notepad for a handy access.
+10. Upon creation of a new secret, save your key by clicking on the **Copy** button and pasting it on your notepad for a handy access.
 
     **Note:** For safety reasons, **you won't be able to view the secret value again** once the **Save your key** page is closed.
 
     ![](../media/cl6-ex1-t2-s5.png)
 
-6. You will now notice that the new API key, `GitHub Action Key` now appears in the list of **API keys**.
+11. You will now notice that the new API key, `GitHub Action Key` now appears in the list of **API keys**.
 
-    ![](../media/cl6-ex1-t2-s6.png)
+    ![](../media/ex6-task1-7.png)
 
 ### Task 3: Create a new GitHub repository secret
 
@@ -87,46 +117,56 @@ Here is the solution guide, which provides all the specific, step-by-step direct
 
 2. Select the `devsecops` repository that was created as a part of the earlier challenges.
 
-3. Under **Security**, expand **Secrets and variables** **(1)** by clicking the drop-down and select **Actions** **(2)** blade from the left navigation bar. Select the **New repository secret** **(3)** button.
+3. Under **Security (1)**, expand **Secrets and variables** **(2)** by clicking the drop-down and select **Actions** **(3)** blade from the left navigation bar. Select the **New repository secret** **(4)** button.
 
-   ![](../media/exe2-task4-step6-action-setup.png)
+   ![](../media/ex6-task1-8.png)
 
 4. Under the **Actions Secrets/New secret** page, enter the below-mentioned details and click on **Add secret** **(3)**.
 
    - **Name** : Enter **OPENAI_API_KEY** **(1)**
    - **Value**: Paste the OpenAI secret value that was copied earlier over to the notepad **(2)**.
 
-   ![](../media/cl6-ex1-t3-s4.png)
+     ![](../media/cl6-ex1-t3-s4.png)
 
 ### Task 4: Configure the AI Code Review GitHub Action
 
-1. Navigate to the following repo and fork it.
+1. Open a new tab and paste the below URL which will Navigate to the following repo and fork it.
 
    ```
    https://github.com/freeedcom/ai-codereviewer
    ```
 
-   ![](../media1/fork-ai-code.png)
+   ![](../media/ex6-task1-forkrepo.png)
+  
+1. Click on **Fork (1)** and then select **Create a new fork (2).**
 
-1. Click on **Setting** **(1)**, rename the repo name to **ai-code-reviewer** **(2)** and click on **Rename** **(3)** button. 
+   ![](../media/ex6-task1-9.png)
+
+1. Uncheck **Copy the main branch only (1)** and click on **Create fork (2)**
+
+   ![](../media/ex6-task1-10.png)
+   
+1. Click on **Settings** **(1)**, rename the repo name to **ai-code-reviewer** **(2)** and click on **Rename** **(3)** button. 
 
    ![](../media1/edit-ai-code.png)
 
 1. Navigate back to the `devsecops` repository that was created as a part of the earlier challenges.
 
-2. Select the **Actions (1)** tab from your repository home page and then click on **New Workflow (2)**.
+   ![](../media/ex6-task1-11.png)
+
+3. Select the **Actions (1)** tab from your repository home page and then click on **New Workflow (2)**.
 
    ![](../media/cl9-t2-s3.png)
 
-3. On the Get Started with GitHub Actions page, select **set up a workflow yourself**.
+4. On the Get Started with GitHub Actions page, select **set up a workflow yourself**.
 
    ![](../media/cl9-t2-s4.png)
 
-4. In the text box, enter the name `ai-code-review.yml` for your workflow file.
+5. In the text box, enter the name `ai-code-review.yml` for your workflow file.
 
    ![](../media/cl6-ex1-t4-s4.png)
 
-5. Copy and paste the following action workflow into the Edit New file tab:
+6. Copy and paste the following action workflow into the Edit New file tab:
 
     ```
     name: AI Code Reviewer
@@ -153,13 +193,13 @@ Here is the solution guide, which provides all the specific, step-by-step direct
               exclude: "**/*.json, **/*.md" # Optional: exclude patterns separated by commas
     ```
 
-6. Rename `your-username` with a GitHub **username** and Commit the changes made to create the workflow file.
+7. Rename `your-username` with a GitHub **username (1)** and Commit the changes made to create the workflow file by clicking on **Commit changes (2)**.
 
    ![](../media1/ai-code-edit.png)
 
-7. Click on **Commit new file**.
+8. Click on **Commit changes**.
 
-   ![](../media/cl9-t2-s8.png)
+   ![](../media/ex-common.png)
 
 ### Task 5: Create a pull request to initiate workflow
 
@@ -176,21 +216,43 @@ Here is the solution guide, which provides all the specific, step-by-step direct
    - **Source:** Select `main` **(2)**.
    - Click on **Create new branch (3)**
 
-   ![](../media/cl6-ex1-t5-s3.png)
+     ![](../media/ex6-task1-12.png)
 
 4. Navigate to the newly created `Test` branch.
 
-5. Select `.github/workflows` and click on `ai-code-review.yml`.
+   ![](../media/ex6-task1-13.png)
 
-6. At the end of the line add a **space** or click on **enter**. 
+6. Select **.github (1)**, expand **workflows (2)** click on **ai-code-review.yml (3)**.
 
-7. Create a Pull request to merge the changes made from the `test` to  `main` branch.
+    ![](../media/ex6-task1-14.png)
 
-   ![](../media/cl6-ex1-t5-s7.png)
+1. on the `ai-code-review.yml` file click on **pencil icon** at the top right corner in order to edit the file.
 
-8. Click on the **Actions** tab and then notice that `AI Code Reviewer` workflow has been auto automatically initiated. Ensure that the workflow does not fail. If so, there may be some vulnerabilities in the code within the recent pull request.  
+   ![](../media/ex6-task1-17.png)
 
-   ![](../media/cl6-ex1-t5-s8.png)
+8. At the end of the line add a **space** or click on **enter** and click on **Commit changes.**
+
+   ![](../media/ex6-task1-15.png)
+
+1. Click on **Commit changes.**
+
+   ![](../media/ex6-task1-16.png)
+
+10. To Create a Pull request to merge the changes made from the `test` to  `main` branch. Click on **Pull requests**
+
+    ![](../media/ex6-task1-18.png)
+
+1. Click on **New pull request.**
+
+   ![](../media/ex6-task1-19.png)
+
+1. Here at the Comparing changes page, make sure you have selected **main (1)** for the base and **Test (2)** for compare , Then click on **Create pull request (3).**
+
+   ![](../media/ex6-task1-20.png)
+
+1. Click on the **Actions** tab and then notice that `AI Code Reviewer` workflow has been automatically initiated. Ensure that the workflow does not fail. If so, there may be some vulnerabilities in the code within the recent pull request.  
+
+   ![](../media/ex6-task1-22.png)
 
 ## Exercise 2: Configure and implement AI Security Check for Pull Requests
 
@@ -200,16 +262,16 @@ Here is the solution guide, which provides all the specific, step-by-step direct
 
 2. Select the `devsecops` repository that was created as a part of the earlier challenges.
 
-3. Under **Security**, expand **Secrets and variables** **(1)** by clicking the drop-down and select **Actions** **(2)** blade from the left navigation bar. Select the **New repository secret** **(3)** button.
+3. Under **Security (1)**, expand **Secrets and variables** **(2)** by clicking the drop-down and select **Actions** **(3)** blade from the left navigation bar. Select the **New repository secret** **(4)** button.
 
-   ![](../media/exe2-task4-step6-action-setup.png)
+   ![](../media/ex6-task1-23.png)
 
 4. Under the **Actions Secrets/New secret** page, enter the below-mentioned details and click on **Add secret** **(3)**.
 
    - **Name** : Enter **OPENAI_TOKEN** **(1)**
    - **Value** : Paste the OpenAI secret value that was created and copied over to the notepad in the previous exercise. **(2)**.
 
-   ![](../media/cl6-ex1-t3-s4.png)
+     ![](../media/ex6-task1-24.png)
 
 ### Task 2: Configure GitHub Action
 
@@ -280,21 +342,25 @@ Here is the solution guide, which provides all the specific, step-by-step direct
 
 6. Commit the changes made to create the workflow file.
 
-7. Click on **Commit new file**.
+   ![](../media/ex6-task1-cm.png)
 
-   ![](../media/cl9-t2-s8.png)
+8. Click on **Commit changes**.
 
-8. Navigate back to `Test` branch that you created.
+   ![](../media/ex6-cm1.png)
 
-9. Select `.github/workflows` and click on `ai-code-review.yml`.
+9. Navigate back to `Test` branch that you created.
 
-10. At the end of the line add a **space** or click on **enter**. 
+   ![](../media/ex6-task1-25.png)
 
-11. Create a Pull request to merge the changes made from the `test` to  `main` branch.
+11. Select `.github/workflows` and click on `ai-code-review.yml`.
 
-11. Click on the **Actions** tab and then notice that `AI Security Check for Pull Requests` workflow has been autoautomatically initiated. Ensure that the workflow does not fail. If so, there may be some vulnerabilities within the recent pull request. Refer to the run details for the GitHub Actions that have failed.
+12. At the end of the line add a **space** or click on **enter**. 
 
-    ![](../media/cl6-ex2-t2-s10.png)
+13. Create a Pull request to merge the changes made from the `test` to  `main` branch.
+
+11. Click on the **Actions** tab and then notice that `AI Security Check for Pull Requests` workflow has been automatically initiated. Ensure that the workflow does not fail. If so, there may be some vulnerabilities within the recent pull request. Refer to the run details for the GitHub Actions that have failed.
+
+    ![](../media/ex6-task1-26.png)
 
 ## Success criteria:
 To complete this challenge successfully:

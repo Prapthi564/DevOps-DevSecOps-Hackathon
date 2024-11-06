@@ -18,69 +18,80 @@ In this task, you will enforce compliance with Azure Policy by assigning a polic
 
    ![](../media/cl8-ex1-t1-s1.png)
 
-2. Select **Assignments** on the left side of the Azure Policy page. An assignment is a policy that has been assigned to take place within a specific scope.
+2. Expand **Authoring (1)** and Select **Assignments (2)** on the left side of the Azure Policy page. An assignment is a policy that has been assigned to take place within a specific scope.
 
-   ![](../media/cl8-ex1-t1-s2.png)
+   ![](../media/ex8-task1-1.png)
 
-3. Select **Assign Policy** from the top of the **Policy - Assignments** page.
+3. Select **Assign Policy** from the top of the **Policy | Assignments** page.
 
-   ![](../media/cl8-ex1-t1-s3.png)
+   ![](../media/ex8-task1-2.png)
 
 4. On the **Assign Policy** page and **Basics** tab, perform the following steps:
-   - Select the **Scope** by selecting the ellipsis and selecting either a management group or subscription **(1)**. Optionally, select a resource group. A scope determines what resources or grouping of resources the policy assignment gets enforced on.
-   - Click on **Select** at the bottom of the Scope pane **(2)**.
+   
+   - Select the **Scope** by selecting the ellipsis and selecting either a management group or subscription **(1)**. Optionally, select a **Resource Group (2)**. A scope determines what resources or grouping of resources the policy assignment gets enforced on.
+   - Click on **Select (3)** at the bottom of the Scope pane.
 
-   ![](../media/cl8-ex1-t1-s4.png)
+     ![](../media/ex8-task1-3.png)
 
-5. Resources can be excluded based on the **Scope**. **Exclusions** start at one level lower than the level of the **Scope**. **Exclusions** are optional, so leave it blank for now.
+6. Resources can be excluded based on the **Scope**. **Exclusions** start at one level lower than the level of the **Scope**. **Exclusions** are optional, so leave it blank for now.
 
-6. Select the **Policy definition** ellipsis to open the list of available definitions. You can filter the policy definition Type to Built-in to view all and read their descriptions.
+7. Select the **Policy definition** ellipsis to open the list of available definitions. You can filter the policy definition Type to Built-in to view all and read their descriptions.
 
-7. Select **Inherit a tag from the resource group if missing**. If you can't find it right away, type **inherit a tag** into the search box and then press ENTER or select out of the search box. Click on **Select** at the bottom of the **Available Definitions** page once you have found and selected the policy definition.
+   [](../media/ex8-0.png)
 
-   ![](../media1/add-policy.png)
+8. Select **Inherit a tag from the resource group if missing**. If you can't find it right away, type **Inherit a tag from the resource group if missing (1)** into the search box and then press ENTER. Select the Policy result fetched **Inherit a tag from the resource group if missing (2)** and then Click on **Add (3)** at the bottom of the **Available Definitions** page once you have found and selected the policy definition.
 
-8. The **Assignment name** is automatically populated with the policy name you selected, but you can change it. For this example, leave **Inherit a tag from the resource group if missing**. You can also add an optional **Description**. The description provides details about this policy assignment.
+   ![](../media/ex8-task1-5.png)
 
-9. Leave **Policy enforcement** as **Enabled**. When Disabled, this setting allows testing the outcome of the policy without triggering the effect.
+9. The **Assignment name (1)** is automatically populated with the policy name you selected, but you can change it. For this example, leave **Inherit a tag from the resource group if missing**. You can also add an optional **Description (2)**. The description provides details about this policy assignment.
 
-10. **Assigned by** is automatically filled based on who is logged in. This field is optional, so custom values can be entered.
+10. Leave **Policy enforcement** as **Enabled (3)**. When Disabled, this setting allows testing the outcome of the policy without triggering the effect.
 
-11. Select the **Parameters** tab at the top of the wizard.
+    ![](../media/ex8-task1-10.png)
+   
+12. Select the **Parameters (1)** tab at the top of the wizard.
 
-12. For **Tag Name**, enter **Environment**.
+13. For **Tag Name**, enter **Environment (2)**.
 
-13. Select the **Remediation** tab at the top of the wizard.
+    ![](../media/ex8-task1-6.png)
 
-14. Leave **Create a remediation task** unchecked. This box allows you to create a task to alter existing resources in addition to new or updated resources.
+15. Select the **Remediation (1)** tab at the top of the wizard.
 
-15. **Create a Managed Identity** is automatically checked since this policy definition uses the modify effect. **Permissions** is set to Contributor automatically based on the policy definition.
+16. Leave **Create a remediation task (2)** unchecked. This box allows you to create a task to alter existing resources in addition to new or updated resources.
 
-16. Select the **Non-compliance messages** tab at the top of the wizard.
+17. **Create a Managed Identity (3)** is automatically checked since this policy definition uses the modify effect. **Permissions** is set to Contributor automatically based on the policy definition.
 
-17. Set the **Non-compliance message** to **This resource doesn't have the required tag**. This custom message is displayed when a resource is denied or for non-compliant resources during regular evaluation.
+    ![](../media/ex8-task1-7.png)
+     
+18. Select the **Non-compliance messages (1)** tab at the top of the wizard.
 
-18. Select the **Review + create** tab at the top of the wizard.
+19. Set the **Non-compliance message** to **This resource doesn't have the required tag (2)**. This custom message is displayed when a resource is denied or for non-compliant resources during regular evaluation.
 
-19. Review your selections, then select **Create** at the bottom of the page.
+    ![](../media/ex8-task1-8.png)
+
+21. Select the **Review + create (1)** tab at the top of the wizard.
+
+22. Review your selections, then select **Create (2)** at the bottom of the page.
+
+    ![](../media/ex8-task1-9.png)
 
 ### Task 2: Implement a new custom policy
 
 Now that you've assigned a built-in policy definition, you can do more with Azure Policy. Azure Policy enables organizations to enforce governance controls and compliance standards. This guide focuses on implementing a custom policy to restrict resource deployments to the East US region within a designated resource group. By leveraging Azure Policy, organizations can ensure compliance, mitigate risks, and streamline resource management effectively.
 
-1. Select **Definitions** under **Authoring** in the left side of the Azure Policy page.
+1. Select **Definitions (1)** under **Authoring** in the left side of the Azure Policy page. Then click on ****+ Policy definition (2)** at the top of the page.
 
-   ![](../media/cl8-ex1-t2-s1.png)
+   ![](../media/ex8-task1-11.png)
 
-2. Select **+ Policy definition** at the top of the page. This button opens to the **Policy definition** page and enter the following information:
-   - Select the **Definition location** **(1)** by selecting the ellipsis and selecting a subscription. Optionally, select a resource group. A scope determines what resources or grouping of resources the policy assignment gets enforced on.
-   - **Name:** Restrict deployment to East US region **(2)**
-   - **Description:** This policy ensures that resources are deployed only in the East US region. **(3)**
-   - **Category:** Create a new catrgory named **Region**.  **(4)**
+1.  This button opens to the **Policy definition** page and enter the following information:
+      - Select the **Definition location** **(1)** by selecting the ellipsis and select the Subscription and click on **Select**. A scope determines what resources or grouping of resources the policy assignment gets enforced on.
+      - **Name:** Restrict deployment to East US region **(2)**
+      - **Description:** This policy ensures that resources are deployed only in the East US region. **(3)**
+      - **Category:** Create a new catrgory named **Region**.  **(4)**
 
-   ![](../media/cl8-ex1-t2-s2-new.png)
+        ![](../media/ex8-task1-12.png)
 
-3. Copy the following JSON code and then update it for your needs with:
+1. Copy the following JSON code and then update it for your needs with:
 
    - The policy parameters.
    - The policy rules/conditions, in this case - location set to East US.
@@ -104,9 +115,19 @@ Now that you've assigned a built-in policy definition, you can do more with Azur
 
    >**Note:** The **field** property in the policy rule must be a supported value. An example of alias might be `Microsoft.Compute/VirtualMachines/Size` and `Microsoft.Resources/resourceGroups/location`.
 
-1. Select **Definitions** on the left side of the Azure Policy page.
+1. Once the json code is updated. Click on **Save.**
 
-1. In the **Policy | Definition** search bar Search and seelct for **Restrict deployment to East US region**. 
+   ![](../media/ex8-0.1.png)
+
+1. This will navigate you to the **Restrict deployment to East US region** Page.
+  
+   >Note: If your not on **Restrict deployment to East US region** Page perform Step 6 and Step 7
+
+   ![](../media/ex8-task1-14.png)
+
+1. Select **Definitions (1)** on the left side of the Azure Policy page.
+
+1. In the **Policy | Definition** search bar Search **Restrict deployment to East US region (2)** and select for **Restrict deployment to East US region (3)**. 
 
    ![](../media1/custom-policy.png)
 
@@ -114,7 +135,7 @@ Now that you've assigned a built-in policy definition, you can do more with Azur
 
    ![](../media1/assign-custom-policy.png)
 
-1. In the **Basics** page of Restrict deployment to East US region, **Exclusions** start at one level lower than the level of the **Scope**. **Exclusions** are optional, so leave it blank for now. click on **Review + Create**.   
+1. In the **Basics** page of Restrict deployment to East US region, **Exclusions** start at one level lower than the level of the **Scope**. **Exclusions** are optional, so leave it blank for now. click on **Review + Create** followed by **Create**.   
 
    ![](../media1/custom-policy-basic.png)
 
@@ -144,9 +165,9 @@ Now that you've assigned a built-in policy definition, you can do more with Azur
 
    >**Note:** Also ensure to replace `your-subscription-id` and `your-resource-group` within any of the available resources group name with the above secret.
 
-3. Within GitHub, under **Security**, expand **Secrets and variables** **(1)** by clicking the drop-down and select **Actions** **(2)** blade from the left navigation bar. Select the **New repository secret** **(3)** button.
+3. Within GitHub, under **Settings (1)**, expand **Secrets and variables** **(2)** by clicking the drop-down and select **Actions** **(3)** blade from the left navigation bar. Select the **New repository secret** **(4)** button.
 
-   ![](../media/exe2-task4-step6-action-setup.png)
+   ![](../media/ex8-task1-15.png)
 
 4. Under the **Actions Secrets/New secret** page, enter the below-mentioned details and click on **Add secret** **(3)**.
 
@@ -154,7 +175,7 @@ Now that you've assigned a built-in policy definition, you can do more with Azur
    - **Secret** : Paste the service principal details in JSON format **(2)**
    - Click on **Add Secret (3)**
    
-   ![](../media1/azure-cred.png)
+     ![](../media1/azure-cred.png)
 
 ### Task 2: Implement Azure Policy Compliance Scan
 
@@ -162,7 +183,7 @@ Now that you've assigned a built-in policy definition, you can do more with Azur
 
    ![](../media/dev2.png) 
 
-2. once logged-in, on the upper-right corner, expand the user **drop-down menu** **(1)** and select **Your repositories** **(2)**.
+2. Once logged-in, on the upper-right corner, expand the user **drop-down menu** **(1)** and select **Your repositories** **(2)**.
 
    ![The `New Repository` creation form in GitHub.](../media/2dg1.png "New Repository Creation Form")
 
@@ -174,9 +195,15 @@ Now that you've assigned a built-in policy definition, you can do more with Azur
 
 5. Go back to your `devsecops` GitHub repository.
 
-6. Navigate to `.github/workflows` directory and create a new file named `complaince-scan.yml`.
+6. Navigate to `.github/workflows` directory and click on **Create a new file.**.
 
-7. Paste the following code within the workflow file. The below workflow will trigger a policy compliance scan on the resource group. After the scan is complete, it will fetch the compliance state of resources. The action will fail if there are any non-compliant resources.
+   ![](../media/ex8-task1-16.png)
+
+1. Create a new file named `complaince-scan.yml`
+
+   ![](../media/ex8-task1-16.1.png)
+
+8. Paste the following code within the workflow file. The below workflow will trigger a policy compliance scan on the resource group. After the scan is complete, it will fetch the compliance state of resources. The action will fail if there are any non-compliant resources.
 
    ```
    # File: .github/workflows/workflow.yml
@@ -205,13 +232,19 @@ Now that you've assigned a built-in policy definition, you can do more with Azur
 
    >**Note:** Ensure to Replace the **Subscription ID** and **<resource-group-name** and **<resource-provider-name>** in the above code.
 
-8. Commit the changes within your repository to successfully create the workflow file.
+9. To Commit the changes within your repository to successfully create the workflow file. Click on **Commit changes.**
 
-9. Head back to the **GitHub Actions (1)** tab and then select the Action named **Security Compliance Scan (2)**.
+    ![](../media/ex8-task1-17.png)
 
-   ![](../media/cl8-ex2-t2-s9.png)
+10. Click on **Commit changes**
 
-10. Make sure all the workflow runs are successful.
+    ![](../media/ex8-task1-19.png)
+
+12. Head back to the **GitHub Actions (1)** tab and then select the Action named **Security Compliance Scan (2)**.
+
+    ![](../media/cl8-ex2-t2-s9.png)
+
+11. Make sure all the workflow runs are successful.
 
 ## Success criteria:
 To complete this challenge successfully:
