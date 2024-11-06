@@ -24,7 +24,7 @@ This is the solution guide, which provides all the specific, step-by-step direct
 
 1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
 
-1. If a **Welcome to Microsoft Azure** pop-up window appears, click **Maybe Later** to skip the tour.
+1. If a **Welcome to Microsoft Azure** pop-up window appears, click **Cancel** to skip the tour.
 
 ## Task 1: Connect GitHub Environment to Microsoft Defender for Cloud
 
