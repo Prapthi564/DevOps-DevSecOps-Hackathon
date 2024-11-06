@@ -58,9 +58,11 @@ Here is the solution guide, which provides all the specific, step-by-step direct
      
           ![](../media/ex6-task1-3.png)
   
-        - A page will appear with the message "Verify your email". open http://outlook.office.com/ in a private window, and enter the Github username and password  open the email from OpenAI, and click the verification link inside to complete the setup process.
+        - A page will appear with the message "Verify your email". open http://outlook.office.com/ in a private window, provide the Github username and password, open the email from OpenAI, and click the verification link inside to complete the setup process. 
      
           ![](../media/ex6-task1-3.1.png)
+  
+        - Navigate back to the login page provide Github username and password, You will be prompted to provide details like **Full Name** and **Date of Bith** and click on **Agree** this will navigate you the Open AI Platform.
 
       >**Note:** Upon creation of a new OpenAI account, the free tier provides you with a $5 credit limit that expires within a period of 3 months from the day of account activation.
 
