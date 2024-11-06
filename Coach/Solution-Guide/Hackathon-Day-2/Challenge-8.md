@@ -40,7 +40,7 @@ In this task, you will enforce compliance with Azure Policy by assigning a polic
 
 8. Select **Inherit a tag from the resource group if missing**. If you can't find it right away, type **Inherit a tag from the resource group if missing (1)** into the search box and then press ENTER. Select the Policy result fetched **Inherit a tag from the resource group if missing (2)** and then Click on **Add (3)** at the bottom of the **Available Definitions** page once you have found and selected the policy definition.
 
-   ![](../media1/ex8-task1-5.png)
+   ![](../media/ex8-task1-5.png)
 
 9. The **Assignment name** is automatically populated with the policy name you selected, but you can change it. For this example, leave **Inherit a tag from the resource group if missing**. You can also add an optional **Description**. The description provides details about this policy assignment.
 
@@ -50,7 +50,7 @@ In this task, you will enforce compliance with Azure Policy by assigning a polic
 
 13. For **Tag Name**, enter **Environment (2)**.
 
-    ![](../media1/ex8-task1-6.png)
+    ![](../media/ex8-task1-6.png)
 
 15. Select the **Remediation (1)** tab at the top of the wizard.
 
@@ -58,19 +58,19 @@ In this task, you will enforce compliance with Azure Policy by assigning a polic
 
 17. **Create a Managed Identity (3)** is automatically checked since this policy definition uses the modify effect. **Permissions** is set to Contributor automatically based on the policy definition.
 
-    ![](../media1/ex8-task1-7.png)
+    ![](../media/ex8-task1-7.png)
      
 18. Select the **Non-compliance messages (1)** tab at the top of the wizard.
 
 19. Set the **Non-compliance message** to **This resource doesn't have the required tag (2)**. This custom message is displayed when a resource is denied or for non-compliant resources during regular evaluation.
 
-    ![](../media1/ex8-task1-8.png)
+    ![](../media/ex8-task1-8.png)
 
 21. Select the **Review + create (1)** tab at the top of the wizard.
 
 22. Review your selections, then select **Create (2)** at the bottom of the page.
 
-    ![](../media1/ex8-task1-9.png)
+    ![](../media/ex8-task1-9.png)
 
 ### Task 2: Implement a new custom policy
 
