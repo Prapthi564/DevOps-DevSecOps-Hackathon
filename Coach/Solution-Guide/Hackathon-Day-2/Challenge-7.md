@@ -35,7 +35,7 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
    
 1. At the left pane , click on **Extensions**. 
 
-   ![Picture1](../media/ex7-task1-0.0.png)
+   ![Picture1](../media/ex7-1.png)
 
 1. At the search bar of the Extensions type **Github (1)**, select the **Github Copilot (2)** Extension and then click on **install (3).**
 
@@ -185,8 +185,7 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
       ```
       cd C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files-2\src\ContosoTraders.Ui.Website.V2
       ``` 
-      - Once you're in your project directory, you can start the application with the `npm start` **(3)** because we need npm to create the Contoso Traders Application. After running the following command within the terminal, your application should start, and you can view it in your web browser at http://localhost:3000.
-        
+      - Once you're in your project directory, you can start the application with the `npm start` **(3)** because we need npm to create the Contoso Traders Application. After running the following command within the terminal, your application should start, and you can view it in your web browser at http://localhost:3000.   
       ```
       npm run start
       ```
@@ -335,7 +334,7 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
   
    ![](../media/cl2-t1-s3.png)
 
-   ![](../media/ex5-task1-step3b.png) 
+   ![](../media/c2-1.png) 
 
 5. Navigate to the **Actions** ***(1)*** tab, here you can review the **workflow** ***(2)*** run.
     
@@ -407,7 +406,7 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
    - Severity: **High** ***(5)***
    - Common Weakness Enumerator (CWE): **Improper Access Control (CWE-284)** ***(6)***
   
-   ![](../media/CL7-EX3-T3-S3.png)
+     ![](../media/CL7-EX3-T3-S3.png)
 
 4. Once the security advisory is created, scroll down and click on **start a temporary private fork**. It is used to collaborate on a patch for this advisory.
 
