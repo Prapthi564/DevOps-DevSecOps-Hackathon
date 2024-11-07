@@ -44,23 +44,23 @@ You are a DevOps engineer tasked with setting up a robust Continuous Integration
 1. **Setup a GitHub repository:**
    - Create a new GitHub repository with public access permission.
 
-      > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-      > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-      > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-      > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com We are available 24/7 to help
-   
-      <validation step="cf73e7b8-5069-427a-92f3-30540b2bb3b3" />
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com We are available 24/7 to help
+
+<validation step="cf73e7b8-5069-427a-92f3-30540b2bb3b3" />
 
    - You are provided with an e-commerce application named Contoso Traders, which needs to be deployed and hosted on Azure.
    - You can navigate to the `C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files` directory and find the complete code base of the application.
    - Using Visual Studio code, connect to the GitHub repository that you created in the earlier step and push the application code base to your GitHub repository.
   
-      > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-      > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-      > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-      > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com We are available 24/7 to help
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com We are available 24/7 to help
 
-      <validation step="2cacb336-4732-4cf2-91c9-49ecdd23a1f9" />
+<validation step="2cacb336-4732-4cf2-91c9-49ecdd23a1f9" />
 
 1. **Deploy Infrastructure:**
    - In the GitHub repository, navigate to the setting and add github action secrets and variable as below.
@@ -76,17 +76,17 @@ You are a DevOps engineer tasked with setting up a robust Continuous Integration
 
    -  Run the workflow named `contoso-traders-cloud-testing` using GitHub Actions.
   
-      > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-      > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-      > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-      > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com We are available 24/7 to help
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com We are available 24/7 to help
 
-      <validation step="9b67b6b9-b498-47c1-b72b-b0ab8bf8a245" />
+<validation step="9b67b6b9-b498-47c1-b72b-b0ab8bf8a245" />
    
 2. **Setup CI/CD Workflow:**
 
    - Update the previously created GitHub secret with the following value:
-      - **SQL_PASSWORD**: ADO.NET (SQL authentication) connection string of `productsdb` SQL database.
+      - **SQLPASSWORD**: ADO.NET (SQL authentication) connection string of `productsdb` SQL database.
 
    - In the GitHub repository, navigate to  **.github/workflow** where you will be able to find the yaml workflow. This YAML file is partially updated, you need to update the YAML files with the right steps and complete the workflow. This workflow should deploy the application to Azure. 
   
