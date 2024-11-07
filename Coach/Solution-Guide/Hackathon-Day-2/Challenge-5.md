@@ -101,7 +101,7 @@ In this task, your objective is to incorporate Targets and establish an Experime
     - Name: **contoso-chaos-<inject key="DeploymentID" enableCopy="false" />** ***(3)***
     - Region: Leave it to default 
  
-   ![](../media/experiment.png)
+      ![](../media/experiment.png)
    
 1. On the **Permissions** page, leave the default selection and select **Next: Experiment designer >**.
 
@@ -117,7 +117,7 @@ In this task, your objective is to incorporate Targets and establish an Experime
    - Duration (minutes): **5** ***(2)***
    - jsonSpec: Leave it to default ***(3)***
      
-   ![](../media/2dgn61.png)
+     ![](../media/2dgn61.png)
      
 1. On **Target resources**, select **Manually select from a list** **(1)** option under the **Select target resources** , select the **contoso-traders-aks<inject key="DeploymentID" enableCopy="false" />** ***(2)*** resource, and **Add** ***(3)***.
   
@@ -147,7 +147,7 @@ In this task, your objective is to incorporate Targets and establish an Experime
 
 1. Click on **Review + assign**. 
    
-   ![](../media/ex6-task3-step21.png)
+   ![](../media/ex6-ch.png)
       
 1. On the Azure Portal, navigate back to the Chaos experiment you created, **contoso-chaos-<inject key="DeploymentID" enableCopy="false" />** and click on **Start**.
   
