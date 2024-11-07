@@ -11,7 +11,7 @@ In this challenge, you will be improving a React Application. As a DevOps engine
 
 1. **Integrate an 'About Us' app component in React using GitHub Copilot:**
    - You are provided with a simple React application which needs to be deployed and hosted on Azure.
-   - You can navigate to the `C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files-2\ContosoTraders.Ui.Website.V2.Raw` directory and then ensure to select the `ContosoTraders.Ui.Website.V2.Raw` folder to import the complete code base of the application.
+   - You can navigate to the `C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files-2\ContosoTraders.Ui.Website.V2.Raw` directory and then ensure to select the `ContosoTraders.Ui.Website.V2` folder to import the complete code base of the application.
    - Enhance the user interface by designing and integrating an **About Us** page app component within the existing imported React application using **GitHub Copilot**.
    - Ensure that the React Application is up and running with the newly integrated **About Us** page, locally on `http://localhost:3000/`.
 
