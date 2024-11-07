@@ -27,12 +27,12 @@ Your task is to implement Microsoft Defender for Cloud DevOps security measures 
    - Implement fixes or enhancements to address the security findings identified during the scan.
    - Ensure that the GitHub Action workflow passes successfully after addressing the security issues.
   
-   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com We are available 24/7 to help
-   
-   <validation step="29fc4baa-5102-4c9d-8f5b-4aec7f5e7ce9" />
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com We are available 24/7 to help
+
+<validation step="29fc4baa-5102-4c9d-8f5b-4aec7f5e7ce9" />
 
 ## Success criteria:
 To complete this challenge successfully:
