@@ -12,21 +12,21 @@ This is the solution guide, which provides all the specific, step-by-step direct
 
 In this task, you will use Dependabot to track the versions of the packages we use in our GitHub repository and create pull requests to update packages for us.
 
-1. In your lab files GitHub repository, navigate to the **Settings** ***(1)*** tab and select the **Code security and analysis** ***(2)*** under Security from the side blade. Make sure **Dependabot alerts** is **Enabled** ***(3)***, if not, click on **Enable** to Enable Dependabot alerts. Click on **Enable** ***(4)*** to Enable Dependabot security updates.
+1. In your lab files GitHub repository, navigate to the **Settings** ***(1)*** tab and select the **Code security** ***(2)*** under Security from the side blade. Make sure **Dependabot alerts** is **Enabled** ***(3)***, if not, click on **Enable** to Enable Dependabot alerts. Click on **Enable** ***(4)*** to Enable Dependabot security updates.
 
    > **Note**: Enabling the `Dependabot security updates` will also automatically enable `Dependency graph` and `Dependabot alerts`.
 
-   ![The GitHub Repository Security Overview tab.](../media/cl3-t1-s1.png "GitHub Repository Security Overview")
+   ![The GitHub Repository Security Overview tab.](../media/devops-devsecops-new-6.png "GitHub Repository Security Overview")
 
    > **Note**: The alerts for the repository may take some time to appear. The rest of the steps for this task rely on the alerts being present. You can continue with the next exercise, as this is an independent task and doesn't affect the lab. Please visit this task later and complete it.
 
 1. To observe Dependabot issues, navigate to the **Security** ***(1)*** tab and select the **View Dependabot alerts** ***(2)*** link.
 
-   ![GitHub Dependabot alerts in the Security tab.](../media/cl3-t1-s2.png "GitHub Dependabot alerts")
+   ![GitHub Dependabot alerts in the Security tab.](../media/devops-devsecops-new-7.png "GitHub Dependabot alerts")
 
 1. You should arrive at the `Dependabot alerts` blade in the `Security` tab.
 
-   ![GitHub Dependabot alerts in the Security tab.](../media/cl3-t1-s3.png "GitHub Dependabot alerts")
+   ![GitHub Dependabot alerts in the Security tab.](../media/devops-devsecops-new-8.png "GitHub Dependabot alerts")
 
 1. Sort the Dependabot alerts by `Package name`. Under the **Package** ***(1)*** dropdown menu, search for **node-forge** ***(2)*** by typing in the search box and selecting **node-forge** ***(3)*** vulnerability.
 
@@ -36,7 +36,7 @@ In this task, you will use Dependabot to track the versions of the packages we u
 
    ![The `handlebars` Dependabot alert detail.](../media/ex5-t3-reviewsu.png "Dependabot alert detail")
    
-   **Note:** If you see the Create Security Update option, click on it. After it is created, select Review security update. 
+   **Note:** If you see the Create Dependabot Security Update option, click on it. After it is created, select Review security update. 
 
 1. Navigate to the **Pull Requests** ***(1)*** tab, find the Dependabot security patch pull request ***(2)***, and merge it to your main branch.
 
@@ -51,8 +51,7 @@ In this task, you will use Dependabot to track the versions of the packages we u
 1. Pull the latest changes from your GitHub repository to your local GitHub folder.
 
    ```pwsh
-   cd C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files  # This path may vary depending on how
-                                                            # you set up your lab files repository
+   cd C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files  # This path may vary depending on how you set up your lab files repository
    git pull
    ```
    
@@ -64,9 +63,9 @@ In this task, you'll explore how secret scanning works and how it generates aler
 
    ![](../media/2dg110.png)
     
-1. Select **Code security (1)** from the sidebar and make sure **Secret scanning is enabled (2)**.
+1. Select **Code security** from the sidebar and make sure **Secret scanning is enabled (1)**.
 
-   ![](../media/2dg111.png)   
+   ![](../media/devops-devsecops-new-9.png)   
     
 1. Navigate back to **Code (1)** and click on the **src (2)** folder.
 
@@ -89,11 +88,15 @@ In this task, you'll explore how secret scanning works and how it generates aler
       build: ./ContosoTraders.Api.Products
    ```
    
-   ![](../media/2dg115.png)   
-   
+   ![](../media/devops-devsecops-new-10.png)   
+
+1. You will get a pop up window of Secret scanning found Azure Active Directory Application secret found alert. You can either **Allow secret** by selecting the options available i.e It's used in tests, It's a false positive or I'll fix it later or **Cancel** it.
+
+   ![](../media/devops-devsecops-new-11.png) 
+
 1. Select the **Security (1)** tab and click on **Secret scanning (2)** from the sidebar. Here, you'll notice that an alert is generated referring to the same **Application ID** that was exposed in the `build.docker-compose.yml` file. This is how the Secret scanning feature works and generates alerts to notify you.
 
-   ![](../media/2dg116.png) 
+   ![](../media/devops-devsecops-new-13.png) 
 
 ## Success criteria:
 To complete this challenge successfully:
