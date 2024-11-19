@@ -132,11 +132,6 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
 
 ### Task 2: Deploy Infrastructure
 
-1. Within the GitHub repository, navigate to the `iac/createResources.parameters.json` path and update the value of the following parameters, once updated click commit changes to save the file:
-   - Replace `deploymentidvalue` with **DeploymentID** present under the **Environment** tab.
-   - Replace `bicepsqlpass` with **AzureAdUserPassword** present under the **Environment** tab.
-  
-       ![](../media/cl1-t2-s1.png)
 
 2. To create GitHub secrets, in your GitHub lab files repository, click on the **Settings** tab.
 
@@ -170,26 +165,19 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
 
 6. To create another secret, under the **Actions Secrets/New secret** page, enter the below-mentioned details and click on **Add secret** ***(3)***.
 
-   - **Name**: Enter **SQL_PASSWORD** ***(1)***
+   - **Name**: Enter **SQLPASSWORD** ***(1)***
    - **Value**: Enter **<inject key="AzureAdUserPassword"></inject> (2)**, which would be the same as the Azure AD Password.
 
       ![](../media/cl1-t2-s6.png)
 
-7. Under the **Actions Secrets/New secret** page, enter the below-mentioned details and click on **Add secret** ***(3)***.
+7. Under the **Actions Secrets/New variable** page, enter the below-mentioned details and click on **Add variable** ***(3)***.
 
    - **Name** : Enter **ENVIRONMENT** ***(1)***
    - **Value** : **<inject key="DeploymentID" enableCopy="false" />** (Copy the Deployment ID from the environment details tab) ***(2)***
    
        ![](../media/2dgn33.png)
+8. Same as above create a new variable called **DEPLOYMENTREGION** and enter the region where you want to deploy your infrastructure. 
 
-8. Now within the GitHub repository, navigate to the `iac/createResourceGroup.bicep` path and update the resource group name as mentioned below:
-   - Replace `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
-
-      ![](../media/cl1-t2-s8.png)
-
-9. Navigate to the `.github/workflow/deploy-infrastructure.yml` path and ensure to update the `RESOURCE_GROUP_NAME` environment variable by replacing `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**, once updated click commit changes to save the file:
-
-   ![](../media/cl1-t2-s9.png)
 
 10. To run a workflow, perform the following steps and wait for the resources to be deployed within your Azure Portal:
       - Click on **Actions (1)** within your GitHub repository.
