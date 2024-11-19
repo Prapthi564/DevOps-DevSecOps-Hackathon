@@ -36,15 +36,24 @@ In this task, you'll create an Azure Load Testing instance and run a test using 
    -  Click on **Review + create (5)**
    - Finally, click on **Create**.
 
-   ![](../media/createloadtesting-1.png)
+      ![](../media/createloadtesting-1.png)
 
 1. On the left-hand side pane, select **Tests** ***(1)***, and click on **+ Create** ***(2)***, and select **Create a URL-based test (3)**.
 
-   ![](../media/url-load-test.png)
+   ![](../media/devops-devsecops-new-17.png)
 
-1. On the **Create a URL-based test** page, under the basic tab, paste the **Endpoint URL** as Test URL ***(1)***, leave the rest as default, and then click on **Review + create (2)**, followed by **Create**.
+1. On the **Create a URL-based test** page, keep the default settings and select **Next**. 
 
-   ![](../media/url-load-test-1.png)
+   ![](../media/devops-devsecops-new-14.png)
+
+1. On the **Test plan** page, keep the default settings and select **+ Add request**. On the Add request tab, paste the **Endpoint URL** as URL that you have copied earlier. Click on **Add** and then on **Next**.
+
+   ![](../media/devops-devsecops-new-15.png)
+
+1. On the **Load** page, change the **Test duration** to **5 minutes** and rest keep the default settings and select **Review + create** , followed by **Create**.
+
+   ![](../media/devops-devsecops-new-16.png)
+
 
 1. The test run will start, and once the test run is completed, you will be able to see the **Client-side metrics**. Explore the given metrics output.
 
@@ -97,7 +106,7 @@ In this task, your objective is to incorporate Targets and establish an Experime
     - Name: **contoso-chaos-<inject key="DeploymentID" enableCopy="false" />** ***(3)***
     - Region: Leave it to default 
  
-   ![](../media/experiment.png)
+      ![](../media/experiment.png)
    
 1. On the **Permissions** page, leave the default selection and select **Next: Experiment designer >**.
 
@@ -113,7 +122,7 @@ In this task, your objective is to incorporate Targets and establish an Experime
    - Duration (minutes): **5** ***(2)***
    - jsonSpec: Leave it to default ***(3)***
      
-   ![](../media/2dgn61.png)
+      ![](../media/2dgn61.png)
      
 1. On **Target resources**, select **Manually select from a list** **(1)** option under the **Select target resources** , select the **contoso-traders-aks<inject key="DeploymentID" enableCopy="false" />** ***(2)*** resource, and **Add** ***(3)***.
   
