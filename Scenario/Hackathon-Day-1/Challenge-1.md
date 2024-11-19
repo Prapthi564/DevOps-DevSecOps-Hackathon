@@ -55,13 +55,10 @@ You are a DevOps engineer tasked with setting up a robust Continuous Integration
      
      - Create GitHub variables with the same name as mentioned below.   
         - **DEPLOYMENTREGION**: Add you deployment region where you want to get the resources deployed.
-        - **SUFFIX**: Create a secret to store the deployment ID which is **<inject key="DeploymentID" enableCopy="false" />**.
+        - **SUFFIX**: Create a variables to store the deployment ID which is **<inject key="DeploymentID" enableCopy="false" />**.
        
        >**Hint**: You can also find the deployment ID and the Azure AD password within the environment details tab of your integrated lab guide.
 
-   - Within your repository, navigate to `.github/workflow/deploy-infrastructure.yml` path and ensure to update the `RESOURCE_GROUP_NAME` environment variable by replacing `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
-     
-   - Within your repository, navigate to `.github/workflow/Update-contoso-Traders-App.yml` path, ensure to update the `RESOURCE_GROUP_NAME`, and `AKS_NODES_RESOURCE_GROUP_NAME` environment variable by replacing `<deployment-id>` with **<inject key="DeploymentID" enableCopy="false" />**.
    
    -  Run the workflow named `contoso-traders-provisioning-deployment` and `update contoso Traders app`, using GitHub Actions.
    
