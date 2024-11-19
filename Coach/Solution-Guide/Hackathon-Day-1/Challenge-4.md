@@ -22,31 +22,31 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
    - **Password:** <inject key="GitHubPassword"></inject>
 
    >**Note**: Please use the above-mentioned credentials to login to Azure.
-```
 
-Connect-AzAccount 
-
-$RGname = <update the existing RG name>
-
-cd C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files\iac
-
-New-AzResourceGroupDeployment -Name "createresource" -TemplateFile "monitoringinfra.bicep" -TemplateParameterFile "monitoringinfra.parameters.json" -ResourceGroup $RGname
-```
+   ```
+   Connect-AzAccount 
+   
+   $RGname = <update the existing RG name>
+   
+   cd C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files\iac
+   
+   New-AzResourceGroupDeployment -Name "createresource" -TemplateFile "monitoringinfra.bicep" -TemplateParameterFile "monitoringinfra.parameters.json" -ResourceGroup $RGname
+   ```
 
 ### Task 2: Monitoring using Application Insights
 
 1. In the Azure Portal, navigate to the **contosotraders-<inject key="Deploymentid" enableCopy="false" />** **(1)** resource group and select the **Application Insights** resource with the name  **contoso-traders-aivalue** **(2)**.
 
    ![](../media/cl4-t2-s1.png)
-   
+
 1. From the Overview of **contoso-traders-aivalue** Application Insights resource, you can set the **Show data for last** as per your requirement of monitoring insights.
 
    ![](../media/cl4-t2-s2.png)
-   
+
 1. In the first graph, you can see the number of failed requests for Application access.
 
    ![](../media/upd-ex6-t1-failedrequests.png)
-   
+
 1. In the next graph, you can see the average server response time.
 
    ![](../media/upd-ex6-t1-server-response-time.png)
@@ -54,20 +54,25 @@ New-AzResourceGroupDeployment -Name "createresource" -TemplateFile "monitoringin
 1. In the next graph, you can see the number of server requests.
 
    ![](../media/upd-ex6-t1-server-requests.png)
-   
+
 1. In the last graph, you can see the average availability.
 
    ![](../media/upd-ex6-t1-availability.png)  
 
 ## Success criteria:
+
 To complete this challenge successfully:
 
 - Successful integration of Azure Monitor and Application Insights within the application environment, ensuring seamless data collection and monitoring capabilities.
+
 - Selection and configuration of key performance metrics relevant to the application's functionality and performance goals.
+
 - Establishment of effective alerting mechanisms with well-defined thresholds, ensuring timely notifications for potential issues or deviations in monitored metrics.
 
 ## Additional Resources:
 
 - Refer to [Application Insights Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview) for reference.
-- [Application Insights for ASP.NET Core applications](https://learn.microsoft.com/en-us/azure/azure-monitor/app/asp-net-core?tabs=netcorenew%2Cnetcore6).
+
+- Refer to [Application Insights for ASP.NET Core applications](https://learn.microsoft.com/en-us/azure/azure-monitor/app/asp-net-core?tabs=netcorenew%2Cnetcore6).
+
 - Refer to [Azure Monitor vs. Application Insights](https://azurelib.com/azure-monitor-vs-application-insights/) for reference.
