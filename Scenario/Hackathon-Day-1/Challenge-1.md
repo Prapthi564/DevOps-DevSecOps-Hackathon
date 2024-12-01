@@ -51,7 +51,7 @@ You are a DevOps engineer tasked with setting up a robust Continuous Integration
    - In the GitHub repository, navigate to the setting and add github action secreat and variable as below.
      - Create GitHub secrets with the same name as mentioned below.
         - **SERVICEPRINCIPAL**: Create a secret to store service principal details. You can find the details in the Environment details tab of your environment.
-        - **SQLPASSWORD**: You need to store **<inject key="AzureAdUserPassword"></inject>(Azure AD user password)** as a secret. 
+        - **SQLPASSWORD**: You need to enter any unique password with combination of Alphanumeric letters. 
      
      - Create GitHub variables with the same name as mentioned below.   
         - **DEPLOYMENTREGION**: Add you deployment region where you want to get the resources deployed.
