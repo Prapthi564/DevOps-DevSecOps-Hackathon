@@ -5,6 +5,14 @@
         "BaseURL": "https://github.com/CloudLabs-MOC/Intro-to-Intelligent-Apps-Challenge-lab",
         "Files": [
             {
+                "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-MOC/DevOps-DevSecOps-Hackathon/Microsoft_repo/Scenario/Hackathon-Day-2/README.md",
+                "Order": 1
+            },
+            {
+                "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-MOC/DevOps-DevSecOps-Hackathon/Microsoft_repo/Scenario/Hackathon-Day-2/Use-Case.md",
+                "Order": 2
+            },
+          {
                 "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-MOC/DevOps-DevSecOps-Hackathon/main/Scenario/Hackathon-Day-1/prerequisites.md",
                 "Order": 3
             },
