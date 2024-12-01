@@ -2,7 +2,7 @@
     {
         "Name": "DevOps-DevSecOps Hackathon Day 2",
         "Language": "English",
-        "BaseURL": "https://github.com/CloudLabs-MOC/Intro-to-Intelligent-Apps-Challenge-lab",
+        "BaseURL": "https://github.com/CloudLabs-MOC/DevOps-DevSecOps-Hackathon",
         "Files": [
             {
                 "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-MOC/DevOps-DevSecOps-Hackathon/Microsoft_repo/Scenario/Hackathon-Day-2/README.md",
