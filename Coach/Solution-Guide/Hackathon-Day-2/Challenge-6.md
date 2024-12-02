@@ -352,7 +352,7 @@ Here is the solution guide, which provides all the specific, step-by-step direct
 
    ![](../media/ex6-task1-25.png)
 
-11. Select ` .github/workflows ` and click on ` ai-code-review.yml `.
+11. Select `.github/workflows` and click on `ai-code-review.yml`.
 
 12. At the end of the line add a **space** or click on **enter**. 
 
