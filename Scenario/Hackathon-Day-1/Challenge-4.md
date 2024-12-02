@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/7a04b4c4-32c5-48b5-a6c5-06adcd2e2eae)# Challenge 04: Implementing Monitoring Solutions for Contoso Traders
+# Challenge 04: Implementing Monitoring Solutions for Contoso Traders
 
 ### Estimated Time: 60 minutes
 
