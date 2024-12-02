@@ -60,10 +60,8 @@ You are a DevOps engineer tasked with setting up a robust Continuous Integration
        >**Hint**: You can also find the deployment ID and the Azure AD password within the environment details tab of your integrated lab guide.
 
    
-   -  Run the workflow named `contoso-traders-provisioning-deployment` and `update contoso Traders app`, using GitHub Actions.
-   
-   -  Run the workflow named `contoso-traders-provisioning-deployment` using GitHub Actions.
-   
+   -  Run the workflow named `contoso-traders-provisioning-deployment` and `update-contoso-traders-App`, using GitHub Actions.
+      
 3. **Setup CI/CD Workflow:**
 
    - Update the previously created GitHub secret with the following value:
