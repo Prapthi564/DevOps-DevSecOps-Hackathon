@@ -230,7 +230,7 @@ Now that you've assigned a built-in policy definition, you can do more with Azur
         
    ```
 
-   >**Note:** Ensure to Replace the **Subscription ID** and **<resource-group-name** and **<resource-provider-name>** in the above code.
+   >**Note:** Ensure to Replace the **Subscription ID** , **<resource-group-name** and **<resource-provider-name>** in the above code.
 
 9. To Commit the changes within your repository to successfully create the workflow file. Click on **Commit changes.**
 
