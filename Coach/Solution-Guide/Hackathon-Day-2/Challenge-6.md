@@ -348,6 +348,10 @@ Here is the solution guide, which provides all the specific, step-by-step direct
 
    ![](../media/ex6-cm1.png)
 
+8. Navigate back to the `Test` branch that you created.
+
+    ![](../media/ex6-task1-25.png)
+
 
 
 ## Success criteria:
