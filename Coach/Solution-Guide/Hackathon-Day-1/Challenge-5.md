@@ -32,7 +32,7 @@ In this task, you'll create an Azure Load Testing instance and run a test using 
    - **Subscription**: Select the available subscription provided **(1)**.
    - **Resource group**: Select **contosotraders-<inject key="DeploymentID" /> (2)**
    - **Name**: Enter **contoso-traders-loadtest-<inject key="DeploymentID" /> (3)**
-   -  **Region**: **East US (4)**
+   -  **Region**: **Same as your contoso webapp resource group deployment (4)**
    -  Click on **Review + create (5)**
    - Finally, click on **Create**.
 
