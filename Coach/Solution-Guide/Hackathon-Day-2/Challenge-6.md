@@ -352,11 +352,11 @@ Here is the solution guide, which provides all the specific, step-by-step direct
 
    ![](../media/ex6-task1-25.png)
 
-11. Select `.github/workflows` and click on `ai-code-review.yml`.
+11. Select ` .github/workflows ` and click on ` ai-code-review.yml `.
 
 12. At the end of the line add a **space** or click on **enter**. 
 
-13. Create a Pull request to merge the changes made from the `test` to  `main` branch.
+13. Create a Pull request to merge the changes made from the ` test ` to  ` main ` branch.
 
 11. Click on the **Actions** tab and then notice that `AI Security Check for Pull Requests` workflow has been automatically initiated. Ensure that the workflow does not fail. If so, there may be some vulnerabilities within the recent pull request. Refer to the run details for the GitHub Actions that have failed.
 
