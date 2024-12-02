@@ -149,7 +149,7 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
    export default AboutUs;
    ```
 
-   >**Note:** Free free to make changes in the above code snippet as per your use case scenario.
+   >**Note:** Feel free to make changes in the above code snippet as per your use case scenario.
 
    >**Note:** Notice that the css rules have been imported into the `AboutUs.js` file using the code, `import "./AboutUs.css";`.
    
