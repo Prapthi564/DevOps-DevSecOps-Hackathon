@@ -117,7 +117,7 @@ Here is the solution guide, which provides all the specific, step-by-step direct
 
 2. Select the `devsecops` repository that was created as a part of the earlier challenges.
 
-3. Under **Security (1)**, expand **Secrets and variables** **(2)** by clicking the drop-down and select **Actions** **(3)** blade from the left navigation bar. Select the **New repository secret** **(4)** button.
+3. Under **Settings (1)**, expand **Secrets and variables** **(2)** under **security** by clicking the drop-down and select **Actions** **(3)** blade from the left navigation bar. Select the **New repository secret** **(4)** button.
 
    ![](../media/ex6-task1-8.png)
 
