@@ -166,13 +166,13 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
 6. To create another secret, under the **Actions Secrets/New secret** page, enter the below-mentioned details and click on **Add secret** ***(3)***.
 
    - **Name**: Enter **SQLPASSWORD** ***(1)***
-   - **Value**: Enter **<inject key="AzureAdUserPassword"></inject> (2)**, which would be the same as the Azure AD Password.
+   - **Value**: You need to enter any unique password with combination of Alphanumeric letters. Your password must contain characters from three of the following categories – English uppercase letters, English lowercase letters, numbers (0-9), and non-alphanumeric characters (!, $, #, %, etc.).
 
-      ![](../media/cl1-t2-s6.png)
+      ![](../media/sqlpass.png)
 
 7. Under the **Actions Secrets/New variable** page, enter the below-mentioned details and click on **Add variable** ***(3)***.
 
-   - **Name** : Enter **ENVIRONMENT** ***(1)***
+   - **Name** : Enter **SUFFIX** ***(1)***
    - **Value** : **<inject key="DeploymentID" enableCopy="false" />** (Copy the Deployment ID from the environment details tab) ***(2)***
    
        ![](../media/2dgn33.png)
@@ -206,7 +206,7 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
 
    ![](../media/2dgn9.png) 
    
-1. Select the **contosotraders-<Deployment-ID>** resource group from the list.
+1. Select the **contosotraders-rg<Deployment-ID>** resource group from the list.
 
    ![](../media/cl1-t3-s2.png)  
    
@@ -232,9 +232,8 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
    
       ![](../media/cl1-t3-s7.png)
    
-   >**Note**: Replace `{your_password}` with the ODL User Azure Password. Go to **Environment (1)**, click on **Azure Credentials (2)**, and copy **Password (3)**.
+   >**Note**: Replace `{your_password}` with the password that you have used initially
    
-   ![](../media/devops-devsecops-new-3.png)   
    
 1. From your GitHub repository, select the **Actions** ***(1)*** tab. Select the **contoso-traders-app-deployment** ***(2)*** workflow from the side blade, Click on the  **drop-down** ***(3)*** next Run workflow button, and select **Run workflow** ***(4)***.
 
