@@ -175,7 +175,7 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
    - **Name** : Enter **SUFFIX** ***(1)***
    - **Value** : **<inject key="DeploymentID" enableCopy="false" />** (Copy the Deployment ID from the environment details tab) ***(2)***
    
-       ![](../media/2dgn33.png)
+       
 8. Same as above create a new variable called **DEPLOYMENTREGION** and enter the region where you want to deploy your infrastructure. 
 
 
