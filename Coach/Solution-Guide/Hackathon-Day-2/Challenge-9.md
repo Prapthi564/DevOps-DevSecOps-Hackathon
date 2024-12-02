@@ -122,7 +122,7 @@ Microsoft Security DevOps is a command line application that integrates static a
 
    ![](../media/cl9-t2-s4.png)
 
-5. In the text box, enter the name `.msdevopssec.yml` for your workflow file.
+5. In the text box, enter the name `msdevopssec.yml` for your workflow file.
 
    ![](../media/cl9-t2-s5.png)
 
