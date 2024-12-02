@@ -243,7 +243,7 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
 
    ![](../media/2dgn124.png)
    
-   ![](../media/2dgn165.png)
+
    
    **Note**: If the workflow **fails** due to the **npm install** job, follow steps 13 to 15. Otherwise, continue from step 16. 
    
