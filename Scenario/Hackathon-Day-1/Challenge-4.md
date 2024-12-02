@@ -1,4 +1,4 @@
-# Challenge 04: Implementing Monitoring Solutions for Contoso Traders
+![image](https://github.com/user-attachments/assets/7a04b4c4-32c5-48b5-a6c5-06adcd2e2eae)# Challenge 04: Implementing Monitoring Solutions for Contoso Traders
 
 ### Estimated Time: 60 minutes
 
@@ -14,6 +14,8 @@ In this challenge, you will integrate Azure's monitoring tools—Azure Monitor a
 
    - Create and set up Application Insights for the Contoso traders application using Key vault.
 
+>**Hint:** You can find existing bicep template to perform this challenge at this location  C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files\iac
+
 2. **Dashboard Creation:**
    - Design comprehensive dashboards for real-time visualization of application health and performance metrics.
       - Participants will create visually intuitive dashboards within Azure Monitor or Application Insights, displaying the collected metrics. These dashboards should offer clear insights into the application's health, failed requests, server response time, and availability.
@@ -21,6 +23,8 @@ In this challenge, you will integrate Azure's monitoring tools—Azure Monitor a
 3. **Monitor the application using App Insights:**
 
    - Monitor and explore the application using the dashboard that you created in the previous task.
+  
+   
 
 ## Success criteria:
 To complete this challenge successfully:
