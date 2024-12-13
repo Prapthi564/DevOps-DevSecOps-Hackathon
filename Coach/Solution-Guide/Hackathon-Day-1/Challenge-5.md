@@ -65,6 +65,58 @@ In this task, you'll create an Azure Load Testing instance and run a test using 
 
 In this task, your objective is to incorporate Targets and establish an Experiment within Azure Chaos Studio. This process aims to assess the resilience of the web application we developed by introducing real faults and observing how our applications react to real-world disruptions.
 
+1. In the portal, open the **Azure Cloud Shell** by clicking on the icon in the top right of the Azure Portal.
+
+    ![](../media/cloudshell.png)
+
+1. The first time you start Cloud Shell you're prompted to which shell to use. Select, select **Bash**.
+
+1. In the **Getting started** pane, select **No storage account required** for an ephemeral session. Using the dropdown menu, select the subscription you want to use for Cloud Shell, then select the **Apply** button.
+
+   ![](../media/getstarted.png)
+
+1. Run the following commands in an Azure Cloud Shell window where you have the active subscription set to be the subscription where your AKS cluster is deployed
+
+   ```
+   az aks get-credentials --admin --name <YourManagedClustername> --resource-group <YourManagedClusterresourcegroup>
+   ```
+
+   >**Note**: Replace <YourManagedClustername> and <YourManagedClusterresourcegroup> with the name of your cluster and resource group.
+
+1. Switch back to **Powershell** by click on **Switch to Powershell**.
+
+   ![](../media/power1.png)
+
+1. Run the below commands one-by-one.
+
+   ```
+   helm repo add chaos-mesh https://charts.chaos-mesh.org
+   helm repo update
+   kubectl create ns chaos-testing
+   helm install chaos-mesh chaos-mesh/chaos-mesh --namespace=chaos-testing --set chaosDaemon.runtime=containerd --set chaosDaemon.socketPath=/run/containerd/containerd.sock
+   ````
+
+1. Verify that the Chaos Mesh pods are installed by running the following command:
+
+   ```
+   kubectl get po -n chaos-testing
+   ```
+1. You should see output similar to the following example (a chaos-controller-manager and one or more chaos-daemons):
+
+   ![](../media/result.png)
+
+1. Verify that the application pods are running by executing the following command:  
+
+   ```  
+   kubectl get pods  
+   ```  
+   ![](../media/pods.png)
+   
+1. If no pods are visible, run the following command to create a new pod:
+ 
+   ```
+   kubectl run my-pod --image=nginx --restart=Never  
+   ```
 1. In the Azure Portal, search for **Azure Chaos Studio (1)** and then click on it from the search results **(2)**.
    
    ![](../media/Ex6-T2-S1.1.png)
