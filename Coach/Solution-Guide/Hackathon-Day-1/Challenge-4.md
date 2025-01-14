@@ -14,24 +14,22 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
 
 1. Navigate to `C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files\iac` path, open the `monitoringinfra.parameters.json` file and update **env** parameter value with **deployment-ID**.
 
-1. Open VS Code, and execute the code.
-
-   The below-mentioned code uses a bicep template named `monitoringinfra.bicep` which contains code to deploy the complete monitoring infrastructure.
+1. Open VS Code, and execute the code. The below-mentioned code uses a bicep template named `monitoringinfra.bicep` which contains code to deploy the complete monitoring infrastructure.
    
    - **Email/Username:** <inject key="GitHubUsername"></inject>
    - **Password:** <inject key="GitHubPassword"></inject>
 
    >**Note**: Please use the above-mentioned credentials to login to Azure.
-```
+   
+   ```
+   Connect-AzAccount 
 
-Connect-AzAccount 
+   $RGname = <update the existing RG name>
 
-$RGname = <update the existing RG name>
+   cd C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files\iac
 
-cd C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files\iac
-
-New-AzResourceGroupDeployment -Name "createresource" -TemplateFile "monitoringinfra.bicep" -TemplateParameterFile "monitoringinfra.parameters.json" -ResourceGroup $RGname
-```
+   New-AzResourceGroupDeployment -Name "createresource" -TemplateFile "monitoringinfra.bicep" -TemplateParameterFile "monitoringinfra.parameters.json" -ResourceGroup $RGname
+   ```
 
 ### Task 2: Monitoring using Application Insights
 
