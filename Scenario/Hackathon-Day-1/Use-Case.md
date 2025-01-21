@@ -14,10 +14,9 @@ Strengthen Code and Dependency Security:
 2. **Strengthen Code and Dependency Security:**
     - Utilize GitHub Advanced Security features to enhance code security. Implement CodeQL for code analysis, manage dependencies, and perform secret scanning to protect sensitive data.
     
-3. **Optimize Application Monitoring and Alerting:**
-    - Integrate Azure Monitor and Application Insights to monitor application health. Design and configure dashboards for real-time performance metrics and set up alerting mechanisms for proactive issue resolution.
-4. **Conduct Resilience Testing:**
-    - Perform resilience testing using Azure Load Testing and Azure Chaos Studio. Simulate high-scale traffic and chaotic events to test and improve the resilience of the e-commerce platform.
+3. Add new application features into a React App:
+
+    - Integrate the 'About Us' page component into the React application using GitHub Copilot, conduct unit tests, code review, and security checks, and deploy the updated application to Azure via GitHub Actions CI/CD pipeline.
 
 In this hackathon, you will be at the forefront of applying cutting-edge DevSecOps practices in a real-world scenario. You will have access to all the necessary tools and resources to effectively implement these use cases and contribute to the evolution of Contoso Traders’ e-commerce platform.
 
