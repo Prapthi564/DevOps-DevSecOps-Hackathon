@@ -46,19 +46,19 @@ This hackathon adopts a challenge-based format, offering you a unique opportunit
    - Code Review and Security Check.
    - CI/CD Pipeline Setup and Infrastructure Deployment.
 
-5. **Challenge 05: Resilience Testing using Azure Load Testing & Azure Chaos Studio**
-   - Conduct Azure Load Testing for high-scale traffic simulation.
-   - Configure and run experiments in Azure Chaos Studio.
-
-6. **Challenge 06: DevSecOps with AI-Powered GitHub Actions**
-   - Configure and implement AI Code Review GitHub Action.
-   - Configure and implement AI Security Check for Pull Requests.
-  
-7. **Challenge 07: Implementing Monitoring Solutions for Contoso Traders**
+5. **Challenge 05: Implementing Monitoring Solutions for Contoso Traders**
    - Integrate Azure Monitor and Application Insights.
    - Configure key performance metrics and alerting mechanisms.
    - Design dashboards for monitoring application health.
+     
+6. **Challenge 06: Resilience Testing using Azure Load Testing & Azure Chaos Studio**
+   - Conduct Azure Load Testing for high-scale traffic simulation.
+   - Configure and run experiments in Azure Chaos Studio.
 
+7. **Challenge 07: DevSecOps with AI-Powered GitHub Actions**
+   - Configure and implement AI Code Review GitHub Action.
+   - Configure and implement AI Security Check for Pull Requests.
+  
 8. **Challenge 08: Security Compliance as Code**
    - Implement Security Policies using Azure Policy.
    - Integrate Compliance Scanning in CI/CD pipeline.
