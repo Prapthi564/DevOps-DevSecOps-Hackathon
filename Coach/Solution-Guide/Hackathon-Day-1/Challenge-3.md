@@ -1,5 +1,7 @@
 # Challenge 03: GitHub Advanced Security - Dependency Management and Secret Scanning
 
+### Estimated Time: 40 minutes
+
 ## Introduction
 
 In this challenge, attendee/user will continue to focus on implementing crucial GitHub Advanced security features like GitHub Dependabots and Secret Scanning.

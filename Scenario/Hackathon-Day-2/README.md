@@ -1,9 +1,8 @@
-# DevOps/DevSecOps Challenge - Day 2 Hackathon
+# DevOps/DevSecOps Challenge: 2-Day Attendee Guide
 
 Welcome to the DevSecOps Mastery with GitHub Hackathon! This event is your gateway to mastering DevSecOps practices within a modern application environment. We have crafted this hackathon to provide you with a robust learning experience, focused on Contoso Traders, a hypothetical e-commerce company using a React front-end, .NET back-end, and various microservices, container services, AI-powered GitHub Actions, understanding of Security compliance as code and mastering the usage of GitHub Copilot.
 
 Your goal is to integrate DevSecOps practices while deploying existing React Applications. As you navigate through various challenges, you will gain practical experience in implementing DevSecOps in an application built with a modern tech stack.
-
 
 ## Learning Objectives
 

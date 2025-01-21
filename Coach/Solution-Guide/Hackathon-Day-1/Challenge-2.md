@@ -1,5 +1,7 @@
 # Challenge 02: GitHub Advanced Security - Implement Code Security Enhancements
 
+### Estimated Time: 60 minutes
+
 ## Introduction
 In this challenge, the user will focus on implementing security features such as Code scanning, CodeQL alerts, and repository security advisories to their GitHub repository using GitHub Advance security features.
 
