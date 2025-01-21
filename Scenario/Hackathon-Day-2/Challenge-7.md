@@ -1,47 +1,44 @@
-# Challenge 04: Integrate 'About Us' Page with GitHub Copilot in React Application  
+# Challenge 07: DevSecOps with AI-Powered GitHub Actions
 
-### Estimated Time: 60 minutes
+### Estimated Time: 40 minutes
 
 ### Introduction:
-In this challenge, you will be improving a React Application. As a DevOps engineer, your focus is to seamlessly implement and test new app features with Copilot, ensuring accuracy and alignment. Conduct a thorough code review and enhance security using GitHub Advanced Security's CodeQL. Streamline development with a GitHub Actions CI/CD pipeline for a React application, ensuring efficient and secure deployment.
+Contoso Traders, an e-commerce platform, is committed to delivering secure and efficient software solutions. In this challenge, as a Lead DevSecOps engineer, your focus is to enhance the DevSecOps workflow by leveraging AI-driven GitHub Actions that focus on code review and security checks for pull requests thus leading to improved code quality and enhanced security practices in the development lifecycle.
+
+You need to focus on completing the implementation of the below-mentioned GitHub Actions:
+
+**AI Code Review Action**: AI Code Reviewer is a GitHub Action that leverages OpenAI's GPT-4 API to provide intelligent feedback and suggestions on your pull requests. This powerful tool helps improve code quality and saves developers time by automating the code review process.
+
+**AI Security Check for Pull Request**: This GitHub Action uses OpenAI's GPT to analyse code in pull requests and identify potential security and privacy vulnerabilities and comment to the pull request with the findings.
 
 ## Challenge Objectives:
 
->**Note:** In this challenge, you are provided with a simple React application present in the path `C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files-2\ContosoTraders.Ui.Website.V2.Raw`.
+>**Note:** This challenge requires you to sign in/sign up to a free tier OpenAI account. This free-tier provides you with a $5 credit limit that expires within a period of 3 months from the day of account activation.
 
-1. **Integrate an 'About Us' app component in React using GitHub Copilot:**
-   - You are provided with a simple React application which needs to be deployed and hosted on Azure.
-   - You can navigate to the `C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files-2\ContosoTraders.Ui.Website.V2.Raw` directory and then ensure to select the `ContosoTraders.Ui.Website.V2` folder to import the complete code base of the application.
-   - Enhance the user interface by designing and integrating an **About Us** page app component within the existing imported React application using **GitHub Copilot**.
-   - Ensure that the React Application is up and running with the newly integrated **About Us** page, locally on `http://localhost:3000/`.
+1. **Configure and implement AI Code Review GitHub Action:**
+   - Sign In/ Sign up to an OpenAI account and create a new secret key (API key).
+     
+      >**Note:** This API key will be used as you move forward in the challenge. Keep it handy!
+   
+   - Use this OpenAI API key to create a GitHub Secret in your repository with the name `OPENAI_API_KEY`.
+   - Create a `.github/workflows/main.yml` file in your repository to successfully implement `AI Code Reviewer` GitHub Action which provides intelligent feedback and suggestions on your pull requests.
 
-2. **Generate and run Unit Test cases using GitHub Coplilot:**
-   - Generate Unit Test cases using GitHub Copilot for the `WelcomePopup.js` file present in the path `ContosoTraders.Ui.Wesite.V2/src/`.
-        - Create a new test file named `WelcomePopup.test.js` to run the unit test cases.
-   - Ensure that the generated test cases are aligning with the code analogy with successful test passes.
-   - Resolve any unit test failures with the help of GitHub Copilot chat.
-
-3. **Code Review and Security Check:**
-   - Perform a code review and on the new feature implemented using GitHub Copilot.
-   >**Hint:** Focus areas include code readability, adherence to best practices, and ensuring that the new feature aligns with the existing codebase.
-   - Run a security check on the newly implemented code using GitHub Advanced Security features thus resolving any alerts to vulnerabilities and catch any potential security issues using CodeQL over the repository.
-
-4. **CI/CD Pipeline Setup and Infrastructure Deployment:**
-   - Host the React Application with the new app component over Azure using **Static Web Apps** through GitHub Actions.
-   - Ensure that the **Azure Static Web Apps CI/CD** GitHub workflow is successful.
-
+2. **Configure and implement AI Security Check for Pull Requests:**
+   - Use the previously created OpenAI API key to create a GitHub Secret in your repository with the name `OPENAI_TOKEN`.
+   - Create a new GitHub secret named `GH_TOKEN` with a GitHub Personal Access Token with the `repo` and `write:discussion` scopes enabled.
+   - Create a new `./github/workflows/ai-security-check-for-pr.yml` workflow file in your repository to successfully implement `AI Security Check for Pull Requests` GitHub Action which analyzes the code in each pull request targeting the specified branch.
+  
 ## Success criteria:
 To complete this challenge successfully:
 
-- Successful implementation of the new feature.
-- Accuracy and completeness of the generated unit tests with all successful passes.
-- Successful setup and execution of the CI/CD pipeline.
+- Successful implementation of the `AI Code Review Action` and generation of review comments based on the AI's response and added to the pull request.
+- Successful implementation of the `AI Security Check for Pull Requests` and generation of comments to the pull requests based on AI's analysis of the code.
 
 ## Additional Resources:
 
-- Refer to [About GitHub Copilot Chat](https://docs.github.com/en/copilot/github-copilot-chat/about-github-copilot-chat) for reference.
-- Refer to [Copilot Chat writes Unit Tests](https://dev.to/this-is-learning/copilot-chat-writes-unit-tests-for-you-1c82) for reference.
-- Refer to [Using GitHub Copilot Chat in your IDE](https://docs.github.com/en/copilot/github-copilot-chat/using-github-copilot-chat-in-your-ide) for reference.
+
+- Refer to [AI Code Review Action](https://github.com/marketplace/actions/ai-code-review-action) for reference.
+- Refer to [AI Security Check for Pull Request](https://github.com/marketplace/actions/ai-security-check-for-pull-request) for reference.
 
 ## Challenge Validations:
 
@@ -62,4 +59,4 @@ To complete this challenge successfully:
 1. If you are still having trouble, you can reach out to the support team via `labs-support@spektrasystems.com` for further assistance. The support team is available to help you to troubleshoot and resolve any technical issues or validation issues that may arise while the lab environment is live.
 
 ## Conclusion
-Congratulations on completing the **Enhancing Contoso Traders with GitHub Copilot** challenge! Through this challenge you have not only focused on finding and fixing vulnerabilities but also promoted a security-conscious development mindset. The next challenge focuses on implementing security policies using Azure Policy and integrating compliance scanning within your GitHub CI/CD pipelines.
+Congratulations on completing the **DevSecOps with AI-Powered GitHub Actions** challenge! Through this challenge you have seamlessly integrated AI-driven GitHub Actions, elevated code quality, security, and developer productivity. In the next challenge, you will focus on using GitHub Copilot Chat to implement/add new features to the existing Contoso Traders Application and deploy the changes to Azure through CI/CD.

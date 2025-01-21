@@ -17,10 +17,6 @@
                 "Order": 3
             },
             {
-                "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-MOC/DevOps-DevSecOps-Hackathon/Microsoft_repo/Coach/Solution-Guide/Hackathon-Day-2/Challenge-7.md",
-                "Order": 4
-            },
-            {
                 "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-MOC/DevOps-DevSecOps-Hackathon/Microsoft_repo/Coach/Solution-Guide/Hackathon-Day-2/Challenge-4.md",
                 "Order": 4
             },
@@ -31,6 +27,10 @@
             {
                 "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-MOC/DevOps-DevSecOps-Hackathon/Microsoft_repo/Coach/Solution-Guide/Hackathon-Day-2/Challenge-6.md",
                 "Order": 6
+            },
+            {
+                "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-MOC/DevOps-DevSecOps-Hackathon/Microsoft_repo/Coach/Solution-Guide/Hackathon-Day-2/Challenge-7.md",
+                "Order": 7
             },
             {
                 "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-MOC/DevOps-DevSecOps-Hackathon/Microsoft_repo/Coach/Solution-Guide/Hackathon-Day-2/Challenge-8.md",
