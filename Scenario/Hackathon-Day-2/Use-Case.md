@@ -13,17 +13,22 @@ Strengthen Code and Dependency Security.
 
 2. **Strengthen Code and Dependency Security:**
     - Utilize GitHub Advanced Security features to enhance code security. Implement CodeQL for code analysis, manage dependencies, and perform secret scanning to protect sensitive data.
-    
-3. **Optimize Application Monitoring and Alerting:**
-    - Integrate Azure Monitor and Application Insights to monitor application health. Design and configure dashboards for real-time performance metrics and set up alerting mechanisms for proactive issue resolution.
-4. **Conduct Resilience Testing:**
-    - Perform resilience testing using Azure Load Testing and Azure Chaos Studio. Simulate high-scale traffic and chaotic events to test and improve the resilience of the e-commerce platform.
-5. **Enhancing DevSecOps Workflow with AI-Powered GitHub Actions:**
-    - Implement AI-driven GitHub Actions for code review and security checks, leveraging OpenAI's GPT-4 API. This enables automated feedback and vulnerability detection on pull requests, enhancing code quality and security practices.
-6. **Add new application features into a React App:**
+
+3. **Add new application features into a React App:**
     - Integrate the 'About Us' page component into the React application using GitHub Copilot, conduct unit tests, code review, and security checks, and deploy the updated application to Azure via GitHub Actions CI/CD pipeline.
+      
+4. **Optimize Application Monitoring and Alerting:**
+    - Integrate Azure Monitor and Application Insights to monitor application health. Design and configure dashboards for real-time performance metrics and set up alerting mechanisms for proactive issue resolution.
+      
+5. **Conduct Resilience Testing:**
+    - Perform resilience testing using Azure Load Testing and Azure Chaos Studio. Simulate high-scale traffic and chaotic events to test and improve the resilience of the e-commerce platform.
+      
+6. **Enhancing DevSecOps Workflow with AI-Powered GitHub Actions:**
+    - Implement AI-driven GitHub Actions for code review and security checks, leveraging OpenAI's GPT-4 API. This enables automated feedback and vulnerability detection on pull requests, enhancing code quality and security practices.
+
 7. **Securing Azure Resources with Compliance as Code:**
     - Implement and enforce Azure security policies, integrate compliance scanning into GitHub CI/CD pipelines for Azure projects.
+      
 8. **Enhancing DevOps Security with Microsoft Defender for Cloud:**
     - Implement Microsoft Defender for Cloud in GitHub workflows, remediate security findings to enhance DevOps security.
 
