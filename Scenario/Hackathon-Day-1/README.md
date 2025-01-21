@@ -36,14 +36,12 @@ This hackathon adopts a challenge-based format, offering you a unique opportunit
     - Implement Dependabot for automated package updates.
     - Use secret scanning to secure sensitive information.
 
-4. **Challenge 04: Implementing Monitoring Solutions for Contoso Traders**
-   - Integrate Azure Monitor and Application Insights.
-   - Configure key performance metrics and alerting mechanisms.
-   - Design dashboards for monitoring application health.
+4. **Challenge 04: Integrate 'About Us' Page with GitHub Copilot in React Application**
+    - Integrate an 'About Us' app component in React using GitHub Copilot.
+    - Unit Test Generation with Copilot.
+    - Code Review and Security Check.
+    - CI/CD Pipeline Setup and Infrastructure Deployment.
 
-5. **Challenge 05: Resilience Testing using Azure Load Testing & Azure Chaos Studio**
-   - Conduct Azure Load Testing for high-scale traffic simulation.
-   - Configure and run experiments in Azure Chaos Studio.
 
 Each challenge comes with its own set of tasks and objectives.
 
