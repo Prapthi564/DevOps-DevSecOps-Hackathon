@@ -1,4 +1,6 @@
-# Challenge 09: Implement Microsoft Defender for Cloud DevOps Security 
+# Challenge 09: Securing DevOps with Microsoft Defender for Cloud
+
+### Estimated Time: 30 minutes
 
 ## Introduction
 

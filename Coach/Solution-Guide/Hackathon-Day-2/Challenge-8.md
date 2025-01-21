@@ -1,5 +1,7 @@
 # Challenge 08: Security Compliance as Code
 
+### Estimated Time: 60 minutes
+
 ## Introduction
 
 In this challenge, you are a DevOps engineer responsible for ensuring the security compliance of your organization's Azure resources. Your task is to implement and enforce security policies using Azure Policy over the Azure resources and integrate compliance scanning into the GitHub CI/CD pipelines for your Azure projects.
