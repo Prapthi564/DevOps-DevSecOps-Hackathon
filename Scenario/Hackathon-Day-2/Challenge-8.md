@@ -22,7 +22,7 @@ In this challenge, you are a DevOps engineer responsible for ensuring the securi
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com We are available 24/7 to help
 
-<validation step="c4116d8a-97eb-4c0f-9e24-2077e5ea6a49" />
+<validation step="cb051155-bc48-4fae-ba18-23625e5255b0" />
      
 ## Success criteria:
 To complete this challenge successfully:

@@ -46,7 +46,7 @@ You need to focus on completing the implementation of the below-mentioned securi
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com We are available 24/7 to help
 
-<validation step="c875f158-b5a8-4e58-b1df-36ffb4230b72" />
+<validation step="1d6e70be-a8ff-4c94-8ec4-50b9790a0fd8" />
   
 ## Success criteria:
 To complete this challenge successfully:

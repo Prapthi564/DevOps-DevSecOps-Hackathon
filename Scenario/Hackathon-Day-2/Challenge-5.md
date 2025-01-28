@@ -19,7 +19,7 @@ The Contoso Traders application is hosted on Azure Kubernetes Service (AKS), and
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com We are available 24/7 to help
 
-<validation step="84bb8beb-5482-4582-b681-a995c4703bf6" />
+<validation step="50b9facb-cdbc-464f-9e5c-c38ff56704cd" />
 
 2. **Create an experiment and target using Azure Chaos Studio:**
 
@@ -32,7 +32,7 @@ The Contoso Traders application is hosted on Azure Kubernetes Service (AKS), and
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com We are available 24/7 to help
 
-<validation step="c1dcc220-e8e7-479d-a596-298d9ecefa3d" />
+<validation step="b00a14c1-7e6f-4948-b31c-689548a69990" />
      
 ## Success criteria:
 To complete this challenge successfully:

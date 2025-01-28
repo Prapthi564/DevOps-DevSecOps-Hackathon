@@ -32,7 +32,7 @@ Your task is to implement Microsoft Defender for Cloud DevOps security measures 
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com We are available 24/7 to help
 
-<validation step="29fc4baa-5102-4c9d-8f5b-4aec7f5e7ce9" />
+<validation step="0531cfee-4c15-4022-9ab7-1b691f7b6203" />
 
 ## Success criteria:
 To complete this challenge successfully:
