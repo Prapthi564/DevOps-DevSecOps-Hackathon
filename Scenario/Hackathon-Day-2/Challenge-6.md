@@ -28,7 +28,7 @@ You need to focus on completing the implementation of the below-mentioned GitHub
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com We are available 24/7 to help
 
-<validation step="685d64ce-179b-4c15-8cc2-82d854a586c7" />
+<validation step="5f0bf0b3-732d-4ef1-ac93-7335bfaad030" />
 
 2. **Configure and implement AI Security Check for Pull Requests:**
    - Use the previously created OpenAI API key to create a GitHub Secret in your repository with the name `OPENAI_TOKEN`.
@@ -40,7 +40,7 @@ You need to focus on completing the implementation of the below-mentioned GitHub
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com We are available 24/7 to help
 
-<validation step="b9e89676-4cb0-4324-b705-4afe80f5af32" />
+<validation step="4d86abe3-dfe3-458f-b1bf-1174db58aa57" />
   
 ## Success criteria:
 To complete this challenge successfully:
