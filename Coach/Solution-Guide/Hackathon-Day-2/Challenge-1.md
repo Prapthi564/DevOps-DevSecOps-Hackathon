@@ -13,28 +13,45 @@ Here's the solution guide, which includes detailed step-by-step instructions req
 
 3. On the **Sign into GitHub tab**, you will see a login screen. Enter the following email/username, and then click on **Next**.
 
-   - **Email/Username:** <inject key="GitHubUsername"></inject>
+4. Now enter the following password and click on **Sign in**.
 
-1. Now enter the following password and click on **Sign in**.
 
-   - **Password:** <inject key="GitHubPassword"></inject>
 
 ## Accessing the Azure Portal
 
-1. To access the Azure Portal, open the Edge browser from inside the environment and navigate to the **[Azure Portal](https://portal.azure.com)**.
+>**Important**: You can find the Username and Password within the environment by navigating to the **Environment** **(1)** tab in the left pane then copy the **Azure Username** **(2)** and **Azure Password** **(3)**, which will be required for signing into the Azure portal in later steps and you can record the **Deployment Id** **(4)**, which can be used to provide a unique name to the resources during deployment.
 
-1. On the **Sign in to Microsoft Azure** tab, you will see a login screen. Enter the following email/username, and then click on **Next**. 
+>**Note**: Numbers and ID's values may vary kindly ignore values in screenshots and copy values from **Environment** tab.
 
-   * **Email/Username**: <inject key="AzureAdUserEmail"></inject>
-        
+ ![](../media1/Active-image19.png)
+ ![](../media1/Active-image(20).png)
+
+1. To access the Azure portal, within labvm open **Microsoft Edge** and browser to the [Azure Portal](https://portal.azure.com/).
+
+1. On the **Sign into Microsoft Azure tab**, you will see a login screen. Enter the following email/username, and then click on **Next**
+   
+   - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+
+     ![](../media1/Active-image1.png)
+
 1. Now enter the following password and click on **Sign in**.
-   * **Password**: <inject key="AzureAdUserPassword"></inject>
-     
-1. If you see the pop-up **Stay Signed in?**, click No.
 
-1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
+   - **Password:** <inject key="AzureAdUserPassword"></inject>
+
+      ![](../media1/Active-image2.png)
+
+1. When **Action Required** window pop up click on **Ask Later**.
+
+    ![](../media1/Active-image3.png)
+   
+1. If you see the pop-up **Stay Signed in?**, click **No**.
+
+    ![](../media1/Active-image4.png)
 
 1. If a **Welcome to Microsoft Azure** pop-up window appears, click **Cancel** to skip the tour.
+
+    ![](../media1/Active-image5.png)
+
 
 ## Solution Guide 
 
@@ -68,29 +85,29 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
    
    >**Note**: If you observe any repository existing with the same name, please make sure you delete the Repo and create a new one. Please follow steps 6 to 10. Otherwise, skip to step 11.
 
-1. In the upper-right corner, expand the user **drop-down menu** **(1)** and select **Your repositories** **(2)**.
+   1. In the upper-right corner, expand the user **drop-down menu** **(1)** and select **Your repositories** **(2)**.
 
-   ![The `New Repository` creation form in GitHub.](../media/2dg1.png "New Repository Creation Form")
+      ![The `New Repository` creation form in GitHub.](../media/2dg1.png "New Repository Creation Form")
 
-1. Using the search bar, search for ```devsecops``` **(1)** and open it.
+   1. Using the search bar, search for ```devsecops``` **(1)** and open it.
 
-   ![The `New Repository` creation form in GitHub.](../media/cl1-t1-s7.png "New Repository Creation Form")
+      ![The `New Repository` creation form in GitHub.](../media/cl1-t1-s7.png "New Repository Creation Form")
 
-1. From the GitHub repository, click on the **Settings** tab.
+   1. From the GitHub repository, click on the **Settings** tab.
 
-   ![The `New Repository` creation form in GitHub.](../media/cl1-t1-s8.png "New Repository Creation Form")
+      ![The `New Repository` creation form in GitHub.](../media/cl1-t1-s8.png "New Repository Creation Form")
 
-1. In the settings page, scroll to the bottom of the page to select **Delete this repository**, and then click on **I want to delete this repository**.
+   1. In the settings page, scroll to the bottom of the page to select **Delete this repository**, and then click on **I want to delete this repository**.
 
-   ![The `New Repository` creation form in GitHub.](../media/2dg120.png "New Repository Creation Form")
+      ![The `New Repository` creation form in GitHub.](../media/2dg120.png "New Repository Creation Form")
 
-1. Within the following pop-up window, click on **I have read and understand these effects**.
+   1. Within the following pop-up window, click on **I have read and understand these effects**.
 
-   ![](../media/cl1-t1-s10.png)
+      ![](../media/cl1-t1-s10.png)
 
-1. In the succeeding pop-up window, copy the **repository name** **(1)**, paste it in the **box** **(2)**, and click on **Delete this repository** **(3)**.
+   1. In the succeeding pop-up window, copy the **repository name** **(1)**, paste it in the **box** **(2)**, and click on **Delete this repository** **(3)**.
 
-   ![The `New Repository` creation form in GitHub.](../media/cl1-t1-s11.png "New Repository Creation Form")
+      ![The `New Repository` creation form in GitHub.](../media/cl1-t1-s11.png "New Repository Creation Form")
 
 1. On the **Quick setup** screen, copy the **HTTPS** GitHub URL for your new repository and **save it** in a notepad for future use.
 
@@ -172,7 +189,7 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
 5. To create another secret, under the **Actions Secrets/New secret** page, enter the below-mentioned details and click on **Add secret** ***(3)***.
 
    - **Name**: Enter **SQLPASSWORD** ***(1)***
-   - **Value**: Enter **<inject key="AzureAdUserPassword"></inject> (2)**, which would be the same as the Azure AD Password.
+   - **Value**: Enter **Azure Password** ***(2)*** which you copied 
 
       ![](../media/ex-task1-11.png)
 
@@ -195,13 +212,13 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
      ![](../media/ex1-task1-12.png)
      
 
-10. To run a workflow, perform the following steps and wait for the resources to be deployed within your Azure Portal:
+9. To run a workflow, perform the following steps and wait for the resources to be deployed within your Azure Portal:
       - Click on **Actions (1)** within your GitHub repository.
-      - Select the workflow named **contoso-traders-cloud-testing (2)**.
+      - Select the workflow named **contoso-traders-provisioning-deployment (2)**.
       - Click on **Run workflow (3)**.
       - Finally, click on **Run workflow (4)**. Ensure that the branch is selected as **main**.
 
-        ![](../media/ex1-task1-15.png)
+        ![](../media1/ex1-task1-15.png)
 
 
 ### Task 3: Setup CI/CD Workflow
