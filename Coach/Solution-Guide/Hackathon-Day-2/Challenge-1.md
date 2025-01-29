@@ -15,8 +15,6 @@ Here's the solution guide, which includes detailed step-by-step instructions req
 
 4. Now enter the following password and click on **Sign in**.
 
-
-
 ## Accessing the Azure Portal
 
 >**Important**: You can find the Username and Password within the environment by navigating to the **Environment** **(1)** tab in the left pane then copy the **Azure Username** **(2)** and **Azure Password** **(3)**, which will be required for signing into the Azure portal in later steps and you can record the **Deployment Id** **(4)**, which can be used to provide a unique name to the resources during deployment.
@@ -189,9 +187,13 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
 5. To create another secret, under the **Actions Secrets/New secret** page, enter the below-mentioned details and click on **Add secret** ***(3)***.
 
    - **Name**: Enter **SQLPASSWORD** ***(1)***
-   - **Value**: Enter **Azure Password** ***(2)*** which you copied 
+   - **Value**: Enter **Azure Password** ***(2)*** 
 
       ![](../media/ex-task1-11.png)
+
+      > **Note**: Replace `{your_password}` with the ODL User Azure Password. Go to **Environment Details (1)**, click on **Azure credentials (2)**, and copy **Password (3)**.
+      
+      ![](../media/2dgn155.png)   
 
 6. To create Variables, under the **Actions secrets and variables** page, switch to **Variables (1)** and then click on **New repository variable (2)**.
    
@@ -200,16 +202,20 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
 7. Under **Actions variables / New variable** , enter the below-mentioned details and click on **Add variable** ***(3)***.
 
    - **Name**: Enter **DEPLOYMENTREGION** ***(1)***
-   - **Value**: Add the deployment region where you want to get the resources deployed. **(2)**
+   - **Value**: Add the deployment region where you want to get the resources deployed. preferenced **eastus2** **(2)**
    
      ![](../media/ex1-task1-10.png)
 
 8. To create another **Variable** click on **New repository variable** ,Under **Actions variables / New variable** , enter the below-mentioned details and click on **Add variable** ***(3)***.
 
    - **Name**: Enter **SUFFIX** ***(1)***
-   - **Value**: Create a secret to store the deployment ID which is **<inject key="DeploymentID" enableCopy="false" />**. **(2)**
+   - **Value**: Create a secret to store the deployment ID **(2)**
   
      ![](../media/ex1-task1-12.png)
+
+      > **Note**: You can find the deployment ID within the environment by navigating to the **Environment Details (1)**, click on **Azure credentials (2)**, and copy **Deployment ID** **(3)**.
+
+      ![](../media1/Deployment_ID.png)
      
 
 9. To run a workflow, perform the following steps and wait for the resources to be deployed within your Azure Portal:
@@ -253,21 +259,21 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
    
       ![](../media/ex1-task3-2.png)
    
-   >**Note**: Replace `{your_password}` with the ODL User Azure Password. Go to **Environment Details (1)**, click on **Azure credentials (2)**, and copy **Password (3)**.
-   
-   ![](../media/2dgn155.png)   
-   
+      >**Note**: Replace `{your_password}` with the ODL User Azure Password. Go to **Environment Details (1)**, click on **Azure credentials (2)**, and copy **Password (3)**.
+      
+      ![](../media/2dgn155.png)   
+      
 1. From your GitHub repository, select the **Actions** ***(1)*** tab. Select the **contoso-traders-app-deployment** ***(2)*** workflow from the side blade, Click on the  **drop-down** ***(3)*** next Run workflow button, and select **Run workflow** ***(4)***.
 
-   ![](../media/2dgn159.png)
+   ![](../media1/2dgn159.png)
    
 1. Navigate back to the Actions tab and select the **contoso-traders-app-deployment** workflow. This workflow builds the Docker image, which is pushed to the container registry. The same image is pushed to the Azure container application.
 
-   ![](media/2dgn124.png)
+   ![](../media/2dgn124.png)
    
-   ![](../media/2dgn165.png)
+   ![](../media1/2dgn165.png)
    
-   >**Note**: If the workflow **fails** due to the **npm install** job, follow steps 13 to 15. Otherwise, continue from step 16. 
+   > **Note**: If the workflow **fails** due to the **npm install** job, follow steps 13 to 15. Otherwise, continue from step 16. 
    
 1. From the GitHub browser tab, follow the steps given below and click on **Create codespace on main** ***(3)***.
 
@@ -291,10 +297,6 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
     
 1. From your GitHub repository, select the **Actions** ***(1)*** tab. You'll see an Action named **Updated node version** ***(2)*** executing. Please wait until the execution is complete.
 
-   ![](../media/2dgn160.png)
-   
-   ![](../media/2dgn161.png)      
-
 ## Task 4: Test the application and perform rolling updates
 
 1. Navigate to Azure Portal, and click on Resource Groups from the Navigate panel to see the resource groups.
@@ -316,44 +318,6 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
    ![](../media/2dgn162.png) 
     
    The last task automated building and updating only one of the Docker images. In this task, we will update the workflow file with a more appropriate workflow for the structure of our repository. This task will end with    a file named `docker-publish.yml` that will rebuild and publish Docker images as their respective code is updated.
-
-5. From the GitHub browser tab, follow the steps given below and click on **Create codespace on main** ***(3)***.
-
-   - Click on **Code** ***(1)***, 
-   - Select the **Codespace** ***(2)*** tab
-
-     ![](../media/ex2-kc-codespace.png)
-   
-     >**Note**: In case you have created a codespace in a previous task. Click on the **+** button to create a new codespace.
-   
-6. You'll be redirected to a new codespace tab in the browser. Please wait until the codespace is configured.
-
-   ![](../media/2dg33.png)
-   
-7. From the explorer side blade, navigate to **.github (1)** > **workflows** **(2)** and select the **contoso-traders-provisioning-deployment.yml** **(3)** file.
-
-   ![](../media/contosoprovision.png) 
-   
-8. Remove the commands from lines 7 to 14 from the workflow file.
-
-   ![](../media/2dgn163.png) 
-   
-9. Using the terminal from codespace, run the following commands to commit this change to your repo and push the change to GitHub.
-
-   ```pwsh
-   git add .
-   git commit -m "Updating app deployment"
-   git push
-   ```
-   ![](../media/2dgn133.png) 
-    
-   > **Note**: This will update the workflow and will **not** run the "Update the ... Docker image" jobs.
-
-10. Navigate back to the GitHub browser, select the **Actions** ***(1)*** tab, and review the **workflow** ***(2)*** created automatically for the changes made. 
-
-      ![](../media/2dgn164.png)
-
-11. Click on the **Next** button present in the bottom-right corner of this lab guide.
 
 ## Success criteria:
 To complete this challenge successfully:
