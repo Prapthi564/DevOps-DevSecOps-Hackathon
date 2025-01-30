@@ -32,17 +32,17 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
    Connect-AzAccount
    ```
    >**Note**: Please use the below-mentioned credentials to login to Azure.
+   
       - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
       - **Password:** <inject key="AzureAdUserPassword"></inject>
       
 1. Set the Resource Group Name before running the deployment command. set the  **$RGname** as **contoso-traders-rg<inject key="Deploymentid" enableCopy="false" />**
 
    ```
-   $RGname = <update the existing RG name>
+   $RGname = '<update the RG name mentioned above>'
    ```
    
-   >**Note:** Make sure you are in the directory where the Bicep template and parameters file resides. 
-    If not switch to the directory cd C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files\iac
+   >**Note:** Make sure you are in the directory where the Bicep template and parameters file resides. If not switch to the directory cd C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files\iac
    
 1. Run the following command to initiate the deployment using the Bicep template and parameters file:
 
