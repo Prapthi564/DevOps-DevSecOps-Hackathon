@@ -226,7 +226,7 @@ Now that you've assigned a built-in policy definition, you can do more with Azur
            scopes: |
              /subscriptions/<Subscription ID>/resourceGroups/<resource-group-name>               
            scopes-ignore: |
-             /subscriptions/<Subscription ID>/resourceGroups/<resource-group-name/providers/microsoft.authorization
+             /subscriptions/<Subscription ID>/resourceGroups/<resource-group-name>/providers/microsoft.authorization
         
    ```
 
