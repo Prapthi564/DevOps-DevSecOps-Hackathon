@@ -51,10 +51,11 @@ In this task, you will use Dependabot to track the versions of the packages we u
 1. Pull the latest changes from your GitHub repository to your local GitHub folder.
 
    ```pwsh
-   cd C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files  # This path may vary depending on how
-                                                            # you set up your lab files repository
+   cd C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files  
    git pull
    ```
+
+    > **Note:** This path may vary depending on how you set up your lab files repository.
    
 ## Task 2: Implement Secret Scanning:
 
