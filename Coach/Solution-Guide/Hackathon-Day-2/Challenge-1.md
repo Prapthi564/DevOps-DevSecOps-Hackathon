@@ -81,7 +81,7 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
 
    ![The `New Repository` creation form in GitHub.](../media/cl1-t1-s5.png "New Repository Creation Form")
    
-   >**Note**: If you observe any repository existing with the same name, please make sure you delete the Repo and create a new one. Please follow steps 6 to 10. Otherwise, skip to step 11.
+   >**Note**: **If you observe any repository existing with the same name, please make sure you delete the Repo and create a new one. Please follow steps below from 1 to 6. Otherwise, skip to step 7**.
 
    1. In the upper-right corner, expand the user **drop-down menu** **(1)** and select **Your repositories** **(2)**.
 
@@ -129,7 +129,7 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
      
    ![](../media/cl1-t1-s15.png) 
      
-    Run the below-mentioned command in the terminal. Make sure to replace `your_github_repository-url` with the value you copied in step 12 and `Unique-ID` in step 13.
+    Run the below-mentioned command in the terminal. Make sure to replace `your_github_repository-url` with the value you copied in step 13 and `Unique-ID` in step 14.
 
     Note: This step is done to initialize the folder as a Git repository, commit, and submit contents to the remote GitHub branch “main” in the lab files repository created in Step 1. 
 
@@ -191,7 +191,7 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
 
       ![](../media/ex-task1-11.png)
 
-      > **Note**: Replace `{your_password}` with the ODL User Azure Password. Go to **Environment Details (1)**, click on **Azure credentials (2)**, and copy **Password (3)**.
+      > **Note**: For **Azure Password**, Navigate to **Environment Details (1)**, click on **Azure credentials (2)**, and copy **Password (3)**.
       
       ![](../media/2dgn155.png)   
 
@@ -213,7 +213,7 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
   
      ![](../media/ex1-task1-12.png)
 
-      > **Note**: You can find the deployment ID within the environment by navigating to the **Environment Details (1)**, click on **Azure credentials (2)**, and copy **Deployment ID** **(3)**.
+      > **Note**: You can find the **Deployment ID** within the environment by navigating to the **Environment Details (1)**, click on **Azure credentials (2)**, and copy **Deployment ID** **(3)**.
 
       ![](../media1/Deployment_ID.png)
      
@@ -273,7 +273,7 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
    
    ![](../media1/2dgn165.png)
    
-   > **Note**: If the workflow **fails** due to the **npm install** job, follow steps 13 to 15. Otherwise, continue from step 16. 
+   > **Note**: If the workflow **fails** due to the **npm install** job, follow steps from 10 to 12. Otherwise, continue from **Task 4**. 
    
 1. From the GitHub browser tab, follow the steps given below and click on **Create codespace on main** ***(3)***.
 

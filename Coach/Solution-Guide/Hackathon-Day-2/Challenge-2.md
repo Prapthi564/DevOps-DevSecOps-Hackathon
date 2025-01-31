@@ -39,7 +39,7 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
   
    ![](../media/cl2-t1-s3.png)
 
-   ![](../media/c2-1.png) 
+   ![](../media/d-1.png) 
   
 1. Navigate to the **Actions** ***(1)*** tab, here you can review the **workflow** ***(2)*** run.
     
@@ -111,7 +111,7 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
    - Severity: **High** ***(5)***
    - Common Weakness Enumerator (CWE): **Improper Access Control (CWE-284)** ***(6)***
   
-     ![](../media/cl2-t2-s3.png)
+     ![](../media/d-2.png)
    
  1. Once the security advisory is created, scroll down and click on **start a temporary private fork**. It is used to collaborate on a patch for this advisory.
 

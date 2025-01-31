@@ -74,7 +74,7 @@ You are a DevOps engineer tasked with setting up a robust Continuous Integration
        
        >**Hint**: You can also find the deployment ID and the Azure AD password within the environment details tab of your integrated lab guide.
 
-   -  Run the workflow named `contoso-traders-cloud-testing` using GitHub Actions.
+   -  Run the workflow named `contoso-traders-app-deployment` using GitHub Actions.
   
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
