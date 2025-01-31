@@ -74,7 +74,7 @@ Here is the solution guide, which provides all the specific, step-by-step direct
 
 1. Go to the profile icon in the top right corner and select **Your profile**.
    
-    ![](../media/ex6-afterlogin.png)
+    ![](../media/CH6T2S2.png)
 
 2. Hover your cursor over the left navigation toolbar to expand the pane and click on **API keys**.
 

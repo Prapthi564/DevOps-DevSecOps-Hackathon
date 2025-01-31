@@ -115,27 +115,27 @@ Now that you've assigned a built-in policy definition, you can do more with Azur
 
    >**Note:** The **field** property in the policy rule must be a supported value. An example of alias might be `Microsoft.Compute/VirtualMachines/Size` and `Microsoft.Resources/resourceGroups/location`.
 
-1. Once the json code is updated. Click on **Save.**
+1. Once the JSON code is updated. Click on **Save.**
 
    ![](../media/ex8-0.1.png)
 
 1. This will navigate you to the **Restrict deployment to East US region** Page.
   
-   >Note: If your not on **Restrict deployment to East US region** Page perform Step 6 and Step 7
+   >Note: If you are not on the **Restrict deployment to East US region** Page perform Step 6 and Step 7
 
    ![](../media/ex8-task1-14.png)
 
-1. Select **Definitions (1)** on the left side of the Azure Policy page.
+1. Select **Policy | Definitions** from the top of the Azure Policy page.
 
-1. In the **Policy | Definition** search bar Search **Restrict deployment to East US region (2)** and select for **Restrict deployment to East US region (3)**. 
+1. In the **Policy | Definition** search bar Search **Restrict deployment to East US region (1)** and select for **Restrict deployment to East US region (2)**. 
 
-   ![](../media1/custom-policy.png)
+   ![](../media1/Ch8E1T2S7-3101.png)
 
 1. In **Restrict deployment to East US region** page, click on **Assign policy**. 
 
    ![](../media1/assign-custom-policy.png)
 
-1. In the **Basics** page of Restrict deployment to East US region, **Exclusions** start at one level lower than the level of the **Scope**. **Exclusions** are optional, so leave it blank for now. click on **Review + Create** followed by **Create**.   
+1. In the **Basics** page of Restrict deployment to East US region, **Exclusions** start at one level lower than the level of the **Scope**. **Exclusions** are optional, so you can leave it blank for now. click on **Review + Create** followed by **Create**.   
 
    ![](../media1/custom-policy-basic.png)
 
@@ -143,13 +143,13 @@ Now that you've assigned a built-in policy definition, you can do more with Azur
 
 ### Task 1: Create a GitHub Secret
 
-1. Navigate back to `devsecops` to create GitHub secrets, in your GitHub lab files repository, and click on the **Settings** tab.
+1. Navigate back to the `devsecops` repository to create GitHub secrets, in your GitHub lab files repository, and click on the **Settings** tab.
 
       ![](../media/cl1-t2-s2.png)
 
 2. Navigate to **Environment Details** **(1)** tab of the integrated lab environment, click on **Service Principal Details** **(2)**, and copy the **Subscription ID**, **Tenant ID (Directory ID)**, **Application ID (Client ID)**, and **Secret Key (Client Secret)**.
 
-      ![](../media/ex2-t4-8.png)
+      ![](../media1/Ch8E2T1S2-3101.png)
    
       - Replace the values that you copied in the below JSON. You will be using them in this step.
       

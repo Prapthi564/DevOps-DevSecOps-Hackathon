@@ -65,9 +65,9 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
 
    >**Note:** If the activation status of Github Copilot in the bottom right corner is not visible, try restarting Visual Studio Code to ensure that the activation status becomes visible in that location.
 
-1. Verify if **GitHub Copilot Chat** is installed. If its installed, the below icon should appear in the left navigation pane.
+1. Verify if **GitHub Copilot Chat** is installed. If its installed, chat window will open as shown below.
    
-    ![Picture1](../media/ex7-task1-0.5.png)
+    ![Picture1](../media/copilotchat.png)
    
 ### Task 2: Integrate an 'About Us' app component in React using GitHub Copilot
 
@@ -121,7 +121,7 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
 
 6. Save the newly created `AboutUs.css` file.
 
-7. Now let's build a new component for the application. Create a new file named `AboutUs.js` **(1)** in your `src` directory ie., within the path `ContosoTraders.Ui.Website.V2\src` and then add the following code **(2)**:
+7. Now let's build a new component for the application. Create a new file named `AboutUs.js` **(1)** in your `src` directory i.e., within the path `ContosoTraders.Ui.Website.V2\src` and then add the following code **(2)**:
 
    ```
    import React from "react";
@@ -422,9 +422,9 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
 
 1. Login to your Azure portal with the credentials provided in the **Environment Details** tab of the integrated CloudLabs Environment.
 
-2. In the global search bar, search for and select **Static Web Pages**
+2. In the global search bar, search for and select **Static Web Apps**
 
-3. Click on **+ Create** to create a new Static Web App.
+3. Click on **+ Create** to create a new Static Web Apps.
 
 4. In the **Basics tab** of the **Create Static Web App** page, enter the following details:
    - **Subscription:** Select the available subscription **(1)**.
