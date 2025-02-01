@@ -75,15 +75,8 @@ You are a DevOps engineer tasked with setting up a robust Continuous Integration
        >**Hint**: You can also find the deployment ID and the Azure AD password within the environment details tab of your integrated lab guide.
 
    -  Run the workflow named `contoso-traders-app-deployment` using GitHub Actions.
-  
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com We are available 24/7 to help
-
-<validation step="f77beb97-64b3-4bad-8c2c-652a45ee8bb0" />
-   
-2. **Setup CI/CD Workflow:**
+ 
+ 2. **Setup CI/CD Workflow:**
 
    - Update the previously created GitHub secret with the following value:
       - **SQLPASSWORD**: ADO.NET (SQL authentication) connection string of `productsdb` SQL database.

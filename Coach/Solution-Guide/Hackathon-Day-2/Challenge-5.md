@@ -68,7 +68,7 @@ In this task, your objective is to incorporate Targets and establish an Experime
 
    ![](../media/ex5-task2-1.png)
       
-1. From the drop-down menu, select the **contoso-traders-rg<inject key="DeploymentID" enableCopy="false" />** resource group.
+1. From the drop-down menu, select the **contoso-traders-rgXXXXXX** resource group.
  
    ![](../media/ex5-task2-2.png)
      
@@ -97,8 +97,8 @@ In this task, your objective is to incorporate Targets and establish an Experime
 1. On the **Create an experiment** page, under the **Basics** tab, provide the following values and select **Next: Permissions >** ***(4)***.
 
     - Subscription: Select the default subscription ***(1)***
-    - Resource Group: **contosotraders-<inject key="DeploymentID" enableCopy="false" />** ***(2)***
-    - Name: **contoso-chaos-<inject key="DeploymentID" enableCopy="false" />** ***(3)***
+    - Resource Group: **contoso-traders-rgXXXXXX** **(2)**
+    - Name: **contoso-chaos-XXXXXX** ***(3)***
     - Region: Leave it to default 
  
       ![](../media/experiment.png)
@@ -143,7 +143,7 @@ In this task, your objective is to incorporate Targets and establish an Experime
   
 1. Next, on the **Conditions** tab, select **What user can do** as **Allow user to assign all roles** **(1)** and click on **Review + assign** **(2)**.
 
-   ![](../media/role-assignment.png)
+   ![](../media/dev-9.png)
 
 1. Click on **Review + assign**. 
    

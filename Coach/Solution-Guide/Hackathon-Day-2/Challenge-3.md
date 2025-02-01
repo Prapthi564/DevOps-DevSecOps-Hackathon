@@ -32,6 +32,8 @@ In this task, you will use Dependabot to track the versions of the packages we u
 
    ![Summary of the `handlebars` Dependabot alert in the list of Dependabot alerts.](../media/ex5-t3-node-forge.png "`handlebars` Dependabot alert")
 
+    >**Note:** If **node-forge** is not available, please search for **`nanoid`** and follow the same steps.
+
 1. Select any of the `node-forge` Dependabot alert entries to see the alert details. After reviewing the alert, select **Review security update**.
 
    ![The `handlebars` Dependabot alert detail.](../media/ex5-t3-reviewsu.png "Dependabot alert detail")
@@ -48,6 +50,10 @@ In this task, you will use Dependabot to track the versions of the packages we u
     
    >**Note**: In case you see any errors with the merge request, retry steps 4 to 6 by selecting any other Dependabot alert.
 
+1. In the LabVM **Start** button, search for **cmd (1)** and select **Command Prompt (2)**.
+
+   ![cmd.](../media/dev1.png "cmd")
+
 1. Pull the latest changes from your GitHub repository to your local GitHub folder.
 
    ```pwsh
@@ -55,7 +61,9 @@ In this task, you will use Dependabot to track the versions of the packages we u
    git pull
    ```
 
-    > **Note:** This path may vary depending on how you set up your lab files repository.
+    ![cmd.](../media/dev-2.png "cmd")   
+
+     > **Note:** This path may vary depending on how you set up your lab files repository.
    
 ## Task 2: Implement Secret Scanning:
 
@@ -81,29 +89,31 @@ In this task, you'll explore how secret scanning works and how it generates aler
 
    ![](../media/2dg113.png)    
    
-1. Add a new file with the name **build.docker-compose.yml (1)**, add the code **(2)** mentioned below and click on **Commit changes** at the right corner. Here, you'll expose the **application ID** of a service principal.
+1. Add a new file with the name **build.docker-compose.yml (1)**, add the code **(2)** mentioned below and click on **Commit changes (3)** at the right corner. Here, you'll expose the **application ID** of a service principal.
 
    ```
    version: "3.4"
    services:
    api:
       build: ./ContosoTraders.Ui.Website/
-      app id: 36540dcd-7bc3-4e16-90ca-4decb9ff8c36
-      app secret: i1R8Q~Hn8dHn86VlWE7xJtLR4FKTIcQBXcexxxxx
+      app id: <Application ID>
+      app secret: <Secret key>
    web:
       build: ./ContosoTraders.Api.Products
    ```
-   >**Note:** Ensure replace the value of the `build` key in above the above code before saving the file.
+   >**Note:** Ensure replace the value of the `<Appication ID>` and `<Secret key>` with the actual values available in your LabVM's **Environment tab** before saving the file.
 
-   ![](../media/ex3-task2-3.png)
+   ![](../media/dev-6.png)
+
+   ![](../media/dev-5.png)   
 
 1. Click on **Commit changes.**
 
    ![](../media/ex-common.png)
    
-1. Select the **Security (1)** tab and click on **Secret scanning (2)** from the sidebar. Here, you'll notice that an alert is generated referring to the same **Application ID** that was exposed in the `build.docker-compose.yml` file. This is how the Secret scanning feature works and generates alerts to notify you.
+1. Select the **Security (1)** tab and click on **Secret scanning (2)** from the sidebar. Set the **Filter** to  **`closed` (3)**. Here, you'll notice that an alert is generated referring to the same **Application ID** that was exposed in the `build.docker-compose.yml` file **(4)**. This is how the Secret scanning feature works and generates alerts to notify you.
 
-   ![](../media/2dg116.png) 
+   ![](../media/dev-4.png) 
 
 ## Success criteria:
 To complete this challenge successfully:

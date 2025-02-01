@@ -224,27 +224,25 @@ Now that you've assigned a built-in policy definition, you can do more with Azur
          uses: azure/policy-compliance-scan@v0
          with:
            scopes: |
-             /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/<resource-group-name>               
+             /subscriptions/<Subscription ID>/resourceGroups/<resource-group-name>               
            scopes-ignore: |
-             /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/<resource-group-name/providers/<resource-provider-name>
+             /subscriptions/<Subscription ID>/resourceGroups/<resource-group-name>/providers/microsoft.authorization
         
    ```
 
-   >**Note:** Ensure to Replace the **Subscription ID** , **<resource-group-name** and **<resource-provider-name>** in the above code.
+   >**Note:** Ensure to Replace the `<Subscription ID>` , `<resource-group-name>` in the above code.
 
 9. To Commit the changes within your repository to successfully create the workflow file. Click on **Commit changes.**
 
-    ![](../media/ex8-task1-17.png)
+    ![](../media/dev-7.png)
 
 10. Click on **Commit changes**
 
     ![](../media/ex8-task1-19.png)
 
-12. Head back to the **GitHub Actions (1)** tab and then select the Action named **Security Compliance Scan (2)**.
+11. Head back to the GitHub **Actions (1)** tab and then make sure that the Action named **Compliance Scan (2)** run successfully.
 
-    ![](../media/cl8-ex2-t2-s9.png)
-
-11. Make sure all the workflow runs are successful.
+    ![](../media/dev-8.png)
 
 ## Success criteria:
 To complete this challenge successfully:
