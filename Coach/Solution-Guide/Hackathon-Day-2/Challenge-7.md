@@ -1,4 +1,4 @@
-# Challenge 07: Integrate 'About Us' Page with GitHub Copilot in React Application
+# Challenge 04: Integrate 'About Us' Page with GitHub Copilot in React Application
 
 ## Introduction
 
