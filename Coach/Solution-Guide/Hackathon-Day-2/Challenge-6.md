@@ -1,4 +1,4 @@
-# Challenge 06: DevSecOps with AI-Powered GitHub Actions
+# Challenge 07: DevSecOps with AI-Powered GitHub Actions
 
 ## Introduction
 
