@@ -1,9 +1,8 @@
-# DevOps/DevSecOps Challenge - Day 2 Hackathon
+# Accelerate Developer Productivity - Day 2 Hackathon
 
 Welcome to the DevSecOps Mastery with GitHub Hackathon! This event is your gateway to mastering DevSecOps practices within a modern application environment. We have crafted this hackathon to provide you with a robust learning experience, focused on Contoso Traders, a hypothetical e-commerce company using a React front-end, .NET back-end, and various microservices, container services, AI-powered GitHub Actions, understanding of Security compliance as code and mastering the usage of GitHub Copilot.
 
 Your goal is to integrate DevSecOps practices while deploying existing React Applications. As you navigate through various challenges, you will gain practical experience in implementing DevSecOps in an application built with a modern tech stack.
-
 
 ## Learning Objectives
 
@@ -41,25 +40,25 @@ This hackathon adopts a challenge-based format, offering you a unique opportunit
     - Implement Dependabot for automated package updates.
     - Use secret scanning to secure sensitive information.
 
-4. **Challenge 04: Implementing Monitoring Solutions for Contoso Traders**
-   - Integrate Azure Monitor and Application Insights.
-   - Configure key performance metrics and alerting mechanisms.
-   - Design dashboards for monitoring application health.
-
-5. **Challenge 05: Resilience Testing using Azure Load Testing & Azure Chaos Studio**
-   - Conduct Azure Load Testing for high-scale traffic simulation.
-   - Configure and run experiments in Azure Chaos Studio.
-
-6. **Challenge 06: DevSecOps with AI-Powered GitHub Actions**
-   - Configure and implement AI Code Review GitHub Action.
-   - Configure and implement AI Security Check for Pull Requests.
-  
-7. **Challenge 07: Enhancing Contoso Traders with GitHub Copilot**
+4. **Challenge 04: Integrate 'About Us' Page with GitHub Copilot in React Application**
    - Integrate an 'About Us' app component in React using GitHub Copilot.
    - Unit Test Generation with Copilot.
    - Code Review and Security Check.
    - CI/CD Pipeline Setup and Infrastructure Deployment.
-  
+
+5. **Challenge 05: Implementing Monitoring Solutions for Contoso Traders**
+   - Integrate Azure Monitor and Application Insights.
+   - Configure key performance metrics and alerting mechanisms.
+   - Design dashboards for monitoring application health.
+
+6. **Challenge 06: Resilience Testing using Azure Load Testing & Azure Chaos Studio**
+   - Conduct Azure Load Testing for high-scale traffic simulation.
+   - Configure and run experiments in Azure Chaos Studio.
+
+7. **Challenge 07: DevSecOps with AI-Powered GitHub Actions**
+   - Configure and implement AI Code Review GitHub Action.
+   - Configure and implement AI Security Check for Pull Requests.
+   
 8. **Challenge 08: Security Compliance as Code**
    - Implement Security Policies using Azure Policy.
    - Integrate Compliance Scanning in CI/CD pipeline.
