@@ -43,11 +43,16 @@ You are a DevOps engineer tasked with setting up a robust Continuous Integration
 
 1. **Setup a GitHub repository:**
    - Create a new GitHub repository with public access permission.
+     
+<validation step="5b252fb5-a2f0-4c4c-8b1d-af806a115039" />
+
    - You are provided with an e-commerce application named Contoso Traders, which needs to be deployed and hosted on Azure.
    - You can navigate to the `C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files` directory and find the complete code base of the application.
    - Using Visual Studio code, connect to the GitHub repository that you created in the earlier step and push the application code base to your GitHub repository.
 
-2. **Deploy Infrastructure:**
+<validation step="d239841d-b8fe-43cb-8170-54bf67f11c8c" />
+
+1. **Deploy Infrastructure:**
    - In the GitHub repository, navigate to the setting and add github action secreat and variable as below.
      - Create GitHub secrets with the same name as mentioned below.
         - **SERVICEPRINCIPAL**: Create a secret to store service principal details. You can find the details in the Environment details tab of your environment.
@@ -62,14 +67,14 @@ You are a DevOps engineer tasked with setting up a robust Continuous Integration
    
    -  Run the workflow named `contoso-traders-provisioning-deployment` and `update-contoso-traders-App`, using GitHub Actions.
       
-3. **Setup CI/CD Workflow:**
+2. **Setup CI/CD Workflow:**
 
    - Update the previously created GitHub secret with the following value:
       - **SQLPASSWORD**: ADO.NET (SQL authentication) connection string of `productsdb` SQL database.
 
    - In the GitHub repository, navigate to  **.github/workflow** where you will be able to find the yaml workflow **contoso-traders-app-deployment**. Run the workflow, this workflow should deploy the application to Azure. 
   
-4. **Test the application and perform rolling updates:**
+3. **Test the application and perform rolling updates:**
    - Navigate to the Azure Portal and check the application status using Azure Endpoint.
    - Update the workflow file to initiate Action run on changes to the GitHub repository.
   
