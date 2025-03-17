@@ -44,13 +44,23 @@ You are a DevOps engineer tasked with setting up a robust Continuous Integration
 1. **Setup a GitHub repository:**
    - Create a new GitHub repository with public access permission.
 
-<validation step="5b252fb5-a2f0-4c4c-8b1d-af806a115039" />
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com We are available 24/7 to help
+
+<validation step="6b3463a9-eca3-4377-b04c-9c04afe4ebb1" />
 
    - You are provided with an e-commerce application named Contoso Traders, which needs to be deployed and hosted on Azure.
    - You can navigate to the `C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files` directory and find the complete code base of the application.
    - Using Visual Studio code, connect to the GitHub repository that you created in the earlier step and push the application code base to your GitHub repository.
   
-<validation step="d239841d-b8fe-43cb-8170-54bf67f11c8c" />
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com We are available 24/7 to help
+
+<validation step="748366ea-c3bf-4783-ac55-ba773159b299" />
 
 1. **Deploy Infrastructure:**
    - In the GitHub repository, navigate to the setting and add github action secrets and variable as below.
