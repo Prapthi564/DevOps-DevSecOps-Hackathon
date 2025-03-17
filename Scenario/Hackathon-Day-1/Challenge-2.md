@@ -41,7 +41,8 @@ You need to focus on completing the implementation of the below-mentioned securi
 2. **Implement Repository security advisories:**
    -  Set up Repository security advisory features for App.js package. Use the `devsecops/src/TailwindTraders.Ui.Website/src/App.js` path while configuring the affected products.
 
-  
+<validation step="32952c71-7fea-4af1-a5f5-7200dbad84ef" />  
+
 ## Success criteria:
 To complete this challenge successfully:
 
