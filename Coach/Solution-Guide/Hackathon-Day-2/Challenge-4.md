@@ -16,9 +16,13 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
 
     ![](../media/ex4-task1-1.png)
 
-1. Navigate to **C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files\iac (1)** path ,  select **iac (2)** and click on **Open folder (3)**.
+1. Navigate to **C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files\ (1)** path ,  select **iac (2)** and click on **Select folder (3)**.
 
-    ![](../media/ex4-task1-2.png)
+    ![](../media/ad24.png)
+
+1. Click on **Yes, I Trust the authors**.
+
+    ![](../media/ad25.png)
 
 1. Open the **monitoringinfra.parameters.json (1)** file. Locate the env parameter in the JSON file and update its value with the **deployment ID (2).** and then save. 
 
@@ -33,14 +37,24 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
    ```
    >**Note**: Please use the below-mentioned credentials to login to Azure.
    
-      - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
-      - **Password:** <inject key="AzureAdUserPassword"></inject>
+      - **Email/Username:** 
+      - **Password:** 
+
+      > **Note**: For **Email/Username** and **Password**, Navigate to **Environment(1)**, click on **Azure credentials**, and copy **Username (2)** and **Password (3)**.  
+            
+      ![](../media1/Active-image19.png)      
       
-1. Set the Resource Group Name before running the deployment command. set the  **$RGname** as **contoso-traders-rg<inject key="Deploymentid" enableCopy="false" />**
+1. Set the Resource Group Name before running the deployment command. set the  **$RGname** as **contoso-traders-rg`<DeployementID>`**
 
    ```
    $RGname = '<update the RG name mentioned above>'
    ```
+
+   ![](../media/ad26.png)   
+
+   >**Note:** For **`<DeploymentID>`**, Navigate to **Environment(1)**, click on **Azure credentials (2)**, and copy  **(3)**. 
+
+    ![](../media/ad27.png)      
    
    >**Note:** Make sure you are in the directory where the Bicep template and parameters file resides. If not switch to the directory cd C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files\iac
    
@@ -55,7 +69,7 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
    
 ### Task 2: Monitoring using Application Insights
 
-1. In the Azure Portal, navigate to the **contoso-traders-rg<inject key="Deploymentid" enableCopy="false" />** **(1)** resource group and select the **Application Insights** resource with the name  **contoso-traders-ai<inject key="Deploymentid" enableCopy="false" />** **(2)**.
+1. In the Azure Portal, navigate to the **contoso-traders-rg`<DeploymentID>`** **(1)** resource group and select the **Application Insights** resource with the name  **contoso-traders-ai`<DeploymentID>`** **(2)**.
 
    ![](../media/ex4-task1-6.png)
    
