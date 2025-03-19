@@ -196,7 +196,7 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
    
       ![](../media/2dgn36.png)
 
-5. To create another secret, under the **Actions Secrets/New secret** page, click on **New repository secrete**. Enter the below-mentioned details and click on **Add secret** ***(3)***.
+5. To create another secret, under the **Actions Secrets/New secret** page, click on **New repository secret**. Enter the below-mentioned details and click on **Add secret** ***(3)***.
 
    - **Name**: Enter **SQLPASSWORD** ***(1)***
    - **Value**: Enter **Azure Password** ***(2)*** 
