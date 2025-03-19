@@ -63,25 +63,26 @@ You are a DevOps engineer tasked with setting up a robust Continuous Integration
 <validation step="748366ea-c3bf-4783-ac55-ba773159b299" />
 
 1. **Deploy Infrastructure:**
-   - In the GitHub repository, navigate to the setting and add github action secrets and variable as below.
+   - In the GitHub repository, navigate to the setting and add github action secreat and variable as below.
      - Create GitHub secrets with the same name as mentioned below.
         - **SERVICEPRINCIPAL**: Create a secret to store service principal details. You can find the details in the Environment details tab of your environment.
-        - **SQLPASSWORD**: You need to store **<inject key="AzureAdUserPassword"></inject>(Azure AD user password)** as a secret. 
+        - **SQLPASSWORD**: You need to enter any unique password with combination of Alphanumeric letters. Your password must contain characters from three of the following categories – English uppercase letters, English lowercase letters, numbers (0-9), and non-alphanumeric characters (!, $, #, %, etc.).
      
      - Create GitHub variables with the same name as mentioned below.   
         - **DEPLOYMENTREGION**: Add you deployment region where you want to get the resources deployed.
-        - **SUFFIX**: Create a secret to store the deployment ID which is **<inject key="DeploymentID" enableCopy="false" />**.
+        - **SUFFIX**: Create a variables to store the deployment ID which is **<inject key="DeploymentID" enableCopy="false" />**.
        
        >**Hint**: You can also find the deployment ID and the Azure AD password within the environment details tab of your integrated lab guide.
 
-   -  Run the workflow named `contoso-traders-app-deployment` using GitHub Actions.
+   
+   -  Run the workflow named `contoso-traders-provisioning-deployment` and `update-contoso-traders-App`, using GitHub Actions.
  
  2. **Setup CI/CD Workflow:**
 
    - Update the previously created GitHub secret with the following value:
       - **SQLPASSWORD**: ADO.NET (SQL authentication) connection string of `productsdb` SQL database.
 
-   - In the GitHub repository, navigate to  **.github/workflow** where you will be able to find the yaml workflow. This YAML file is partially updated, you need to update the YAML files with the right steps and complete the workflow. This workflow should deploy the application to Azure. 
+   - In the GitHub repository, navigate to  **.github/workflow** where you will be able to find the yaml workflow **contoso-traders-app-deployment**. Run the workflow, this workflow should deploy the application to Azure. 
   
 3. **Test the application and perform rolling updates:**
    - Navigate to the Azure Portal and check the application status using Azure Endpoint.

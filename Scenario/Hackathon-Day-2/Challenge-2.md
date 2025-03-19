@@ -21,11 +21,11 @@ You need to focus on completing the implementation of the below-mentioned securi
 
 3. On the **Sign into GitHub tab**, you will see a login screen. Enter the following email/username and then click on **Next**.
 
-   - **Email/Username:** 
+   - **Email/Username:** <inject key="GitHubUsername"></inject>
 
 1. Now enter the following password and click on **Sign in**.
 
-   - **Password:** 
+   - **Password:** <inject key="GitHubPassword"></inject>
 
 
 ## Challenge Objectives:
