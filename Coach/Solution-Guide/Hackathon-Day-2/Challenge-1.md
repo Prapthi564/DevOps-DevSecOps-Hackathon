@@ -30,15 +30,23 @@ Here's the solution guide, which includes detailed step-by-step instructions req
 
 1. On the **Sign into Microsoft Azure tab**, you will see a login screen. Enter the following email/username, and then click on **Next**
    
-   - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+   - **Email/Username:**
 
      ![](../media1/Active-image1.png)
 
+      > **Note**: For **Email/Username**, Navigate to **Environment(1)**, click on **Azure credentials (2)**, and copy **Username (3)**.   
+            
+      ![](../media/ad1.png)
+
 1. Now enter the following password and click on **Sign in**.
 
-   - **Password:** <inject key="AzureAdUserPassword"></inject>
+   - **Password:** 
 
       ![](../media1/Active-image2.png)
+
+      > **Note**: For **Password**, Navigate to **Environment(1)**, click on **Azure credentials (2)**, and copy **Password (3)**.   
+            
+      ![](../media/ad2.png)      
 
 1. When **Action Required** window pop up click on **Ask Later**.
 
@@ -59,9 +67,9 @@ Here's the solution guide, which includes detailed step-by-step instructions req
 
 In this task, you will login to an account on [GitHub](https://github.com) and use `git` to add lab files to a new repository.
 
-1. In a new browser tab, open ```https://www.github.com/login```. From the **Environment Details** page **(1)**, navigate to **License** **(2)** tab and **copy** **(3)** the credentials. Use the same username and password to log into GitHub.
+1. In a new browser tab, open ```https://www.github.com/login```. From the **Environment** page **(1)**, navigate to **License** **(2)** tab and **copy** **(3)** the credentials. Use the same username and password to log into GitHub.
 
-   ![](../media/dev2.png) 
+   ![](../media/ad3.png) 
    
 1. For **Device Verification Code**, use the same credentials as in the previous step, open `http://outlook.office.com/` in a private window, and enter the same username and password used for the GitHub Account login. Copy the verification code and Paste it into Device verification.
 
@@ -129,9 +137,9 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
      git config --global user.name "Your UserName"
      ```
      
-   ![](../media/cl1-t1-s15.png) 
+   ![](../media/ad4.png) 
      
-    Run the below-mentioned command in the terminal. Make sure to replace `your_github_repository-url` with the value you copied in step 13 and `Unique-ID` in step 14.
+    Run the below-mentioned command in the terminal. Make sure to replace `your_github_repository-url` with the value you copied in step 7 and `Unique-ID` in step 8.
 
     Note: This step is done to initialize the folder as a Git repository, commit, and submit contents to the remote GitHub branch “main” in the lab files repository created in Step 1. 
 
@@ -144,11 +152,13 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
       git push -u origin-<Unique-ID> main
       ```
       
-   - If you are asked to authenticate your GitHub account, select **Sign in with your browser**, and you will be prompted with a pop-up window to authorize Git Credential Manager. Click on **Authorize git-ecosystem** to provide access.
+   - If you are asked to authenticate your GitHub account, select **Sign in with your browser**, and you will be prompted with a pop-up window to authorize Git Credential Manager.
   
-       ![](../media/ex1-task1-6.png)
+       ![](../media/ad5.png)
 
-       ![](../media/ex2-t3.png)
+   - Click on **Authorize git-ecosystem** to provide access.    
+
+       ![](../media/ad6.png)
        
    - After you are prompted with the message **Authorization Succeeded**, close the tab and continue with the next task.
 
@@ -160,9 +170,9 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
 
       ![](../media/cl1-t2-s2.png)
 
-2. Navigate to **Environment Details** **(1)**, click on **Service Principal Details** **(2)**, and copy the **Subscription ID**, **Tenant ID (Directory ID)**, **Application ID (Client ID)**, and **Secret Key (Client Secret)**.
+2. Navigate to **Environment** **(1)**, click on **Service Principal Details** **(2)**, and copy the **Subscription ID**, **Tenant ID (Directory ID)**, **Application ID (Client ID)**, and **Secret Key (Client Secret)**.
 
-      ![](../media/ex2-t4-8.png)
+      ![](../media/ad7.png)
    
       - Replace the values that you copied in the below JSON. You will be using them in this step.
       
@@ -186,16 +196,16 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
    
       ![](../media/2dgn36.png)
 
-5. To create another secret, under the **Actions Secrets/New secret** page, enter the below-mentioned details and click on **Add secret** ***(3)***.
+5. To create another secret, under the **Actions Secrets/New secret** page, click on **New repository secrete**. Enter the below-mentioned details and click on **Add secret** ***(3)***.
 
    - **Name**: Enter **SQLPASSWORD** ***(1)***
    - **Value**: Enter **Azure Password** ***(2)*** 
 
       ![](../media/ex-task1-11.png)
 
-      > **Note**: For **Azure Password**, Navigate to **Environment Details (1)**, click on **Azure credentials (2)**, and copy **Password (3)**.
+      > **Note**: For **Azure Password**, Navigate to **Environment (1)**, click on **Azure credentials (2)**, and copy **Password (3)**.
       
-      ![](../media/2dgn155.png)   
+      ![](../media/ad2.png)   
 
 6. To create Variables, under the **Actions secrets and variables** page, switch to **Variables (1)** and then click on **New repository variable (2)**.
    
@@ -261,9 +271,9 @@ In this task, you will login to an account on [GitHub](https://github.com) and u
    
       ![](../media/ex1-task3-2.png)
    
-      >**Note**: Replace `{your_password}` with the ODL User Azure Password. Go to **Environment Details (1)**, click on **Azure credentials (2)**, and copy **Password (3)**.
+      >**Note**: Replace `{your_password}` with the ODL User Azure Password. Go to **Environment (1)**, click on **Azure credentials (2)**, and copy **Password (3)**.
       
-      ![](../media/2dgn155.png)   
+      ![](../media/ad2.png)   
       
 1. From your GitHub repository, select the **Actions** ***(1)*** tab. Select the **contoso-traders-app-deployment** ***(2)*** workflow from the side blade, Click on the  **drop-down** ***(3)*** next Run workflow button, and select **Run workflow** ***(4)***.
 

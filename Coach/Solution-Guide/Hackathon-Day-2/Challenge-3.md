@@ -77,9 +77,9 @@ In this task, you'll explore how secret scanning works and how it generates aler
 
    ![](../media/ex3-task2-1.png)
 
-1. Scroll down ,make sure **Secret scanning is enabled**.
+1. Scroll down ,make sure **Secret Protection is enabled**.
 
-   ![](../media/ex3-task2-2.png)
+   ![](../media/ad9.png)
     
 1. Navigate back to **Code (1)** and click on the **src (2)** folder.
 
@@ -103,13 +103,19 @@ In this task, you'll explore how secret scanning works and how it generates aler
    ```
    >**Note:** Ensure replace the value of the `<Appication ID>` and `<Secret key>` with the actual values available in your LabVM's **Environment tab** before saving the file.
 
-   ![](../media/dev-6.png)
+   ![](../media/ad10.png)
 
    ![](../media/dev-5.png)   
 
 1. Click on **Commit changes.**
 
    ![](../media/ex-common.png)
+
+1. If you get the below warning pop up, choose **Its used in tests (3)** and then select **Allow secret (2)**.   
+
+   ![](../media/ad11.png)
+
+1. Then again click on, **Commit changes** twice.   
    
 1. Select the **Security (1)** tab and click on **Secret scanning (2)** from the sidebar. Set the **Filter** to  **`closed` (3)**. Here, you'll notice that an alert is generated referring to the same **Application ID** that was exposed in the `build.docker-compose.yml` file **(4)**. This is how the Secret scanning feature works and generates alerts to notify you.
 

@@ -11,13 +11,11 @@ Here's the solution guide, which includes detailed step-by-step instructions req
 
 2. Sign in to GitHub by clicking on the **Sign in** button in the top right corner of the GitHub home page.
 
-3. On the **Sign into GitHub tab**, you will see a login screen. Enter the following email/username and click on **Next**.
+3. On the **Sign into GitHub tab**, you will see a login screen. Enter the following `GitHubUserEmail` and `GitHubUserPassword` then click on **Sign in**.
 
-   - **Email/Username:** <inject key="GitHubUsername"></inject>
-
-1. Now enter the following password and click on **Sign in**.
-
-   - **Password:** <inject key="GitHubPassword"></inject>
+    >**Note**: For **GitHubUserEmail** and **GitHubUserPassword**, Navigate to **Environment(1)**, click on **Licenses (2)** and Copy **(3)**.
+            
+     ![](../media/ad3.png)
 
 ## Solution Guide
 
@@ -27,7 +25,7 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
 
 **Note**: To perform this task, the GitHub repository should be public. If the repository visibility is private, please go to the settings of the repository and change the visibility to public.
    
-1. Select the **settings** ***(1)*** tab from the GitHub browser tab. Click on **Code security** ***(2)*** under the security side blade.
+1. Select the **Settings** ***(1)*** tab from the GitHub browser tab. Click on **Code security** ***(2)*** under the security side blade.
 
    ![](../media/ex2-task1-1.png)  
    
@@ -111,7 +109,7 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
    - Severity: **High** ***(5)***
    - Common Weakness Enumerator (CWE): **Improper Access Control (CWE-284)** ***(6)***
   
-     ![](../media/d-2.png)
+     ![](../media/ad8.png)
    
  1. Once the security advisory is created, scroll down and click on **start a temporary private fork**. It is used to collaborate on a patch for this advisory.
 

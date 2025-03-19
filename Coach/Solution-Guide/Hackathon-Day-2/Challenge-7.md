@@ -12,10 +12,18 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
 
 1. On the **Sign in to Microsoft Azure** tab, you will see a login screen. Enter the following email/username, and then click on **Next**. 
 
-   * **Email/Username**: <inject key="AzureAdUserEmail"></inject>
+   * **Email/Username**: 
+
+      > **Note**: For **Email/Username**, Navigate to **Environment(1)**, click on **Azure credentials (2)**, and copy **Username (3)**.   
+            
+      ![](../media/ad1.png)   
         
 1. Now enter the following password and click on **Sign in**.
-   * **Password**: <inject key="AzureAdUserPassword"></inject>
+   * **Password**: 
+
+      > **Note**: For **Email/Username**, Navigate to **Environment(1)**, click on **Azure credentials (2)**, and copy **Password (3)**.   
+            
+      ![](../media/ad2.png)   
      
 1. If you see the pop-up **Stay Signed in?**, click No.
 
@@ -41,17 +49,17 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
 
    ![Picture1](../media/ex7-task1-0.1.png)
    
-1. Once the installation is successfull, a pop appears to sign-in. Click on **Sign in to GitHub**
+1. Once the installation is successfull, a pop appears to sign-in. Click on **Sign in to Use Copilot for free**
 
-   ![Picture1](../media/ex7-task1-0.2.png)
+   ![Picture1](../media/ad12.png)
 
-1. Next, once you get the popup, click on **Allow**.
+1. If you get the popup, click on **Allow**.
 
    ![Picture1](../media/cl7-ex1-t1-s3.png)
 
-1. On the **select user to authorize** page in the edge browser, click on **Continue**
+1. On the **Select user to authorize** page in the edge browser, click on **Continue**
 
-   ![Picture1](../media/ex7-task1-0.3.png)
+   ![Picture1](../media/ad13.png)
 
 1. You will encounter a pop-up prompt. Click **Open** to proceed.
 
@@ -67,7 +75,7 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
 
 1. Verify if **GitHub Copilot Chat** is installed. If its installed, chat window will open as shown below.
    
-    ![Picture1](../media/copilotchat.png)
+    ![Picture1](../media/ad14.png)
    
 ### Task 2: Integrate an 'About Us' app component in React using GitHub Copilot
 
@@ -77,29 +85,33 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
 
     ![](../media/ex4-task1-1.png)
 
-3. Navigate to **C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files-2/ (1)** within the file explorer, and then select the **ContosoTraders.Ui.Website.V2.Raw (2)** folder, and then click on **Select folder (3)**
+1. Navigate to **C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files-2/ (1)** within the file explorer, and then select the **ContosoTraders.Ui.Website.V2.Raw (2)** folder, and then click on **Select folder (3)**
 
     ![Picture1](../media/ex7-task1-1.png) 
 
-4. Ensure to click on **Yes, I trust the authors** within the pop-up to successfully import the CloudLabs folder into VS Code.
+1. Ensure to click on **Yes, I trust the authors** within the pop-up to successfully import the CloudLabs folder into VS Code.
 
    ![Picture1](../media/trust-authors.png)
 
-5. Once the project has loaded, within the explorer pane of VS Code, navigate to `Contosotraders.Ui.Website.V2\src` folder to view the `App.js` file.
+1. Once the project has loaded, within the explorer pane of VS Code, navigate to `Contosotraders.Ui.Website.V2\src\components` folder to view the `App.js` file.
 
    ![Picture1](../media/CL7-EX1-T2-S3.png)
 
-6. Within the **CHAT: GITHUB COPILOT** pane, type: `Help me create the new About Us" page in ContosoTraders.Ui.Website.V2\src` and observe the AI response. You can follow the instructions provided by GitHub Copilot towards successfully adding the About Us page as a part of the sample React application that you have imported into VS Code.
+1. Click on the **Copilot Chat** icon drop down **(1)** and select **Open Chat (2)**.   
+
+   ![Picture1](../media/ad16.png)
+
+1. Within the **CHAT: GITHUB COPILOT** pane, type: `Help me create the new About Us" page in ContosoTraders.Ui.Website.V2\src` and observe the AI response. You can follow the instructions provided by GitHub Copilot towards successfully adding the About Us page as a part of the sample React application that you have imported into VS Code.
 
    ![Picture1](../media/CL7-EX1-T2-S4.png)
 
-  >**Disclaimer:** It should be noted that the code suggestions offered by GitHub Copilot might not exactly match the screenshots shown within the labguide. GitHub Copilot is an AI-powered tool that generates code based on context and patterns, and its suggestions can be influenced by various factors. It is also important that you have the knowledge on operating and running React Applications which may be needed as you proceed with this exercise.
+    >**Disclaimer:** It should be noted that the code suggestions offered by GitHub Copilot might not exactly match the screenshots shown within the labguide. GitHub Copilot is an AI-powered tool that generates code based on context and patterns, and its suggestions can be influenced by various factors. It is also important that you have the knowledge on operating and running React Applications which may be needed as you proceed with this exercise.
 
-  >**Note:** However the ease of executability of this challenge, you can open a new folder within VS Code and import the solution folder from the Windows file explorer with path, `C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files-2\`. Select the **src** folder. This solution project has integrated "About Us" page and unit test cases for the same.
+    >**Note:** However the ease of executability of this challenge, you can open a new folder within VS Code and import the solution folder from the Windows file explorer with path, `C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files-2\`. Select the **src** folder. This solution project has integrated "About Us" page and unit test cases for the same.
 
-  >**Note:** If you wish to continue to manually edit the raw project, follow the steps from step 5.
+    >**Note:** If you wish to continue to manually edit the raw project, follow the steps from step 7.
 
-5. Create a new file named `AboutUs.css` **(1)** in your `src` directory ie., within the path `ContosoTraders.Ui.Website.V2\src` and then add the following code **(2)**:
+1. Create a new file named `AboutUs.css` **(1)** in your `src` directory ie., within the path `ContosoTraders.Ui.Website.V2\src\components` and then add the following code **(2)**:
 
    ```
    .about-us {
@@ -119,9 +131,9 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
 
    ![Picture1](../media/CL7-EX1-T2-S5.png)
 
-6. Save the newly created `AboutUs.css` file.
+1. Save the newly created `AboutUs.css` file.
 
-7. Now let's build a new component for the application. Create a new file named `AboutUs.js` **(1)** in your `src` directory i.e., within the path `ContosoTraders.Ui.Website.V2\src` and then add the following code **(2)**:
+1. Now let's build a new component for the application. Create a new file named `AboutUs.js` **(1)** in your `src` directory i.e., within the path `ContosoTraders.Ui.Website.V2\src\components` and then add the following code **(2)**:
 
    ```
    import React from "react";
@@ -155,42 +167,44 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
    
    >**Note:** The `AboutUs.js` file is a React component that renders an "About Us" section on a webpage based on the CSS rules that have been defined in `AboutUs.css` file.
 
-8. Save the newly created `AboutUs.js` file.
+1. Save the newly created `AboutUs.js` file.
 
-9. Now navigate to the `App.js` file to integrate the "About Us" page that was created in the previous steps.
+1. Now navigate to the `App.js` file to integrate the "About Us" page that was created in the previous steps.
 
-10. Within the `App.js` file, enter the following code.
+1. Within the `App.js` file, enter the following code.
 
      ```
      import AboutUs from "./AboutUs";
      import "./App.css";
      ```
 
-11. Your `App.js` should look similar like the below screenshot:
+1. Your `App.js` should look similar like the below screenshot:
 
      ![Picture1](../media/CL7-EX1-T2-S11.png)
 
-12. Scroll down to the end of the code within the `App.js` file and then add the following code to include the newly created `About Us` component.
+1. Scroll down to the end of the code within the `App.js` file and then add the following code to include the newly created `About Us` component.
 
      ```
      <AboutUs />
      ```
-13. Your `App.js` should now look similar like the below screenshot:
+1. Your `App.js` should now look similar like the below screenshot:
 
      ![Picture1](../media/CL7-EX1-T2-S13.png)
 
-14. To run your React application, you typically use the command line (also known as the terminal). Here are the steps:
-      - Within Visual Studio Code, you can open the terminal by going to the top menu to click on **Terminal** **(1)** and then select **New Termimal (2)**.
-      - Navigate to your project directory. You can do this with the `cd` command followed by the path to your project. You can use the below command to navigate to the React application's working directory **(3)**:
+1. To run your React application, you typically use the command line (also known as the terminal). Here are the steps:
+      - Within Visual Studio Code, you can open the terminal by going to the top menu, click on elipses **... (1)**, then click on **Terminal** **(2)** and then select **New Termimal (3)**.
+
+      - Navigate to your project directory. You can do this with the `cd` command followed by the path to your project. You can use the below command to navigate to the React application's working directory **(4)**:
+
       ```
       cd C:\Workspaces\lab\DevOps-DevSecOps-Hackathon-lab-files-2\src\ContosoTraders.Ui.Website.V2
       ``` 
-      - Once you're in your project directory, you can start the application with the `npm start` **(3)** because we need npm to create the Contoso Traders Application. After running the following command within the terminal, your application should start, and you can view it in your web browser at http://localhost:3000.   
+      - Once you're in your project directory, you can start the application with the `npm start` **(5)** because we need npm to create the Contoso Traders Application. After running the following command within the terminal, your application should start, and you can view it in your web browser at http://localhost:3000.   
       ```
       npm run start
       ```
       
-     ![Picture1](../media/CL7-EX1-T2-S14.png)
+     ![Picture1](../media/ad17.png)
 
     >**Note:** If the above command fails, you might need to run the following command :
 
@@ -202,7 +216,7 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
 
      - After the installation of all the dependencies, execute the command - `npm run start` to start the application. This open a new browser tab over the url path, `http://localhost:3000/`.
 
-15. Observe that the new "About Us" component has been added at the end of the webpage.
+1. Observe that the new "About Us" component has been added at the end of the webpage.
 
      ![Picture1](../media/CL7-EX1-T2-S15.png)
 
@@ -219,7 +233,7 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
    /tests
    ```
 
-   ![Picture1](../media/CL7-EX2-T1-S2.png)
+   ![Picture1](../media/ad18.png)
 
 3. Now create a new file named `WelcomePopup.test.js` under the path `ContosoTraders.Ui.Website.V2\src\components`.
 
@@ -257,9 +271,9 @@ This is the solution guide that contains all of the comprehensive, step-by-step 
 
 ### Task 1: Submit Codebase Modifications to GitHub Repository
 
-1. In a new browser tab, open ```https://www.github.com/login```. From the **Environment Details** page **(1)**, navigate to **License** **(2)** tab and **copy** **(3)** the credentials. Use the same username and password to log into GitHub.
+1. In a new browser tab, open ```https://www.github.com/login```. From the **Environment** page **(1)**, navigate to **License** **(2)** tab and **copy** **(3)** the credentials. Use the same username and password to log into GitHub.
 
-   ![](../media/dev2.png) 
+   ![](../media/ad3.png) 
 
 2. once logged-in, on the upper-right corner, expand the user **drop-down menu** **(1)** and select **Your repositories** **(2)**.
 
@@ -334,7 +348,7 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
   
    ![](../media/cl2-t1-s3.png)
 
-   ![](../media/c2-1.png) 
+   ![](../media/ad-19.png) 
 
 5. Navigate to the **Actions** ***(1)*** tab, here you can review the **workflow** ***(2)*** run.
     
@@ -420,9 +434,11 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
 
 ### Task 1: Deploy Infrastructure
 
-1. Login to your Azure portal with the credentials provided in the **Environment Details** tab of the integrated CloudLabs Environment.
+1. Login to your Azure portal with the credentials provided in the **Environment** tab of the integrated CloudLabs Environment.
 
-2. In the global search bar, search for and select **Static Web Apps**
+2. In the global search bar, search for **Static Web Apps (1)** and select **Static Web Apps (2)**.
+
+    ![](../media/ad20.png)
 
 3. Click on **+ Create** to create a new Static Web Apps.
 
@@ -432,7 +448,16 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
    - **Name:** `React-Static-Web-App` **(3)**.
    - **Plan type:** Select **Free (4)**.
    - **Source:** Select **GitHub (5)**
-   - **GitHub account:** Connect to your GitHub account which has the `devsecops-2` repository with the React application files **(6)**.
+   - **GitHub account:** Click on **Click here to login**. Connect to your GitHub account which has the `devsecops-2` repository with the React application files **(6)**.
+
+      - Click on **Authorize AzureApp service**
+
+        ![](../media/ad21.png)
+
+      - Provide the **GitHubUserPassword (1)** and then click on **Confirm (2)**
+
+        ![](../media/ad22.png)
+
    - **Organization:** Select your assigned Github organization **(7)**.
    - **Repository:** Select `devsecops-2` **(8)**.
    - **Branch:** `Main` **(9)**.
@@ -442,13 +467,16 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
       >**Note:** `/` refers to the root directory of the GitHub repository. Ensure that the location is specified appropriately as per your GitHub file structure.
    
    - Leave the other fields at default and then click on **Review + Create (12)**.
-   - Finally, click on **Create** on the **Review + create** page to create the static web app.
-
+   
      ![](../media/ex7-task1-6.png)
    
      ![](../media/ex7-task1-8.png)
 
      ![](../media/ex7-task1-7.png)
+
+   - Finally, click on **Create** on the **Review + create** page to create the static web app.     
+
+     ![](../media/ad23.png)   
 
 6. Once the deployment is successful, click on **Go to resource**.
 
