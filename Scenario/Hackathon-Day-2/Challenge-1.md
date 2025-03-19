@@ -82,7 +82,7 @@ You are a DevOps engineer tasked with setting up a robust Continuous Integration
    - Update the previously created GitHub secret with the following value:
       - **SQLPASSWORD**: ADO.NET (SQL authentication) connection string of `productsdb` SQL database.
 
-   - In the GitHub repository, navigate to  **.github/workflow** where you will be able to find the yaml workflow. This YAML file is partially updated, you need to update the YAML files with the right steps and complete the workflow. This workflow should deploy the application to Azure. 
+   - In the GitHub repository, navigate to  **.github/workflow** where you will be able to find the yaml workflow **contoso-traders-app-deployment**. Run the workflow, this workflow should deploy the application to Azure. 
   
 3. **Test the application and perform rolling updates:**
    - Navigate to the Azure Portal and check the application status using Azure Endpoint.
